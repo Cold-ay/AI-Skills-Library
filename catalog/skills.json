@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "react-best-practices",
+    "invocation": "vercel-react-best-practices",
+    "category": "website-ui",
+    "summary": "React performance review",
+    "reason": "Actionable React and Next.js performance rules with supporting examples.",
+    "requirements": "React/Next.js project; rule guidance must match your framework version.",
+    "repo": "vercel-labs/agent-skills",
+    "path": "skills/react-best-practices",
+    "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+    "stars": 32707,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/vercel-labs/agent-skills",
+    "source": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/react-best-practices/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/README.md"
+    ],
+    "codex": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/README.md",
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/react-best-practices/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "blob": "4e340a50684a8e7811d5bfa4df48bd9989d0fd87"
+      },
+      {
+        "path": "README.md",
+        "blob": "f283e1c0c21c5b13c848452528c3949ff544846c"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e"
+      },
+      {
+        "path": "metadata.json",
+        "blob": "3bec38b176cc71d105895ec4678bbe79305dcb4c"
+      },
+      {
+        "path": "rules/_sections.md",
+        "blob": "4d20c144bc3b9265fc5976c704a8dd60ed3a806a"
+      },
+      {
+        "path": "rules/_template.md",
+        "blob": "1e9e70703485021e0b969f5731f38c8b9f8694db"
+      },
+      {
+        "path": "rules/advanced-effect-event-deps.md",
+        "blob": "24d901b62be66f6088eb1de5b262e67f5c337d57"
+      },
+      {
+        "path": "rules/advanced-event-handler-refs.md",
+        "blob": "97e7ade243aa6dae50d6faa5111dea0d04778ead"
+      },
+      {
+        "path": "rules/advanced-init-once.md",
+        "blob": "73ee38e5e74c0afa28cb730afe3275479432092a"
+      },
+      {
+        "path": "rules/advanced-use-latest.md",
+        "blob": "9c7cb501693d4a9521697f13dbd5906dd99f0257"
+      },
+      {
+        "path": "rules/async-api-routes.md",
+        "blob": "6feda1ef0ac06b57b33c7b5bd6a19ca88d6c8a34"
+      },
+      {
+        "path": "rules/async-cheap-condition-before-await.md",
+        "blob": "5799d7f6ee6e9d70422048ab0cae06ca021d22b2"
+      },
+      {
+        "path": "rules/async-defer-await.md",
+        "blob": "460b5e16baf9c66f85e4169eb9d43e4d07f2ce94"
+      },
+      {
+        "path": "rules/async-dependencies.md",
+        "blob": "0484ebab993f3db78277e8731872473d02475e6d"
+      },
+      {
+        "path": "rules/async-parallel.md",
+        "blob": "64133f6c31fec81eaaabd712586337d20122e09f"
+      },
+      {
+        "path": "rules/async-suspense-boundaries.md",
+        "blob": "1fbc05b04ed2474637b12014a77688750e78f931"
+      },
+      {
+        "path": "rules/bundle-analyzable-paths.md",
+        "blob": "8276f156cf1aa8a611bd5bc3cadcb362e16ccd13"
+      },
+      {
+        "path": "rules/bundle-barrel-imports.md",
+        "blob": "22d1050196671b7bc9f9aaf88cc665ba6fa8deb0"
+      },
+      {
+        "path": "rules/bundle-conditional.md",
+        "blob": "99d6fc90e31d683d2b6b71353b92d620b484b644"
+      },
+      {
+        "path": "rules/bundle-defer-third-party.md",
+        "blob": "db041d1510e51defeade05926ba4e6bbad1068b5"
+      },
+      {
+        "path": "rules/bundle-dynamic-imports.md",
+        "blob": "60b62695e7a080e2020ff2242d8d841c5e3ecbc4"
+      },
+      {
+        "path": "rules/bundle-preload.md",
+        "blob": "7000504065472628ae614786a3faadd23b0435a7"
+      },
+      {
+        "path": "rules/client-event-listeners.md",
+        "blob": "aad4ae91605d715aad8e92b76bd7fb85c91d7cdf"
+      },
+      {
+        "path": "rules/client-localstorage-schema.md",
+        "blob": "d30a1a7d4f85b0d50a0808eaa1b382c6deb595f4"
+      },
+      {
+        "path": "rules/client-passive-event-listeners.md",
+        "blob": "ce39a889efb4452ec4c044555ff818301dcf7ece"
+      },
+      {
+        "path": "rules/client-swr-dedup.md",
+        "blob": "2a430f27fd6abdc1b1b2f809b7a60114ff506790"
+      },
+      {
+        "path": "rules/js-batch-dom-css.md",
+        "blob": "a62d84ed8149b6d4f173debc7043af03f8f8dd06"
+      },
+      {
+        "path": "rules/js-cache-function-results.md",
+        "blob": "180f8ac8fffd7e6ee320242d59d06565d40a12f8"
+      },
+      {
+        "path": "rules/js-cache-property-access.md",
+        "blob": "39eec9061b4ca820150cc8183fb73f9e0c91ce85"
+      },
+      {
+        "path": "rules/js-cache-storage.md",
+        "blob": "aa4a30c08176aabd27b41fa44d5c1981457b675f"
+      },
+      {
+        "path": "rules/js-combine-iterations.md",
+        "blob": "044d017ec3b24b53e46d638acd1d936a22ac6323"
+      },
+      {
+        "path": "rules/js-early-exit.md",
+        "blob": "f46cb89c6cbe06e481aba0136848e3b17263ba96"
+      },
+      {
+        "path": "rules/js-flatmap-filter.md",
+        "blob": "ee0edf0da256eb8b62c5a998c768c51eb520e8cd"
+      },
+      {
+        "path": "rules/js-hoist-regexp.md",
+        "blob": "dae3fefdc0a1db66badcd4875489715edcdb038b"
+      },
+      {
+        "path": "rules/js-index-maps.md",
+        "blob": "9d357a00b15ac67cdd638886f5197a13173a637d"
+      },
+      {
+        "path": "rules/js-length-check-first.md",
+        "blob": "8b89573630fdc3aa10564273f390ecc7e2b1cd3e"
+      },
+      {
+        "path": "rules/js-min-max-loop.md",
+        "blob": "4b6656e96aecf3ae6ade52974090ae8b3e3f2bb5"
+      },
+      {
+        "path": "rules/js-request-idle-callback.md",
+        "blob": "d81927e5f0ddb9fa4eece79197728bfc4382cbfe"
+      },
+      {
+        "path": "rules/js-set-map-lookups.md",
+        "blob": "680a4892ee291c432bf8e769a44d0f1eb102b74b"
+      },
+      {
+        "path": "rules/js-tosorted-immutable.md",
+        "blob": "eae8b3f8aed2c7a893ceaae4cab55fa1c444b309"
+      },
+      {
+        "path": "rules/rendering-activity.md",
+        "blob": "c957a490b7c2688542766150741e85e066539251"
+      },
+      {
+        "path": "rules/rendering-animate-svg-wrapper.md",
+        "blob": "646744cbe53b213c6fa5ead54ef107510e5be89d"
+      },
+      {
+        "path": "rules/rendering-conditional-render.md",
+        "blob": "7e866f5852dac80e0822e7f7c33476f5c9fc22f1"
+      },
+      {
+        "path": "rules/rendering-content-visibility.md",
+        "blob": "aa6656362b2c0dad9ffea788b5850843d6c0629e"
+      },
+      {
+        "path": "rules/rendering-hoist-jsx.md",
+        "blob": "32d2f3fcea53dadcf847231ee20c60fa2c5c3049"
+      },
+      {
+        "path": "rules/rendering-hydration-no-flicker.md",
+        "blob": "5cf0e79b69afd7564b965c09435a2c7ee79eb2bd"
+      },
+      {
+        "path": "rules/rendering-hydration-suppress-warning.md",
+        "blob": "24ba2513a29f5259b3184695d2d4da25e03e42ac"
+      },
+      {
+        "path": "rules/rendering-resource-hints.md",
+        "blob": "1290bef06baf459f85dc5856ffc4486951224a48"
+      },
+      {
+        "path": "rules/rendering-script-defer-async.md",
+        "blob": "ee275ed1c06da8f1ae70e744e47965799eaebf02"
+      },
+      {
+        "path": "rules/rendering-svg-precision.md",
+        "blob": "6d7712860365294936a1b736d29d3eb970b91da7"
+      },
+      {
+        "path": "rules/rendering-usetransition-loading.md",
+        "blob": "0c1b0b98e884d2c77bdec66df754693bd48c7777"
+      },
+      {
+        "path": "rules/rerender-defer-reads.md",
+        "blob": "e867c95f02fe6ed6ac2f91fdf1c0922304e0423a"
+      },
+      {
+        "path": "rules/rerender-dependencies.md",
+        "blob": "47a4d92685702e3a3b07073c62a61800fa0a6d7d"
+      },
+      {
+        "path": "rules/rerender-derived-state-no-effect.md",
+        "blob": "3d9fe4050794ea6655add6bee50cfbc104e5dc31"
+      },
+      {
+        "path": "rules/rerender-derived-state.md",
+        "blob": "e5c899f6c073338bbd1b73c0275bc3e5e7d9ae7b"
+      },
+      {
+        "path": "rules/rerender-functional-setstate.md",
+        "blob": "b004ef45e347503947fee397b6c3d163b0a317fb"
+      },
+      {
+        "path": "rules/rerender-lazy-state-init.md",
+        "blob": "4ecb350fbadff3db805b72429276e672d42736dc"
+      },
+      {
+        "path": "rules/rerender-memo-with-default-value.md",
+        "blob": "63570491848cb42c2bc7073bceb754893a6a4cfa"
+      },
+      {
+        "path": "rules/rerender-memo.md",
+        "blob": "f8982ab612105a3b7faee1292b797338e7fb5271"
+      },
+      {
+        "path": "rules/rerender-move-effect-to-event.md",
+        "blob": "dd58a1af091b3cf5cb271d25904af4feb836d1aa"
+      },
+      {
+        "path": "rules/rerender-no-inline-components.md",
+        "blob": "d97592acefced05bc4a8538c77d226fa24c08534"
+      },
+      {
+        "path": "rules/rerender-simple-expression-in-memo.md",
+        "blob": "59dfab0f3b048097627e0ca6e4c8da36629a5268"
+      },
+      {
+        "path": "rules/rerender-split-combined-hooks.md",
+        "blob": "89d805644dbffe3877bc1356bdf8ad416a5c715b"
+      },
+      {
+        "path": "rules/rerender-transitions.md",
+        "blob": "d99f43f764232e994a49a1df89ec9d624552f439"
+      },
+      {
+        "path": "rules/rerender-use-deferred-value.md",
+        "blob": "619c04b0142bf5a5b7d0f69532a56b797a78f664"
+      },
+      {
+        "path": "rules/rerender-use-ref-transient-values.md",
+        "blob": "cf04b81f8a531eacd07a32e8917fb3ed3c1bbecb"
+      },
+      {
+        "path": "rules/server-after-nonblocking.md",
+        "blob": "e8f5b260f5fc6d58141bc61e0a091569adb81e7e"
+      },
+      {
+        "path": "rules/server-auth-actions.md",
+        "blob": "ee82c0442bc69ffae7bf20c07709d57893da1123"
+      },
+      {
+        "path": "rules/server-cache-lru.md",
+        "blob": "ef6938aa53c55dc3c0035bd6c66838810d870260"
+      },
+      {
+        "path": "rules/server-cache-react.md",
+        "blob": "87c9ca33168a321a59fbaaa84843e2f48c99751a"
+      },
+      {
+        "path": "rules/server-dedup-props.md",
+        "blob": "fb24a2562c73fadbb9a11a79897c2cf93ea3c69a"
+      },
+      {
+        "path": "rules/server-hoist-static-io.md",
+        "blob": "25205c2fc42d0dd684d6423acde642774329a8cc"
+      },
+      {
+        "path": "rules/server-no-shared-module-state.md",
+        "blob": "ff7d9f29c6e0e42ec1471acec8a3c7f394c8358d"
+      },
+      {
+        "path": "rules/server-parallel-fetching.md",
+        "blob": "1affc835a601a894fd02de08e6c9cdfd76d34b64"
+      },
+      {
+        "path": "rules/server-parallel-nested-fetching.md",
+        "blob": "be1dc25075e40e6bda46cb24dc5a6f42b916b0e8"
+      },
+      {
+        "path": "rules/server-serialization.md",
+        "blob": "39c5c4164c31be7f171ea2f4b3b32fe47709a651"
+      }
+    ]
+  },
+  {
+    "id": "web-design-guidelines",
+    "invocation": "web-design-guidelines",
+    "category": "website-ui",
+    "summary": "UI accessibility review",
+    "reason": "Focused review of interface and accessibility issues.",
+    "requirements": "Fetches live web guidelines; review fetched instructions separately.",
+    "repo": "vercel-labs/agent-skills",
+    "path": "skills/web-design-guidelines",
+    "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+    "stars": 32707,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/vercel-labs/agent-skills",
+    "source": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/README.md"
+    ],
+    "codex": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/README.md",
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "ceae92ab319216a68274168fba9b63b998b65997"
+      }
+    ]
+  },
+  {
+    "id": "frontend-design",
+    "invocation": "frontend-design",
+    "category": "website-ui",
+    "summary": "Distinctive frontend design",
+    "reason": "Useful visual design direction; not evidence of Codex runtime integration.",
+    "requirements": "Claude-oriented wording; adapt tool names and check browser support.",
+    "repo": "anthropics/skills",
+    "path": "skills/frontend-design",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "stars": 182446,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/anthropics/skills",
+    "source": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt"
+    ],
+    "codex": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/README.md",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "LICENSE.txt",
+        "blob": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "a5333457c414d20d625f307df945842c0952ecc3"
+      }
+    ]
+  },
+  {
+    "id": "remotion-best-practices",
+    "invocation": "remotion-best-practices",
+    "category": "video",
+    "summary": "Programmatic video with Remotion",
+    "reason": "Rich timing, animation and rendering references for code-driven video.",
+    "requirements": "Node.js and Remotion project; rendering dependencies and Remotion licensing apply.",
+    "repo": "remotion-dev/skills",
+    "path": "skills/remotion-best-practices",
+    "commit": "039e8a2fc78b67efc228d5645367838b85818a1c",
+    "stars": 5431,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/remotion-dev/skills",
+    "source": "https://github.com/remotion-dev/skills/blob/039e8a2fc78b67efc228d5645367838b85818a1c/skills/remotion-best-practices/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/remotion-dev/skills/blob/039e8a2fc78b67efc228d5645367838b85818a1c/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/remotion-dev/skills/blob/039e8a2fc78b67efc228d5645367838b85818a1c/README.md",
+        "https://github.com/remotion-dev/skills/blob/039e8a2fc78b67efc228d5645367838b85818a1c/skills/remotion-best-practices/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "d1bd486ea2f08d6c948b46c8669c86ad7111f53f"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "5ce4e931930a23bf372d6e5bc97415588deba92d"
+      },
+      {
+        "path": "assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-captions/REFERENCE.md",
+        "blob": "6ba1d21ece8886413d69487cbb80dcf77c9a0682"
+      },
+      {
+        "path": "remotion-captions/agents/openai.yaml",
+        "blob": "f3851301aa1e8a8ac9287c705f1679f6fa9fa033"
+      },
+      {
+        "path": "remotion-captions/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-captions/display-captions.md",
+        "blob": "f698d42ad2788485abb1a1be462934d2decf3dcb"
+      },
+      {
+        "path": "remotion-captions/import-srt-captions.md",
+        "blob": "1a809442e3bdb42b3c49ba0d7bfa6f2973e3b427"
+      },
+      {
+        "path": "remotion-captions/transcribe-captions.md",
+        "blob": "1818b7446282f53aa6157d1560b275b86c2bf32e"
+      },
+      {
+        "path": "remotion-create/REFERENCE.md",
+        "blob": "a8aab660547efe137d0bb5ec35696ed391ebab25"
+      },
+      {
+        "path": "remotion-create/agents/openai.yaml",
+        "blob": "20b2d885b78986cf20386ea487ce95e741bea4b5"
+      },
+      {
+        "path": "remotion-create/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-create/tailwind.md",
+        "blob": "b902131edd8a38a2cfb5f0498e956a81079f82a3"
+      },
+      {
+        "path": "remotion-create/video-layout.md",
+        "blob": "3e6bc435ef83df62516c5a7a033809b8539445eb"
+      },
+      {
+        "path": "remotion-docs/REFERENCE.md",
+        "blob": "06217800e2fb14cebc8a4b3cbeac8f4564c4c7de"
+      },
+      {
+        "path": "remotion-docs/agents/openai.yaml",
+        "blob": "64be533b693e856568907038f0ecf286ab793262"
+      },
+      {
+        "path": "remotion-docs/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-interactivity/REFERENCE.md",
+        "blob": "e6d2e777321eeb342e76bdd0d7a06463da0e7dd3"
+      },
+      {
+        "path": "remotion-interactivity/agents/openai.yaml",
+        "blob": "e4152ad53af85e29c5640bfd19f9f2d2903cd2d9"
+      },
+      {
+        "path": "remotion-interactivity/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-interactivity/inline-effects.md",
+        "blob": "910a95d51e3a6b8ba8929d21e1e9af895696f31c"
+      },
+      {
+        "path": "remotion-interactivity/timeline-structure.md",
+        "blob": "31e30a67d58114376d1596aae1da39ed3c318eb4"
+      },
+      {
+        "path": "remotion-maps/REFERENCE.md",
+        "blob": "32f0142f6561c3f561ab9aa0fa042cf43ca0f359"
+      },
+      {
+        "path": "remotion-maps/agents/openai.yaml",
+        "blob": "c60b3a186973a32c89176b88446c1856ef5f3ed6"
+      },
+      {
+        "path": "remotion-maps/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/TECHNIQUE.md",
+        "blob": "b58e4a42d6ce8cd7ba158c7eef64145f629f9ea2"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+        "blob": "02465d0ead353c994a628bb39dd949ff9ce0758e"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/assets/cesium-path.json",
+        "blob": "32b60baec5b2ec39252936743bb234616a70b996"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/assets/city-path.json",
+        "blob": "821973f2d7e085409016b933c644f8f0efabaed0"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/assets/example-Root.tsx",
+        "blob": "9a27a0b7c9491af655e08f6844d2d8cabb6b1a0e"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/assets/flight-path.ts",
+        "blob": "de7f7bdb6878cff8479b6b2f1c2fb4c556fce8b4"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/assets/sample-river.geojson",
+        "blob": "5574b30b311150eed82dd332d756dfa5e3cf9256"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/references/3d-data-sources.md",
+        "blob": "c5cfcbd00e4e6fadf8ba98a515d412db0e46fb47"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+        "blob": "a2222d782a14fe7757b9ab2bd75efed4c580fe85"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+        "blob": "488eb9d438358f604790cccde179e9d37fd52841"
+      },
+      {
+        "path": "remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+        "blob": "dbb3f0f9756ec5b2d4bcda6d3b37bd6396defda1"
+      },
+      {
+        "path": "remotion-maps/techniques/mapbox/TECHNIQUE.md",
+        "blob": "6042621b1f7a33f9124291b7831956f7b7afd6cd"
+      },
+      {
+        "path": "remotion-maps/techniques/mapbox/references/render-stability.md",
+        "blob": "fc40033139c9cf5baa8160a436d379fd8c606933"
+      },
+      {
+        "path": "remotion-maps/techniques/maplibre/TECHNIQUE.md",
+        "blob": "38977cce4b9f171bea0ee47e9bffa63a6c681285"
+      },
+      {
+        "path": "remotion-maps/techniques/maplibre/references/render-stability.md",
+        "blob": "fc40033139c9cf5baa8160a436d379fd8c606933"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/TECHNIQUE.md",
+        "blob": "d35879100781b260c67df12b372c4c810dd4a9de"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+        "blob": "3e4b887ef5deb1ffb265b3f8d615bf7b836f17f5"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+        "blob": "9d91691a266a49dd9f19dd133b7e4f054664597d"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+        "blob": "a0ade54a174a026c9e62c187b7c3aab574003630"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+        "blob": "4e252677de1ede8866157ddc8afeeb2388b56a4b"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+        "blob": "59ed681b99d4058d0481846b3a97d91437094586"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+        "blob": "e5923b90282fe01b3fb50f84988cfa441fd003c1"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/assets/tokens.ts",
+        "blob": "31505e3f5d9cf66816d5d09874bac8b1f234bf15"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/references/map-data-sources.md",
+        "blob": "d93a8c2a69a2397da7910b5cb67e9b1f2d618037"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+        "blob": "77e98aa10f98da323c53c76d4546ada7b2c43a22"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+        "blob": "0e79a2b51e293f4a9f834a87e24fff8ce350446f"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/references/render-stability.md",
+        "blob": "fc40033139c9cf5baa8160a436d379fd8c606933"
+      },
+      {
+        "path": "remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+        "blob": "af8e19eb22d7d3d3486b72c021d617d48ea4dd94"
+      },
+      {
+        "path": "remotion-maps/techniques/static-map/TECHNIQUE.md",
+        "blob": "808ec935c42e3d02cd1486828be367bcf1d676af"
+      },
+      {
+        "path": "remotion-markup/3d.md",
+        "blob": "c9d254f1209d83fd6f8a313659cfc694ec7b7837"
+      },
+      {
+        "path": "remotion-markup/REFERENCE.md",
+        "blob": "ef21d0af31a7a6af77f6ee5ad82123a60f96f711"
+      },
+      {
+        "path": "remotion-markup/agents/openai.yaml",
+        "blob": "3174fbd37d5a1f6258af7b0ec5724827c6795b05"
+      },
+      {
+        "path": "remotion-markup/arabic-text.md",
+        "blob": "06cbd0d5afcd5d616df38a2ec63b9845839683af"
+      },
+      {
+        "path": "remotion-markup/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-markup/audio-visualization.md",
+        "blob": "733b0d350db745429d02ddb3e268ddbaa0106b5c"
+      },
+      {
+        "path": "remotion-markup/audio.md",
+        "blob": "4ec871f142f5e68e9e5f881ea9b91cb806be44a6"
+      },
+      {
+        "path": "remotion-markup/calculate-metadata.md",
+        "blob": "b66aedbe80a3ba7eb97ffbaf3c1439d1dc76ea07"
+      },
+      {
+        "path": "remotion-markup/color-correction.md",
+        "blob": "18a3b5614d9d6b269349aae919604c84cd483b9d"
+      },
+      {
+        "path": "remotion-markup/compositions.md",
+        "blob": "e042330a43a04ce83ea9a9dae643f19c7e70325f"
+      },
+      {
+        "path": "remotion-markup/connected-compositions.md",
+        "blob": "57f5e30195040726d8ad04b94654dd396945caa5"
+      },
+      {
+        "path": "remotion-markup/cropping.md",
+        "blob": "8ffb6442e689923a64fd4d34e2285d34dbad8aa4"
+      },
+      {
+        "path": "remotion-markup/effects.md",
+        "blob": "610e6af4a91ddef6ea110dcff310fd078a7177ee"
+      },
+      {
+        "path": "remotion-markup/embedding-videos.md",
+        "blob": "5263d6f1c25df5707e1aecda8b36dae9e1ab20b3"
+      },
+      {
+        "path": "remotion-markup/ffmpeg.md",
+        "blob": "492c6cb3e49b36d07a4de10dbc87a5e2c19e8133"
+      },
+      {
+        "path": "remotion-markup/gifs.md",
+        "blob": "d9ac8b7d412ee6ac53a3ae7a1019d75644fb4c63"
+      },
+      {
+        "path": "remotion-markup/google-fonts.md",
+        "blob": "9fd4d32fbf5125c2c195362a5b95af100d121281"
+      },
+      {
+        "path": "remotion-markup/html-in-canvas.md",
+        "blob": "a3d9d0c6f10cb7703b31ecbc2dd24ecb863db55c"
+      },
+      {
+        "path": "remotion-markup/images.md",
+        "blob": "ad9ec1a35aff0d0f425d2fffb439218d00fe47fe"
+      },
+      {
+        "path": "remotion-markup/light-leaks.md",
+        "blob": "c000a07560ae6611890d4247f99a2eba1b865ec9"
+      },
+      {
+        "path": "remotion-markup/local-fonts.md",
+        "blob": "94ab7e569d02b52d512d7a939893faeededbb0d4"
+      },
+      {
+        "path": "remotion-markup/lottie.md",
+        "blob": "f146cfee76a1558c54b582511c733356dec3c75a"
+      },
+      {
+        "path": "remotion-markup/measuring-dom-nodes.md",
+        "blob": "d522b16a2cd6f3989e644eebf0110fd7d48b284f"
+      },
+      {
+        "path": "remotion-markup/measuring-text.md",
+        "blob": "8faca937ad4bce150e238d7ffa946af3da23b30a"
+      },
+      {
+        "path": "remotion-markup/motion-blur.md",
+        "blob": "eb840a65b996dbb4b3787b34d57491028fc5bf0f"
+      },
+      {
+        "path": "remotion-markup/multi-scene-video.md",
+        "blob": "d6b631d903fd70bee152975c0531e1a2903d4d9a"
+      },
+      {
+        "path": "remotion-markup/parameters.md",
+        "blob": "8ab51df35531e13baea2670f3c53d5fadfff3f5b"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/REFERENCE.md",
+        "blob": "32f0142f6561c3f561ab9aa0fa042cf43ca0f359"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/agents/openai.yaml",
+        "blob": "c60b3a186973a32c89176b88446c1856ef5f3ed6"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/TECHNIQUE.md",
+        "blob": "b58e4a42d6ce8cd7ba158c7eef64145f629f9ea2"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+        "blob": "02465d0ead353c994a628bb39dd949ff9ce0758e"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/assets/cesium-path.json",
+        "blob": "32b60baec5b2ec39252936743bb234616a70b996"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/assets/city-path.json",
+        "blob": "821973f2d7e085409016b933c644f8f0efabaed0"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/assets/example-Root.tsx",
+        "blob": "9a27a0b7c9491af655e08f6844d2d8cabb6b1a0e"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/assets/flight-path.ts",
+        "blob": "de7f7bdb6878cff8479b6b2f1c2fb4c556fce8b4"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/assets/sample-river.geojson",
+        "blob": "5574b30b311150eed82dd332d756dfa5e3cf9256"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/references/3d-data-sources.md",
+        "blob": "c5cfcbd00e4e6fadf8ba98a515d412db0e46fb47"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+        "blob": "a2222d782a14fe7757b9ab2bd75efed4c580fe85"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+        "blob": "488eb9d438358f604790cccde179e9d37fd52841"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+        "blob": "dbb3f0f9756ec5b2d4bcda6d3b37bd6396defda1"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/mapbox/TECHNIQUE.md",
+        "blob": "6042621b1f7a33f9124291b7831956f7b7afd6cd"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/mapbox/references/render-stability.md",
+        "blob": "fc40033139c9cf5baa8160a436d379fd8c606933"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maplibre/TECHNIQUE.md",
+        "blob": "38977cce4b9f171bea0ee47e9bffa63a6c681285"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maplibre/references/render-stability.md",
+        "blob": "fc40033139c9cf5baa8160a436d379fd8c606933"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/TECHNIQUE.md",
+        "blob": "d35879100781b260c67df12b372c4c810dd4a9de"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+        "blob": "3e4b887ef5deb1ffb265b3f8d615bf7b836f17f5"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+        "blob": "9d91691a266a49dd9f19dd133b7e4f054664597d"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+        "blob": "a0ade54a174a026c9e62c187b7c3aab574003630"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+        "blob": "4e252677de1ede8866157ddc8afeeb2388b56a4b"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+        "blob": "59ed681b99d4058d0481846b3a97d91437094586"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+        "blob": "e5923b90282fe01b3fb50f84988cfa441fd003c1"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/tokens.ts",
+        "blob": "31505e3f5d9cf66816d5d09874bac8b1f234bf15"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/references/map-data-sources.md",
+        "blob": "d93a8c2a69a2397da7910b5cb67e9b1f2d618037"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+        "blob": "77e98aa10f98da323c53c76d4546ada7b2c43a22"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+        "blob": "0e79a2b51e293f4a9f834a87e24fff8ce350446f"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/references/render-stability.md",
+        "blob": "fc40033139c9cf5baa8160a436d379fd8c606933"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+        "blob": "af8e19eb22d7d3d3486b72c021d617d48ea4dd94"
+      },
+      {
+        "path": "remotion-markup/remotion-maps/techniques/static-map/TECHNIQUE.md",
+        "blob": "5f23bbc333c2b0d8d7e8ed0489b90fa8b5e104c1"
+      },
+      {
+        "path": "remotion-markup/sequencing.md",
+        "blob": "9843a701bd4774a59b3348e1e7b064b01746e724"
+      },
+      {
+        "path": "remotion-markup/sfx.md",
+        "blob": "9354fe7fbd39087f73e6fb7456d1fbf836fafde1"
+      },
+      {
+        "path": "remotion-markup/silence-detection.md",
+        "blob": "d67110c62769171c5e3d8491fbc49f50746d2c94"
+      },
+      {
+        "path": "remotion-markup/text-highlights.md",
+        "blob": "a39b42c4118faa309ed999d9fea3bbbf8529535f"
+      },
+      {
+        "path": "remotion-markup/timing-props.md",
+        "blob": "e2d81e37ec82ac1c5bb730623a70a1a3590531f3"
+      },
+      {
+        "path": "remotion-markup/timing.md",
+        "blob": "4c224f8de06e3e2a4623e73171b4e3733546ff73"
+      },
+      {
+        "path": "remotion-markup/transitions.md",
+        "blob": "a83d709804446eca705fabf671f2ccdc219d4842"
+      },
+      {
+        "path": "remotion-markup/video-editing.md",
+        "blob": "468362310bd51650644693004d9420d05011fe5b"
+      },
+      {
+        "path": "remotion-markup/voiceover.md",
+        "blob": "5a18438aa0f8ee17fac4b2c167e8190c745ca47a"
+      },
+      {
+        "path": "remotion-multimedia/REFERENCE.md",
+        "blob": "4c680e14035fae3ca8c4d1e3bd1301742133682a"
+      },
+      {
+        "path": "remotion-multimedia/agents/openai.yaml",
+        "blob": "fbb5246825fae7ffc62a66512e6e7e37e2cf001d"
+      },
+      {
+        "path": "remotion-multimedia/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-multimedia/get-audio-duration.md",
+        "blob": "1678eb3c7017a57eaddf43f6957edd1c48045eb0"
+      },
+      {
+        "path": "remotion-multimedia/get-video-dimensions.md",
+        "blob": "8071a2bbac76ae5c045b90aad84ec15ccaf61919"
+      },
+      {
+        "path": "remotion-multimedia/get-video-duration.md",
+        "blob": "55bbb8635e0161594b87dbc47c12014362840f5b"
+      },
+      {
+        "path": "remotion-render/REFERENCE.md",
+        "blob": "03368e6ca2556c77c1f6218a17ebbbb43a8500ad"
+      },
+      {
+        "path": "remotion-render/agents/openai.yaml",
+        "blob": "da473ab10489602492e5e043c62b1ac4e9dd0f14"
+      },
+      {
+        "path": "remotion-render/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-render/transparent-videos.md",
+        "blob": "dce5de5082e9cd3dadd04126e254ad8b61238234"
+      },
+      {
+        "path": "remotion-saas/REFERENCE.md",
+        "blob": "0f9d97ebeb4e3690115c4a0dd5ff6975d07f57c0"
+      },
+      {
+        "path": "remotion-saas/agents/openai.yaml",
+        "blob": "e9507e56d1fb17364b587f664aefc10f20d741ea"
+      },
+      {
+        "path": "remotion-saas/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-saas/framework.md",
+        "blob": "aa2448b62c6f4838b782e3d88ddcbb40c1d19cef"
+      },
+      {
+        "path": "remotion-saas/player.md",
+        "blob": "7cc9185f3b4c64a7db638415bc6b3b3e914c2c69"
+      },
+      {
+        "path": "remotion-saas/rendering.md",
+        "blob": "70e0688ab068f0879530a560af29c6a4e340d275"
+      },
+      {
+        "path": "remotion-studio/REFERENCE.md",
+        "blob": "5c4d0ac84f5f0e674d2d04273acc4a092be3281d"
+      },
+      {
+        "path": "remotion-studio/agents/openai.yaml",
+        "blob": "dd0ff182de1963e9e2250294976cd1da33bba6cd"
+      },
+      {
+        "path": "remotion-studio/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      },
+      {
+        "path": "remotion-upgrade/REFERENCE.md",
+        "blob": "483f69450eea5c675320d66efcc26a50564b8016"
+      },
+      {
+        "path": "remotion-upgrade/agents/openai.yaml",
+        "blob": "b8b1905afc820dd2fa12c2afc00236ee63956560"
+      },
+      {
+        "path": "remotion-upgrade/assets/remotion-icon.svg",
+        "blob": "420dbc726662dbb88a144878a49a68dcc6b0cd5b"
+      }
+    ]
+  },
+  {
+    "id": "systematic-debugging",
+    "invocation": "systematic-debugging",
+    "category": "coding",
+    "summary": "Evidence-first debugging",
+    "reason": "Reproduce and isolate root causes before editing.",
+    "requirements": "Other Superpowers skills are referenced; install full upstream plugin for complete workflow.",
+    "repo": "obra/superpowers",
+    "path": "skills/systematic-debugging",
+    "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+    "stars": 302498,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/obra/superpowers",
+    "source": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/systematic-debugging/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/README.md",
+        "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/systematic-debugging/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "CREATION-LOG.md",
+        "blob": "9aa03092809feaf93c9bfa985252f6f1c9624692"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "62fc752aaef59a8bbed5d305f4cadc60f8ae07ed"
+      },
+      {
+        "path": "condition-based-waiting-example.ts",
+        "blob": "703a06b653160d060bbf46ab5c6e0cd7446bd592"
+      },
+      {
+        "path": "condition-based-waiting.md",
+        "blob": "70994f777c586f7d4c43033aac34c7cf0da6688b"
+      },
+      {
+        "path": "defense-in-depth.md",
+        "blob": "e2483354dc2b62478a2624e34ca18bc0efe887b2"
+      },
+      {
+        "path": "find-polluter.sh",
+        "blob": "985f5d08ccf8a3f2d40739cfcaf4413bb24bf1cb"
+      },
+      {
+        "path": "root-cause-tracing.md",
+        "blob": "0e72e8f9566b7ef85e814633d1feacad9d0c5868"
+      },
+      {
+        "path": "test-academic.md",
+        "blob": "23a6ed7a2044e0c44d74c3101406140f4851aa41"
+      },
+      {
+        "path": "test-pressure-1.md",
+        "blob": "8d13b467e4a98abfffd12161cbc3c418021d6023"
+      },
+      {
+        "path": "test-pressure-2.md",
+        "blob": "2d2315ec8a24ca872bc80d2f4056468ba051462a"
+      },
+      {
+        "path": "test-pressure-3.md",
+        "blob": "89734b86fdc756488df315d53e5c3ac2d3752cd8"
+      }
+    ]
+  },
+  {
+    "id": "context-compression",
+    "invocation": "context-compression",
+    "category": "token-context",
+    "summary": "Long-session handoff summaries",
+    "reason": "Preserves task decisions and state when context is compressed.",
+    "requirements": "Guidance only; no measured token savings or control of Codex compaction guaranteed.",
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "path": "skills/context-compression",
+    "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+    "stars": 18178,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-compression/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-compression/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "44b78abf987b07ee5c63bc325a5ced366ffd7d15"
+      },
+      {
+        "path": "references/evaluation-framework.md",
+        "blob": "eac3e0572c8f50a7bdee5e04817d9d1a389a93fe"
+      },
+      {
+        "path": "scripts/compression_evaluator.py",
+        "blob": "f8ce4f4b61df37bab19061272ae24119a734e2eb"
+      },
+      {
+        "path": "tests/test_compression_evaluator.py",
+        "blob": "0bdd6fbe9128850c966a794a565cb43d99ae808b"
+      }
+    ]
+  },
+  {
+    "id": "context-optimization",
+    "invocation": "context-optimization",
+    "category": "token-context",
+    "summary": "Context budget and retrieval strategy",
+    "reason": "Separates retrieval, masking and caching tradeoffs.",
+    "requirements": "Some techniques require runtime control; benchmark task quality and total tokens.",
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "path": "skills/context-optimization",
+    "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+    "stars": 18178,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-optimization/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-optimization/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "6b63196315aeab99c37c37d2cfea4891ecb2b23f"
+      },
+      {
+        "path": "references/optimization_techniques.md",
+        "blob": "a5c60b30789dc696ef62d53228b4c4e46abe737d"
+      },
+      {
+        "path": "scripts/compaction.py",
+        "blob": "b38c0aaa3e5e3fad72927a3ab6d991dd68b54b02"
+      }
+    ]
+  },
+  {
+    "id": "zotero",
+    "invocation": "Zotero",
+    "category": "research-automation",
+    "summary": "Zotero research and citations",
+    "reason": "Current official plugin example for local scholarly source workflows.",
+    "requirements": "Zotero Desktop and full Zotero plugin; relative plugin paths and connector required.",
+    "repo": "openai/plugins",
+    "path": "plugins/zotero/skills/zotero",
+    "commit": "0722921d5542fc593105c27bd52630babd8b8c2a",
+    "stars": 7517,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/openai/plugins",
+    "source": "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/plugins/zotero/skills/zotero/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/README.md"
+    ],
+    "codex": {
+      "status": "verified-static",
+      "evidence": [
+        "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/README.md",
+        "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/plugins/zotero/skills/zotero/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "17fdcd293f091cf91b24371e82bf580680c409ba"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "3b6682968a71c08abe7ce8be4590c7777a4f0176"
+      },
+      {
+        "path": "assets/icon.png",
+        "blob": "c7cc5a5ce96a5ca009aba48864c98fc41f994697"
+      },
+      {
+        "path": "references/local-api-routes.md",
+        "blob": "eb1a477eb0d23a30faae8ff6baf387961f7b0352"
+      },
+      {
+        "path": "scripts/zotero.py",
+        "blob": "0b12836d8133209d8f20d25bd1eba8904fd2833d"
+      }
+    ]
+  },
+  {
+    "id": "plugin-creator",
+    "invocation": "plugin-creator",
+    "category": "skill-engineering",
+    "summary": "Codex plugin scaffolding",
+    "reason": "Current official Codex packaging and marketplace scaffolding workflow.",
+    "requirements": "Python; scripts assume repository layout. Prefer upstream repository workflow.",
+    "repo": "openai/plugins",
+    "path": ".agents/skills/plugin-creator",
+    "commit": "0722921d5542fc593105c27bd52630babd8b8c2a",
+    "stars": 7517,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/openai/plugins",
+    "source": "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/.agents/skills/plugin-creator/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/README.md"
+    ],
+    "codex": {
+      "status": "verified-static",
+      "evidence": [
+        "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/README.md",
+        "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/.agents/skills/plugin-creator/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "4a90165c0708ca7967bb5a23c0b1a8f521a3479c"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "1b934d6ecc829065c905370a4834219df9b9a203"
+      },
+      {
+        "path": "references/plugin-json-spec.md",
+        "blob": "ee66dfe4f68b7ebc0dea8b60a642608601bc59f6"
+      },
+      {
+        "path": "scripts/create_basic_plugin.py",
+        "blob": "dcb24562e811def57c87e1822b15640005161fb9"
+      }
+    ]
+  },
+  {
+    "id": "skill-creator",
+    "invocation": "skill-creator",
+    "category": "skill-engineering",
+    "summary": "Skill writing reference (legacy)",
+    "reason": "Useful principles for concise skills; usually already bundled in Codex.",
+    "requirements": "Deprecated repository; prefer installed skill-creator and current plugins. Reference only.",
+    "repo": "openai/skills",
+    "path": "skills/.system/skill-creator",
+    "commit": "49f948faa9258a0c61caceaf225e179651397431",
+    "stars": 28189,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/openai/skills",
+    "source": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/LICENSE.txt"
+    ],
+    "codex": {
+      "status": "verified-static",
+      "evidence": [
+        "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/README.md",
+        "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "LICENSE.txt",
+        "blob": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "72bc0b97e7a6476254a9d5c424c9971748402ec3"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "f5ce09ed118b72908b7308fcfc1619f59e89f6ea"
+      },
+      {
+        "path": "references/openai_yaml.md",
+        "blob": "da5629f8de500ec6f81291d239a2d9c68d1d9044"
+      },
+      {
+        "path": "scripts/generate_openai_yaml.py",
+        "blob": "1a9d784f8704999daf55a2b9036094949d9af3f8"
+      },
+      {
+        "path": "scripts/init_skill.py",
+        "blob": "f90703eca8159a21a9684ed1df974c702d92f814"
+      },
+      {
+        "path": "scripts/quick_validate.py",
+        "blob": "0547b4041a5f58fa19892079a114a1df98286406"
+      }
+    ]
+  },
+  {
+    "id": "gh-fix-ci",
+    "invocation": "gh-fix-ci",
+    "category": "coding",
+    "summary": "GitHub Actions diagnosis (legacy)",
+    "reason": "Concrete log-based CI diagnosis; retained as a migration reference.",
+    "requirements": "Deprecated upstream; gh CLI/auth needed; reference only.",
+    "repo": "openai/skills",
+    "path": "skills/.curated/gh-fix-ci",
+    "commit": "49f948faa9258a0c61caceaf225e179651397431",
+    "stars": 28189,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/openai/skills",
+    "source": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-fix-ci/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-fix-ci/LICENSE.txt"
+    ],
+    "codex": {
+      "status": "verified-static",
+      "evidence": [
+        "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/README.md",
+        "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-fix-ci/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "LICENSE.txt",
+        "blob": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "76bdeb6a7bff93cbe924c0652f1fd7a3c3ffc46c"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "262bd70c8214ffc8fcc698465a8122d69066fe4f"
+      },
+      {
+        "path": "assets/github-small.svg",
+        "blob": "828e9d9d1d29e1a525a1aeee5eb1e4162249c77e"
+      },
+      {
+        "path": "assets/github.png",
+        "blob": "e23dbe59099a594c06a46081ce48b82aa409b0e7"
+      },
+      {
+        "path": "scripts/inspect_pr_checks.py",
+        "blob": "06cd03c5fc61c784d082e1c25a533c94e0912b3f"
+      }
+    ]
+  },
+  {
+    "id": "transcribe",
+    "invocation": "transcribe",
+    "category": "video",
+    "summary": "Audio/video transcription (legacy)",
+    "reason": "Transcription and speaker labelling workflow; not a video editor.",
+    "requirements": "Deprecated upstream; Python OpenAI SDK and paid API key needed; reference only.",
+    "repo": "openai/skills",
+    "path": "skills/.curated/transcribe",
+    "commit": "49f948faa9258a0c61caceaf225e179651397431",
+    "stars": 28189,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/openai/skills",
+    "source": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/transcribe/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/transcribe/LICENSE.txt"
+    ],
+    "codex": {
+      "status": "verified-static",
+      "evidence": [
+        "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/README.md",
+        "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/transcribe/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "LICENSE.txt",
+        "blob": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "757576f9bbd1782f14fcc28ca85159139a2b8fa5"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "2f5909c7fff9a325a6c6501c694f2c5305f0c720"
+      },
+      {
+        "path": "assets/transcribe-small.svg",
+        "blob": "f6d8d816dd77cd9e7aa92afbbd748399a62c0e5d"
+      },
+      {
+        "path": "assets/transcribe.png",
+        "blob": "2c15b2adc0e5beb656bffd181e1dfa2e1532e6bb"
+      },
+      {
+        "path": "references/api.md",
+        "blob": "5f3edae8d4be6379b0111cc351b22278edb89526"
+      },
+      {
+        "path": "scripts/transcribe_diarize.py",
+        "blob": "0fea33aaa1f4969ec7bf77a90d220236a47d81c6"
+      }
+    ]
+  }
+]
