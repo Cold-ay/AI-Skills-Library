@@ -1,6 +1,6 @@
 # AI Skills Library
 
-精選、可追溯的 AI skills 導覽與安全安裝工具。涵蓋網站／UI、影片、coding、token／context、研究／自動化、skill engineering。Python 3.10+；工具本身只用標準函式庫，不需付費 API。
+精選、可追溯的 AI skills 導覽與安全安裝工具。涵蓋網站／UI、影片、coding、token／context、研究／自動化、skill engineering。Python 3.9+；工具本身只用標準函式庫，不需付費 API。
 
 ## 快速開始
 

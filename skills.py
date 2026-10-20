@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Auditable skill discovery and opt-in file installation. Python 3.10+, stdlib only."""
+"""Auditable skill discovery and opt-in file installation. Python 3.9+, stdlib only."""
 import argparse
 import hashlib
 import json

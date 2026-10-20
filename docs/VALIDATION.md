@@ -8,3 +8,7 @@
 - Live report collection: 11 repositories collected, 18 repository HTTP errors. The initial dated report is explicitly incomplete; collector exited 1. This demonstrates failure visibility, not a successful scheduled run.
 - Live source review: GitHub metadata, commit/tree manifests, selected SKILL.md files and READMEs inspected for seven sources. Deprecated openai/skills entries were retained only as migration references.
 - No end-to-end Codex execution of third-party skills, paid API calls, or live GitHub Actions run is claimed. Scheduled PR creation depends on repository Actions permissions and a default-branch workflow.
+
+## Publication status
+
+Library published to main. Workflow files are delivered under docs/workflows because the Git transport credential lacks workflow scope. The connected GitHub integration also returned HTTP 403 for branch creation. No schedule or CI has been activated remotely. To activate, copy the two templates into .github/workflows using a GitHub account/token with workflow write permission, review/merge, and enable Actions PR creation in repository settings.
