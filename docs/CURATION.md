@@ -32,8 +32,8 @@ The catalogue is trusted configuration and must receive code review. Do not run 
 7. Review the complete diff, run tests and `skills.py validate`, and update the human catalogue table.
 8. Use a PR; never auto-promote a discovery candidate or silently update an installed skill.
 
-## Weekly discovery limitations
+## Manual discovery limitations
 
 Three bounded GitHub searches distinguish recently created Codex repositories from recently pushed popular skill repositories. Queries, actual counts, creation/push dates, commit SHA, matching tree paths and API errors are saved. The five trial candidates are a mechanical shortlist, not a safety approval. A single snapshot establishes no trend. New repository commits do not inherit the compatibility verification of older catalogue pins. API limits, private repositories, missing search terms and top-eight limits can hide useful projects.
 
-GitHub Actions runs only trusted default-branch collector code. It does not use pull_request_target, execute downloaded files, or interpolate repository descriptions into shell commands. Weekly PRs require maintainer review. GitHub may suppress CI triggered by its own GITHUB_TOKEN; review checks can be run manually, and the weekly job runs tests before creating the report.
+Reports are maintained manually. No recurring report workflow or schedule is configured.

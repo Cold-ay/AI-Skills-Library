@@ -1468,5 +1468,2084 @@
         "blob": "0fea33aaa1f4969ec7bf77a90d220236a47d81c6"
       }
     ]
+  },
+  {
+    "id": "taste-skill",
+    "invocation": "design-taste-frontend",
+    "category": "website-ui",
+    "summary": "Art direction for distinctive websites",
+    "reason": "Researched design directions and browser-based review help escape generic page layouts.",
+    "requirements": "Node 22+ and Chrome/Edge/Chromium; image discovery uses the network. Scripts remain unexecuted.",
+    "repo": "Leonxlnx/taste-skill",
+    "path": "skills/taste-skill",
+    "commit": "63aba5f43b5056758b15bbe7d683da8c86a7a7ad",
+    "stars": 99768,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "reports/2026-10-21.json",
+    "source": "https://github.com/Leonxlnx/taste-skill/blob/63aba5f43b5056758b15bbe7d683da8c86a7a7ad/skills/taste-skill/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/Leonxlnx/taste-skill/blob/63aba5f43b5056758b15bbe7d683da8c86a7a7ad/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/Leonxlnx/taste-skill/blob/63aba5f43b5056758b15bbe7d683da8c86a7a7ad/README.md",
+        "https://github.com/Leonxlnx/taste-skill/blob/63aba5f43b5056758b15bbe7d683da8c86a7a7ad/skills/taste-skill/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned sources inspected; no third-party scripts or hooks executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "README.md",
+        "blob": "a98ba126ce373ba5e639560d8628834d5fa43347"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "433d92105c76671250013e0312d82cb413f552bc"
+      },
+      {
+        "path": "assets/app.css",
+        "blob": "865e4ed4804556aaff51897d22bf0c1bcbee9549"
+      },
+      {
+        "path": "assets/base.css",
+        "blob": "75915d3b1ea8780090a365eabfb5c4b697cc6e86"
+      },
+      {
+        "path": "assets/base.js",
+        "blob": "86ec0afacba394f64db238c44b8e7b980f2383b3"
+      },
+      {
+        "path": "assets/charts.js",
+        "blob": "fa0f459448daef137ad85900809695ad2617f512"
+      },
+      {
+        "path": "assets/scenes/stage.css",
+        "blob": "190763d3c1661e7a602bec21fce952dece67bf15"
+      },
+      {
+        "path": "assets/scenes/stage.js",
+        "blob": "fd7ba541b69f4dda347e52764faf7c25c198e02b"
+      },
+      {
+        "path": "evals/evals.json",
+        "blob": "f6d598008f22d980d135a863a7a151609822bb3f"
+      },
+      {
+        "path": "library/app.json",
+        "blob": "c06fb45f8bb6b09398f19ba35b2f71ae2363a310"
+      },
+      {
+        "path": "library/directions.json",
+        "blob": "f7f82e1a921e7009da7ce6f88410d2c8a94cf214"
+      },
+      {
+        "path": "library/heroes.json",
+        "blob": "74227d956a049f548d99f7b420ccc6218ae3c40e"
+      },
+      {
+        "path": "library/motions.json",
+        "blob": "ff3818f561f338b15dbe1ff45620729ef0ff8d3b"
+      },
+      {
+        "path": "library/palettes.json",
+        "blob": "9de29b16db9c9f57b977dd38648a47f866572e54"
+      },
+      {
+        "path": "library/photos.json",
+        "blob": "f403b772d3d6ae11ef07cfe44514fb019d918820"
+      },
+      {
+        "path": "library/sections.json",
+        "blob": "042b8ab18ef1aa6e67a6f0f2c171fa9357528623"
+      },
+      {
+        "path": "library/sites.json",
+        "blob": "ef070e3ccdf5cb9c388bab1fd0aacb0371cba413"
+      },
+      {
+        "path": "library/type.json",
+        "blob": "72c1c1e493b006a5c10ec4ee18db69c99fdc4892"
+      },
+      {
+        "path": "references/app-screens.md",
+        "blob": "784439ed799484a98958764a5bf3ede2a1d25296"
+      },
+      {
+        "path": "references/colour.md",
+        "blob": "a20a810fa1f080414035a5e0fdc5002977e56ab2"
+      },
+      {
+        "path": "references/copy.md",
+        "blob": "69f20af2bff6d40cc07d4dcadaa45440ced550bf"
+      },
+      {
+        "path": "references/critique.md",
+        "blob": "1989a85c83232e86aec66baf733a843947392b37"
+      },
+      {
+        "path": "references/imagery.md",
+        "blob": "ddd88d7a31dd3a5d7f4675ead4524f34d037f665"
+      },
+      {
+        "path": "references/layout.md",
+        "blob": "dae26af173b4b60f96291f816700f390ffd8e37e"
+      },
+      {
+        "path": "references/motion.md",
+        "blob": "c8f649d4fa45c369c53ce375a00d2f125182f181"
+      },
+      {
+        "path": "references/research.md",
+        "blob": "c38364af48f9e95dc90a2e6b47ae75ffdc24731e"
+      },
+      {
+        "path": "references/scenes.md",
+        "blob": "c2c568b5f1d18128658b28a273e90028fc22bb30"
+      },
+      {
+        "path": "references/tells.md",
+        "blob": "9cfa4a89e466eb6df81b7a1b776421c378aad840"
+      },
+      {
+        "path": "references/type.md",
+        "blob": "c1552b700e9bebb2fedf79f82c875615d0f876ac"
+      },
+      {
+        "path": "scripts/assets.mjs",
+        "blob": "4f9c5b1c1fcc5a821685c5cea35f326bcf15d75b"
+      },
+      {
+        "path": "scripts/draw.mjs",
+        "blob": "6db3d89422057902457c97643c13f4b351d1459b"
+      },
+      {
+        "path": "scripts/inspect.mjs",
+        "blob": "105b0e5e0a9038244e04cfea4c79b2c66ae5833f"
+      },
+      {
+        "path": "scripts/lib/app-draw.mjs",
+        "blob": "e246a38f15d4f3b163a3d3aa5378c71462a4c24f"
+      },
+      {
+        "path": "scripts/lib/cdp.mjs",
+        "blob": "b3b8e01b9c4e603d432b83df13963a55d6aa63c5"
+      },
+      {
+        "path": "scripts/lib/probe.mjs",
+        "blob": "911094e566b35508a15b344febdf1a51a1cae0cf"
+      },
+      {
+        "path": "scripts/lib/rules.mjs",
+        "blob": "558fcccf246ae4432fa05e30a32a25d9e46d214e"
+      },
+      {
+        "path": "scripts/lint.mjs",
+        "blob": "9277761d18222e5fc75c85ed79aa032f3d086598"
+      },
+      {
+        "path": "scripts/scenes.mjs",
+        "blob": "7bbde8e6bdf27859af0d54db1e1b2756de3a7d56"
+      }
+    ],
+    "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
+    "video_direct_mention": true
+  },
+  {
+    "id": "ui-ux-pro-max",
+    "invocation": "ui-ux-pro-max",
+    "category": "website-ui",
+    "summary": "Searchable UI/UX and design-system guidance",
+    "reason": "Useful for product palettes, typography and accessibility priorities.",
+    "requirements": "Python; use upstream Codex-specific installation to include shared data and scripts. Standalone copy disabled.",
+    "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "path": ".claude/skills/ui-ux-pro-max",
+    "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+    "stars": 137926,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/search/repositories?q=repo:nextlevelbuilder/ui-ux-pro-max-skill",
+    "source": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/README.md",
+        "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned sources inspected; no third-party scripts or hooks executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "41f8e2fd7f8c568228d0b55186ebe3f7b4007377"
+      },
+      {
+        "path": "data/app-interface.csv",
+        "blob": "95e328c807a23be02c9c32c736d0fa19109c6076"
+      },
+      {
+        "path": "data/catalog-summary.json",
+        "blob": "f911c3ae48fac5863a5a5e210866ec5cabece164"
+      },
+      {
+        "path": "data/charts.csv",
+        "blob": "c6f4f875fd5b34379f24dbb541539492366a1058"
+      },
+      {
+        "path": "data/colors.csv",
+        "blob": "5d2bf7389105f8a824b504b57cc93c00dc1d7e0a"
+      },
+      {
+        "path": "data/data-provenance.json",
+        "blob": "e41d2e553bdc7e5a8e6d16f5daab565faf372188"
+      },
+      {
+        "path": "data/google-font-licenses.json",
+        "blob": "3ac2c34e80665bc902e265c52ab6c27b1654524c"
+      },
+      {
+        "path": "data/google-fonts.csv",
+        "blob": "d7f87e3e0159b1caba083b9954793d9852256aa0"
+      },
+      {
+        "path": "data/icons.csv",
+        "blob": "cfc3f1eccd7e5aee15d8d70f86d8fa17ba737958"
+      },
+      {
+        "path": "data/landing.csv",
+        "blob": "34858160aa2789c49dca274d48bb116d51dd3f0a"
+      },
+      {
+        "path": "data/motion.csv",
+        "blob": "8e0ca9ceb0e4cd4832aee60ac74713e1e1830de8"
+      },
+      {
+        "path": "data/phosphor-icons-upstream.json",
+        "blob": "ec1d76b8117ccbfdce5df214bf0d993e41a75318"
+      },
+      {
+        "path": "data/products.csv",
+        "blob": "9f40f1d1f9743c4a81603076dfbfd115bbb55246"
+      },
+      {
+        "path": "data/react-performance.csv",
+        "blob": "425a8e76c6b3bae40e8c633ffbf7ad6222c9f73a"
+      },
+      {
+        "path": "data/stacks/angular.csv",
+        "blob": "5a1878dbee2b3c55c6468cbb18699b84d1a8c4d2"
+      },
+      {
+        "path": "data/stacks/astro.csv",
+        "blob": "1fd2492420b20a0b311295ab883597fadb8245a6"
+      },
+      {
+        "path": "data/stacks/avalonia.csv",
+        "blob": "c67f4117105865587eda9020c57d8c209f3a929a"
+      },
+      {
+        "path": "data/stacks/flutter.csv",
+        "blob": "731805c4076bd9f2755ca4bd7def5be6f6df7e9c"
+      },
+      {
+        "path": "data/stacks/html-tailwind.csv",
+        "blob": "9089eb0fc821ff0c8d135f8ee503be345e8fcb84"
+      },
+      {
+        "path": "data/stacks/javafx.csv",
+        "blob": "744bd80f437f12bfb5bb9c84630a58022604675a"
+      },
+      {
+        "path": "data/stacks/jetpack-compose.csv",
+        "blob": "8daa0b8f9a2ca3f0f1711664d9d677cd1c38dd9e"
+      },
+      {
+        "path": "data/stacks/laravel.csv",
+        "blob": "ed11b0fba457e02857f996d1542fb0b8e1271756"
+      },
+      {
+        "path": "data/stacks/nextjs.csv",
+        "blob": "acdaf097dff26ba0d3b22ab4544bf6169c87afd4"
+      },
+      {
+        "path": "data/stacks/nuxt-ui.csv",
+        "blob": "e2aaeca45faa8b987bf94010162b14d458811dde"
+      },
+      {
+        "path": "data/stacks/nuxtjs.csv",
+        "blob": "ceab9cf3358d2788af0bd7dc14cb3fab769740d0"
+      },
+      {
+        "path": "data/stacks/react-native.csv",
+        "blob": "a5aea45dc1d0341b11ee42076a86db842d4d2a19"
+      },
+      {
+        "path": "data/stacks/react.csv",
+        "blob": "fe8f001e695a978733449e04e99d7135af0f1bf3"
+      },
+      {
+        "path": "data/stacks/shadcn.csv",
+        "blob": "0e8bedf3084e7a40d6310bcd3011c437efcb1700"
+      },
+      {
+        "path": "data/stacks/svelte.csv",
+        "blob": "51684fe70448e15333cd16207db7da8aea0508e6"
+      },
+      {
+        "path": "data/stacks/swiftui.csv",
+        "blob": "ea9b95e8922e663b2adf27a7346e2c2f44c7a215"
+      },
+      {
+        "path": "data/stacks/threejs.csv",
+        "blob": "f62286320038beabbdc5e11e07ca2818d8e959a4"
+      },
+      {
+        "path": "data/stacks/uno.csv",
+        "blob": "9cab32326b4ad3a3cf43451a3c24553a41126cc1"
+      },
+      {
+        "path": "data/stacks/uwp.csv",
+        "blob": "04a84ea092a7657fef11e5daa97982be52dc6f59"
+      },
+      {
+        "path": "data/stacks/vue.csv",
+        "blob": "83997c515775170f22b638635aae0a67a46dfc87"
+      },
+      {
+        "path": "data/stacks/winui.csv",
+        "blob": "107ecead11728a83ec0ea10d815a9d1f43a35792"
+      },
+      {
+        "path": "data/stacks/wpf.csv",
+        "blob": "4e88d6750833a74f85ba487cf2b8f4ff6ebd2f4a"
+      },
+      {
+        "path": "data/styles.csv",
+        "blob": "d1eb2c216e453005ffa8232ffb94491c183afe3c"
+      },
+      {
+        "path": "data/typography.csv",
+        "blob": "70d107d107de30150863c965767320ec33ef29ad"
+      },
+      {
+        "path": "data/ui-reasoning.csv",
+        "blob": "8931d4c809f8e22ddac00ce612ce0c35f34a59b6"
+      },
+      {
+        "path": "data/ux-guidelines.csv",
+        "blob": "4e7d52b296537a03513b18b2c3f2b946cc802051"
+      },
+      {
+        "path": "references/pro-rules.md",
+        "blob": "b2ce233287e37ec9ca13476c4014b922e9d5a0e9"
+      },
+      {
+        "path": "references/quick-reference.md",
+        "blob": "7acc7e7540ca6981d878a90aae4455c1638e2385"
+      },
+      {
+        "path": "scripts/core.py",
+        "blob": "670fe33070cfe706401da4ff276831257dbf1e25"
+      },
+      {
+        "path": "scripts/design_system.py",
+        "blob": "d5fe1575f00d839f919603bd09b44fe7e9def4fb"
+      },
+      {
+        "path": "scripts/reasoning_contract.py",
+        "blob": "63652a666b130c249ea1e2954316f1ac8a5a73d5"
+      },
+      {
+        "path": "scripts/search.py",
+        "blob": "5038aa875a0d39f24dea803a4c73b38f8f56915f"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/google-api.json",
+        "blob": "eacf1bb4559875808247df711376e8cc47c4f7c4"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/google-catalog.json",
+        "blob": "4eb89d4d3312b670ef70d44563bf2ffd5cf814bb"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/google-existing.csv",
+        "blob": "83279e0f218e9725b8a14486a558fa10ff134949"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/google-metadata.json",
+        "blob": "43edcbec14c4a5e68d373eda8466c235f2ee7e9b"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/google-overrides.json",
+        "blob": "162fd1830b08dc1a7b8b891f92f16dbb8b7015f2"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/icons-curated.csv",
+        "blob": "3171bfc7a0a6b3b36745b4f7f0c7743f0afad953"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/phosphor-core.json",
+        "blob": "be0edd337f2c731af41b8a745d37089172c5dc60"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/phosphor-package.json",
+        "blob": "ad9e6ef4b835e65a6c0bd0ad9d11f0517fd718c1"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/phosphor-react-exports.json",
+        "blob": "4a0b4587ce9876acac1904831ea774bbf8c69edf"
+      },
+      {
+        "path": "scripts/tests/fixtures/catalogs/phosphor-react-package.json",
+        "blob": "a0db183da61e63f3a8f9e3fbfba7405144f41c1e"
+      },
+      {
+        "path": "scripts/tests/fixtures/relevance-baseline.json",
+        "blob": "0894a44cc154a01d3b2d624a66c30e7ac3e1a3d5"
+      },
+      {
+        "path": "scripts/tests/fixtures/relevance-cases.json",
+        "blob": "a1fbb87835bda252ba8ae7f15e7090cee580cb42"
+      },
+      {
+        "path": "scripts/tests/fixtures/relevance-thresholds.json",
+        "blob": "1f90e9891fa96bcf9f27db54bcc4bc1eb41328a7"
+      },
+      {
+        "path": "scripts/tests/test_catalog_refresh.py",
+        "blob": "8379cc3a224bb9f3dca2a3ebd561cd92b7e05ae4"
+      },
+      {
+        "path": "scripts/tests/test_catalog_summary_line_endings.py",
+        "blob": "056c8e5e7d8ba69c87c31c8ad7bcd32ca3d7223c"
+      },
+      {
+        "path": "scripts/tests/test_core.py",
+        "blob": "b30c0ae54c25f38ec91b37a56cda04426b2510a9"
+      },
+      {
+        "path": "scripts/tests/test_core_data_quality.py",
+        "blob": "6d36c79b1f9f8c68c4b02f86a09c5e5f9ba410fe"
+      },
+      {
+        "path": "scripts/tests/test_data_contracts.py",
+        "blob": "312dc383b3f6548d7200e928c192673a907b5016"
+      },
+      {
+        "path": "scripts/tests/test_design_system_mode.py",
+        "blob": "44c80c1caa159058a7a5858284ea269bcb561449"
+      },
+      {
+        "path": "scripts/tests/test_design_system_stack.py",
+        "blob": "50f0080300b56f4891014d878edddb781b36d7de"
+      },
+      {
+        "path": "scripts/tests/test_native_desktop_stack_freshness.py",
+        "blob": "79e07f4f5f9c88025506cb3d7bb5aad01dbbd339"
+      },
+      {
+        "path": "scripts/tests/test_relevance_evaluator.py",
+        "blob": "ed158e2d4e39a342090b29435dee25bcf5c4444f"
+      },
+      {
+        "path": "scripts/tests/test_skill_script_paths.py",
+        "blob": "36514964d7ea6edcadc169e0d713c18b1cc0bb09"
+      },
+      {
+        "path": "scripts/tests/test_style_taxonomy.py",
+        "blob": "09ec131ea6d609e21aaf81327a2e3ffe1ea59d4c"
+      },
+      {
+        "path": "scripts/tests/test_text_layout_resilience.py",
+        "blob": "8db3b873f958b93906abb8f4e4d6ef75a344c76e"
+      },
+      {
+        "path": "scripts/tests/test_web_stack_freshness.py",
+        "blob": "a54b0eaaa564fc4e0390537b268eaca46d36d5bd"
+      },
+      {
+        "path": "scripts/validate_data.py",
+        "blob": "8b6c7941f6ad3e51cb9d412b11185133e7763001"
+      }
+    ],
+    "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
+    "video_direct_mention": true
+  },
+  {
+    "id": "impeccable",
+    "invocation": "impeccable",
+    "category": "website-ui",
+    "summary": "Design critique, polish and accessibility audit",
+    "reason": "Broad design-review vocabulary with a concrete quality floor.",
+    "requirements": "Launcher may download a binary; native hooks need separate review. Use upstream installation; not a passive text-only package.",
+    "repo": "pbakaus/impeccable",
+    "path": ".agents/skills/impeccable",
+    "commit": "dad8dbb3aac21ad1fa236c110315ef4abece23e8",
+    "stars": 83690,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/search/repositories?q=repo:pbakaus/impeccable",
+    "source": "https://github.com/pbakaus/impeccable/blob/dad8dbb3aac21ad1fa236c110315ef4abece23e8/.agents/skills/impeccable/SKILL.md",
+    "license": {
+      "spdx_id": "Apache-2.0"
+    },
+    "license_evidence": [
+      "https://github.com/pbakaus/impeccable/blob/dad8dbb3aac21ad1fa236c110315ef4abece23e8/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/pbakaus/impeccable/blob/dad8dbb3aac21ad1fa236c110315ef4abece23e8/README.md",
+        "https://github.com/pbakaus/impeccable/blob/dad8dbb3aac21ad1fa236c110315ef4abece23e8/.agents/skills/impeccable/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned sources inspected; no third-party scripts or hooks executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "7da92d6e902cd1bf001f05a80f7592b61d6381f4"
+      },
+      {
+        "path": "agents/impeccable_asset_producer.toml",
+        "blob": "91eeca4cce0e62881149b094e758f814510649c3"
+      },
+      {
+        "path": "agents/impeccable_documenter.toml",
+        "blob": "45203ec73dc5d2509d0bd4f13e0eccbe51b4366e"
+      },
+      {
+        "path": "agents/impeccable_finish_reviewer.toml",
+        "blob": "124b0c4e4418308288b731f78d134e28093ade33"
+      },
+      {
+        "path": "agents/impeccable_manual_edit_applier.toml",
+        "blob": "469dd2da6512966a110b94e20abd18283d3689e7"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "e86d8a955ee9527dc9acfa70ded41f8c54aea435"
+      },
+      {
+        "path": "reference/adapt.md",
+        "blob": "de4631d7e8f14b3c193175b87302b6ccc814e34c"
+      },
+      {
+        "path": "reference/adapt.native.md",
+        "blob": "435c40a6f416809d88cef92c09f0331c65fddec8"
+      },
+      {
+        "path": "reference/android.md",
+        "blob": "1f67a6bb574960cccb1692f460cc5432baebad65"
+      },
+      {
+        "path": "reference/animate.md",
+        "blob": "c8fb9e038bb74a125646b64c49bc39711f63e8f4"
+      },
+      {
+        "path": "reference/audit.md",
+        "blob": "29eefcc071b9e0c4f33c86cae96fdb7eed1685b4"
+      },
+      {
+        "path": "reference/audit.native.md",
+        "blob": "af725765fb65a02375815060fe825da390f2d051"
+      },
+      {
+        "path": "reference/bolder.md",
+        "blob": "c11a146b502cb46f6d5ad3f11ba0f6ff75c0e4d7"
+      },
+      {
+        "path": "reference/clarify.md",
+        "blob": "4506a31c95e02b2ad918367a0ef4461643d51532"
+      },
+      {
+        "path": "reference/colorize.md",
+        "blob": "02fa661efac9229d6e869a20ef8ee928d4b986a0"
+      },
+      {
+        "path": "reference/component-review.md",
+        "blob": "a3c35c92999ecde66f53c96fb287d8adaa0e17f3"
+      },
+      {
+        "path": "reference/craft-floor.md",
+        "blob": "43da17bca0f54d2c77d59726b76033e6a22c592b"
+      },
+      {
+        "path": "reference/craft.md",
+        "blob": "dbbc9402c07cdab21f2b6eb69279b8435fecfd7f"
+      },
+      {
+        "path": "reference/critique.md",
+        "blob": "07ae4a854ede894de3320f42e50743c1ab4681fb"
+      },
+      {
+        "path": "reference/degraded/asset-producer.md",
+        "blob": "76f2357b8aaec59fcb77dbc87582e235c3fcb365"
+      },
+      {
+        "path": "reference/degraded/documenter.md",
+        "blob": "e9dfb799bcece32233386bf9702bc3141d56d196"
+      },
+      {
+        "path": "reference/degraded/finish-reviewer.md",
+        "blob": "06f257d4a97ec7a19726e9b8eea702592bc0fdf8"
+      },
+      {
+        "path": "reference/degraded/manual-edit-applier.md",
+        "blob": "ef5095b924623ce04e02188a6790ebd98a273bcd"
+      },
+      {
+        "path": "reference/delight.md",
+        "blob": "60a8e83ee48d50901acfa886d3ec4bc72b40ec6f"
+      },
+      {
+        "path": "reference/distill.md",
+        "blob": "6a449dd3cc84ce77c37dcc1beece4f9e4a7bc3b7"
+      },
+      {
+        "path": "reference/doctor.md",
+        "blob": "99211927a5a045f24521c92cb26815e8f664eef9"
+      },
+      {
+        "path": "reference/document.md",
+        "blob": "5f332e5fe874d1ce4597d2fc9512260bae18d97a"
+      },
+      {
+        "path": "reference/extract.md",
+        "blob": "7c9d009c5a573dd15332b4431f6f0044374d25b7"
+      },
+      {
+        "path": "reference/generate.md",
+        "blob": "7fe7a49886003677fdecad79a528f368b13d7f0f"
+      },
+      {
+        "path": "reference/harden.md",
+        "blob": "07f3d90b20cef7ef7bb61b3787b4afb6d65089de"
+      },
+      {
+        "path": "reference/hooks.md",
+        "blob": "43c05d1876cf8cf34d7283fbb802046ddefe9505"
+      },
+      {
+        "path": "reference/init.md",
+        "blob": "fe5422cc811fb8c93989dc9a4ec7b24afbc91a69"
+      },
+      {
+        "path": "reference/ios.md",
+        "blob": "c6244dfe32176e5718d86211b7d1eb5601eb0860"
+      },
+      {
+        "path": "reference/layout.md",
+        "blob": "aa547c742fc373bc459bdbb7977683441aa48ec0"
+      },
+      {
+        "path": "reference/live-setup.md",
+        "blob": "6e10f00f7f2a789da582f38cdaef89de39ead266"
+      },
+      {
+        "path": "reference/live.md",
+        "blob": "a042ed5837d99973e8f4e1883adf8ca982b42361"
+      },
+      {
+        "path": "reference/mode-operate.md",
+        "blob": "833775ba85f03bf65a4c1b23e39192f7653414e6"
+      },
+      {
+        "path": "reference/mode-persuade.md",
+        "blob": "9c152d67064fb8453a7eaa89de20c35fc115b085"
+      },
+      {
+        "path": "reference/mode-read.md",
+        "blob": "b30c4c9139e3094bd35c60738decb6109326153f"
+      },
+      {
+        "path": "reference/new-work.md",
+        "blob": "6720fa3b1b7bec285d05f927b4248a9ffca130aa"
+      },
+      {
+        "path": "reference/onboard.md",
+        "blob": "f2e1c15af24976fbddb6770719fae66172268ff4"
+      },
+      {
+        "path": "reference/operate.md",
+        "blob": "524f2c3ae9fa497284e9699f3ca5320cce5d05cf"
+      },
+      {
+        "path": "reference/optimize.md",
+        "blob": "ea61921c2b2006b68e7b27d92cb66dd7fd05a0ce"
+      },
+      {
+        "path": "reference/overdrive.md",
+        "blob": "9f8fc8eec3b07156b670a2561d1f74c17ccdd9f2"
+      },
+      {
+        "path": "reference/polish.md",
+        "blob": "f93170f773cac058f51e289603aed7575d62a6a2"
+      },
+      {
+        "path": "reference/quieter.md",
+        "blob": "61ea5c7027b54ef7354f55d591b6df8e1fc11dd8"
+      },
+      {
+        "path": "reference/region-map.md",
+        "blob": "7b7685cf59a7ee8fa9361d4f0b986ec0ba5b48ad"
+      },
+      {
+        "path": "reference/routing.md",
+        "blob": "21c12a626e7ef084fa6ed5d03b93b91e3eb122ce"
+      },
+      {
+        "path": "reference/shape.md",
+        "blob": "90a74ae813331cbce8fff6beb498ced77970fadf"
+      },
+      {
+        "path": "reference/typeset.md",
+        "blob": "683175632928ab5566e517ad6128a07166e095e8"
+      },
+      {
+        "path": "reference/visualize.md",
+        "blob": "11ba6d7cd67a344ebc24c0a7870a4aa7c0b412cc"
+      },
+      {
+        "path": "scripts/VERSION",
+        "blob": "e8e277f2fab09359482bc93312975016553c59ff"
+      },
+      {
+        "path": "scripts/command-metadata.json",
+        "blob": "89891ea4df179d5a07cf3aef42e84dafb1d05689"
+      },
+      {
+        "path": "scripts/data/font-index-failures.json",
+        "blob": "1aca67220413ef163570c75405b444d7a27a32be"
+      },
+      {
+        "path": "scripts/data/font-index.json",
+        "blob": "9d2029971df232a72ff6584d264c104490521742"
+      },
+      {
+        "path": "scripts/impeccable",
+        "blob": "224028c79e402d2701ec90144ca551ac653b6b86"
+      },
+      {
+        "path": "scripts/impeccable.cmd",
+        "blob": "789a96f4cc9d3e5d5959213eafd89185e1ea5ef7"
+      },
+      {
+        "path": "scripts/live-browser-dom.js",
+        "blob": "ef1ca8928111080ddb923da14c7827b7396a9e62"
+      },
+      {
+        "path": "scripts/live-browser-ignores.js",
+        "blob": "1c8514c7bcd8b8d889a1763965326fb6adec24a1"
+      },
+      {
+        "path": "scripts/live-browser-session.js",
+        "blob": "388d2c2f9d760f343d6404511ddd8b3ae5006e86"
+      },
+      {
+        "path": "scripts/live-browser.js",
+        "blob": "504e75b9c4667e2bb54b5525d39e444b503eddfc"
+      },
+      {
+        "path": "scripts/modern-screenshot.umd.js",
+        "blob": "a9c5208f6b141d3bafdb8eb843d6fcbdcf23e370"
+      }
+    ],
+    "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
+    "video_direct_mention": true
+  },
+  {
+    "id": "hallmark",
+    "invocation": "hallmark",
+    "category": "website-ui",
+    "summary": "Structural variety and design audits",
+    "reason": "Strong distinction between layout structure, theme and audit-only behavior.",
+    "requirements": "Review scripts and any image-generation service before use; provider credentials may be needed for optional features.",
+    "repo": "Nutlope/hallmark",
+    "path": "skills/hallmark",
+    "commit": "13ac0ec7e148655948100b6396439e481361d690",
+    "stars": 30440,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/search/repositories?q=repo:Nutlope/hallmark",
+    "source": "https://github.com/Nutlope/hallmark/blob/13ac0ec7e148655948100b6396439e481361d690/skills/hallmark/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/Nutlope/hallmark/blob/13ac0ec7e148655948100b6396439e481361d690/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/Nutlope/hallmark/blob/13ac0ec7e148655948100b6396439e481361d690/README.md",
+        "https://github.com/Nutlope/hallmark/blob/13ac0ec7e148655948100b6396439e481361d690/skills/hallmark/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned sources inspected; no third-party scripts or hooks executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "645221da63743de870501760a48694acdf7aef10"
+      },
+      {
+        "path": "references/anti-patterns.md",
+        "blob": "e643cfbe81908ba76a443c128ad5987cd50ffd7b"
+      },
+      {
+        "path": "references/assets.md",
+        "blob": "e1d7d93c8befe4ffca9564f66b12176cf2db2c12"
+      },
+      {
+        "path": "references/color.md",
+        "blob": "6bf19cab4e535456ee8c8f6f6f16fef58f653810"
+      },
+      {
+        "path": "references/component-cookbook.md",
+        "blob": "56fd0efafb15de8754ed71c6fb5230fe24e5fc30"
+      },
+      {
+        "path": "references/components/c1-outlined-chip.md",
+        "blob": "9319f53617c3d002a4e1f74914d13b5fcd5eea17"
+      },
+      {
+        "path": "references/components/c2-inline-form-as-cta.md",
+        "blob": "9600223fb45a8a76b13eeacd5bc9f6375668b12d"
+      },
+      {
+        "path": "references/components/c3-typographic-link.md",
+        "blob": "68ce77fc2ba2d03cab940c2971d99e6c13aa3975"
+      },
+      {
+        "path": "references/components/c4-sticky-bottom-bar.md",
+        "blob": "8f8c05b305a15bec8ae95dbfcad8fafd321c9b61"
+      },
+      {
+        "path": "references/components/f1-bento-grid.md",
+        "blob": "fab987ee8aaf6680790a256415865543a4b7bba9"
+      },
+      {
+        "path": "references/components/f2-sticky-scroll-stack.md",
+        "blob": "7675d5296b7b6accf21cb761270f8e384abab306"
+      },
+      {
+        "path": "references/components/f3-tabular-spec-sheet.md",
+        "blob": "4007334f81b6551332d7f4a945f95d86083b6c4b"
+      },
+      {
+        "path": "references/components/f4-step-sequence.md",
+        "blob": "ac82a1829b6f51de25f2c731f1853f7c0185288f"
+      },
+      {
+        "path": "references/components/f5-annotated-screenshot.md",
+        "blob": "014aefdff6619107526d9c3d4ed78ff63780034c"
+      },
+      {
+        "path": "references/components/f6-product-card-grid.md",
+        "blob": "1521921a2dce8acf30d974abd5aba3669672c3dd"
+      },
+      {
+        "path": "references/components/ft1-mast-headed.md",
+        "blob": "92972ccc302a63af2bfdc3e01ff9d6331fa80454"
+      },
+      {
+        "path": "references/components/ft2-inline-rule-single-line.md",
+        "blob": "f994f8b79311afef44950d457b47d09ed5c9788f"
+      },
+      {
+        "path": "references/components/ft3-index-style-category-list.md",
+        "blob": "a02f8d29f9e68ad99bb91eeaf1e79561b5ddf941"
+      },
+      {
+        "path": "references/components/ft4-dense-typographic.md",
+        "blob": "7d2b2502be364793554aebe35fc098ff9609d235"
+      },
+      {
+        "path": "references/components/ft5-statement.md",
+        "blob": "e0d88a74e7e8a321def67bb7654a4e4a9593fb78"
+      },
+      {
+        "path": "references/components/ft6-letter-close.md",
+        "blob": "ba84f7691228de2a3b44b72cee630d84e71bd913"
+      },
+      {
+        "path": "references/components/ft7-newsletter-first.md",
+        "blob": "df67edc72c859dd32c8fbe4b7bd4552e5cdbc133"
+      },
+      {
+        "path": "references/components/ft8-marquee-scroll.md",
+        "blob": "e5a0f295475751264ee343fa9f84f9d23d35af1c"
+      },
+      {
+        "path": "references/components/h1-marquee.md",
+        "blob": "b15087c5b746bc7f7fc3e6c3cc86879f5403e3a0"
+      },
+      {
+        "path": "references/components/h2-split-diptych.md",
+        "blob": "f5c8cae8999dff7657597522814d828156bc9f3f"
+      },
+      {
+        "path": "references/components/h3-quote-led.md",
+        "blob": "e2bb4558140d636e60e4e28fe3e0ac4b87b72023"
+      },
+      {
+        "path": "references/components/h4-stat-led.md",
+        "blob": "414815a015da7e06f092a4584efec8693754c303"
+      },
+      {
+        "path": "references/components/h5-letter-hero.md",
+        "blob": "19a7e743805e2ddfac9c2d2d4cf472d8501d4701"
+      },
+      {
+        "path": "references/components/h6-photographic-fold.md",
+        "blob": "4aaf01d8bcd02f2bd79bf7e636aadbcfd26b91e7"
+      },
+      {
+        "path": "references/components/h7-demo-video-clipped-by-viewport-edge.md",
+        "blob": "82fecbf84496166cebf26dc45ddfb566fc5f9ca2"
+      },
+      {
+        "path": "references/components/h8-mockup-split-browser-framed.md",
+        "blob": "7159f778ad2bc54a3026a6ffdd6bb193fff82a78"
+      },
+      {
+        "path": "references/components/h9-custom-illustration-centerpiece.md",
+        "blob": "7b65eac49580799f10fd23254bdcbd433f217aa7"
+      },
+      {
+        "path": "references/components/n1-wordmark-2-links.md",
+        "blob": "f74a5b0b128e73211ab92864ca5c75ea403d17f2"
+      },
+      {
+        "path": "references/components/n10-floating-on-scroll-morph.md",
+        "blob": "6297780024a0a987a3d89632f2ff128dc3ee50bf"
+      },
+      {
+        "path": "references/components/n11-mega-menu.md",
+        "blob": "94568719cdc733d1b2577428458611ac9b73943d"
+      },
+      {
+        "path": "references/components/n12-banner-retract.md",
+        "blob": "f9edee523b4ec15206a720f492107b52288c89ea"
+      },
+      {
+        "path": "references/components/n13-inline-cmdk-pill.md",
+        "blob": "fe0d186520e49b03f196ca768fbacb755c5ebc5d"
+      },
+      {
+        "path": "references/components/n1b-saas-three-section.md",
+        "blob": "b39d53922fb983589254e91faf59b5e2c019c502"
+      },
+      {
+        "path": "references/components/n2-floating-chip.md",
+        "blob": "b4dcc97ab8587fce14d332ef4da83fc6fce69ca0"
+      },
+      {
+        "path": "references/components/n3-side-rail.md",
+        "blob": "a31ddfbb8ff150eb1da19ad437b249c362574880"
+      },
+      {
+        "path": "references/components/n4-hidden-behind-k.md",
+        "blob": "24a4f3f216dc66d638ce358c3ac8d5fed09b5426"
+      },
+      {
+        "path": "references/components/n5-floating-pill.md",
+        "blob": "b6170f354f2b816ebec51c5ac65877547183b15d"
+      },
+      {
+        "path": "references/components/n6-newspaper-masthead.md",
+        "blob": "24f055a05abfa0dbac0250ccd81d92af816598b6"
+      },
+      {
+        "path": "references/components/n7-brutal-slab.md",
+        "blob": "24d0f0f0938a6a2ff54d4771d30f9b99311ee14e"
+      },
+      {
+        "path": "references/components/n8-terminal-command.md",
+        "blob": "17c23a72a6678ac46f76e3d4f44c485b28deb299"
+      },
+      {
+        "path": "references/components/n9-edge-aligned-minimal.md",
+        "blob": "8361dfa10fddad652dfbb937a785c13b6a21ced2"
+      },
+      {
+        "path": "references/components/s1-left-margin-numbered.md",
+        "blob": "14a59389c6661f38cafedac63ece9f865e65307e"
+      },
+      {
+        "path": "references/components/s2-hanging.md",
+        "blob": "57531f39905fa23c3c57bc08e3561b32c4857bcc"
+      },
+      {
+        "path": "references/components/s3-sticky-pinned.md",
+        "blob": "dbdd0f3d973434061662a7c189c9947de55b466a"
+      },
+      {
+        "path": "references/components/s4-inline-no-break.md",
+        "blob": "6d6d03f8f0fbcf37d327d5622cb4a7cecc0cf3ae"
+      },
+      {
+        "path": "references/components/s5-bottom-anchored.md",
+        "blob": "1f84a975e8e342b36f52edf105c262b3e345625d"
+      },
+      {
+        "path": "references/components/t1-pull-quote-with-marginalia.md",
+        "blob": "95c92072f76a6ca7394384d309350004f67d047f"
+      },
+      {
+        "path": "references/components/t2-logo-wall-hairline.md",
+        "blob": "1ac2a14e3df67b969c8dee8f19efc04e66de140d"
+      },
+      {
+        "path": "references/components/t3-single-huge-quote.md",
+        "blob": "71011d49deb0237602959398dab386f2f6ddec2a"
+      },
+      {
+        "path": "references/components/t4-numbered-stat-strip.md",
+        "blob": "e534b423f0fdcf5042cd74dcede495e2c4432b5e"
+      },
+      {
+        "path": "references/contract.md",
+        "blob": "410d19f046270ad090e830409d4a8f8310240b1e"
+      },
+      {
+        "path": "references/copy.md",
+        "blob": "eaca077ee8e66c69c1c8495c9fac93a091d30d26"
+      },
+      {
+        "path": "references/custom-craft.md",
+        "blob": "c965449641d0a8e7110079e1dfc870d65b5b8b55"
+      },
+      {
+        "path": "references/custom-theme.md",
+        "blob": "4118a75e269d83026ea396f06b9d9df23d95b4cf"
+      },
+      {
+        "path": "references/design-md.md",
+        "blob": "b8f39a703d7c2bea2a2095d0867ced5901fc9a42"
+      },
+      {
+        "path": "references/export-formats.md",
+        "blob": "6d9ffada9ddb5fa973d0a64383a025f774f57c2e"
+      },
+      {
+        "path": "references/floating-nav.md",
+        "blob": "a4c00338fc3251b7ca302ae5b71cda386832a6d5"
+      },
+      {
+        "path": "references/genres/atmospheric.md",
+        "blob": "941bcd04542768126db8e87c2da7413c50d9c87b"
+      },
+      {
+        "path": "references/genres/editorial.md",
+        "blob": "853604be39983c2af5ce98c279c2960b3352eb67"
+      },
+      {
+        "path": "references/genres/modern-minimal.md",
+        "blob": "648c67e6ce5cf4a44e2402163d30d253eb866dd4"
+      },
+      {
+        "path": "references/genres/playful.md",
+        "blob": "e16142ed5569b8bc4159251d430ab1513382471b"
+      },
+      {
+        "path": "references/hero-enrichment.md",
+        "blob": "be0e521e488cbf80413af697379b172e42c433a7"
+      },
+      {
+        "path": "references/imagery-kit.md",
+        "blob": "48efb96f502af1636c2c41155aba314cadbb4d65"
+      },
+      {
+        "path": "references/interaction-and-states.md",
+        "blob": "07453213da7264a25079287102d8642ebd32d9d7"
+      },
+      {
+        "path": "references/layout-and-space.md",
+        "blob": "8844d518ae8a82ea5b57f68581a284e89085c6a9"
+      },
+      {
+        "path": "references/macrostructures.md",
+        "blob": "0d28032c3250847a5f54dcddb367a9c383f47df1"
+      },
+      {
+        "path": "references/macrostructures/01-bento-grid.md",
+        "blob": "ab6f035cc8a7b9039bd3ab340b413ae9ad7d93a4"
+      },
+      {
+        "path": "references/macrostructures/02-long-document.md",
+        "blob": "225ac77ca7b8bd2a3bb05c1e3484f5f70704cc54"
+      },
+      {
+        "path": "references/macrostructures/03-marquee-hero.md",
+        "blob": "b88f72913f6802113173147e94f91f4b11a57ef4"
+      },
+      {
+        "path": "references/macrostructures/04-stat-led.md",
+        "blob": "7d99d1094106876c673f079b8898389e5d389e0d"
+      },
+      {
+        "path": "references/macrostructures/05-workbench.md",
+        "blob": "1e14ed64f737bd937e0fef9a0f015f4760070084"
+      },
+      {
+        "path": "references/macrostructures/06-conversational-faq.md",
+        "blob": "8ee3437277fed4e7b8c87c9952ec33b3a7ddb4cf"
+      },
+      {
+        "path": "references/macrostructures/07-manifesto.md",
+        "blob": "0b89da31d717f99b0b74a3fd88b753342e8dea50"
+      },
+      {
+        "path": "references/macrostructures/08-photographic.md",
+        "blob": "17ba98a1b75ecbd45bd4f791bf2f664bbfe51910"
+      },
+      {
+        "path": "references/macrostructures/09-quote-led.md",
+        "blob": "36c1965e1442090d4155322b6ca59a2de9c1262b"
+      },
+      {
+        "path": "references/macrostructures/10-specimen.md",
+        "blob": "ab343b42e7a35b25443143237a27faf0902c77c7"
+      },
+      {
+        "path": "references/macrostructures/11-catalogue.md",
+        "blob": "c4fd2a33253d99be260301c88f6535bd80a965bc"
+      },
+      {
+        "path": "references/macrostructures/12-letter.md",
+        "blob": "9320d85ef3cf3c962fe1b6a859313bc0da21bc17"
+      },
+      {
+        "path": "references/macrostructures/13-index-first.md",
+        "blob": "7527d8b7a70adb5306f5e033c4c6df570302d304"
+      },
+      {
+        "path": "references/macrostructures/14-narrative-workflow.md",
+        "blob": "cfe0a784be257812d2fc92f0136acfa51b4e760a"
+      },
+      {
+        "path": "references/macrostructures/15-split-studio.md",
+        "blob": "bf05bda7ce422e30d8fb0b178f9a0155706ca7a3"
+      },
+      {
+        "path": "references/macrostructures/16-feature-stack.md",
+        "blob": "e693e6ca9aa0759252718fd50cbce0fa1cbbbbb5"
+      },
+      {
+        "path": "references/macrostructures/17-type-specimen.md",
+        "blob": "dea1ae8c0cd2e55bd6e6c16b4d5c32eb0170c538"
+      },
+      {
+        "path": "references/macrostructures/18-portfolio-grid.md",
+        "blob": "968ae6ddd9674f51fe12625fa6cf09284db4c939"
+      },
+      {
+        "path": "references/macrostructures/19-map-diagram.md",
+        "blob": "f2a035b5e745767920b8922e83b930634efb6df1"
+      },
+      {
+        "path": "references/macrostructures/20-ecosystem-index.md",
+        "blob": "5dfee944d4217cff1c1a44f9582195029da92bd2"
+      },
+      {
+        "path": "references/macrostructures/21-component-playground.md",
+        "blob": "c6f65c6c0bf3dd23d58635957e4d782e740e48c0"
+      },
+      {
+        "path": "references/microinteractions.md",
+        "blob": "1e0fb62ed6702849e6ee6a07525c84e0776fcb35"
+      },
+      {
+        "path": "references/motion.md",
+        "blob": "e3207a1db5f8b234d618406250f8e39f3819871e"
+      },
+      {
+        "path": "references/preview-examples.md",
+        "blob": "9f5126233577c3a85f4f44c357534e19d4b3be20"
+      },
+      {
+        "path": "references/responsive.md",
+        "blob": "58d0e1faec1d86dfee860b94ec5f8b3eb1c25e92"
+      },
+      {
+        "path": "references/slop-test.md",
+        "blob": "3bc7ec12f91706c33dac1397ecaad81551143475"
+      },
+      {
+        "path": "references/structure.md",
+        "blob": "e4e5e327ef445a88c43b9137250f33cfd0bc5351"
+      },
+      {
+        "path": "references/study.md",
+        "blob": "5d72092b14570442846493f196b26107af80340a"
+      },
+      {
+        "path": "references/themes/carnival.md",
+        "blob": "d3b876780b438b104cd692fa2fd7ab6be240b0da"
+      },
+      {
+        "path": "references/themes/cobalt.md",
+        "blob": "7f7c324a743d885adb4d96ea0a4669a061a34881"
+      },
+      {
+        "path": "references/themes/grid.md",
+        "blob": "94a2702221011ca0a8e306e7a2a8fe1b41f2c943"
+      },
+      {
+        "path": "references/themes/hum.md",
+        "blob": "51fe8e86a55554d1dd6e8d3a7ecf13152d943dca"
+      },
+      {
+        "path": "references/themes/lumen.md",
+        "blob": "cb0623c3c60a3ede8c26e56069c286bd8fa2066a"
+      },
+      {
+        "path": "references/typography.md",
+        "blob": "a67a8ca14813f1834c0e9ae810505e35ab2ef7e9"
+      },
+      {
+        "path": "references/verbs/audit.md",
+        "blob": "855ed5cf11985a34e94e1b6162f0f1dc64ec0da4"
+      },
+      {
+        "path": "references/verbs/redesign.md",
+        "blob": "494b022b38cf8796d5eb6b0e8dd50c9a71dea9ba"
+      }
+    ],
+    "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
+    "video_direct_mention": true
+  },
+  {
+    "id": "gsap-core",
+    "invocation": "gsap-core",
+    "category": "website-ui",
+    "summary": "Official GSAP animation fundamentals",
+    "reason": "Focused API guidance covering responsive and reduced-motion animation.",
+    "requirements": "GSAP package in target project; optional timeline/React companion skills. Skill MIT license is separate from GSAP runtime terms.",
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-core",
+    "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "stars": 16731,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/search/repositories?q=repo:greensock/gsap-skills",
+    "source": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-core/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/README.md",
+        "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-core/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned sources inspected; no third-party scripts or hooks executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "98639432f4112b664aa5e53cf5d8ea1a4697eff9"
+      }
+    ],
+    "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
+    "video_direct_mention": true
+  },
+  {
+    "id": "stitch-design-md",
+    "invocation": "design-md",
+    "category": "website-ui",
+    "summary": "Extract a reusable design system from Stitch",
+    "reason": "Turns existing screen assets into an explicit DESIGN.md.",
+    "requirements": "Stitch MCP access and existing project; full upstream plugin recommended for interdependent tools.",
+    "repo": "google-labs-code/stitch-skills",
+    "path": "plugins/stitch-utilities/skills/design-md",
+    "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+    "stars": 8545,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/search/repositories?q=repo:google-labs-code/stitch-skills",
+    "source": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-utilities/skills/design-md/SKILL.md",
+    "license": {
+      "spdx_id": "Apache-2.0"
+    },
+    "license_evidence": [
+      "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/README.md",
+        "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-utilities/skills/design-md/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned sources inspected; no third-party scripts or hooks executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "README.md",
+        "blob": "8f522077baf7a98f4d1516285394b532ff14c792"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "c29a0feb9c06c2fb48dc9114988382e06b1f9d9b"
+      },
+      {
+        "path": "examples/DESIGN.md",
+        "blob": "be0855f6c8285be2b1de3fff24f4f9ab9da79bd8"
+      }
+    ],
+    "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
+    "video_direct_mention": true
+  },
+  {
+    "id": "nothing-design",
+    "invocation": "nothing-design",
+    "category": "website-ui",
+    "summary": "Nothing-inspired industrial interface design",
+    "reason": "A focused monochrome design system useful when explicitly requested.",
+    "requirements": "Claude-oriented allowed-tools; Codex behavior unknown. Fonts and brand fit need review; not a universal design default.",
+    "repo": "dominikmartn/nothing-design-skill",
+    "path": "nothing-design",
+    "commit": "74affbb786af098b18503467b205c10a7df30126",
+    "stars": 2833,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/search/repositories?q=repo:dominikmartn/nothing-design-skill",
+    "source": "https://github.com/dominikmartn/nothing-design-skill/blob/74affbb786af098b18503467b205c10a7df30126/nothing-design/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/dominikmartn/nothing-design-skill/blob/74affbb786af098b18503467b205c10a7df30126/LICENSE"
+    ],
+    "codex": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/dominikmartn/nothing-design-skill/blob/74affbb786af098b18503467b205c10a7df30126/README.md",
+        "https://github.com/dominikmartn/nothing-design-skill/blob/74affbb786af098b18503467b205c10a7df30126/nothing-design/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned sources inspected; no third-party scripts or hooks executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "32f7f42164fd0dc05500a6b95e90a0984c8ff800"
+      },
+      {
+        "path": "references/components.md",
+        "blob": "d25768db419ec863531c057ab30b1998b5c541fd"
+      },
+      {
+        "path": "references/platform-mapping.md",
+        "blob": "5d5201ab02ef2bf654ab8363fdb1df0937e339ca"
+      },
+      {
+        "path": "references/tokens.md",
+        "blob": "38578adca1e2f6c00b8ab3d0f9915493c9160098"
+      }
+    ],
+    "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
+    "video_direct_mention": true
+  },
+  {
+    "id": "web-video-presentation",
+    "invocation": "web-video-presentation",
+    "category": "video",
+    "summary": "Turn articles into record-ready web presentations",
+    "reason": "Clear separation of narrative, outline, scenes and optional voiceover.",
+    "requirements": "Vite/React/TypeScript; optional TTS may require credentials. Original skill is Chinese; checkpoint and agent workflows require adaptation.",
+    "repo": "ConardLi/garden-skills",
+    "path": "skills/web-video-presentation",
+    "commit": "7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68",
+    "stars": 13036,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/search/repositories?q=repo:ConardLi/garden-skills",
+    "source": "https://github.com/ConardLi/garden-skills/blob/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/skills/web-video-presentation/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/ConardLi/garden-skills/blob/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/ConardLi/garden-skills/blob/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/README.md",
+        "https://github.com/ConardLi/garden-skills/blob/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/skills/web-video-presentation/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned sources inspected; no third-party scripts or hooks executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "README.md",
+        "blob": "6501afe9d4f9e1410efd1fe020e48d8000f3537b"
+      },
+      {
+        "path": "README.zh-CN.md",
+        "blob": "2d84650ab9a5b2109d5698712d9b3c513f56708b"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "d4e0beca1b145fc2fc52efb49657296af0b22eca"
+      },
+      {
+        "path": "manifest.json",
+        "blob": "5352b605ba75bfde2aac6e049ae7a997d1a05106"
+      },
+      {
+        "path": "references/AUDIO.md",
+        "blob": "73875961bc002a11e71e29add25fe7c511d46e29"
+      },
+      {
+        "path": "references/CHAPTER-CRAFT.md",
+        "blob": "f6df13acd7a8e0b87d981447102dee90eeb96ac2"
+      },
+      {
+        "path": "references/EXAMPLES/README.md",
+        "blob": "da3f62a1492894d581885db80c83eced5cb9d8b1"
+      },
+      {
+        "path": "references/EXAMPLES/case-tech-review/README.md",
+        "blob": "6506a2e04b6cdaf369083fe8fa795cf53ba7a3de"
+      },
+      {
+        "path": "references/EXAMPLES/case-tech-review/outline-snippet.md",
+        "blob": "e947b13dbdf153b68f8c5aa5e836fad178f88ede"
+      },
+      {
+        "path": "references/EXAMPLES/hook-chapter/README.md",
+        "blob": "bb8bcb811b10462f94124444e0dfd074a1adebfd"
+      },
+      {
+        "path": "references/EXAMPLES/hook-chapter/chapter.css",
+        "blob": "9dc76a49f0fb0dc393a0822c5eb996f6c6acd6f3"
+      },
+      {
+        "path": "references/EXAMPLES/hook-chapter/chapter.tsx",
+        "blob": "f0f5bcd9649fb2c65a3b0653c97bb9dfaff0db74"
+      },
+      {
+        "path": "references/EXAMPLES/list-reveal/README.md",
+        "blob": "82607774f909d240ae1536c4ea1e2e5a80c50da6"
+      },
+      {
+        "path": "references/EXAMPLES/list-reveal/chapter.css",
+        "blob": "532280932aa397d6511445fe82d4943da8870517"
+      },
+      {
+        "path": "references/EXAMPLES/list-reveal/chapter.tsx",
+        "blob": "872a1d204610152e514d776960539838fcaa2347"
+      },
+      {
+        "path": "references/OUTLINE-FORMAT.md",
+        "blob": "d5ba0f16d98b4dc27c01093bde38952818a76628"
+      },
+      {
+        "path": "references/RECORDING.md",
+        "blob": "b5fd09b27f1203e35e057fe1de3c0bc23a3e4272"
+      },
+      {
+        "path": "references/SCRIPT-STYLE.md",
+        "blob": "a97447f06b89151cdd5beb70e7d33a4e0c5496e3"
+      },
+      {
+        "path": "references/THEMES.md",
+        "blob": "51ed4ceb46f390cea88f4a3da60197f00ebb07a6"
+      },
+      {
+        "path": "scripts/scaffold.sh",
+        "blob": "8cceeaa9155167123482fcd7bc0d8a1ff110fd2f"
+      },
+      {
+        "path": "templates/index.html",
+        "blob": "5b30a2fa0f37e16b4ee8215426816926b1946abb"
+      },
+      {
+        "path": "templates/scripts/extract-narrations.ts",
+        "blob": "55e84545c62887bea58346ffe388431e9260699f"
+      },
+      {
+        "path": "templates/scripts/synthesize-audio.sh",
+        "blob": "4fabe7ea947385c0fafae7e1dcd43173c6c4749c"
+      },
+      {
+        "path": "templates/scripts/tts-providers/README.md",
+        "blob": "af1683ac383dab431b502f46facf625227414431"
+      },
+      {
+        "path": "templates/scripts/tts-providers/minimax.sh",
+        "blob": "b2aca2ba2fc6ea26c1ed3b9b1d3a49eb9804ae0d"
+      },
+      {
+        "path": "templates/scripts/tts-providers/openai.sh",
+        "blob": "4f14e0b5e154944058a54a590e7c4f941e26d7aa"
+      },
+      {
+        "path": "templates/src/App.tsx",
+        "blob": "799a61dfbfa2fc1f84a129707368baf4d1fac8c5"
+      },
+      {
+        "path": "templates/src/chapters/01-example/Example.css",
+        "blob": "b84eb7d89ea3557d12fae40d001df0fbd1187ae8"
+      },
+      {
+        "path": "templates/src/chapters/01-example/Example.tsx",
+        "blob": "50193452bf8d416c22623f4cd9a02debc897723a"
+      },
+      {
+        "path": "templates/src/chapters/01-example/narrations.ts",
+        "blob": "94b430e847fbcae0db5d949511f8dd3bb9fa8141"
+      },
+      {
+        "path": "templates/src/components/AutoStartGate.css",
+        "blob": "b6661c4434472234607e14c48564df5a3c299a27"
+      },
+      {
+        "path": "templates/src/components/AutoStartGate.tsx",
+        "blob": "3651c833a88cad0e970b99ccbac7816ef4d91dea"
+      },
+      {
+        "path": "templates/src/components/AutoToggle.css",
+        "blob": "cbc12e83147f995ef31478ee7a983b089df16032"
+      },
+      {
+        "path": "templates/src/components/AutoToggle.tsx",
+        "blob": "34da8390890539e050644809f6bced8d03afccc8"
+      },
+      {
+        "path": "templates/src/components/MaskReveal.tsx",
+        "blob": "83eea5d1e20e35d30dc431a14cecf25966a94951"
+      },
+      {
+        "path": "templates/src/components/ProgressBar.css",
+        "blob": "fd6eee4791f28a0d0d7c40d97e9af511fdaf7c36"
+      },
+      {
+        "path": "templates/src/components/ProgressBar.tsx",
+        "blob": "19669cb6c2bc01a62ffe8b62c9e39b8c4e664518"
+      },
+      {
+        "path": "templates/src/components/Stage.tsx",
+        "blob": "c43f1aa97d63efd583045a13ee8133d88d8a8baf"
+      },
+      {
+        "path": "templates/src/hooks/useAudioPlayer.ts",
+        "blob": "2db29f734e01074cf91ad28b179b836a1f0ccc97"
+      },
+      {
+        "path": "templates/src/hooks/useAutoMode.ts",
+        "blob": "a897490c5012671a585fab6661f8fbbffa3a1735"
+      },
+      {
+        "path": "templates/src/hooks/useStageScale.ts",
+        "blob": "3f4f074a5f372d70cd0852b134594b2ebe20eafe"
+      },
+      {
+        "path": "templates/src/hooks/useStepper.ts",
+        "blob": "93b84741d549c063a8ed1c98e561906888c2126a"
+      },
+      {
+        "path": "templates/src/main.tsx",
+        "blob": "f8fc6f511f8d79f0eba6468a5b8cce5afcd08718"
+      },
+      {
+        "path": "templates/src/registry/chapters.ts",
+        "blob": "02ee947894591b35f94c00d90d8e0c0df99106ab"
+      },
+      {
+        "path": "templates/src/registry/types.ts",
+        "blob": "b84a9f84df56ff6d71eef3d7057b81ba5acba3d5"
+      },
+      {
+        "path": "templates/src/styles/animations.css",
+        "blob": "1adb98796fe3d8efc01f257c618f54f6bed4580c"
+      },
+      {
+        "path": "templates/src/styles/base.css",
+        "blob": "06a9597084dcb6beab955f87f9184c027a08c15a"
+      },
+      {
+        "path": "templates/src/styles/fonts.css",
+        "blob": "527b4b0890f71d347135843499d3d59b16fc9d94"
+      },
+      {
+        "path": "templates/vite.config.ts",
+        "blob": "6cb21f28f4f4124ba7746c2e8a894c5e61b5da86"
+      },
+      {
+        "path": "themes/bauhaus-bold/theme.json",
+        "blob": "85f7c7a4a5543d318202a0a68b12f59c4ba3716f"
+      },
+      {
+        "path": "themes/bauhaus-bold/tokens.css",
+        "blob": "e8030e36a3f5c7b40cc3af3bc4867298f3951118"
+      },
+      {
+        "path": "themes/blueprint/theme.json",
+        "blob": "ebdb1ad72db0a8050c2d0524815142bb9e1b2e30"
+      },
+      {
+        "path": "themes/blueprint/tokens.css",
+        "blob": "9e5f2d881a924bd8f129b0dcc16d6d990d605105"
+      },
+      {
+        "path": "themes/bold-signal/theme.json",
+        "blob": "25992eff6238355ed6e3baeb8781c213bc2ec8dd"
+      },
+      {
+        "path": "themes/bold-signal/tokens.css",
+        "blob": "dd50ccf7a2039dfdfe71c7c0f59aa29e72898ed6"
+      },
+      {
+        "path": "themes/chalk-garden/theme.json",
+        "blob": "b93970d2f517a0e456e036337235f1fd3b03438a"
+      },
+      {
+        "path": "themes/chalk-garden/tokens.css",
+        "blob": "8dda90aacea30b27a52dbb62eaac93f9d0fff6b1"
+      },
+      {
+        "path": "themes/creative-voltage/theme.json",
+        "blob": "5662aa4f23f043bb0e1e660dcf5719fc41dafed8"
+      },
+      {
+        "path": "themes/creative-voltage/tokens.css",
+        "blob": "d9fe85779533a58538443407110ab1cd5cd04331"
+      },
+      {
+        "path": "themes/dark-botanical/theme.json",
+        "blob": "b7e7ef50f0628e94883aae2f5160751d22a6f6e6"
+      },
+      {
+        "path": "themes/dark-botanical/tokens.css",
+        "blob": "ac5747d49d026aa4504383cee9a6e32f89c7fa84"
+      },
+      {
+        "path": "themes/dune/theme.json",
+        "blob": "728a9ae7ebdd28afac69d1fcfafd6835d0ab0f8a"
+      },
+      {
+        "path": "themes/dune/tokens.css",
+        "blob": "c22865c47c9bf1a10d725ae2d0f0aff51ad57505"
+      },
+      {
+        "path": "themes/electric-studio/theme.json",
+        "blob": "184456f76558869f08fde9234d4a7f5a01b4e89d"
+      },
+      {
+        "path": "themes/electric-studio/tokens.css",
+        "blob": "874e3fee8e48a1fb9daea545b231f8cb73db42ce"
+      },
+      {
+        "path": "themes/forest-ink/theme.json",
+        "blob": "1044fbdb876d468ba17734bfad31d6449afbefd6"
+      },
+      {
+        "path": "themes/forest-ink/tokens.css",
+        "blob": "3d8ed8d922032b6f9e287a0964e22e78136a36ed"
+      },
+      {
+        "path": "themes/indigo-porcelain/theme.json",
+        "blob": "f3262a6dbf3456d46f74cf6b3974dd9eb04e42a4"
+      },
+      {
+        "path": "themes/indigo-porcelain/tokens.css",
+        "blob": "ea249f6132aec166a9cd7ea984af358eb703330e"
+      },
+      {
+        "path": "themes/kraft-paper/theme.json",
+        "blob": "dada830928675510424afaac8e16924d56973e41"
+      },
+      {
+        "path": "themes/kraft-paper/tokens.css",
+        "blob": "93ffce90ddb866fda82d67e2b5db6d0c35df691a"
+      },
+      {
+        "path": "themes/midnight-press/theme.json",
+        "blob": "3c37533a02389adb79d05827ce690584f056426e"
+      },
+      {
+        "path": "themes/midnight-press/tokens.css",
+        "blob": "718f089155a7de72ccb3d37ba2738095dfe59523"
+      },
+      {
+        "path": "themes/monochrome-print/theme.json",
+        "blob": "eda16b45f9b9c35ec282ba2723efce57bb921f17"
+      },
+      {
+        "path": "themes/monochrome-print/tokens.css",
+        "blob": "f4fc0e800ff86d102af27408c5aa2e0fd42669d9"
+      },
+      {
+        "path": "themes/neon-cyber/theme.json",
+        "blob": "01edd9995233f3818217bfe211461c721b52dcf2"
+      },
+      {
+        "path": "themes/neon-cyber/tokens.css",
+        "blob": "f79c8aebf41721f58e40bb7d236753a85881cab4"
+      },
+      {
+        "path": "themes/newsroom/theme.json",
+        "blob": "08f3a03b9fbd0b9ab38094e07353d4c371d691f5"
+      },
+      {
+        "path": "themes/newsroom/tokens.css",
+        "blob": "6440f3258c2d685cdceea5eeedcba0eb10020ab9"
+      },
+      {
+        "path": "themes/paper-press/theme.json",
+        "blob": "7f4c2217ec50cc1e44008f268d2647f01066ee62"
+      },
+      {
+        "path": "themes/paper-press/tokens.css",
+        "blob": "f699943c306195dfb6efed8860d8a2457f900d06"
+      },
+      {
+        "path": "themes/pastel-dream/theme.json",
+        "blob": "b547a2a73ba90fcb7a2a79407a6a343667048f0f"
+      },
+      {
+        "path": "themes/pastel-dream/tokens.css",
+        "blob": "9a3564d7ed1f3f25f302c2435d09fa01f2719541"
+      },
+      {
+        "path": "themes/split-canvas/theme.json",
+        "blob": "282346059c2afaf4bfdcae1a45a33a78ee7cdd1e"
+      },
+      {
+        "path": "themes/split-canvas/tokens.css",
+        "blob": "94e6f41cccd40fa9f60dbb0ed7dda0161cb636d4"
+      },
+      {
+        "path": "themes/sunset-zine/theme.json",
+        "blob": "ad43fbdc319aea720870dc84ff208b7723c1d284"
+      },
+      {
+        "path": "themes/sunset-zine/tokens.css",
+        "blob": "3e4e6f6292adffe1b53234a8a57c9fc24a6d148d"
+      },
+      {
+        "path": "themes/swiss-ikb/theme.json",
+        "blob": "719dcf0022b77a6d42a51863796a148ac4ec9fda"
+      },
+      {
+        "path": "themes/swiss-ikb/tokens.css",
+        "blob": "a77ecc8dfc87724e4de7410dcd01eb2697924bb3"
+      },
+      {
+        "path": "themes/terminal-green/theme.json",
+        "blob": "7f4ae1d12b2310c9f52bbb24ae611477bb0b0169"
+      },
+      {
+        "path": "themes/terminal-green/tokens.css",
+        "blob": "ebf07f406ea00d10701cc5061475cd7d472629d9"
+      },
+      {
+        "path": "themes/vintage-editorial/theme.json",
+        "blob": "46b6eefbdcdfdd6a6d0c8a240a1292e945857541"
+      },
+      {
+        "path": "themes/vintage-editorial/tokens.css",
+        "blob": "6abdba386faef0787ee377ab6fd850bca354765f"
+      },
+      {
+        "path": "themes/warm-keynote/theme.json",
+        "blob": "82870455c0d4776ef305e4df2612fc70e1039856"
+      },
+      {
+        "path": "themes/warm-keynote/tokens.css",
+        "blob": "ee2288b427b2c9bce7cb8a0c7cf2aa6a31bd1eea"
+      }
+    ],
+    "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
+    "video_direct_mention": true
+  },
+  {
+    "id": "beautiful-article",
+    "invocation": "beautiful-article",
+    "category": "website-ui",
+    "summary": "Editorial long-form web articles",
+    "reason": "Companion editorial workflow relevant to report publishing; discovered from the Garden collection, not named separately in the video.",
+    "requirements": "Original skill is Chinese; requires adapting approval/reviewer steps and build dependencies to Codex.",
+    "repo": "ConardLi/garden-skills",
+    "path": "skills/beautiful-article",
+    "commit": "7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68",
+    "stars": 13036,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/search/repositories?q=repo:ConardLi/garden-skills",
+    "source": "https://github.com/ConardLi/garden-skills/blob/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/skills/beautiful-article/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/ConardLi/garden-skills/blob/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/ConardLi/garden-skills/blob/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/README.md",
+        "https://github.com/ConardLi/garden-skills/blob/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/skills/beautiful-article/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned sources inspected; no third-party scripts or hooks executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "README.md",
+        "blob": "beb3dbc98bfd61586624e62c4c08fa077894ea04"
+      },
+      {
+        "path": "README.zh-CN.md",
+        "blob": "2083ade872e15d185782815e62ecbef7894ef97c"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "7a0400ce6621aa77a7fa2350a73c31df0da1084c"
+      },
+      {
+        "path": "assets/scaffold-template/.npmrc",
+        "blob": "214c29d1395919ce175f26d140526368127981ba"
+      },
+      {
+        "path": "assets/scaffold-template/article/Article.tsx",
+        "blob": "92850a58e946c5f39b56624fe650a75cd607abfa"
+      },
+      {
+        "path": "assets/scaffold-template/article/Cover.tsx",
+        "blob": "d68150347fa729dca2aae00b21c7cfed84834265"
+      },
+      {
+        "path": "assets/scaffold-template/article/main.tsx",
+        "blob": "b4f76053b9bfba49250673289330586e2bb02838"
+      },
+      {
+        "path": "assets/scaffold-template/article/sections/01-opening.tsx",
+        "blob": "0ebbaa14b6be0a819a7423f0c5084a2ddbd153b9"
+      },
+      {
+        "path": "assets/scaffold-template/index.html",
+        "blob": "ceb6312a75778745ccb7e7e627f30c29225bbf88"
+      },
+      {
+        "path": "assets/scaffold-template/package.json",
+        "blob": "89ec744e2fd3c58f88a993629cfbe0ab0164f7c4"
+      },
+      {
+        "path": "assets/scaffold-template/tsconfig.json",
+        "blob": "855bc603be373c10f2ef64de2957f1642de65b9c"
+      },
+      {
+        "path": "assets/scaffold-template/tsconfig.node.json",
+        "blob": "6841fc156dcb0041d1e0ce88e2514c913de804ec"
+      },
+      {
+        "path": "assets/scaffold-template/vite.config.ts",
+        "blob": "19d506b37728421014319491e575a12d682f48a5"
+      },
+      {
+        "path": "manifest.json",
+        "blob": "16139ab5c8a1ccc9bfcf2a149c6db7d81c63df82"
+      },
+      {
+        "path": "references/article-types.md",
+        "blob": "4b9e29d5a72f9cecabecb8c72ab7755701acaa0c"
+      },
+      {
+        "path": "references/article-types/briefing.md",
+        "blob": "2dbfc99b6e86d1ac9c851d5dc716d021ace1238f"
+      },
+      {
+        "path": "references/article-types/dialogue.md",
+        "blob": "8a51094416075f727aa8ffbc0ad8e1d790579cd2"
+      },
+      {
+        "path": "references/article-types/essay.md",
+        "blob": "2a46899dd0705a023464cda8b6d987cd959a30e9"
+      },
+      {
+        "path": "references/article-types/explainer.md",
+        "blob": "e2b447d0cc39d45a06f388e96fdd1995d38e17c9"
+      },
+      {
+        "path": "references/article-types/full-report.md",
+        "blob": "4127ed43cb247b7d72e368f8be35d78723671060"
+      },
+      {
+        "path": "references/article-types/interactive-explainer.md",
+        "blob": "da53a65a714f8bf4ee1efb7eca9bb21f8ac84048"
+      },
+      {
+        "path": "references/article-types/longform.md",
+        "blob": "882a3c2beb9a2a14e991fd6512f5c1597b212c7d"
+      },
+      {
+        "path": "references/article-types/review.md",
+        "blob": "db4d07316d6f411fa2656f16619521d60cb88099"
+      },
+      {
+        "path": "references/article-types/tutorial.md",
+        "blob": "29d9be9efe1dc4ed707edc19638ce18ddaeb647e"
+      },
+      {
+        "path": "references/article-types/visual-essay.md",
+        "blob": "f927594cd486b1832f4f3e19b56236909b0b5aa5"
+      },
+      {
+        "path": "references/asset-policy.md",
+        "blob": "16dd20dec7e600c40fe9ba1123309efbdd68d5f5"
+      },
+      {
+        "path": "references/component-policy.md",
+        "blob": "1507236a266c63caf7d4be09093fd3c4c71ff642"
+      },
+      {
+        "path": "references/cover.md",
+        "blob": "43bb1efd79da8c6889fde5a5681a940dc7b92788"
+      },
+      {
+        "path": "references/harness.md",
+        "blob": "ddf394c0dd78339897ceac48ab437a26a8658cc6"
+      },
+      {
+        "path": "references/html-output.md",
+        "blob": "43eb2ffe3b1fc7f4be8969c4462d0c6927f09d32"
+      },
+      {
+        "path": "references/information-density.md",
+        "blob": "1a539f0697363d6bb84f6e633223123e7a9c4faf"
+      },
+      {
+        "path": "references/layout.md",
+        "blob": "5e916fe0222a75da5c2c24f8ea338543ab936c94"
+      },
+      {
+        "path": "references/pdf-output.md",
+        "blob": "2ef8af4455923350a52f9efac88549ba96c8c8f8"
+      },
+      {
+        "path": "references/plan-template.md",
+        "blob": "41700cbac018726a9750615b0e46b462d5d92a32"
+      },
+      {
+        "path": "references/raw-policy.md",
+        "blob": "74040128e5d2ff6e782012d50b49265daeb83051"
+      },
+      {
+        "path": "references/repair-policy.md",
+        "blob": "92d141e8de5a4a4d7d4de44c90f748c7097bc639"
+      },
+      {
+        "path": "references/review-checklist.md",
+        "blob": "c7698dee6333dbc1c2200ba1f97fff73834e9183"
+      },
+      {
+        "path": "references/scaffold.md",
+        "blob": "1cfeecb1a311a62cd8eb7f62d99ccceceb702705"
+      },
+      {
+        "path": "references/section-build.md",
+        "blob": "ec4de93a74badab2e6b3657c13da1f1c3b55fee6"
+      },
+      {
+        "path": "references/source-to-markdown.md",
+        "blob": "ae705111936f31ff0bdcdbf55a0dd02086e265a8"
+      },
+      {
+        "path": "references/theme-selection.md",
+        "blob": "9842d9aaec999945d62134b7e7dbef5dc1a86bcd"
+      },
+      {
+        "path": "scripts/html-to-pdf.sh",
+        "blob": "aba9d4f7323251c09d7c303318dd41ba00bdf8a1"
+      },
+      {
+        "path": "scripts/pdf-print-overrides.css",
+        "blob": "dfe79e22e8ff542c986bfebf8582fa3c1f892da8"
+      },
+      {
+        "path": "scripts/scaffold.sh",
+        "blob": "a56ef962d4e9d6038ac52479aa6a4f2e94697742"
+      },
+      {
+        "path": "scripts/source-to-markdown-markitdown.py",
+        "blob": "9e16b783da164cd45b8ebd06353cd77c2255bb4b"
+      },
+      {
+        "path": "scripts/source-to-markdown.py",
+        "blob": "63de0caa4d3b1cb18e48f9562e9ceb33b8b80474"
+      },
+      {
+        "path": "theme-profiles/andy.md",
+        "blob": "f9af2d2cb97049b15756efe07ab632ba4d64dd2c"
+      },
+      {
+        "path": "theme-profiles/bayer.md",
+        "blob": "918584bb5023b0a2e204467e5e256eb9bbb8db02"
+      },
+      {
+        "path": "theme-profiles/bodoni.md",
+        "blob": "63fc687884c18bb47721b3e131c7c5a2928518d0"
+      },
+      {
+        "path": "theme-profiles/freddie.md",
+        "blob": "14f5412e9862a50069cce4b9c320d5cfcb9f6408"
+      },
+      {
+        "path": "theme-profiles/fuller.md",
+        "blob": "2eb5cde554f992e44a8efb16a51474c4cee38f81"
+      },
+      {
+        "path": "theme-profiles/index.json",
+        "blob": "961eb41919343f2f39e672445fd624ff91a79775"
+      },
+      {
+        "path": "theme-profiles/knuth.md",
+        "blob": "24b2200e4ffa33cd260d6c0636d525875d61481e"
+      },
+      {
+        "path": "theme-profiles/press.md",
+        "blob": "c72124afb54f9ae08e51799dde8d389803993367"
+      },
+      {
+        "path": "theme-profiles/shannon.md",
+        "blob": "28d3c015498bca09d7545ff67985322f4b2e6dfa"
+      },
+      {
+        "path": "theme-profiles/sottsass.md",
+        "blob": "ee4a209669f210e9e7e20aee8f65f2aaf106885c"
+      },
+      {
+        "path": "theme-profiles/tufte.md",
+        "blob": "d1a542451e83307e7ad246559233e1d7d454fb78"
+      },
+      {
+        "path": "theme-profiles/vignelli.md",
+        "blob": "7ef0870eff68df1124cd87b53f152b2d9c1d4e6e"
+      }
+    ],
+    "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
+    "video_direct_mention": false
   }
 ]

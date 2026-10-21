@@ -1,4 +1,4 @@
-"""Read-only weekly discovery: data is never executed or auto-promoted to catalogue."""
+"""Read-only manual discovery: data is never executed or auto-promoted to catalogue."""
 from datetime import datetime, timedelta, timezone
 import json
 import os
@@ -49,7 +49,7 @@ def cell(s):return str(s).replace('|','\\|').replace('\n',' ').replace('<','&lt;
 def render(s,previous=None):
     old={r['repo']:r['stars'] for r in (previous or {}).get('repositories',[])}
     known={e['repo']:e for e in catalogue()}
-    lines=['# Weekly AI Skills discovery','','Observed: '+s['observed_at'],'','Stars are repository popularity, not quality. Candidates remain unknown for Codex; SKILL.md presence is not a runtime test.','','| Repository | Stars | Change | Lane | Skill files | Codex | Evidence |','|---|---:|---:|---|---:|---|---|']
+    lines=['# AI Skills discovery snapshot','','Observed: '+s['observed_at'],'','Stars are repository popularity, not quality. Candidates remain unknown for Codex; SKILL.md presence is not a runtime test.','','| Repository | Stars | Change | Lane | Skill files | Codex | Evidence |','|---|---:|---:|---|---:|---|---|']
     for r in sorted(s['repositories'],key=lambda x:x['stars'],reverse=True):
         delta=f"{r['stars']-old[r['repo']]:+d}" if r['repo'] in old else 'baseline unavailable'
         lane='curated watchlist' if r['repo'] in known else 'review candidate' if r['skill_paths'] else 'reject: no skill files'

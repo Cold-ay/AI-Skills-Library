@@ -1,69 +1,81 @@
 # AI Skills Library
 
-精選、可追溯的 AI skills 導覽與安全安裝工具。涵蓋網站／UI、影片、coding、token／context、研究／自動化、skill engineering。Python 3.9+；工具本身只用標準函式庫，不需付費 API。
+An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, video, coding, token/context efficiency, research/automation and skill engineering.
 
-## 快速開始
+**21 curated entries · English documentation · Manual reports · No scheduled updates**
+
+## Discover a skill
+
+Python 3.9+; standard library only. No paid API is needed to browse the library.
 
 ```sh
 git clone https://github.com/Cold-ay/AI-Skills-Library.git
 cd AI-Skills-Library
 python3 skills.py list
-python3 skills.py list --category video
-python3 skills.py list --query context
-python3 skills.py show react-best-practices
+python3 skills.py list --category website-ui
+python3 skills.py list --query animation
+python3 skills.py show taste-skill
 ```
 
-[瀏覽 12 個精選項目](docs/CATALOG.md) · [每週報告](reports/) · [證據及審查準則](docs/CURATION.md)
+[Open the Fieldnotes website](https://ai-skills-fieldnotes.spicy-dog-4235.chatgpt.site) · [Browse the catalogue](docs/CATALOG.md) · [Read the video analysis](reports/2026-10-21-video-review.md) · [Current discovery snapshot](reports/2026-10-21.md) · [Evidence standards](docs/CURATION.md)
 
-先看 `show` 的來源、固定版本、相容性、依賴與授權；閱讀所選 skill 的完整資料夾。確認後才安裝到你的工作專案：
+## Install and call
+
+Read the complete pinned skill folder, dependencies, compatibility evidence and license before installing. Then copy the reviewed files into your project:
 
 ```sh
-python3 skills.py install react-best-practices --dest /path/to/your-project/.agents/skills --reviewed
-python3 skills.py call react-best-practices 'Review this React project for performance issues'
+python3 skills.py install taste-skill --dest /path/to/project/.agents/skills --reviewed
+python3 skills.py call taste-skill 'Review the visual direction of this website'
 ```
 
-`call` 只輸出可貼進 Codex 的 `$技能名稱 任務`，不會呼叫模型。安裝後開啟該專案的新 Codex session；在技能選單確認已載入再貼上。若要使用個人技能目錄，明確傳入 `--dest ~/.agents/skills`。現有 skill 不會被覆蓋，更新要先審查新版本並手動保留舊版。
+`call` prints `$design-taste-frontend Review the visual direction of this website`. Paste it into a new Codex session after confirming the skill is loaded. The invocation uses the skill's frontmatter name, which can differ from its catalogue ID.
 
-直接讀 README 也能使用這個 library：選擇類別 → 看來源／要求 → 安裝 → 用輸出的名稱呼叫。不需一次載入全部 skills。需要完整插件、跨技能依賴或已停用的來源不開放此工具安裝，請依 `show` 所列上游文件處理。
+Use `--dest ~/.agents/skills` explicitly for a personal destination. Existing skills are never overwritten. Entries needing a full plugin, shared dependencies, binary launchers or hooks point to upstream installation instead of using standalone copying.
 
-## 推薦怎樣選
+Installation only downloads pinned files and verifies Git blob hashes. It does not execute third-party scripts, hooks or skill instructions. Later use inside an agent can invoke tools, so review the source first.
 
-| 需求 | 起點 | 限制 |
+## Where to start
+
+| Task | Suggested entry | Main requirement |
 |---|---|---|
-| React 網站效能 | react-best-practices | 規則須符合專案版本 |
-| UI／無障礙檢查 | web-design-guidelines | 使用時會讀取外部指南 |
-| 視覺設計 | frontend-design | Codex 相容性未知，先試小任務 |
-| 程式化剪片／動畫 | remotion-best-practices | 要有 Remotion／Node.js，非時間軸剪輯器 |
-| Debugging | systematic-debugging | 完整流程須使用上游 Superpowers 插件 |
-| 長對話整理 | context-compression | 沒有保證節省百分比 |
-| Token 策略 | context-optimization | 部分技巧需要 runtime 控制 |
-| 論文／引用 | zotero | Zotero Desktop 與完整插件 |
-| 建立技能／插件 | plugin-creator | 官方 repo 路徑與腳本依賴 |
+| Distinctive website art direction | taste-skill | Node 22+ and a supported browser for its scripts |
+| Product UI and design-system choices | ui-ux-pro-max | Upstream Codex installation and Python data search |
+| Design critique and polish | impeccable | Review upstream binary launcher and native hooks |
+| Layout variety and design audit | hallmark | Review optional service integrations |
+| React performance | react-best-practices | Match rules to your framework version |
+| Accessibility and interface review | web-design-guidelines | Reads external guidelines at use time |
+| Web animation | gsap-core | GSAP in your target project |
+| Record-ready article presentations | web-video-presentation | Vite, React and TypeScript; optional TTS |
+| Programmatic video | remotion-best-practices | Node.js and Remotion |
+| Long-session handoff | context-compression | Measure quality as well as token use |
+| Research citations | zotero | Zotero Desktop and its complete plugin |
+| Plugin engineering | plugin-creator | Upstream repository workflow |
 
-`openai/skills` 在本次查核時已標示 deprecated；其中 3 個項目保留為歷史／遷移參考，不是目前首選。現在的官方範例來源是 [openai/plugins](https://github.com/openai/plugins)。星數不等於安全性、技能品質或 Codex 支援。
+Codex labels distinguish static official evidence, upstream support claims and unknown compatibility. **None of the third-party workflows has been runtime-tested in Codex.** Three deprecated `openai/skills` entries remain migration references; current official examples are in [openai/plugins](https://github.com/openai/plugins).
 
-## 每週更新
+## Reports and website
 
-**啟用狀態：workflow 範本已完成；目前 GitHub 憑證缺少 `workflow` 寫入權限，尚未啟用排程。** 將 `docs/workflows/` 兩個檔案放入 `.github/workflows/` 並合併到 default branch 後，即可啟用。
+Reports are added manually under `reports/`. The existing 2026-10-21 snapshot is preserved, including its collection errors. The video review adds a separate dated article and evidence file. No weekly schedule, report automation or scheduling template is included.
 
-GitHub Actions 設計為每星期一香港時間 **09:17**（UTC 01:17，排程可能延遲）執行唯讀搜尋，保存 `reports/YYYY-MM-DD.md` 與 JSON 證據，再建立 PR。也可在 Actions → Weekly skills discovery → Run workflow 手動執行。
+The `site/` directory contains the Fieldnotes blog: report articles, a searchable skill catalogue, topic filters, and a browser-local Markdown draft editor with export. Published pages are generated from repository reports and catalogue data.
 
-- 正式排程需要 workflow 在 repo 的 default branch，並啟用 Actions。
-- Repository Settings → Actions → General → Workflow permissions 必須允許 GitHub Actions 建立 pull requests；組織政策亦可能限制它。
-- 每次只追蹤精選 repo 及三組搜尋各前 8 名；新增候選永遠先標記 Codex `unknown`。
-- 比較前一份已合併日期的星數；首份顯示 baseline unavailable，不捏造增長率。
-- API 錯誤或截斷樹會使 run 失敗、保留 artifact，不建立貌似完整的 PR。
-- PR 只更新報告，不自動改清單、不安裝技能、不合併 PR。
+```sh
+python3 site/build.py
+python3 -m http.server 8765 --directory site/dist
+```
 
-本機產生同樣報告：`python3 report.py`。可選擇提供 `GH_TOKEN` 提高 GitHub API 配額；不要把 token 寫進 repo。未認證 API 配額較低，失敗詳情會記在報告。
+Open `http://localhost:8765`. See [website publishing and authoring](docs/WEBSITE.md). Browser drafts stay on that browser until exported; publishing a report requires adding its Markdown to this repository and rebuilding/redeploying the site.
 
-## 驗證
+The optional `python3 report.py` collector is **manual only**. It reads public GitHub metadata and writes a dated snapshot; it never modifies the curated catalogue. API failures are recorded and return a failing exit status. The script is not used by the website build.
+
+## Validate
 
 ```sh
 python3 -m unittest discover -s tests -v
 python3 skills.py validate
+python3 site/build.py
 ```
 
-測試覆蓋分類、固定版本、重複項目、路徑穿越、符號連結、完整性失敗回滾、離線回滾、不覆蓋、安裝確認、候選去重、星數變化及 API 錯誤。CI 不需網路 API、憑證或第三方技能執行。
+Tests cover catalogue invariants, safe installation, integrity failure rollback, report evidence and safe website generation. See [validation notes](docs/VALIDATION.md).
 
-參考：[官方技能文件](https://learn.chatgpt.com/docs/build-skills)、[官方插件範例](https://github.com/openai/plugins)。第三方來源各自保有其授權；本 repo 儲存原創描述及來源 manifest，沒有整包轉載第三方 skills。
+Official reference: [Build skills](https://learn.chatgpt.com/docs/build-skills). Third-party projects retain their own licenses. This library stores original curation notes, source links and file manifests rather than vendoring complete third-party skills.
