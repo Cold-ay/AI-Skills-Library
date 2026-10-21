@@ -6,7 +6,7 @@ AI Skill Library is a static, English-language journal generated from the review
 
 - Journal: featured video review, searchable report archive and topic filters.
 - Articles: full reports, readable comparison tables, original Markdown links and downloads.
-- Skill library: keyword search, six discipline filters, compatibility filters, evidence details and copyable invocation prompts.
+- Skill library: keyword search, seven discipline filters, compatibility filters, evidence details and copyable invocation prompts.
 - New note: a browser-local Markdown draft editor with explicit save and export.
 - Curation: evidence labels and the manual editorial standard.
 

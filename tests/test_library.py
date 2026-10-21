@@ -18,8 +18,28 @@ class LibraryTests(unittest.TestCase):
         e=self.entry();e['commit']='main'
         with self.assertRaises(ValueError):skills.validate([e])
     def test_traversal(self):
-        for p in ('../escape','/tmp/x','a/../../x','a\\b','a//b','./x'):
+        for p in ('../escape','/tmp/x','a/../../x','a\\b','a//b','./x','.',''):
             with self.subTest(p=p),self.assertRaises(ValueError):skills.safe_path(p)
+    def test_repository_root_path_omits_dot_segment(self):
+        e=self.entry();e['path']='.';seen=[]
+        def grab(url):
+            seen.append(url);return b'example'
+        with tempfile.TemporaryDirectory() as d:
+            skills.install(e,d,True,grab)
+        self.assertEqual(seen,[f"https://raw.githubusercontent.com/{e['repo']}/{e['commit']}/SKILL.md"])
+        self.assertEqual(skills.raw_file_url('o/r','a'*40,'skills/x','SKILL.md'),'https://raw.githubusercontent.com/o/r/'+'a'*40+'/skills/x/SKILL.md')
+        with self.assertRaises(ValueError):skills.raw_file_url('o/r','a'*40,'.','.')
+        with self.assertRaises(ValueError):skills.raw_file_url('o/r','a'*40,'..','SKILL.md')
+    def test_weekly_includes(self):
+        entries={e['id']:e for e in skills.catalogue()}
+        human=entries['humanizer'];context=entries['context-engineering']
+        self.assertEqual(human['path'],'.');self.assertEqual(human['category'],'writing-editing')
+        self.assertEqual(human['codex']['status'],'upstream-claimed');self.assertIs(human['codex']['runtime_tested'],False)
+        self.assertEqual([f['path'] for f in human['files']],['SKILL.md','AGENTS.md','agents/openai.yaml'])
+        self.assertNotIn('scripts/validate-package.py',[f['path'] for f in human['files']])
+        self.assertEqual(context['category'],'token-context');self.assertEqual(context['path'],'skills/context-engineering')
+        self.assertEqual([f['path'] for f in context['files']],['SKILL.md'])
+        self.assertEqual(context['codex']['status'],'upstream-claimed');self.assertIs(context['codex']['runtime_tested'],False)
     def test_review_required(self):
         with self.assertRaises(ValueError):skills.install(self.entry(),'/unused')
     def test_reference_only(self):

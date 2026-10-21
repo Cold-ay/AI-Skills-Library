@@ -14,13 +14,13 @@ A useful software library rather than a magazine masthead. The home page starts 
 - Canvas: white, with cool surfaces (#f5f7fc) and subtle dividers (#e3e8f0).
 - Type: system sans-serif with a strong hierarchy; monospace only for executable invocation text.
 - Accent: cobalt (#2854dc); ink (#18243b); muted text (#627086).
-- Layout: workflow-led discovery, six categories, selected skill records, report feature and source standard.
+- Layout: workflow-led discovery, seven categories, selected skill records, report feature and source standard.
 - Motion: short user-triggered feedback; no autoplay animation; reduced-motion preference respected.
 - Content: the existing 21 skill records and two reports. No invented adoption metrics or runtime-verification claims.
 
 ## Template views
 
-- `#home`: project-type selector, six categories, curated starting points and report feature.
+- `#home`: project-type selector, seven categories, curated starting points and report feature.
 - `#library`: skill search, category/evidence filters, source details and invocation copy.
 - `#reports`: searchable, filtered report archive.
 - `#article/<slug>`: full article and Markdown download.
