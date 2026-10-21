@@ -58,7 +58,18 @@ function renderCombinations(){
   card.append(list);
   const details=el('details');details.append(el('summary','','Requirements & conflict handling'),el('p','',b.requirements),el('p','',b.conflicts),el('p','',b.compatibility));card.append(details);
   const artifact=downloads.find(d=>d.id===b.id);
-  if(b.downloadable&&artifact){const a=link('downloads/'+artifact.file,'Download ZIP ↓','button primary');a.download=artifact.file;const button=el('button','','Copy workflow call');button.type='button';button.addEventListener('click',()=>copy('$combination-'+b.id+' <your task>',button));card.append(a,button,el('small','bundle-integrity',Math.ceil(artifact.bytes/1024)+' KB · '+artifact.files+' files · SHA-256 '+artifact.sha256));card.append(el('p','','Review the ZIP, stage extraction, then copy .agents/skills into your project without overwriting existing folders. Dependencies are installed separately.'));}
+  if(b.downloadable&&artifact){const a=link('downloads/'+artifact.file,'Download ZIP ↓','button primary');a.download=artifact.file;const prompt='$combination-'+b.id+' <your task>';
+   const promptBox=el('div','workflow-prompt');
+   const promptHeader=el('div','workflow-prompt-header');
+   const button=el('button','workflow-copy');button.type='button';button.setAttribute('aria-label','Copy '+b.title+' prompt');
+   const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('aria-hidden','true');
+   const iconPath=document.createElementNS('http://www.w3.org/2000/svg','path');const copyPath='M9 9h11v11H9z M15 9V4H4v11h5';iconPath.setAttribute('d',copyPath);icon.append(iconPath);
+   const label=el('span','','Copy prompt');button.append(icon,label);
+   const command=el('code','workflow-command',prompt);command.tabIndex=0;
+   button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(prompt);clearTimeout(button.copyTimer);label.textContent='Copied';iconPath.setAttribute('d','M5 12l4 4L19 6');button.classList.add('is-copied');toast('Prompt copied. Paste into Codex after installing this pack.');button.copyTimer=setTimeout(()=>{label.textContent='Copy prompt';iconPath.setAttribute('d',copyPath);button.classList.remove('is-copied');},2000);}catch{command.focus();toast('Clipboard unavailable. Select and copy the prompt shown here.');}});
+   promptHeader.append(el('span','workflow-prompt-label','Use in Codex'),button);
+   promptBox.append(promptHeader,command,el('p','workflow-prompt-help','After installing this pack, paste into a new Codex chat and replace <your task>. Copying does not install or run the workflow.'));
+   card.append(a,promptBox,el('small','bundle-integrity',Math.ceil(artifact.bytes/1024)+' KB · '+artifact.files+' files · SHA-256 '+artifact.sha256));card.append(el('p','','Review the ZIP, stage extraction, then copy .agents/skills into your project without overwriting existing folders. Dependencies are installed separately.'));}
   else card.append(el('code','','python3 bundles.py show '+b.id));
   $('#combinations').append(card);
  }

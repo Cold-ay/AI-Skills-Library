@@ -7,3 +7,13 @@
 .combination-card{align-content:start}.combination-stages{padding-left:1.3rem}.combination-stages li{padding:0 0 1.2rem .3rem}.combination-stages p{margin:.4rem 0}.combination-stages .badge{display:block;width:fit-content;margin-top:.5rem}.bundle-integrity{display:block;overflow-wrap:anywhere;color:var(--muted,#536078);font-size:.72rem;margin:.7rem 0}.combination-card>.button{margin-top:1rem;width:fit-content}.combination-card>button{margin-top:.7rem;width:fit-content}.bundle-search{display:block;max-width:36rem;margin:1.5rem 0}.bundle-search input{display:block;width:100%;margin-top:.5rem;padding:.85rem;border:1px solid #cbd2df;border-radius:.6rem;font:inherit;background:white}.combination-card h2{font-size:1.4rem}
 
 #combinations{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:760px){#combinations{grid-template-columns:1fr}}
+
+/* A visible prompt makes the clipboard action understandable before clicking. */
+.workflow-prompt{min-width:0;margin-top:16px;padding:16px;background:var(--soft);border:1px solid var(--line);border-radius:10px}
+.workflow-prompt-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.workflow-prompt-label{font-size:11px;font-weight:650;color:var(--muted)}
+.workflow-copy{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 12px;border:1px solid var(--line);border-radius:7px;background:var(--white);color:var(--accent);font-size:12px;font-weight:650;white-space:nowrap;transition:background .16s,border-color .16s}
+.workflow-copy svg{width:16px;height:16px}.workflow-copy:hover{background:var(--blue-soft);border-color:var(--accent)}.workflow-copy:active{transform:translateY(1px)}
+.workflow-copy.is-copied{background:var(--green-soft);border-color:var(--green);color:var(--green)}
+.workflow-command{display:block;font:12px/1.7 var(--mono);color:var(--ink);white-space:pre-wrap;overflow-wrap:anywhere;user-select:all}
+.workflow-prompt .workflow-prompt-help{margin:10px 0 0;font-size:11px;line-height:1.7;color:var(--muted)}
