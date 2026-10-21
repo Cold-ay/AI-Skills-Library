@@ -60,4 +60,4 @@ All newly claimed Codex support remains upstream-claimed. Nothing Design remains
 
 Nine entries were added: eight recommendations from the video plus Garden's beautiful-article companion. Frontend Design and Web Interface Guidelines were reused from the existing catalogue. Documentation is English, and reports are manually maintained. The original discovery snapshot and its collection failures remain available.
 
-The Fieldnotes website uses a clear editorial hierarchy, a report archive, readable article pages, category navigation and a searchable skill catalogue. It includes a browser-local draft editor with Markdown export. Published reports remain repository files: export a draft, review it, add it to reports/, then rebuild and redeploy. No recurring reporting system is configured.
+The AI Skill Library website uses a clear editorial hierarchy, a report archive, readable article pages, category navigation and a searchable skill catalogue. It includes a browser-local draft editor with Markdown export. Published reports remain repository files: export a draft, review it, add it to reports/, then rebuild and redeploy. No recurring reporting system is configured.

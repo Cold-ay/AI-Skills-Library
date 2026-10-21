@@ -1,6 +1,6 @@
-# Fieldnotes website
+# AI Skill Library website
 
-Fieldnotes is a static, English-language journal generated from the reviewed repository reports and skill catalogue. Its source is in site/; its deployable files are in site/dist/.
+AI Skill Library is a static, English-language journal generated from the reviewed repository reports and skill catalogue. Its source is in site/; its deployable files are in site/dist/.
 
 ## Read and explore
 
@@ -33,8 +33,8 @@ python3 -m unittest discover -s tests -v
 
 Open http://localhost:8765. Article and library filters use hash routes and work on static hosts without rewrite rules. Browser testing should cover article navigation, back behavior, search, category/evidence filters, empty states, copy buttons, browser draft save/restore, Markdown export, mobile layout and horizontal table scrolling.
 
-## Hosting
+## Hosting and preview status
 
-The site is published privately using Sites: [Open Fieldnotes](https://ai-skills-fieldnotes.spicy-dog-4235.chatgpt.site). Its identity and static directory are recorded in site/.openai/hosting.json. Keep that identity for future redeploys. The site contains the current reviewed reports at deployment time; it does not pull live data from GitHub or update on a schedule. Source changes in GitHub require an explicit rebuild and redeploy.
+The current design is named AI Skill Library. Existing historical Sites identity remains in site/.openai/hosting.json, but it is not used by the Vercel setup or the exported static template.
 
-A separate deployment checkout is used for the Sites source helper so its managed source repository does not replace this GitHub repository's remote. Only generated website assets and its hosting manifest are copied into that checkout. No credentials are stored in repository files.
+For later Vercel deployment, use the committed generated files under site/dist/ and the root vercel.json configuration. See [Vercel setup](VERCEL.md). The website has no runtime API, backend or environment-variable requirement. Rebuild after changing repository reports or the catalogue, then include the generated data.js in your eventual commit.

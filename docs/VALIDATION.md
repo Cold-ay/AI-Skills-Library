@@ -24,3 +24,7 @@ Documentation is now English. The weekly report workflow template and report PR 
 ## Deployment
 
 Sites private deployment succeeded on 2026-10-21. Deployed source commit: 061aa1bb430b95b47a282f800026921f49f38a5f (the separate Sites source repository). URL: https://ai-skills-fieldnotes.spicy-dog-4235.chatgpt.site
+
+## AI Skill Library redesign template
+
+The current redesign is local-only and not deployed. It applies the repository’s Frontend Design skill and current Vercel Web Design Guidelines. Existing 18 tests and JavaScript syntax validation pass. Browser checks cover task switching, category navigation, shareable search state and reload persistence. Current branding is AI Skill Library. Vercel static configuration is prepared for later user deployment; no Vercel linking, deployment or Git push was performed for this revision.

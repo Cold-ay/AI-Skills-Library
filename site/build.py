@@ -1,4 +1,4 @@
-"""Generate the static Fieldnotes journal from reviewed repository content."""
+"""Generate the static AI Skill Library website from reviewed repository content."""
 from html import escape
 import json
 from pathlib import Path
@@ -54,7 +54,7 @@ def build():
         video='video-review' in file.stem
         posts.append(dict(slug=file.stem,title=title,date=file.stem[:10],category='Source review' if video else 'Discovery',readTime=max(1,len(source.split())//200),excerpt='Ten recommendations, nine additions, and the evidence behind each decision.' if video else 'The preserved discovery snapshot: real repository stars, candidate projects and collection limits.',html=markdown('\n'.join(source.splitlines()[1:])),source=f'https://github.com/Cold-ay/AI-Skills-Library/blob/main/reports/{file.name}',markdown=source))
     payload=json.dumps(dict(skills=skills,posts=posts),ensure_ascii=True)
-    (dest/'data.js').write_text('window.FIELDNOTES = '+payload+';\n')
+    (dest/'data.js').write_text('window.AI_SKILL_LIBRARY = '+payload+';\n')
     print(f'Built {len(posts)} articles and {len(skills)} skill records in {dest}')
     return posts
 

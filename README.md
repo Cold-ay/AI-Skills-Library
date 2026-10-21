@@ -17,7 +17,7 @@ python3 skills.py list --query animation
 python3 skills.py show taste-skill
 ```
 
-[Open the Fieldnotes website](https://ai-skills-fieldnotes.spicy-dog-4235.chatgpt.site) · [Browse the catalogue](docs/CATALOG.md) · [Read the video analysis](reports/2026-10-21-video-review.md) · [Current discovery snapshot](reports/2026-10-21.md) · [Evidence standards](docs/CURATION.md)
+[Browse the catalogue](docs/CATALOG.md) · [Read the video analysis](reports/2026-10-21-video-review.md) · [Current discovery snapshot](reports/2026-10-21.md) · [Evidence standards](docs/CURATION.md)
 
 ## Install and call
 
@@ -55,9 +55,11 @@ Codex labels distinguish static official evidence, upstream support claims and u
 
 ## Reports and website
 
+The redesigned AI Skill Library uses static HTML, CSS and JavaScript. See [Vercel setup](docs/VERCEL.md) for its hosting configuration.
+
 Reports are added manually under `reports/`. The existing 2026-10-21 snapshot is preserved, including its collection errors. The video review adds a separate dated article and evidence file. No weekly schedule, report automation or scheduling template is included.
 
-The `site/` directory contains the Fieldnotes blog: report articles, a searchable skill catalogue, topic filters, and a browser-local Markdown draft editor with export. Published pages are generated from repository reports and catalogue data.
+The `site/` directory contains the AI Skill Library website: report articles, a searchable skill catalogue, topic filters, and a browser-local Markdown draft editor with export. Published pages are generated from repository reports and catalogue data.
 
 ```sh
 python3 site/build.py

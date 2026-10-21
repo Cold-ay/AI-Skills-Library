@@ -21,7 +21,7 @@ class SiteTests(unittest.TestCase):
         posts=site.build()
         self.assertEqual(len(posts),len(list((site.ROOT/'reports').glob('*.md'))))
         self.assertTrue(any(p['slug']=='2026-10-21-video-review' for p in posts))
-        self.assertTrue((site.HERE/'dist/data.js').read_text().startswith('window.FIELDNOTES = '))
+        self.assertTrue((site.HERE/'dist/data.js').read_text().startswith('window.AI_SKILL_LIBRARY = '))
     def test_no_recurring_report_workflow(self):
         self.assertFalse((site.ROOT/'docs/workflows/weekly.yml').exists())
         for path in (site.ROOT/'.github/workflows').glob('*.yml'):
