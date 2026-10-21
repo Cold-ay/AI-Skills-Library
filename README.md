@@ -97,3 +97,13 @@ python3 bundles.py build react-motion --out /tmp/react-motion-new.zip --reviewed
 Review and extract downloaded ZIPs in a staging directory. Copy `.agents/skills` into a project after checking existing folders; install runtime dependencies separately. Start a new Codex session and invoke `$combination-react-motion <your task>`. Check archive checksums in `site/dist/downloads/index.json`.
 
 For your own discovery, use the [research playbook](docs/RESEARCH.md), [editable search configuration](research/queries.json), and [review template](research/review-template.md). The [expansion report](reports/2026-10-21-combinations.md) records seven additional skills, decisions and source limitations. Collection remains manual.
+
+### Claude Code support
+
+Packs include `CLAUDE.md` alongside the shared `.agents/skills` source files. Merge the adapter into your project's existing CLAUDE.md, keep the skill folders, then choose **Claude Code · CLAUDE.md** on the website or run:
+
+```sh
+python3 bundles.py call react-motion --agent claude
+```
+
+Paste the resulting file-based request into Claude Code. This does not install native slash commands, execute code or establish runtime compatibility. See [host setup](docs/WEBSITE.md#claude-code--claudemd).

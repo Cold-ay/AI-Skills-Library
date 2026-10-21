@@ -2,29 +2,29 @@
   {
     "id": "react-motion",
     "file": "react-motion.zip",
-    "sha256": "75ea04c514460a92bcaadfb6b7d661231d2ff2f66f3a950cc5afeebe178178b1",
-    "bytes": 16238,
-    "files": 9
+    "sha256": "2e19a8d2b80a943759108c9881179be3e08bf33330031eb44cf82fa427981c91",
+    "bytes": 17286,
+    "files": 10
   },
   {
     "id": "industrial-motion",
     "file": "industrial-motion.zip",
-    "sha256": "a82122d94444bc995048fbb00aa81d0a6d82272dd687575542a12eaef873eda4",
-    "bytes": 22550,
-    "files": 10
+    "sha256": "077eaf70cddfd44f1a0d7d8b6caeb681f5d4ab9d4fd038767d75bc1f703b1261",
+    "bytes": 23612,
+    "files": 11
   },
   {
     "id": "article-to-presentation",
     "file": "article-to-presentation.zip",
-    "sha256": "48f4a690ce3d43f44dae8a45a25b72638a71ae066852b931ac7c12391553f033",
-    "bytes": 332734,
-    "files": 158
+    "sha256": "726d16ae5204ef2a46da22a8b9e89d6c1676ea4c6214a497e3036f637237b44e",
+    "bytes": 333805,
+    "files": 159
   },
   {
     "id": "evidence-to-article",
     "file": "evidence-to-article.zip",
-    "sha256": "31f8993d934171a6325b097207f742aba033ae048465c494d4298bb7caf80363",
-    "bytes": 211501,
-    "files": 72
+    "sha256": "efab6a192ef5725a3de0559c82041b826abc61487c33819f0af8dcbd9d5df391",
+    "bytes": 212577,
+    "files": 73
   }
 ]

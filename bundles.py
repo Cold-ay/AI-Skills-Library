@@ -38,6 +38,23 @@ def workflow(b,entries):
     return '\n'.join(lines)+'\n'
 
 
+
+def claude_instructions(b):
+    path='.agents/skills/combination-'+b['id']+'/SKILL.md'
+    return ('# '+b['title']+' — Claude Code workflow\n\n'
+        'When the user explicitly requests the '+b['id']+' workflow, read `'+path+'`, then read each stage skill from its sibling folder as needed. Paths in this file are relative to the project root. Paths inside a SKILL.md are relative to that skill directory.\n\n'
+        'The .agents directory is shared source storage here; this adapter does not claim that Claude Code automatically discovers it as native slash-command skills. Use an explicit request to read the workflow. Do not use Codex dollar-prefixed invocations as Claude slash commands.\n\n'
+        'Follow the stages in order and preserve the handoff artifacts. Load only the stage needed. Follow existing project conventions and user/host instructions. Never run bundled scripts, install dependencies, contact services or launch subagents merely because this file was loaded; review their need within the current authorized task. Report missing host tools or dependencies.\n\n'
+        '## Requirements\n\n'+b['requirements']+'\n\n## Conflicts and limits\n\n'+b['conflicts']+'\n\n'
+        'This is a library-authored CLAUDE.md adapter, not a claim of upstream Claude support or a successful end-to-end runtime test. No dependencies are bundled.\n')
+
+
+def call_prompt(b,agent='codex'):
+    if not b['downloadable']:return 'Recipe only: follow stages in show; no integration skill installed.'
+    if agent=='claude':return 'Read CLAUDE.md and follow .agents/skills/combination-'+b['id']+'/SKILL.md for this task: <your task>'
+    return '$combination-'+b['id']+' <your task>'
+
+
 def build_bundle(b,destination,reviewed=False,downloader=fetch):
     if not reviewed:raise ValueError('Review pins and licenses first; pass --reviewed')
     if not b['downloadable']:raise ValueError('Recipe only; upstream setup required')
@@ -61,7 +78,8 @@ def build_bundle(b,destination,reviewed=False,downloader=fetch):
         if blob_hash(data)!=license['blob']:raise ValueError('License integrity mismatch')
         add('LICENSES/'+ident+'.txt',data)
     add('.agents/skills/combination-'+b['id']+'/SKILL.md',workflow(b,entries).encode())
-    add('README.md',('# '+b['title']+'\n\n'+b['summary']+'\n\nReview all files before use. Extract into a clean staging directory, then copy .agents/skills into your project after checking for collisions. No packages or dependencies are installed by extraction. Start a new Codex session and explicitly invoke `$combination-'+b['id']+' <your task>`. The workflow sequences skills; simultaneous execution and runtime compatibility are untested.\n\n'+b['requirements']+'\n\n'+b['conflicts']+'\n\nOriginal upstream files remain unmodified and retain their licenses. The orchestration text is library-authored. ZIPs contain instruction text and may contain passive scripts; nothing was executed to build them.\n').encode())
+    add('CLAUDE.md',claude_instructions(b).encode())
+    add('README.md',('# '+b['title']+'\n\n'+b['summary']+'\n\nReview all files before use. Extract into a clean staging directory, then copy .agents/skills into your project after checking for collisions. No packages or dependencies are installed by extraction. Start a new Codex session and explicitly invoke `$combination-'+b['id']+' <your task>`. For Claude Code, copy or merge the included CLAUDE.md into the project root without replacing existing instructions, keep .agents/skills alongside it, and explicitly ask Claude to read the combination SKILL.md. This adapter uses file references, not native slash-command discovery. The workflow sequences skills; simultaneous execution and runtime compatibility in either host are untested.\n\n'+b['requirements']+'\n\n'+b['conflicts']+'\n\nOriginal upstream files remain unmodified and retain their licenses. The orchestration text is library-authored. ZIPs contain instruction text and may contain passive scripts; nothing was executed to build them.\n').encode())
     manifest={'combination':b,'skills':[entries[i] for i in b['skills']],'sha256':{k:hashlib.sha256(v).hexdigest() for k,v in sorted(payload.items())}}
     add('MANIFEST.json',(json.dumps(manifest,indent=2)+'\n').encode())
     destination=Path(destination);destination.parent.mkdir(parents=True,exist_ok=True)
@@ -79,6 +97,7 @@ def main():
     sub.add_parser('list')
     for cmd in ('show','call','build'):
         parser=sub.add_parser(cmd);parser.add_argument('id')
+        if cmd=='call':parser.add_argument('--agent',choices=('codex','claude'),default='codex')
         if cmd=='build':parser.add_argument('--out',required=True);parser.add_argument('--reviewed',action='store_true')
     args=p.parse_args()
     try:
@@ -89,7 +108,7 @@ def main():
         b=next((b for b in data if b['id']==args.id),None)
         if b is None:raise ValueError('Unknown combination')
         if args.command=='show':print(json.dumps(b,indent=2))
-        elif args.command=='call':print('$combination-'+b['id']+' <your task>' if b['downloadable'] else 'Recipe only: follow stages in show; no integration skill installed.')
+        elif args.command=='call':print(call_prompt(b,args.agent))
         else:print(json.dumps(build_bundle(b,args.out,args.reviewed),indent=2))
     except (ValueError,OSError,KeyError) as e:p.exit(1,'Error: '+str(e)+'\n')
 if __name__=='__main__':main()

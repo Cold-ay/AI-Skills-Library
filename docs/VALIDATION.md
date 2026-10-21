@@ -36,3 +36,9 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - Browser preview verified workflow search, requirements expansion, a real React motion ZIP download and navigation to the linked individual skill.
 - Research used public primary-source searches, preserved GitHub API metadata and fixed Git checkouts. No newly discovered scripts or skill workflows ran. Package validation does not establish end-to-end Codex compatibility.
 - The earlier Vercel preparation note above is historical. The production site is now Git-linked at `https://ai-skill-library.vercel.app`; pushes to main trigger its existing deployment integration.
+
+## CLAUDE.md adapter
+
+- All four ZIPs now include a library-authored root CLAUDE.md adapter; original upstream skill bytes and licenses are preserved.
+- 26 unit tests passed, including adapter content, explicit Claude file-path prompts and archive manifest/checksum coverage. CLI `bundles.py call react-motion --agent claude` was verified.
+- Browser preview verified host selection switches the displayed prompt and setup instructions to Claude Code. Compatibility badges remain explicitly Codex evidence. Claude Code itself was not executed; this is file-based integration support, not a runtime certification.

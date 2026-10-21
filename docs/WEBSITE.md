@@ -44,3 +44,11 @@ For later Vercel deployment, use the committed generated files under site/dist/ 
 `catalog/combinations.json` defines stage owners, handoff tasks, requirements, conflict handling and exact license blobs. `bundles.py` produces inert, deterministic ZIPs from pinned GitHub files after explicit source review. The website serves checked-in archives from `site/dist/downloads/`; `index.json` records their sizes and SHA-256 checksums. Update an archive and its index together after reviewing any pin changes. `site/build.py` rejects checksum drift. Unit tests also compare archive members, provenance and license hashes with the current catalogue.
 
 The Combinations page provides workflow search, individual skill links, setup details and downloads. Recipe-only workflows intentionally have no ZIP or synthetic callable integration skill. The research playbook, configuration and review template live in `docs/RESEARCH.md` and `research/`. New manual collector runs use unique filenames to preserve previous snapshots.
+
+### Claude Code / CLAUDE.md
+
+Each downloadable pack also contains a root `CLAUDE.md` adapter. Keep the shared `.agents/skills` directory in the project and merge the adapter into an existing project CLAUDE.md rather than replacing that file. The adapter loads the chosen workflow explicitly by file path; it does not register native Claude slash commands or assume `.agents/skills` is automatically discovered by Claude Code.
+
+Choose **Claude Code · CLAUDE.md** in the combination page to copy an explicit file-based prompt. CLI equivalent: `python3 bundles.py call react-motion --agent claude`. The default Codex prompt remains available. The adapter does not change upstream instructions, grant tool permissions or install dependencies. Neither host has an end-to-end runtime verification claim.
+
+Reference: [Claude Code project memory](https://code.claude.com/docs/en/memory). CLAUDE.md supplies project instructions; a copied prompt requests a specific workflow.

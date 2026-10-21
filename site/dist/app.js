@@ -45,6 +45,8 @@ $('#draft-form').addEventListener('submit',()=>{if($('#draft-status').textConten
 window.addEventListener('beforeunload',event=>{if(draftDirty){event.preventDefault();event.returnValue='';}});
 
 function renderCombinations(){
+ const claude=$('#bundle-agent').value==='claude';
+ const host=claude?'Claude Code':'Codex';
  const query=$('#bundle-search').value.trim().toLowerCase();
  const found=combinations.filter(b=>JSON.stringify(b).toLowerCase().includes(query));
  $('#bundle-results').textContent=found.length+(found.length===1?' workflow · ':' workflows · ')+found.filter(b=>b.downloadable).length+' downloadable '+(found.filter(b=>b.downloadable).length===1?'pack':'packs');
@@ -54,11 +56,11 @@ function renderCombinations(){
   const card=el('article','skill-card combination-card');
   card.append(el('span','tag',b.downloadable?'Downloadable workflow':'Recipe · upstream setup'),el('h2','',b.title),el('p','',b.summary));
   const list=el('ol','combination-stages');
-  for(const stage of b.stages){const li=el('li');const skill=skills.find(s=>s.id===stage.skill);li.append(el('strong','',stage.title),el('p','',stage.task),link('#library?q='+encodeURIComponent(skill.id),skill.id+' ↗'),el('span','badge '+skill.codex.status,statuses[skill.codex.status]));list.append(li);}
+  for(const stage of b.stages){const li=el('li');const skill=skills.find(s=>s.id===stage.skill);li.append(el('strong','',stage.title),el('p','',stage.task),link('#library?q='+encodeURIComponent(skill.id),skill.id+' ↗'),el('span','badge '+skill.codex.status,'Codex: '+statuses[skill.codex.status]));list.append(li);}
   card.append(list);
   const details=el('details');details.append(el('summary','','Requirements & conflict handling'),el('p','',b.requirements),el('p','',b.conflicts),el('p','',b.compatibility));card.append(details);
   const artifact=downloads.find(d=>d.id===b.id);
-  if(b.downloadable&&artifact){const a=link('downloads/'+artifact.file,'Download ZIP ↓','button primary');a.download=artifact.file;const prompt='$combination-'+b.id+' <your task>';
+  if(b.downloadable&&artifact){const a=link('downloads/'+artifact.file,'Download ZIP ↓','button primary');a.download=artifact.file;const prompt=claude?'Read CLAUDE.md and follow .agents/skills/combination-'+b.id+'/SKILL.md for this task: <your task>':'$combination-'+b.id+' <your task>';
    const promptBox=el('div','workflow-prompt');
    const promptHeader=el('div','workflow-prompt-header');
    const button=el('button','workflow-copy');button.type='button';button.setAttribute('aria-label','Copy '+b.title+' prompt');
@@ -66,12 +68,12 @@ function renderCombinations(){
    const iconPath=document.createElementNS('http://www.w3.org/2000/svg','path');const copyPath='M9 9h11v11H9z M15 9V4H4v11h5';iconPath.setAttribute('d',copyPath);icon.append(iconPath);
    const label=el('span','','Copy prompt');button.append(icon,label);
    const command=el('code','workflow-command',prompt);command.tabIndex=0;
-   button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(prompt);clearTimeout(button.copyTimer);label.textContent='Copied';iconPath.setAttribute('d','M5 12l4 4L19 6');button.classList.add('is-copied');toast('Prompt copied. Paste into Codex after installing this pack.');button.copyTimer=setTimeout(()=>{label.textContent='Copy prompt';iconPath.setAttribute('d',copyPath);button.classList.remove('is-copied');},2000);}catch{command.focus();toast('Clipboard unavailable. Select and copy the prompt shown here.');}});
-   promptHeader.append(el('span','workflow-prompt-label','Use in Codex'),button);
-   promptBox.append(promptHeader,command,el('p','workflow-prompt-help','After installing this pack, paste into a new Codex chat and replace <your task>. Copying does not install or run the workflow.'));
+   button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(prompt);clearTimeout(button.copyTimer);label.textContent='Copied';iconPath.setAttribute('d','M5 12l4 4L19 6');button.classList.add('is-copied');toast('Prompt copied. Paste into '+host+' after setting up this pack.');button.copyTimer=setTimeout(()=>{label.textContent='Copy prompt';iconPath.setAttribute('d',copyPath);button.classList.remove('is-copied');},2000);}catch{command.focus();toast('Clipboard unavailable. Select and copy the prompt shown here.');}});
+   promptHeader.append(el('span','workflow-prompt-label','Use in '+host),button);
+   promptBox.append(promptHeader,command,el('p','workflow-prompt-help',claude?'Keep .agents/skills in your project and merge the included CLAUDE.md with existing instructions. Paste into Claude Code and replace <your task>. Copying does not install or run anything.':'After installing this pack, paste into a new Codex chat and replace <your task>. Copying does not install or run the workflow.'));
    card.append(a,promptBox,el('small','bundle-integrity',Math.ceil(artifact.bytes/1024)+' KB · '+artifact.files+' files · SHA-256 '+artifact.sha256));card.append(el('p','','Review the ZIP, stage extraction, then copy .agents/skills into your project without overwriting existing folders. Dependencies are installed separately.'));}
   else card.append(el('code','','python3 bundles.py show '+b.id));
   $('#combinations').append(card);
  }
 }
-$('#bundle-search').addEventListener('input',renderCombinations);renderCombinations();
+$('#bundle-search').addEventListener('input',renderCombinations);$('#bundle-agent').addEventListener('change',renderCombinations);renderCombinations();

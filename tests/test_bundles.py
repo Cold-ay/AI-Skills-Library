@@ -43,6 +43,18 @@ class BundleTests(unittest.TestCase):
                 self.assertEqual(z.read('.agents/skills/demo/SKILL.md'),b'skill')
                 self.assertIn('../demo/SKILL.md',z.read('.agents/skills/combination-demo-pack/SKILL.md').decode())
                 self.assertTrue(all(not (i.external_attr>>16)&0o111 for i in z.infolist()))
+    def test_claude_prompt_uses_file_adapter_not_codex_invocation(self):
+        _,b=self.fixture()
+        self.assertEqual(bundles.call_prompt(b),'$combination-demo-pack <your task>')
+        text=bundles.call_prompt(b,'claude')
+        self.assertIn('Read CLAUDE.md',text);self.assertIn('.agents/skills/combination-demo-pack/SKILL.md',text)
+        self.assertNotIn('$combination',text)
+    def test_claude_adapter_keeps_staged_loading_and_limits(self):
+        _,b=self.fixture();text=bundles.claude_instructions(b)
+        self.assertIn('.agents/skills/combination-demo-pack/SKILL.md',text)
+        self.assertIn('When the user explicitly requests',text)
+        self.assertIn('not a claim of upstream Claude support',text)
+        self.assertNotIn('@.agents',text)
     def test_published_archives_match_catalogue_and_all_file_hashes(self):
         entries={e['id']:e for e in skills.catalogue()};packs={b['id']:b for b in bundles.combinations()}
         artifacts=json.loads((skills.ROOT/'site/dist/downloads/index.json').read_text())
@@ -51,6 +63,7 @@ class BundleTests(unittest.TestCase):
             p=skills.ROOT/'site/dist/downloads'/a['file'];self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),a['sha256'])
             with zipfile.ZipFile(p) as z:
                 m=json.loads(z.read('MANIFEST.json'));b=packs[a['id']];self.assertEqual(m['combination'],b)
+                self.assertEqual(z.read('CLAUDE.md').decode(),bundles.claude_instructions(b))
                 self.assertEqual(set(z.namelist()),set(m['sha256'])|{'MANIFEST.json'})
                 for name,digest in m['sha256'].items():
                     skills.safe_path(name);self.assertEqual(hashlib.sha256(z.read(name)).hexdigest(),digest)
