@@ -1,0 +1,80 @@
+{
+  "observed_at": "2026-10-21",
+  "queries": [
+    "site:github.com skills browser agent-browser vercel-labs",
+    "site:github.com skills research scientific K-Dense",
+    "repo:vercel-labs/agent-browser",
+    "repo:K-Dense-AI/scientific-agent-skills",
+    "repo:vercel-labs/agent-skills"
+  ],
+  "selection": "Purpose-led primary-source search plus complementary skills in already pinned GSAP source. This is not an exhaustive popularity ranking.",
+  "added": [
+    {
+      "id": "agent-browser",
+      "source": "https://github.com/vercel-labs/agent-browser/blob/fd93075e55a21a47fcb36d7433361daa867a0580/skills/agent-browser/SKILL.md",
+      "stars": 44368,
+      "codex": "upstream-claimed",
+      "decision": "A small discovery stub routes agents to version-matched CLI documentation.",
+      "requirements": "Requires separately reviewed agent-browser CLI and Chromium. The stub loads instructions dynamically; not a standalone browser runtime."
+    },
+    {
+      "id": "composition-patterns",
+      "source": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/composition-patterns/SKILL.md",
+      "stars": 32753,
+      "codex": "unknown",
+      "decision": "Useful for replacing boolean-heavy component APIs with compound components and shared state.",
+      "requirements": "React project; React 19-specific examples need version checks. No runtime packages are bundled."
+    },
+    {
+      "id": "research-lookup",
+      "source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/research-lookup/SKILL.md",
+      "stars": 53459,
+      "codex": "upstream-claimed",
+      "decision": "Separates retrieval from bibliographic identity and claim verification.",
+      "requirements": "Python 3.10+, network, parallel-web-tools CLI 0.9.3 and Parallel authentication; optional OpenRouter. Queries leave your machine. Review upstream setup."
+    },
+    {
+      "id": "literature-review",
+      "source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/literature-review/SKILL.md",
+      "stars": 53459,
+      "codex": "upstream-claimed",
+      "decision": "Tracks search coverage, exclusions and the difference between records and studies.",
+      "requirements": "Python 3.10+, requests and network; optional Parallel authentication, Pandoc/XeLaTeX and OpenRouter. Upstream sibling skills and scripts require review."
+    },
+    {
+      "id": "scientific-critical-thinking",
+      "source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/scientific-critical-thinking/SKILL.md",
+      "stars": 53459,
+      "codex": "upstream-claimed",
+      "decision": "Adds a structured critique after retrieval rather than treating search results as established facts.",
+      "requirements": "Core appraisal is text-only. Optional scientific-schematics is not included and requires OpenRouter; skip figures unless separately installed."
+    },
+    {
+      "id": "gsap-react",
+      "source": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-react/SKILL.md",
+      "stars": 16731,
+      "codex": "upstream-claimed",
+      "decision": "Complements core animation with scoped refs, useGSAP and unmount cleanup.",
+      "requirements": "React, gsap and @gsap/react in the target project; optional timeline and ScrollTrigger companions."
+    },
+    {
+      "id": "gsap-timeline",
+      "source": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-timeline/SKILL.md",
+      "stars": 16731,
+      "codex": "upstream-claimed",
+      "decision": "Adds labels, timing and composition to individual GSAP tweens.",
+      "requirements": "GSAP runtime in the project; gsap-core supplies basic API guidance."
+    }
+  ],
+  "deferred": [
+    {
+      "id": "agent-browser standalone bundle",
+      "reason": "CLI-served instructions and separately installed browser runtime."
+    },
+    {
+      "id": "research-lookup and literature-review bundles",
+      "reason": "Authentication, optional services and sibling skills require upstream setup."
+    }
+  ],
+  "runtime_tests": []
+}

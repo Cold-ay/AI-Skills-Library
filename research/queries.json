@@ -1,0 +1,12 @@
+{
+  "window_days": 90,
+  "per_query": 8,
+  "queries": [
+    "\"agent skills\" stars:>=50 archived:false pushed:>={since}",
+    "\"codex\" \"skills\" stars:>=20 archived:false created:>={since}",
+    "\"SKILL.md\" stars:>=100 archived:false pushed:>={since}",
+    "\"browser\" \"skills\" stars:>=20 archived:false",
+    "\"research\" \"skills\" stars:>=20 archived:false",
+    "\"context\" \"skills\" stars:>=20 archived:false"
+  ]
+}

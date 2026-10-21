@@ -1,0 +1,210 @@
+[
+  {
+    "id": "react-motion",
+    "title": "React motion studio",
+    "summary": "Build scoped, sequenced React animations with lifecycle cleanup.",
+    "skills": [
+      "gsap-core",
+      "gsap-timeline",
+      "gsap-react"
+    ],
+    "stages": [
+      {
+        "skill": "gsap-core",
+        "title": "Establish animation primitives",
+        "task": "Choose targets and tweens; document reduced-motion alternatives."
+      },
+      {
+        "skill": "gsap-timeline",
+        "title": "Compose the sequence",
+        "task": "Create named labels and intentional timing from the approved motion brief."
+      },
+      {
+        "skill": "gsap-react",
+        "title": "Integrate and verify cleanup",
+        "task": "Use scoped refs and useGSAP; check rerenders, unmount and reduced motion."
+      }
+    ],
+    "requirements": "React, gsap and @gsap/react. Runtime library terms are separate from skill MIT licenses.",
+    "conflicts": "Core examples do not override React lifecycle guidance. Use gsap-react cleanup in React. ScrollTrigger and other plugins are outside this pack.",
+    "downloadable": true,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {
+      "gsap-core": {
+        "path": "LICENSE",
+        "blob": "fa2fe218371ee47b741db9d0fa7cf17cddc03eb8"
+      },
+      "gsap-timeline": {
+        "path": "LICENSE",
+        "blob": "fa2fe218371ee47b741db9d0fa7cf17cddc03eb8"
+      },
+      "gsap-react": {
+        "path": "LICENSE",
+        "blob": "fa2fe218371ee47b741db9d0fa7cf17cddc03eb8"
+      }
+    }
+  },
+  {
+    "id": "industrial-motion",
+    "title": "Industrial interface + motion",
+    "summary": "Apply a deliberate monochrome identity, then add restrained interaction.",
+    "skills": [
+      "nothing-design",
+      "gsap-core"
+    ],
+    "stages": [
+      {
+        "skill": "nothing-design",
+        "title": "Set the visual system",
+        "task": "Apply Nothing-inspired styling only when explicitly requested; record tokens and readable contrast."
+      },
+      {
+        "skill": "gsap-core",
+        "title": "Add functional motion",
+        "task": "Animate only interactions justified by the brief; preserve reduced-motion behavior."
+      }
+    ],
+    "requirements": "A web project and GSAP runtime. Optional external fonts need separate setup.",
+    "conflicts": "Keep nothing-design as the visual owner; GSAP only owns animation. Codex compatibility of nothing-design is unknown. Do not let motion change the typography or layout.",
+    "downloadable": true,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {
+      "nothing-design": {
+        "path": "LICENSE",
+        "blob": "409719d0280e710502107d55ed06442f5c100fae"
+      },
+      "gsap-core": {
+        "path": "LICENSE",
+        "blob": "fa2fe218371ee47b741db9d0fa7cf17cddc03eb8"
+      }
+    }
+  },
+  {
+    "id": "article-to-presentation",
+    "title": "Article to presentation",
+    "summary": "Create an editorial web article and adapt its evidence into a presentation.",
+    "skills": [
+      "beautiful-article",
+      "web-video-presentation"
+    ],
+    "stages": [
+      {
+        "skill": "beautiful-article",
+        "title": "Produce the source article",
+        "task": "Write the approved article with traceable claims and export a stable content outline."
+      },
+      {
+        "skill": "web-video-presentation",
+        "title": "Adapt to presentation scenes",
+        "task": "Use that outline as input; review story, scene outline and rendered presentation at separate checkpoints."
+      }
+    ],
+    "requirements": "Vite, React and TypeScript for generated projects. Optional TTS requires separate services; source skills are Chinese.",
+    "conflicts": "Pass an article/outline between stages, not conflicting project scaffolds. Use separate output directories. Adapt upstream agent/reviewer instructions to your host; do not assume subagents or voice services exist.",
+    "downloadable": true,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {
+      "beautiful-article": {
+        "path": "LICENSE",
+        "blob": "14fac913ccf80234b1848540089a3bbcb6e5283d"
+      },
+      "web-video-presentation": {
+        "path": "LICENSE",
+        "blob": "14fac913ccf80234b1848540089a3bbcb6e5283d"
+      }
+    }
+  },
+  {
+    "id": "evidence-to-article",
+    "title": "Evidence to editorial report",
+    "summary": "Evaluate provided evidence before turning it into a readable web report.",
+    "skills": [
+      "scientific-critical-thinking",
+      "beautiful-article"
+    ],
+    "stages": [
+      {
+        "skill": "scientific-critical-thinking",
+        "title": "Appraise supplied evidence",
+        "task": "Create a source/claim/limitation table from user-provided papers; core appraisal only, no optional schematic service."
+      },
+      {
+        "skill": "beautiful-article",
+        "title": "Publish the bounded conclusions",
+        "task": "Use the approved evidence table to build an editorial article; keep uncertainty, references and missing evidence visible."
+      }
+    ],
+    "requirements": "User-provided sources; frontend tooling for article output. No database retrieval, paid figures or TTS is included.",
+    "conflicts": "Critical-thinking owns claim strength; article design must not inflate certainty. Optional sibling skills are excluded. This is not a clinical recommendation workflow.",
+    "downloadable": true,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {
+      "scientific-critical-thinking": {
+        "path": "LICENSE.md",
+        "blob": "eb246475fd5a66b9bb56176f3a718984632dd98d"
+      },
+      "beautiful-article": {
+        "path": "LICENSE",
+        "blob": "14fac913ccf80234b1848540089a3bbcb6e5283d"
+      }
+    }
+  },
+  {
+    "id": "react-component-review",
+    "title": "React architecture review",
+    "summary": "Plan composable components, then review rendering performance.",
+    "skills": [
+      "composition-patterns",
+      "react-best-practices"
+    ],
+    "stages": [
+      {
+        "skill": "composition-patterns",
+        "title": "Define component boundaries",
+        "task": "Replace boolean-heavy APIs using compound components and explicit state ownership."
+      },
+      {
+        "skill": "react-best-practices",
+        "title": "Audit performance",
+        "task": "Review the resulting components for rendering and loading problems; retain approved public APIs."
+      }
+    ],
+    "requirements": "React project. Install each skill using its pinned setup instructions.",
+    "conflicts": "Architecture owns the component contract; performance changes must preserve it. Recipe only: complete redistributable license evidence for every member is not yet captured.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "scholarly-research",
+    "title": "Scholarly research pipeline",
+    "summary": "Plan a search, gather evidence, then critically appraise the findings.",
+    "skills": [
+      "literature-review",
+      "research-lookup",
+      "scientific-critical-thinking"
+    ],
+    "stages": [
+      {
+        "skill": "literature-review",
+        "title": "Define the review protocol",
+        "task": "Define databases, date range, inclusion/exclusion and screening log before searching."
+      },
+      {
+        "skill": "research-lookup",
+        "title": "Collect a bounded evidence packet",
+        "task": "Collect source excerpts with explicit provider consent; do not confuse retrieval with claim verification."
+      },
+      {
+        "skill": "scientific-critical-thinking",
+        "title": "Appraise claims",
+        "task": "Evaluate the included full texts and document bias, uncertainties and applicability."
+      }
+    ],
+    "requirements": "Upstream installation, Python 3.10+, network and Parallel authentication; optional OpenRouter/PDF tooling.",
+    "conflicts": "Literature-review owns the protocol. Research-lookup is a retrieval assistant, not a systematic-review engine. No claim of exhaustive coverage. Recipe only because service and sibling dependencies need upstream setup.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  }
+]

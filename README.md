@@ -2,7 +2,7 @@
 
 An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, video, coding, token/context efficiency, research/automation and skill engineering.
 
-**21 curated entries · English documentation · Manual reports · No scheduled updates**
+**28 curated entries · 6 combinations · 4 downloadable packs · English documentation · Manual reports · No scheduled updates**
 
 ## Discover a skill
 
@@ -80,4 +80,20 @@ python3 site/build.py
 
 Tests cover catalogue invariants, safe installation, integrity failure rollback, report evidence and safe website generation. See [validation notes](docs/VALIDATION.md).
 
-Official reference: [Build skills](https://learn.chatgpt.com/docs/build-skills). Third-party projects retain their own licenses. This library stores original curation notes, source links and file manifests rather than vendoring complete third-party skills.
+Official reference: [Build skills](https://learn.chatgpt.com/docs/build-skills). Third-party projects retain their own licenses. This library stores original curation notes, source links and file manifests and reviewed downloadable packs with unchanged third-party files and their licenses.
+
+## Combinations and downloads
+
+Browse [workflow combinations](https://ai-skill-library.vercel.app/#combinations): four downloadable packs and two dependency-aware recipes. Each explains its stages, handoff artifacts, prerequisites, conflicts and evidence limits. Packs include pinned original skill files, MIT license texts, provenance manifests and a `combination-*` orchestration skill. They are static integration proposals; no end-to-end Codex runtime test is claimed.
+
+```sh
+python3 bundles.py list
+python3 bundles.py show react-motion
+python3 bundles.py call react-motion
+# After source/license review, build a fresh archive (never runs upstream code):
+python3 bundles.py build react-motion --out /tmp/react-motion-new.zip --reviewed
+```
+
+Review and extract downloaded ZIPs in a staging directory. Copy `.agents/skills` into a project after checking existing folders; install runtime dependencies separately. Start a new Codex session and invoke `$combination-react-motion <your task>`. Check archive checksums in `site/dist/downloads/index.json`.
+
+For your own discovery, use the [research playbook](docs/RESEARCH.md), [editable search configuration](research/queries.json), and [review template](research/review-template.md). The [expansion report](reports/2026-10-21-combinations.md) records seven additional skills, decisions and source limitations. Collection remains manual.

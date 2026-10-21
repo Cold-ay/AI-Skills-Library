@@ -1,6 +1,7 @@
 """Read-only manual discovery: data is never executed or auto-promoted to catalogue."""
 from datetime import datetime, timedelta, timezone
 import json
+import argparse
 import os
 from pathlib import Path
 import re
@@ -21,15 +22,22 @@ def api(path):
             if e.code not in (429,500,502,503,504) or attempt==2:raise
             time.sleep(2**attempt)
 
-def collect(get=api, now=None):
+def collect(get=api, now=None, config=None):
     now=now or datetime.now(timezone(timedelta(hours=8)))
     since=(now-timedelta(days=90)).date().isoformat()
     queries=[f'"agent skills" stars:>=50 archived:false pushed:>={since}',f'"codex" "skills" stars:>=20 archived:false created:>={since}',f'"SKILL.md" stars:>=100 archived:false pushed:>={since}']
-    result={'observed_at':now.isoformat(),'queries':queries,'errors':[],'repositories':[]}
+    per_query=8
+    if config is not None:
+        days=config['window_days'];per_query=config['per_query']
+        if type(days) is not int or not 1<=days<=3650 or type(per_query) is not int or not 1<=per_query<=100:raise ValueError('Invalid query limits')
+        since=(now-timedelta(days=days)).date().isoformat()
+        if not isinstance(config['queries'],list) or not 1<=len(config['queries'])<=20:raise ValueError('Expected 1–20 queries')
+        queries=[q.format(since=since) for q in config['queries']]
+    result={'per_query':per_query,'observed_at':now.isoformat(),'queries':queries,'errors':[],'repositories':[]}
     selected={e['repo']:{'curated'} for e in catalogue()}
     for query in queries:
         try:
-            data=get('search/repositories?'+urlencode({'q':query,'sort':'stars','order':'desc','per_page':8}))
+            data=get('search/repositories?'+urlencode({'q':query,'sort':'stars','order':'desc','per_page':per_query}))
             if data.get('incomplete_results'):result['errors'].append('Incomplete search: '+query)
             for item in data['items']:selected.setdefault(item['full_name'],set()).add(query)
         except (HTTPError,URLError,TimeoutError,ValueError,KeyError) as exc:result['errors'].append('Search failed: '+query+' ('+type(exc).__name__+(' '+str(exc.code) if isinstance(exc, HTTPError) else '')+')')
@@ -59,15 +67,23 @@ def render(s,previous=None):
     candidates=[r for r in s['repositories'] if r['repo'] not in known and r['skill_paths'] and not r['archived'] and r['license'] not in ('unknown','NOASSERTION')]
     for r in sorted(candidates,key=lambda x:x['stars'],reverse=True)[:5]:lines.append(f"- [{r['repo']}](https://github.com/{r['repo']}/tree/{r['commit']}): {r['stars']} stars; {r['skill_count']} skill files; {cell(r['license'])}; created {r['created_at']}. Codex unknown. Trial: inspect one skill and dependencies, then test in a disposable project.")
     if not candidates:lines.append('- No candidates met this limited screen.')
-    lines+=['','## Review gate','','- Confirm usefulness, provenance, license and dependencies at the pinned commit.','- Inspect scripts, network calls, hooks, credentials and sibling references.','- Record Codex version, setup and a reproducible smoke test before claiming runtime verification.','- Update catalogue pins in a separate reviewed change; never execute a discovered installer.','','## Search coverage','']+['- `'+q+'` (top 8)' for q in s['queries']]
+    lines+=['','## Review gate','','- Confirm usefulness, provenance, license and dependencies at the pinned commit.','- Inspect scripts, network calls, hooks, credentials and sibling references.','- Record Codex version, setup and a reproducible smoke test before claiming runtime verification.','- Update catalogue pins in a separate reviewed change; never execute a discovered installer.','','## Search coverage','']+['- `'+q+'` (top '+str(s.get('per_query',8))+')' for q in s['queries']]
     lines+=['','Bounded search, not an exhaustive ranking. Star growth requires a prior dated snapshot.','','## Collection errors','']+(['- '+cell(e) for e in s['errors']] or ['None.'])
     return '\n'.join(lines)+'\n'
 
 def main():
-    s=collect();out=ROOT/'reports';out.mkdir(exist_ok=True);date=s['observed_at'][:10]
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--config',type=Path);parser.add_argument('--output',type=Path)
+    args=parser.parse_args()
+    config=json.loads(args.config.read_text()) if args.config else None
+    s=collect(config=config);out=ROOT/'reports';out.mkdir(exist_ok=True);date=s['observed_at'][:10]
     older=sorted(p for p in out.glob('????-??-??.json') if p.stem<date)
     previous=json.loads(older[-1].read_text()) if older else None
-    (out/(date+'.json')).write_text(json.dumps(s,indent=2)+'\n');(out/(date+'.md')).write_text(render(s,previous))
+    prefix=args.output or out/(date+'-discovery-'+datetime.now().strftime('%H%M%S'))
+    prefix.parent.mkdir(parents=True,exist_ok=True)
+    json_path=Path(str(prefix)+'.json');md_path=Path(str(prefix)+'.md')
+    if json_path.exists() or md_path.exists():parser.exit(1,'Refusing to overwrite an existing snapshot. Choose another --output.\n')
+    with json_path.open('x') as f:f.write(json.dumps(s,indent=2)+'\n')
+    with md_path.open('x') as f:f.write(render(s,previous))
     print(f"Saved {date}: {len(s['repositories'])} repositories, {len(s['errors'])} errors")
     if s['errors']:raise SystemExit(1)
 if __name__=='__main__':main()

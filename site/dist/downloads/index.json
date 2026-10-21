@@ -1,0 +1,30 @@
+[
+  {
+    "id": "react-motion",
+    "file": "react-motion.zip",
+    "sha256": "75ea04c514460a92bcaadfb6b7d661231d2ff2f66f3a950cc5afeebe178178b1",
+    "bytes": 16238,
+    "files": 9
+  },
+  {
+    "id": "industrial-motion",
+    "file": "industrial-motion.zip",
+    "sha256": "a82122d94444bc995048fbb00aa81d0a6d82272dd687575542a12eaef873eda4",
+    "bytes": 22550,
+    "files": 10
+  },
+  {
+    "id": "article-to-presentation",
+    "file": "article-to-presentation.zip",
+    "sha256": "48f4a690ce3d43f44dae8a45a25b72638a71ae066852b931ac7c12391553f033",
+    "bytes": 332734,
+    "files": 158
+  },
+  {
+    "id": "evidence-to-article",
+    "file": "evidence-to-article.zip",
+    "sha256": "31f8993d934171a6325b097207f742aba033ae048465c494d4298bb7caf80363",
+    "bytes": 211501,
+    "files": 72
+  }
+]

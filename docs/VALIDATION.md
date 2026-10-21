@@ -28,3 +28,11 @@ Sites private deployment succeeded on 2026-10-21. Deployed source commit: 061aa1
 ## AI Skill Library redesign template
 
 The current redesign is local-only and not deployed. It applies the repository’s Frontend Design skill and current Vercel Web Design Guidelines. Existing 18 tests and JavaScript syntax validation pass. Browser checks cover task switching, category navigation, shareable search state and reload persistence. Current branding is AI Skill Library. Vercel static configuration is prepared for later user deployment; no Vercel linking, deployment or Git push was performed for this revision.
+
+## Combinations and research expansion
+
+- Current catalogue: 28 skills, six combinations, four downloadable ZIPs and three articles.
+- 24 unit tests passed. New tests verify bundle member/catalogue agreement, every upstream Git blob hash, license hashes, SHA-256 manifests, non-executable file modes, deterministic ZIP bytes, corrupt-download rollback and overwrite rejection. Configurable discovery limits and query substitution are covered.
+- Browser preview verified workflow search, requirements expansion, a real React motion ZIP download and navigation to the linked individual skill.
+- Research used public primary-source searches, preserved GitHub API metadata and fixed Git checkouts. No newly discovered scripts or skill workflows ran. Package validation does not establish end-to-end Codex compatibility.
+- The earlier Vercel preparation note above is historical. The production site is now Git-linked at `https://ai-skill-library.vercel.app`; pushes to main trigger its existing deployment integration.

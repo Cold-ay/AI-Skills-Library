@@ -38,3 +38,9 @@ Open http://localhost:8765. Article and library filters use hash routes and work
 The current design is named AI Skill Library. Existing historical Sites identity remains in site/.openai/hosting.json, but it is not used by the Vercel setup or the exported static template.
 
 For later Vercel deployment, use the committed generated files under site/dist/ and the root vercel.json configuration. See [Vercel setup](VERCEL.md). The website has no runtime API, backend or environment-variable requirement. Rebuild after changing repository reports or the catalogue, then include the generated data.js in your eventual commit.
+
+## Combination packs
+
+`catalog/combinations.json` defines stage owners, handoff tasks, requirements, conflict handling and exact license blobs. `bundles.py` produces inert, deterministic ZIPs from pinned GitHub files after explicit source review. The website serves checked-in archives from `site/dist/downloads/`; `index.json` records their sizes and SHA-256 checksums. Update an archive and its index together after reviewing any pin changes. `site/build.py` rejects checksum drift. Unit tests also compare archive members, provenance and license hashes with the current catalogue.
+
+The Combinations page provides workflow search, individual skill links, setup details and downloads. Recipe-only workflows intentionally have no ZIP or synthetic callable integration skill. The research playbook, configuration and review template live in `docs/RESEARCH.md` and `research/`. New manual collector runs use unique filenames to preserve previous snapshots.

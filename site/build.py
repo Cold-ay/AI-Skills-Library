@@ -3,6 +3,10 @@ from html import escape
 import json
 from pathlib import Path
 import re
+import hashlib
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from bundles import combinations
 from urllib.parse import urlparse
 
 HERE=Path(__file__).resolve().parent
@@ -52,8 +56,15 @@ def build():
     for file in sorted((ROOT/'reports').glob('*.md'),key=lambda p:(p.stem[:10], 'video-review' in p.stem, p.stem),reverse=True):
         source=file.read_text();title=source.splitlines()[0].lstrip('# ')
         video='video-review' in file.stem
-        posts.append(dict(slug=file.stem,title=title,date=file.stem[:10],category='Source review' if video else 'Discovery',readTime=max(1,len(source.split())//200),excerpt='Ten recommendations, nine additions, and the evidence behind each decision.' if video else 'The preserved discovery snapshot: real repository stars, candidate projects and collection limits.',html=markdown('\n'.join(source.splitlines()[1:])),source=f'https://github.com/Cold-ay/AI-Skills-Library/blob/main/reports/{file.name}',markdown=source))
-    payload=json.dumps(dict(skills=skills,posts=posts),ensure_ascii=True)
+        combo='combinations' in file.stem
+        first_paragraph=next((line.strip() for line in source.splitlines()[1:] if line.strip() and not line.startswith(('#','|','-','```'))),'Read the findings, sources and limitations in this report.')
+        posts.append(dict(slug=file.stem,title=title,date=file.stem[:10],category='Source review' if video else 'Discovery',readTime=max(1,len(source.split())//200),excerpt='Seven new skills, six workflow combinations and a reusable primary-source research method.' if combo else 'Ten recommendations, nine additions, and the evidence behind each decision.' if video else 'The preserved discovery snapshot: real repository stars, candidate projects and collection limits.' if file.stem=='2026-10-21' else first_paragraph[:240],html=markdown('\n'.join(source.splitlines()[1:])),source=f'https://github.com/Cold-ay/AI-Skills-Library/blob/main/reports/{file.name}',markdown=source))
+    packs=combinations()
+    artifacts=json.loads((dest/'downloads/index.json').read_text())
+    for a in artifacts:
+        path=dest/'downloads'/a['file']
+        if hashlib.sha256(path.read_bytes()).hexdigest()!=a['sha256']:raise ValueError('Bundle archive integrity mismatch')
+    payload=json.dumps(dict(skills=skills,posts=posts,combinations=packs,downloads=artifacts),ensure_ascii=True)
     (dest/'data.js').write_text('window.AI_SKILL_LIBRARY = '+payload+';\n')
     print(f'Built {len(posts)} articles and {len(skills)} skill records in {dest}')
     return posts

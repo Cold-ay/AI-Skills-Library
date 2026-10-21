@@ -1,5 +1,5 @@
 'use strict';
-const {skills,posts}=window.AI_SKILL_LIBRARY;
+const {skills,posts,combinations,downloads}=window.AI_SKILL_LIBRARY;
 const names={'website-ui':'Website & UI','video':'Video & storytelling','coding':'Coding','token-context':'Token & context','research-automation':'Research & automation','skill-engineering':'Skill engineering'};
 const statuses={'verified-static':'Official static evidence','upstream-claimed':'Upstream claims support','unknown':'Unknown compatibility'};
 const $=s=>document.querySelector(s);
@@ -22,7 +22,7 @@ function renderSkills(){const query=$('#skill-search').value.trim().toLowerCase(
 for(const id of ['skill-search','category-select','compat-select'])$('#'+id).addEventListener(id==='skill-search'?'input':'change',()=>{renderSkills();const category=$('#category-select').value;const params=new URLSearchParams();if($('#skill-search').value)params.set('q',$('#skill-search').value);if($('#compat-select').value!=='all')params.set('evidence',$('#compat-select').value);history.replaceState(null,'','#library'+(category==='all'?'':'/'+category)+(params.size?'?'+params:''));});
 function article(slug){const p=posts.find(p=>p.slug===slug);const container=$('#article');container.replaceChildren();if(!p){container.append(el('h1','','Report not found'),el('p','','Return to the reports to choose an available report.'));return;}
 const head=el('header','article-header');head.append(el('span','tag',p.category),el('h1','',p.title));const meta=el('div','meta');meta.append(el('span','',p.date),el('span','',p.readTime+' minute read'),el('span','','AI Skill Library'));head.append(meta);const actions=el('div','article-actions');actions.append(link(p.source,'View Markdown source ↗'));const exportButton=el('button','','Download report ↓');exportButton.type='button';exportButton.addEventListener('click',()=>download(p.slug+'.md',p.markdown));actions.append(exportButton);head.append(actions);const body=el('article','prose');body.innerHTML=p.html;container.append(head,body);document.title=p.title+' — AI Skill Library';}
-function route(){const value=location.hash.slice(1)||'home';const [path,query='']=value.split('?');const params=new URLSearchParams(query);const [page,key]=path.split('/');const known=['home','reports','library','article','draft','about'];const target=known.includes(page)?page:'home';for(const view of document.querySelectorAll('.view'))view.hidden=view.id!==target+'-view';for(const a of document.querySelectorAll('[data-nav]')){const active=a.dataset.nav===(target==='article'?'reports':target);a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');}document.title='AI Skill Library';if(target==='article')article(key);if(target==='library'){$('#category-select').value=names[key]?key:'all';$('#skill-search').value=params.get('q')||'';$('#compat-select').value=statuses[params.get('evidence')]?params.get('evidence'):'all';renderSkills();}window.scrollTo(0,0);}
+function route(){const value=location.hash.slice(1)||'home';const [path,query='']=value.split('?');const params=new URLSearchParams(query);const [page,key]=path.split('/');const known=['home','reports','library','article','draft','about','combinations'];const target=known.includes(page)?page:'home';for(const view of document.querySelectorAll('.view'))view.hidden=view.id!==target+'-view';for(const a of document.querySelectorAll('[data-nav]')){const active=a.dataset.nav===(target==='article'?'reports':target);a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');}document.title='AI Skill Library';if(target==='article')article(key);if(target==='library'){$('#category-select').value=names[key]?key:'all';$('#skill-search').value=params.get('q')||'';$('#compat-select').value=statuses[params.get('evidence')]?params.get('evidence'):'all';renderSkills();}window.scrollTo(0,0);}
 try{const stored=JSON.parse(localStorage.getItem('ai-skill-library-draft') || localStorage.getItem('fieldnotes-draft')||'null');if(stored){$('#draft-title').value=String(stored.title||'');$('#draft-body').value=String(stored.body||'');$('#draft-status').textContent='Your previous browser draft has been restored.';}}catch{$('#draft-status').textContent='Browser storage unavailable. Export your draft to keep it.';}
 $('#draft-form').addEventListener('submit',e=>{e.preventDefault();try{localStorage.setItem('ai-skill-library-draft',JSON.stringify({title:$('#draft-title').value,body:$('#draft-body').value}));$('#draft-status').textContent='Saved in this browser. Export Markdown to add it to the repository.';}catch{$('#draft-status').textContent='Could not save to browser storage. Use Export .md to keep your work.';}});
 $('#export-draft').addEventListener('click',()=>{if(!$('#draft-form').reportValidity())return;const title=$('#draft-title').value.trim(),body=$('#draft-body').value;const date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Hong_Kong',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());const slug=title.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,70)||'report';download(date+'-'+slug+'.md','# '+title+'\n\n'+body+'\n');$('#draft-status').textContent='Markdown exported. Add it to reports/ and rebuild to publish.';});
@@ -43,3 +43,24 @@ let draftDirty=false;
 for(const field of ['draft-title','draft-body'])$('#'+field).addEventListener('input',()=>{draftDirty=true;});
 $('#draft-form').addEventListener('submit',()=>{if($('#draft-status').textContent.startsWith('Saved in this browser'))draftDirty=false;});
 window.addEventListener('beforeunload',event=>{if(draftDirty){event.preventDefault();event.returnValue='';}});
+
+function renderCombinations(){
+ const query=$('#bundle-search').value.trim().toLowerCase();
+ const found=combinations.filter(b=>JSON.stringify(b).toLowerCase().includes(query));
+ $('#bundle-results').textContent=found.length+(found.length===1?' workflow · ':' workflows · ')+found.filter(b=>b.downloadable).length+' downloadable '+(found.filter(b=>b.downloadable).length===1?'pack':'packs');
+ $('#combinations').replaceChildren();
+ if(!found.length)$('#combinations').append(el('p','empty','No workflows match. Try a task such as React, article or research.'));
+ for(const b of found){
+  const card=el('article','skill-card combination-card');
+  card.append(el('span','tag',b.downloadable?'Downloadable workflow':'Recipe · upstream setup'),el('h2','',b.title),el('p','',b.summary));
+  const list=el('ol','combination-stages');
+  for(const stage of b.stages){const li=el('li');const skill=skills.find(s=>s.id===stage.skill);li.append(el('strong','',stage.title),el('p','',stage.task),link('#library?q='+encodeURIComponent(skill.id),skill.id+' ↗'),el('span','badge '+skill.codex.status,statuses[skill.codex.status]));list.append(li);}
+  card.append(list);
+  const details=el('details');details.append(el('summary','','Requirements & conflict handling'),el('p','',b.requirements),el('p','',b.conflicts),el('p','',b.compatibility));card.append(details);
+  const artifact=downloads.find(d=>d.id===b.id);
+  if(b.downloadable&&artifact){const a=link('downloads/'+artifact.file,'Download ZIP ↓','button primary');a.download=artifact.file;const button=el('button','','Copy workflow call');button.type='button';button.addEventListener('click',()=>copy('$combination-'+b.id+' <your task>',button));card.append(a,button,el('small','bundle-integrity',Math.ceil(artifact.bytes/1024)+' KB · '+artifact.files+' files · SHA-256 '+artifact.sha256));card.append(el('p','','Review the ZIP, stage extraction, then copy .agents/skills into your project without overwriting existing folders. Dependencies are installed separately.'));}
+  else card.append(el('code','','python3 bundles.py show '+b.id));
+  $('#combinations').append(card);
+ }
+}
+$('#bundle-search').addEventListener('input',renderCombinations);renderCombinations();

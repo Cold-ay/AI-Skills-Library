@@ -3547,5 +3547,408 @@
     ],
     "discovered_from": "https://www.youtube.com/shorts/33cXtiB5v_I",
     "video_direct_mention": false
+  },
+  {
+    "id": "agent-browser",
+    "invocation": "agent-browser",
+    "category": "research-automation",
+    "summary": "Browser automation and exploratory web testing",
+    "reason": "A small discovery stub routes agents to version-matched CLI documentation.",
+    "requirements": "Requires separately reviewed agent-browser CLI and Chromium. The stub loads instructions dynamically; not a standalone browser runtime.",
+    "repo": "vercel-labs/agent-browser",
+    "path": "skills/agent-browser",
+    "commit": "fd93075e55a21a47fcb36d7433361daa867a0580",
+    "stars": 44368,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "reports/evidence/2026-10-21-combinations/agent-browser-metadata.json",
+    "source": "https://github.com/vercel-labs/agent-browser/blob/fd93075e55a21a47fcb36d7433361daa867a0580/skills/agent-browser/SKILL.md",
+    "license": {
+      "spdx_id": "Apache-2.0"
+    },
+    "license_evidence": [
+      "https://github.com/vercel-labs/agent-browser/blob/fd93075e55a21a47fcb36d7433361daa867a0580/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/vercel-labs/agent-browser/blob/fd93075e55a21a47fcb36d7433361daa867a0580/README.md",
+        "https://github.com/vercel-labs/agent-browser/blob/fd93075e55a21a47fcb36d7433361daa867a0580/skills/agent-browser/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned instructions and dependencies inspected; no third-party scripts executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "dc9bb54a22e9cd7ad9c982a0fe5ae2e204751b12"
+      }
+    ]
+  },
+  {
+    "id": "composition-patterns",
+    "invocation": "vercel-composition-patterns",
+    "category": "coding",
+    "summary": "Composable React component architecture",
+    "reason": "Useful for replacing boolean-heavy component APIs with compound components and shared state.",
+    "requirements": "React project; React 19-specific examples need version checks. No runtime packages are bundled.",
+    "repo": "vercel-labs/agent-skills",
+    "path": "skills/composition-patterns",
+    "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+    "stars": 32753,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "reports/evidence/2026-10-21-combinations/agent-skills-metadata.json",
+    "source": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/composition-patterns/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/composition-patterns/SKILL.md"
+    ],
+    "codex": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/README.md",
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/composition-patterns/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned instructions and dependencies inspected; no third-party scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "blob": "558bf9aa1e36db2161f1633c9bfae14a819f0508"
+      },
+      {
+        "path": "README.md",
+        "blob": "01f359b0e79ce544d1463057be54946e50d62bcd"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "d07025bf943345bc1cf15eb923594f889ff881f0"
+      },
+      {
+        "path": "metadata.json",
+        "blob": "3470b744190af044373abbfe80d94630c0cc6041"
+      },
+      {
+        "path": "rules/_sections.md",
+        "blob": "f921dd41b53e4d847f25a6b3eca25a4e8857db44"
+      },
+      {
+        "path": "rules/_template.md",
+        "blob": "119a30167f162c439f05e73c63044c590dff645c"
+      },
+      {
+        "path": "rules/architecture-avoid-boolean-props.md",
+        "blob": "ccee19ce495b9d7fdf08867db3c6b6282006312e"
+      },
+      {
+        "path": "rules/architecture-compound-components.md",
+        "blob": "e5e3043cb5a81b83dce0389848b828455f00854f"
+      },
+      {
+        "path": "rules/patterns-children-over-render-props.md",
+        "blob": "d4345ee30aea5f1b11815251edca7ebd0aefe2e2"
+      },
+      {
+        "path": "rules/patterns-explicit-variants.md",
+        "blob": "56e32e8bee5e5768f747db4e9718a6c2b54bfce5"
+      },
+      {
+        "path": "rules/react19-no-forwardref.md",
+        "blob": "e0d8f8a76f14888f2fafc8cccd3d9395e4711d0d"
+      },
+      {
+        "path": "rules/state-context-interface.md",
+        "blob": "d961bede0c6c6e318f6ba3aca9b5dfcdb768d8f9"
+      },
+      {
+        "path": "rules/state-decouple-implementation.md",
+        "blob": "71a5afaa7d7078c262c92d32c3b97723de62f99f"
+      },
+      {
+        "path": "rules/state-lift-state.md",
+        "blob": "d7fe27b54933135f9050365b6c2001c101029d51"
+      }
+    ]
+  },
+  {
+    "id": "research-lookup",
+    "invocation": "research-lookup",
+    "category": "research-automation",
+    "summary": "Build a scholarly evidence packet",
+    "reason": "Separates retrieval from bibliographic identity and claim verification.",
+    "requirements": "Python 3.10+, network, parallel-web-tools CLI 0.9.3 and Parallel authentication; optional OpenRouter. Queries leave your machine. Review upstream setup.",
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/research-lookup",
+    "commit": "593377bb048752abb0152deab9fbb1083a6087df",
+    "stars": 53459,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "reports/evidence/2026-10-21-combinations/scientific-agent-skills-metadata.json",
+    "source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/research-lookup/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/LICENSE.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/README.md",
+        "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/research-lookup/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned instructions and dependencies inspected; no third-party scripts executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "README.md",
+        "blob": "a4c64fbe7c0b7305a4bb3a66e8c425f745122e23"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "a337950e3425001a2edc93a531fc420d62b65db7"
+      },
+      {
+        "path": "references/api-contracts.md",
+        "blob": "e4b942f9dfcd411a52cabb3d2bc704efe2ee5576"
+      },
+      {
+        "path": "scripts/manuscript_packet.py",
+        "blob": "fd49e0d7a3039165045965b5908ef02043d74078"
+      },
+      {
+        "path": "scripts/research_lookup.py",
+        "blob": "f4a9153b478ba2ea50adc0216d55517a7f655656"
+      }
+    ]
+  },
+  {
+    "id": "literature-review",
+    "invocation": "literature-review",
+    "category": "research-automation",
+    "summary": "Reproducible literature search and screening",
+    "reason": "Tracks search coverage, exclusions and the difference between records and studies.",
+    "requirements": "Python 3.10+, requests and network; optional Parallel authentication, Pandoc/XeLaTeX and OpenRouter. Upstream sibling skills and scripts require review.",
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/literature-review",
+    "commit": "593377bb048752abb0152deab9fbb1083a6087df",
+    "stars": 53459,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "reports/evidence/2026-10-21-combinations/scientific-agent-skills-metadata.json",
+    "source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/literature-review/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/LICENSE.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/README.md",
+        "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/literature-review/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned instructions and dependencies inspected; no third-party scripts executed."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "5178dce6419cee412155e7b9dd523d5b2ef703f5"
+      },
+      {
+        "path": "assets/review_template.md",
+        "blob": "d4188470de723bc75d617b8aaf2fb47a0b65dce4"
+      },
+      {
+        "path": "references/citation_styles.md",
+        "blob": "a12c1f8a6dc1a93abfe3c7d74b198062176ce3cf"
+      },
+      {
+        "path": "references/core_workflow.md",
+        "blob": "6a0bab11cd67d05dd683576f512b2045d85c826b"
+      },
+      {
+        "path": "references/database_strategies.md",
+        "blob": "ed342f27145805ad585ba260c75d60678b60ac20"
+      },
+      {
+        "path": "references/example_workflow.md",
+        "blob": "521308758c8847254edb1d62ad242e982f00dbe5"
+      },
+      {
+        "path": "references/search_and_citation.md",
+        "blob": "ed27ee9d24c9cef3381cc414834dda7d69a4a019"
+      },
+      {
+        "path": "scripts/generate_pdf.py",
+        "blob": "dea8d556e808c006c911131ee761b2bd1ae8ecc0"
+      },
+      {
+        "path": "scripts/generate_schematic.py",
+        "blob": "10aacec40261d1dfb4c51c406e1d12590ab865bb"
+      },
+      {
+        "path": "scripts/generate_schematic_ai.py",
+        "blob": "a7f586678624e23fb70b271188b70fa539d8fc99"
+      },
+      {
+        "path": "scripts/search_databases.py",
+        "blob": "d14e3202055844ea47a4d19b8b5ceeb4321dceab"
+      },
+      {
+        "path": "scripts/verify_citations.py",
+        "blob": "39fb278f7896e275784f7ea23ba395b1929863e5"
+      }
+    ]
+  },
+  {
+    "id": "scientific-critical-thinking",
+    "invocation": "scientific-critical-thinking",
+    "category": "research-automation",
+    "summary": "Appraise evidence, bias and scientific claims",
+    "reason": "Adds a structured critique after retrieval rather than treating search results as established facts.",
+    "requirements": "Core appraisal is text-only. Optional scientific-schematics is not included and requires OpenRouter; skip figures unless separately installed.",
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/scientific-critical-thinking",
+    "commit": "593377bb048752abb0152deab9fbb1083a6087df",
+    "stars": 53459,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "reports/evidence/2026-10-21-combinations/scientific-agent-skills-metadata.json",
+    "source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/scientific-critical-thinking/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/LICENSE.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/README.md",
+        "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/scientific-critical-thinking/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned instructions and dependencies inspected; no third-party scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "2a2fc151b5b13e4e11ece7410f21a14d5b25e30d"
+      },
+      {
+        "path": "references/common_biases.md",
+        "blob": "0acba93293aaf6df629cc00212c9e86a184efdb0"
+      },
+      {
+        "path": "references/core_capabilities.md",
+        "blob": "ca7fec36594abd20921d2aa2ae15e9363d3d58b1"
+      },
+      {
+        "path": "references/evidence_hierarchy.md",
+        "blob": "e4b4946886cee0b1e35b24309e162e0f9ca6f14b"
+      },
+      {
+        "path": "references/experimental_design.md",
+        "blob": "4be76ae49eb6339e6a72c8d3ee69338c4ea3e347"
+      },
+      {
+        "path": "references/logical_fallacies.md",
+        "blob": "336a0407f4397f8ad9b218fc4156ef3473d19f70"
+      },
+      {
+        "path": "references/review_sources.md",
+        "blob": "0241f4aa470f86473cd8be196edeff07a274b261"
+      },
+      {
+        "path": "references/scientific_method.md",
+        "blob": "4dee3644c01de3bec9250d19efa58a0a13cbee59"
+      },
+      {
+        "path": "references/statistical_pitfalls.md",
+        "blob": "1e78cb2d3c6873e7d8289009cc7c9fb772def542"
+      }
+    ]
+  },
+  {
+    "id": "gsap-react",
+    "invocation": "gsap-react",
+    "category": "website-ui",
+    "summary": "React animation lifecycle and cleanup",
+    "reason": "Complements core animation with scoped refs, useGSAP and unmount cleanup.",
+    "requirements": "React, gsap and @gsap/react in the target project; optional timeline and ScrollTrigger companions.",
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-react",
+    "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "stars": 16731,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "reports/2026-10-21-video-review.json",
+    "source": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-react/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/README.md",
+        "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-react/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned instructions and dependencies inspected; no third-party scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "e2e51805457943cd4982fe792b858c14fa2c3c8f"
+      }
+    ]
+  },
+  {
+    "id": "gsap-timeline",
+    "invocation": "gsap-timeline",
+    "category": "website-ui",
+    "summary": "Sequence animation with reusable timelines",
+    "reason": "Adds labels, timing and composition to individual GSAP tweens.",
+    "requirements": "GSAP runtime in the project; gsap-core supplies basic API guidance.",
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-timeline",
+    "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "stars": 16731,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "reports/2026-10-21-video-review.json",
+    "source": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-timeline/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/README.md",
+        "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-timeline/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned instructions and dependencies inspected; no third-party scripts executed."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "1fed372b0e5276b2a207d80bc23f81180a0dff55"
+      }
+    ]
   }
 ]

@@ -17,7 +17,7 @@ STATUSES = {'verified-static', 'upstream-claimed', 'unknown'}
 
 def safe_path(value):
     p = PurePosixPath(value)
-    if not value or p.is_absolute() or '..' in p.parts or '\\' in value or str(p) != value:
+    if not value or value == '.' or p.is_absolute() or '..' in p.parts or '\\' in value or str(p) != value:
         raise ValueError('Unsafe relative path: ' + value)
     return p
 
