@@ -2,7 +2,7 @@
 
 An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, video, coding, token/context efficiency, research/automation, skill engineering and writing/editing.
 
-**30 curated entries · 6 combinations · 4 downloadable packs · English documentation · Manual reports · No scheduled updates**
+**37 curated entries · 14 combinations · 4 downloadable packs · English documentation · Manual reports · No scheduled updates**
 
 ## Discover a skill
 
@@ -17,7 +17,7 @@ python3 skills.py list --query animation
 python3 skills.py show taste-skill
 ```
 
-[Browse the catalogue](docs/CATALOG.md) · [Read the video analysis](reports/2026-10-21-video-review.md) · [Weekly review 2026-10-21](reports/2026-10-21-weekly.md) · [Current discovery snapshot](reports/2026-10-21.md) · [Evidence standards](docs/CURATION.md)
+[Browse the catalogue](docs/CATALOG.md) · [Read the video analysis](reports/2026-10-21-video-review.md) · [Weekly review 2026-10-21](reports/2026-10-21-weekly.md) · [On-demand review 2026-10-22](reports/2026-10-22-ondemand.md) · [Current discovery snapshot](reports/2026-10-21.md) · [Evidence standards](docs/CURATION.md)
 
 ## Install and call
 
@@ -86,7 +86,7 @@ Official reference: [Build skills](https://learn.chatgpt.com/docs/build-skills).
 
 ## Combinations and downloads
 
-Browse [workflow combinations](https://ai-skill-library.vercel.app/#combinations): four downloadable packs and two dependency-aware recipes. Each explains its stages, handoff artifacts, prerequisites, conflicts and evidence limits. Packs include pinned original skill files, MIT license texts, provenance manifests and a `combination-*` orchestration skill. They are static integration proposals; no end-to-end Codex runtime test is claimed.
+Browse [workflow combinations](https://ai-skill-library.vercel.app/#combinations): four downloadable packs and ten recipes. Two recipes need upstream setup. Eight 2026-10-22 workflows are static-reviewed only and are not ZIPs. Each explains its stages, handoff artifacts, prerequisites, conflicts and evidence limits. Packs include pinned original skill files, MIT license texts, provenance manifests and a `combination-*` orchestration skill. They are static integration proposals; no end-to-end Codex runtime test is claimed.
 
 ```sh
 python3 bundles.py list
