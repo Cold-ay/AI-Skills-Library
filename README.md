@@ -1,8 +1,8 @@
 # AI Skills Library
 
-An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, video, coding, token/context efficiency, research/automation and skill engineering.
+An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, video, coding, token/context efficiency, research/automation, skill engineering and writing/editing.
 
-**28 curated entries · 6 combinations · 4 downloadable packs · English documentation · Manual reports · No scheduled updates**
+**30 curated entries · 6 combinations · 4 downloadable packs · English documentation · Manual reports · No scheduled updates**
 
 ## Discover a skill
 
@@ -17,7 +17,7 @@ python3 skills.py list --query animation
 python3 skills.py show taste-skill
 ```
 
-[Browse the catalogue](docs/CATALOG.md) · [Read the video analysis](reports/2026-10-21-video-review.md) · [Current discovery snapshot](reports/2026-10-21.md) · [Evidence standards](docs/CURATION.md)
+[Browse the catalogue](docs/CATALOG.md) · [Read the video analysis](reports/2026-10-21-video-review.md) · [Weekly review 2026-10-21](reports/2026-10-21-weekly.md) · [Current discovery snapshot](reports/2026-10-21.md) · [Evidence standards](docs/CURATION.md)
 
 ## Install and call
 
@@ -48,6 +48,8 @@ Installation only downloads pinned files and verifies Git blob hashes. It does n
 | Record-ready article presentations | web-video-presentation | Vite, React and TypeScript; optional TTS |
 | Programmatic video | remotion-best-practices | Node.js and Remotion |
 | Long-session handoff | context-compression | Measure quality as well as token use |
+| Session context setup and handoffs | context-engineering | Instruction-only; keep it separate from context-compression |
+| De-AI prose before publishing | humanizer | Instruction-only; the packaging script is not installed |
 | Research citations | zotero | Zotero Desktop and its complete plugin |
 | Plugin engineering | plugin-creator | Upstream repository workflow |
 
@@ -57,7 +59,7 @@ Codex labels distinguish static official evidence, upstream support claims and u
 
 The redesigned AI Skill Library uses static HTML, CSS and JavaScript. See [Vercel setup](docs/VERCEL.md) for its hosting configuration.
 
-Reports are added manually under `reports/`. The existing 2026-10-21 snapshot is preserved, including its collection errors. The video review adds a separate dated article and evidence file. No weekly schedule, report automation or scheduling template is included.
+Reports are added manually under `reports/`. The existing 2026-10-21 snapshot is preserved, including its collection errors. The video review and the 2026-10-21 weekly review are separate dated articles. No weekly schedule, report automation or scheduling template is included.
 
 The `site/` directory contains the AI Skill Library website: report articles, a searchable skill catalogue, topic filters, and a browser-local Markdown draft editor with export. Published pages are generated from repository reports and catalogue data.
 

@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import re
 import zipfile
-from skills import ROOT, catalogue, safe_path, blob_hash, fetch
+from skills import ROOT, catalogue, safe_path, blob_hash, fetch, raw_file_url
 
 
 def combinations():
@@ -70,7 +70,7 @@ def build_bundle(b,destination,reviewed=False,downloader=fetch):
         if not e['installable'] or (e.get('license') or {}).get('spdx_id')!='MIT':raise ValueError('Unreviewed member')
         for f in e['files']:
             safe_path(f['path'])
-            data=downloader(f"https://raw.githubusercontent.com/{e['repo']}/{e['commit']}/{e['path']}/{f['path']}")
+            data=downloader(raw_file_url(e['repo'], e['commit'], e['path'], f['path']))
             if len(data)>5_000_000 or blob_hash(data)!=f['blob']:raise ValueError('Skill integrity mismatch')
             add('.agents/skills/'+ident+'/'+f['path'],data)
         license=b['licenses'][ident];safe_path(license['path'])

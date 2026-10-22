@@ -3950,5 +3950,96 @@
         "blob": "1fed372b0e5276b2a207d80bc23f81180a0dff55"
       }
     ]
+  },
+  {
+    "id": "humanizer",
+    "invocation": "humanizer",
+    "category": "writing-editing",
+    "summary": "De-AI prose rewriting",
+    "reason": "Specific input and output, instruction-only, and an explicit MIT license.",
+    "requirements": "Instruction-only. MIT at the repository root. SKILL.md states no credentials or network use. scripts/validate-package.py is a packaging check and is not installed.",
+    "repo": "blader/humanizer",
+    "path": ".",
+    "commit": "8c307f367c91bd974002f10f2be2965d642c13df",
+    "stars": 59130,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/blader/humanizer",
+    "source": "https://github.com/blader/humanizer/blob/8c307f367c91bd974002f10f2be2965d642c13df/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/blader/humanizer/blob/8c307f367c91bd974002f10f2be2965d642c13df/LICENSE",
+      "https://github.com/blader/humanizer/blob/8c307f367c91bd974002f10f2be2965d642c13df/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/blader/humanizer/blob/8c307f367c91bd974002f10f2be2965d642c13df/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README Codex section is the support claim."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "19fc634208e8cc6ae55d4ff287152583216fd244"
+      },
+      {
+        "path": "AGENTS.md",
+        "blob": "5b170fd02364e3c088897a2b417c4226a533244e"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "16df2a8e1c788b20bfdf5d3c9a5fa863890fe7bc"
+      }
+    ]
+  },
+  {
+    "id": "context-engineering",
+    "invocation": "context-engineering",
+    "category": "token-context",
+    "summary": "Agent context setup and session handoffs",
+    "reason": "Session-setup and handoff discipline. Complements context-compression and context-optimization; kept separate and not combined.",
+    "requirements": "Instruction-only. Scripts under evals/ are fixtures and are not installed. Guidance may mention project commands such as npx tsc --noEmit. MIT checked at the repository root; subfolders were not checked.",
+    "repo": "addyosmani/agent-skills",
+    "path": "skills/context-engineering",
+    "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "stars": 109160,
+    "observed_at": "2026-10-21",
+    "stars_evidence": "https://api.github.com/repos/addyosmani/agent-skills",
+    "source": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/context-engineering/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/LICENSE",
+      "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/README.md",
+        "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/context-engineering/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README says the skills CLI installs into Codex; SKILL.md lists AGENTS.md for OpenAI Codex."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "fb8bb5f85128302b231d301c1201da1e223f6869"
+      }
+    ]
   }
 ]

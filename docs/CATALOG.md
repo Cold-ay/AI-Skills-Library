@@ -1,6 +1,6 @@
 # Curated skills
 
-28 skills. Repository stars are dated observations, not quality scores. See each record for immutable provenance and requirements.
+30 skills. Repository stars are dated observations, not quality scores. See each record for immutable provenance and requirements.
 
 | Skill | Purpose | Category | Stars | Codex evidence |
 |---|---|---|---:|---|
@@ -32,3 +32,5 @@
 | [scientific-critical-thinking](https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/scientific-critical-thinking/SKILL.md) | Appraise evidence, bias and scientific claims | research-automation | 53,459 | upstream-claimed |
 | [gsap-react](https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-react/SKILL.md) | React animation lifecycle and cleanup | website-ui | 16,731 | upstream-claimed |
 | [gsap-timeline](https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-timeline/SKILL.md) | Sequence animation with reusable timelines | website-ui | 16,731 | upstream-claimed |
+| [humanizer](https://github.com/blader/humanizer/blob/8c307f367c91bd974002f10f2be2965d642c13df/SKILL.md) | De-AI prose rewriting | writing-editing | 59,130 | upstream-claimed |
+| [context-engineering](https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/context-engineering/SKILL.md) | Agent context setup and session handoffs | token-context | 109,160 | upstream-claimed |
