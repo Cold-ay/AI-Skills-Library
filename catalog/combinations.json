@@ -206,5 +206,213 @@
     "downloadable": false,
     "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
     "licenses": {}
+  },
+  {
+    "id": "context-onboarding",
+    "title": "Context onboarding path",
+    "summary": "Learn context mechanics, then name the active failure pattern.",
+    "skills": [
+      "context-fundamentals",
+      "context-degradation"
+    ],
+    "stages": [
+      {
+        "skill": "context-fundamentals",
+        "title": "State the principles",
+        "task": "Write an attention-budget checklist: edges versus middle, and the progressive-disclosure rule. No operational diagnosis."
+      },
+      {
+        "skill": "context-degradation",
+        "title": "Name the failure",
+        "task": "Consume the checklist and write a diagnosis note: pattern name and a Write, Select, Compress, or Isolate bucket."
+      }
+    ],
+    "requirements": "Agent Skills host. An optional tokenizer is not required. No credentials are claimed by either skill folder. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "Fundamentals owns framing; degradation owns diagnosis. Do not start optimization, compression, or filesystem offload until the diagnosis note names a bucket. Resolver: degradation, after fundamentals.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "context-diagnose-offload",
+    "title": "Context diagnose-and-offload",
+    "summary": "Diagnose a crowded window, then store bulky state as file references.",
+    "skills": [
+      "context-degradation",
+      "filesystem-context"
+    ],
+    "stages": [
+      {
+        "skill": "context-degradation",
+        "title": "Choose the Write bucket",
+        "task": "Diagnose the failure and list bulky tool dumps, logs, and plans with agreed project-relative paths."
+      },
+      {
+        "skill": "filesystem-context",
+        "title": "Offload and reference",
+        "task": "Store those items and return file references plus compact summaries, not re-inlined dumps."
+      }
+    ],
+    "requirements": "Host file read, write, and search. Review write paths before use. No network credentials are claimed. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "Degradation owns whether Write is correct; filesystem-context owns how to store and retrieve. If the note names Compress or Select, stop and use context-diagnose-compress or context-optimization. Resolver: degradation.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "context-diagnose-compress",
+    "title": "Context diagnose-and-compress",
+    "summary": "Diagnose a shrinkable window, then write a structured handoff summary.",
+    "skills": [
+      "context-degradation",
+      "context-compression"
+    ],
+    "stages": [
+      {
+        "skill": "context-degradation",
+        "title": "Choose the Compress bucket",
+        "task": "Name the pattern and list what must survive: files, decisions, errors, and next steps."
+      },
+      {
+        "skill": "context-compression",
+        "title": "Write the structured summary",
+        "task": "Produce Session Intent, Files Modified, Decisions, Current State, and Next Steps from that checklist."
+      }
+    ],
+    "requirements": "context-compression is already catalogued. Its optional compression_evaluator.py is not part of this recipe and was not run. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "Degradation chooses the bucket; compression owns summary structure. Do not substitute filesystem-context when the need is summary wording. Resolver: degradation chooses; compression owns the text.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "superpowers-evidence-tdd",
+    "title": "Superpowers evidence-then-TDD",
+    "summary": "Establish a root cause, then implement the fix under iron-law TDD.",
+    "skills": [
+      "systematic-debugging",
+      "test-driven-development"
+    ],
+    "stages": [
+      {
+        "skill": "systematic-debugging",
+        "title": "Investigate without fixing",
+        "task": "Complete root-cause, pattern, and hypothesis work and record the smallest reproduction. No production fix yet."
+      },
+      {
+        "skill": "test-driven-development",
+        "title": "Fail, then implement",
+        "task": "Write a failing test from that reproduction, watch it fail, then make the project suite green."
+      }
+    ],
+    "requirements": "The user's project test runner. Optional Superpowers plugin telemetry can be disabled with SUPERPOWERS_DISABLE_TELEMETRY. Stays a recipe because systematic-debugging is not installable. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "Debugging owns root cause; test-driven-development owns red-green-refactor. Do not also load mattpocock tdd or diagnosing-bugs. Resolver: debugging until the root cause is written, then TDD.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "hard-bug-tdd",
+    "title": "Hard-bug loop then TDD",
+    "summary": "Build a red feedback loop, then lock the fix with one vertical TDD slice.",
+    "skills": [
+      "diagnosing-bugs",
+      "tdd"
+    ],
+    "stages": [
+      {
+        "skill": "diagnosing-bugs",
+        "title": "Build the red loop",
+        "task": "Produce a named red-capable command with redacted output, a minimised reproduction, and a seam proposal."
+      },
+      {
+        "skill": "tdd",
+        "title": "Test the confirmed seam",
+        "task": "After the user confirms the seam, write one failing test and the smallest green implementation."
+      }
+    ],
+    "requirements": "The user's own tests, curl, CLI, or Playwright as chosen in phase 1. scripts/hitl-loop.template.sh is optional, not packaged, and was not executed. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "diagnosing-bugs owns the loop and hypotheses; tdd owns seams and anti-patterns. Do not combine with systematic-debugging or obra test-driven-development. If no correct seam exists, stop. Resolver: diagnosing-bugs through phase 4, then tdd.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "artifact-session-travel",
+    "title": "Artifact-backed session travel",
+    "summary": "Persist bulky session state, then write a portable handoff that references it.",
+    "skills": [
+      "filesystem-context",
+      "handoff"
+    ],
+    "stages": [
+      {
+        "skill": "filesystem-context",
+        "title": "Persist durable artifacts",
+        "task": "Store plans, scratch outputs, and workspaces under agreed project paths and record a cleanup policy."
+      },
+      {
+        "skill": "handoff",
+        "title": "Write the travel document",
+        "task": "Save an OS-temp handoff that references those paths, redacts secrets, and lists suggested skills."
+      }
+    ],
+    "requirements": "Writable OS temp and the project filesystem. Deferred compaction-handoff is not a dependency. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "filesystem-context owns storage layout; handoff owns the travel document and redaction. Prefer in-session compact when nothing must travel. Resolver: the user chooses travel versus stay; handoff owns the temp file.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "session-boundary-travel",
+    "title": "Session boundary then travel",
+    "summary": "Close a task with a restart checklist, then emit a portable handoff.",
+    "skills": [
+      "context-engineering",
+      "handoff"
+    ],
+    "stages": [
+      {
+        "skill": "context-engineering",
+        "title": "Complete the boundary checklist",
+        "task": "Record scope, decisions, task status, files changed, verification commands, and risks before leaving the session."
+      },
+      {
+        "skill": "handoff",
+        "title": "Write the travel document",
+        "task": "Save an OS-temp handoff that points at those durable artifacts and names suggested skills."
+      }
+    ],
+    "requirements": "A project rules file such as AGENTS.md is encouraged. Optional MCP servers named by context-engineering are not required. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "context-engineering owns the leave-session checklist; handoff owns the portable file. This is not a substitute for context-diagnose-compress. Resolver: context-engineering at the boundary; handoff when travel is required.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "colleague-handoff",
+    "title": "Colleague-ready handoff",
+    "summary": "Write a portable handoff, then rewrite the prose for a human colleague.",
+    "skills": [
+      "handoff",
+      "humanizer"
+    ],
+    "stages": [
+      {
+        "skill": "handoff",
+        "title": "Draft the handoff",
+        "task": "Save a redacted OS-temp handoff that references paths instead of duplicating specs."
+      },
+      {
+        "skill": "humanizer",
+        "title": "Rewrite for a colleague",
+        "task": "Remove AI writing tells without changing claims, commands, paths, or fenced code."
+      }
+    ],
+    "requirements": "OS temp and the ability to edit the handoff file. No network or credentials. Skip humanizer when the audience is another agent. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "handoff owns structure, suggested skills, and redaction; humanizer owns prose style only and must not invent facts. Resolver: handoff first; humanizer only for a human-facing audience.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
   }
 ]

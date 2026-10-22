@@ -4041,5 +4041,347 @@
         "blob": "fb8bb5f85128302b231d301c1201da1e223f6869"
       }
     ]
+  },
+  {
+    "id": "handoff",
+    "invocation": "handoff",
+    "category": "token-context",
+    "summary": "Session handoff document",
+    "reason": "Specific conversation-to-handoff document, instruction-only and MIT. Fills a session-transfer gap next to context-compression.",
+    "requirements": "Instruction-only package: SKILL.md and agents/openai.yaml. No scripts in this skill folder. Writes a handoff file under the OS temp directory and redacts secrets. MIT at the repository root; no per-skill LICENSE. Sibling skills are not included.",
+    "repo": "mattpocock/skills",
+    "path": "skills/productivity/handoff",
+    "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+    "stars": 300066,
+    "observed_at": "2026-10-22",
+    "stars_evidence": "https://api.github.com/repos/mattpocock/skills",
+    "source": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/handoff/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE",
+      "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/README.md",
+        "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/handoff/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README Codex section is the support claim."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "a224edc643a20ddb989f9bca1547440169159810"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "6e1d8da121beceddc2f9ec7fa8714c1d914dd11a"
+      }
+    ]
+  },
+  {
+    "id": "tdd",
+    "invocation": "tdd",
+    "category": "coding",
+    "summary": "Test-driven red-green loop",
+    "reason": "Test-first coding workflow with seam and anti-pattern guidance. Kept separate from systematic-debugging and from obra test-driven-development.",
+    "requirements": "Instruction pack: SKILL.md, tests.md, mocking.md, and agents/openai.yaml. Sibling skills codebase-design and code-review are referenced and not packaged. MIT at the repository root; no per-skill LICENSE. Not executed.",
+    "repo": "mattpocock/skills",
+    "path": "skills/engineering/tdd",
+    "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+    "stars": 300066,
+    "observed_at": "2026-10-22",
+    "stars_evidence": "https://api.github.com/repos/mattpocock/skills",
+    "source": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/tdd/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE",
+      "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/README.md",
+        "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/tdd/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README Codex section is the support claim."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "01eadaa34e7c9a63a67d6dc3cce1cc81b0e49985"
+      },
+      {
+        "path": "tests.md",
+        "blob": "7ab86479f925a1f9e8ba680af33cb3b12e015381"
+      },
+      {
+        "path": "mocking.md",
+        "blob": "71cbfee674d93244ce81d1830b930ca9a69200bd"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "651b838a7663e027b1b8884491e867f26bb9a021"
+      }
+    ]
+  },
+  {
+    "id": "diagnosing-bugs",
+    "invocation": "diagnosing-bugs",
+    "category": "coding",
+    "summary": "Feedback-loop-first bug diagnosis",
+    "reason": "Feedback-loop-first diagnosis that complements systematic-debugging. Kept separate and not combined.",
+    "requirements": "Instruction-only package: SKILL.md and agents/openai.yaml. scripts/hitl-loop.template.sh exists in the upstream skill folder and is not installed or packaged. May drive the user's own tests, curl, or Playwright. MIT at the repository root; no per-skill LICENSE. Kept separate from systematic-debugging.",
+    "repo": "mattpocock/skills",
+    "path": "skills/engineering/diagnosing-bugs",
+    "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+    "stars": 300066,
+    "observed_at": "2026-10-22",
+    "stars_evidence": "https://api.github.com/repos/mattpocock/skills",
+    "source": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE",
+      "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/README.md",
+        "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README Codex section is the support claim. The HITL shell template was not packaged."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "d039541ddd1c46e6ddbd662fe99d49b686fc5e12"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "a13a755a77634ce61a649a3a0d905a66d3865b35"
+      }
+    ]
+  },
+  {
+    "id": "context-degradation",
+    "invocation": "context-degradation",
+    "category": "token-context",
+    "summary": "Diagnose context failure modes",
+    "reason": "Fills the diagnosis gap between context-compression, context-optimization, and context-engineering.",
+    "requirements": "Skill directory only: SKILL.md, references/patterns.md, and scripts/degradation_detector.py. Researcher scripts elsewhere in the repository are not packaged. The script was not executed. MIT at the repository root; no per-skill LICENSE. The sharper tag context-diagnosis is prose only and is not a catalogue category.",
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "path": "skills/context-degradation",
+    "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+    "stars": 18189,
+    "observed_at": "2026-10-22",
+    "stars_evidence": "https://api.github.com/repos/muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-degradation/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/LICENSE",
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-degradation/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README documents Codex, Cursor, and Open Plugins, including a .codex/skills/ copy path."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "1a6d079940045d5ff6d0058f50d3cc11a6f9610b"
+      },
+      {
+        "path": "references/patterns.md",
+        "blob": "663a3c32d960b2a3ca04aa9f9f55d3b74c448626"
+      },
+      {
+        "path": "scripts/degradation_detector.py",
+        "blob": "11c0246ab90873b3cfaf807e12c892447cc6b572"
+      }
+    ]
+  },
+  {
+    "id": "context-fundamentals",
+    "invocation": "context-fundamentals",
+    "category": "token-context",
+    "summary": "Context engineering foundations",
+    "reason": "Conceptual foundation for the token-context set. Kept sequential with operational skills, not combined into one pack.",
+    "requirements": "Skill directory only: SKILL.md, references/context-components.md, and scripts/context_manager.py. The script is a local token-estimate utility and was not executed. MIT at the repository root; no per-skill LICENSE.",
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "path": "skills/context-fundamentals",
+    "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+    "stars": 18189,
+    "observed_at": "2026-10-22",
+    "stars_evidence": "https://api.github.com/repos/muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-fundamentals/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/LICENSE",
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-fundamentals/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README documents Codex, Cursor, and Open Plugins, including a .codex/skills/ copy path."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "f61443be6e233572cede0a111a4287518742d02e"
+      },
+      {
+        "path": "references/context-components.md",
+        "blob": "2c0a6d5e086100511e1900a27db632b3e1b472ec"
+      },
+      {
+        "path": "scripts/context_manager.py",
+        "blob": "d3daa21add4acec56b2aacadb6b0c569a26072a5"
+      }
+    ]
+  },
+  {
+    "id": "filesystem-context",
+    "invocation": "filesystem-context",
+    "category": "token-context",
+    "summary": "Filesystem overflow for agent context",
+    "reason": "Durable offload and retrieval, distinct from compression summaries and optimization masking.",
+    "requirements": "Skill directory only: SKILL.md, references/implementation-patterns.md, and scripts/filesystem_context.py. The script can write under a caller-supplied path and was not executed. Illustrative Python in the markdown is not a separate executable. MIT at the repository root; no per-skill LICENSE. Review project write paths before use.",
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "path": "skills/filesystem-context",
+    "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+    "stars": 18189,
+    "observed_at": "2026-10-22",
+    "stars_evidence": "https://api.github.com/repos/muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/LICENSE",
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README documents Codex, Cursor, and Open Plugins, including a .codex/skills/ copy path."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "d80eec51832f6d7fb784839251a211ca84522239"
+      },
+      {
+        "path": "references/implementation-patterns.md",
+        "blob": "6487d650dd259a5d0defe275f2a8074d52499c3c"
+      },
+      {
+        "path": "scripts/filesystem_context.py",
+        "blob": "574ef4f6847b1720b2ee8959b44a5b638e331707"
+      }
+    ]
+  },
+  {
+    "id": "test-driven-development",
+    "invocation": "test-driven-development",
+    "category": "coding",
+    "summary": "Iron-law test-driven development",
+    "reason": "Superpowers implementation discipline alongside systematic-debugging. Separate voice from mattpocock tdd.",
+    "requirements": "Skill-folder files only (SKILL.md and writing-good-tests.md), matching systematic-debugging. Not installable here: the Superpowers plugin may inject SessionStart hooks elsewhere and documents optional visual-companion telemetry via SUPERPOWERS_DISABLE_TELEMETRY. Runs the user's test suite when used. MIT at the repository root; no per-skill LICENSE. Kept separate from mattpocock tdd.",
+    "repo": "obra/superpowers",
+    "path": "skills/test-driven-development",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "stars": 303236,
+    "observed_at": "2026-10-22",
+    "stars_evidence": "https://api.github.com/repos/obra/superpowers",
+    "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE",
+      "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README Codex App and Codex CLI sections are the support claim. Plugin telemetry is outside this skill folder."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "46838cc9e893c06259e3bdad0fc2425b36242f15"
+      },
+      {
+        "path": "writing-good-tests.md",
+        "blob": "d3c4482fd30b4f9084bb61545fe73939a7502c28"
+      }
+    ]
   }
 ]

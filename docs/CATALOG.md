@@ -1,6 +1,6 @@
 # Curated skills
 
-30 skills. Repository stars are dated observations, not quality scores. See each record for immutable provenance and requirements.
+37 skills. Repository stars are dated observations, not quality scores. See each record for immutable provenance and requirements.
 
 | Skill | Purpose | Category | Stars | Codex evidence |
 |---|---|---|---:|---|
@@ -34,3 +34,10 @@
 | [gsap-timeline](https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-timeline/SKILL.md) | Sequence animation with reusable timelines | website-ui | 16,731 | upstream-claimed |
 | [humanizer](https://github.com/blader/humanizer/blob/8c307f367c91bd974002f10f2be2965d642c13df/SKILL.md) | De-AI prose rewriting | writing-editing | 59,130 | upstream-claimed |
 | [context-engineering](https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/context-engineering/SKILL.md) | Agent context setup and session handoffs | token-context | 109,160 | upstream-claimed |
+| [handoff](https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/handoff/SKILL.md) | Session handoff document | token-context | 300,066 | upstream-claimed |
+| [tdd](https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/tdd/SKILL.md) | Test-driven red-green loop | coding | 300,066 | upstream-claimed |
+| [diagnosing-bugs](https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md) | Feedback-loop-first bug diagnosis | coding | 300,066 | upstream-claimed |
+| [context-degradation](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-degradation/SKILL.md) | Diagnose context failure modes | token-context | 18,189 | upstream-claimed |
+| [context-fundamentals](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-fundamentals/SKILL.md) | Context engineering foundations | token-context | 18,189 | upstream-claimed |
+| [filesystem-context](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md) | Filesystem overflow for agent context | token-context | 18,189 | upstream-claimed |
+| [test-driven-development](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md) | Iron-law test-driven development | coding | 303,236 | upstream-claimed |
