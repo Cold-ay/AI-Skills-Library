@@ -1,6 +1,6 @@
 # Curated skills
 
-37 skills. Repository stars are dated observations, not quality scores. See each record for immutable provenance and requirements.
+44 skills. Repository stars are dated observations, not quality scores. See each record for immutable provenance and requirements.
 
 | Skill | Purpose | Category | Stars | Codex evidence |
 |---|---|---|---:|---|
@@ -41,3 +41,10 @@
 | [context-fundamentals](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-fundamentals/SKILL.md) | Context engineering foundations | token-context | 18,189 | upstream-claimed |
 | [filesystem-context](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md) | Filesystem overflow for agent context | token-context | 18,189 | upstream-claimed |
 | [test-driven-development](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md) | Iron-law test-driven development | coding | 303,236 | upstream-claimed |
+| [deliver-prd](https://github.com/product-on-purpose/pm-skills/blob/f943d9589bfe9db06fac2641f9740987ff9b3aee/skills/deliver-prd/SKILL.md) | Stakeholder product requirements document | product-management | 763 | upstream-claimed |
+| [kicad](https://github.com/aklofas/kicad-happy/blob/2fd9aa0fe2d620f36627d9221e8b1393987ae38e/skills/kicad/SKILL.md) | KiCad schematic and PCB design review | electronics-eda | 1,508 | upstream-claimed |
+| [lean-startup](https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/lean-startup/SKILL.md) | MVP and pivot-or-persevere coaching | product-management | 2,509 | upstream-claimed |
+| [2d-essentials](https://github.com/jame581/GodotPrompter/blob/d7b26cdb5fae14d4ef7b713c5bf259395e75c3c6/skills/2d-essentials/SKILL.md) | Godot 4.3+ 2D systems guidance | game-development | 873 | upstream-claimed |
+| [asc-release-flow](https://github.com/rorkai/app-store-connect-cli-skills/blob/0915e9da1016a6cc953659d43906dcf7839a4c52/skills/asc-release-flow/SKILL.md) | App Store release steps via the asc CLI | mobile-release | 1,106 | upstream-claimed |
+| [cangjie-skill](https://github.com/kangarooking/cangjie-skill/blob/a28de55ba881b9928956a55048f743f7a9e3b23e/SKILL.md) | Distill long-form media into agent skills | skill-engineering | 11,767 | unknown |
+| [clear-communication](https://github.com/dongshuyan/compass-skills/blob/5bf1e5df7de8e6d92e649bab0aefd3041a038c05/skills/clear-communication/SKILL.md) | Accurate reader-friendly explanations | writing-communication | 761 | upstream-claimed |

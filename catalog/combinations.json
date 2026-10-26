@@ -414,5 +414,109 @@
     "downloadable": false,
     "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
     "licenses": {}
+  },
+  {
+    "id": "validated-learning-to-prd",
+    "title": "Validated learning to PRD",
+    "summary": "Turn a persevere decision into an engineering-ready PRD.",
+    "skills": [
+      "lean-startup",
+      "deliver-prd"
+    ],
+    "stages": [
+      {
+        "skill": "lean-startup",
+        "title": "Record validated learning",
+        "task": "Name the riskiest assumptions, the MVP and what was measured, actionable metrics, and an explicit persevere or scoped pivot. Do not write the PRD here."
+      },
+      {
+        "skill": "deliver-prd",
+        "title": "Write the PRD",
+        "task": "Consume that validated-learning memo as the problem summary and success metrics, then write the stakeholder PRD."
+      }
+    ],
+    "requirements": "Agent Skills host. Neither skill folder requires a paid API. Optional .claude/pm-skills.local.md may hold initiative context; review before sharing. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "lean-startup owns experiment design and whether evidence justifies building. deliver-prd owns specification structure. Do not start the PRD while the problem is still unvalidated, and do not load both at once. Do not let smallest-MVP language erase agreed scope once the memo says persevere. Resolver: lean-startup until the memo records persevere or a scoped post-pivot baseline, then deliver-prd.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "prd-to-tdd",
+    "title": "PRD to TDD implementation",
+    "summary": "Lock PRD behaviour with one vertical-slice red-green loop.",
+    "skills": [
+      "deliver-prd",
+      "tdd"
+    ],
+    "stages": [
+      {
+        "skill": "deliver-prd",
+        "title": "Finish testable requirements",
+        "task": "Write numbered, testable functional requirements and, when a cold executor needs it, the verification contract."
+      },
+      {
+        "skill": "tdd",
+        "title": "Fail, then implement",
+        "task": "After a seam is confirmed, write one failing test from a numbered requirement, watch it fail, then make the smallest green change."
+      }
+    ],
+    "requirements": "The project test runner and the catalogued tdd install. deliver-prd is Apache-2.0 and tdd is MIT; any future pack must carry both notices. Do not also load obra test-driven-development or diagnosing-bugs. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "deliver-prd owns what must be true. tdd owns the red-green seam and test anti-patterns. If no correct seam exists, stop rather than force a weak test. Resolver: deliver-prd until requirements are testable, then tdd. This recipe uses only catalogued mattpocock tdd.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "clarity-then-humanize",
+    "title": "Clarity then humanize",
+    "summary": "Keep the facts stable, then remove AI writing tells.",
+    "skills": [
+      "clear-communication",
+      "humanizer"
+    ],
+    "stages": [
+      {
+        "skill": "clear-communication",
+        "title": "Check clarity and fidelity",
+        "task": "Organize the explanation, status, comparison, or doc and pass the delivery checklist for certainty, numbers, exceptions, and paths."
+      },
+      {
+        "skill": "humanizer",
+        "title": "Remove AI writing tells",
+        "task": "Rewrite that clarity-checked draft. Keep every supported claim, and preserve code, paths, commands, and YAML."
+      }
+    ],
+    "requirements": "Ability to edit the draft. No network or credentials are claimed for either core skill. A voice sample for humanizer is optional. COMPASS personal-OS siblings are not part of this recipe. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "clear-communication owns selection, structure, and fidelity. humanizer owns style only and must not invent facts or change commands, paths, or requirements. Do not run both as simultaneous rewrite directors, and do not pair clear-communication with beautiful-article as co-authors. Skip humanizer when the audience is another agent. Resolver: clear-communication first; humanizer only for human-facing output.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "prd-session-travel",
+    "title": "PRD session travel",
+    "summary": "Reference an approved PRD from a portable session handoff.",
+    "skills": [
+      "deliver-prd",
+      "handoff"
+    ],
+    "stages": [
+      {
+        "skill": "deliver-prd",
+        "title": "Store the PRD",
+        "task": "Write the durable PRD at an agreed repository or docs path, including open questions and owners."
+      },
+      {
+        "skill": "handoff",
+        "title": "Write the travel document",
+        "task": "Save an OS-temp handoff that points at that path, redacts secrets, and names next skills such as tdd. Do not paste the full PRD."
+      }
+    ],
+    "requirements": "Writable OS temp and a project path for the PRD. Catalogued handoff. Optional pm-skills local memory is not required. No App Store or network credentials. Static-reviewed only. No end-to-end runtime test. Recipe only this cycle; no ZIP and no license blob pin.",
+    "conflicts": "deliver-prd owns product requirements. handoff owns travel packaging and redaction. Use prd-to-tdd when staying to implement. Prefer in-session work when nothing travels. Resolver: the user chooses travel versus implement-in-place; handoff owns the temp file when travel is required.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
+    "licenses": {}
   }
 ]

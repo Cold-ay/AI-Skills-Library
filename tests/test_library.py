@@ -40,6 +40,25 @@ class LibraryTests(unittest.TestCase):
         self.assertEqual(context['category'],'token-context');self.assertEqual(context['path'],'skills/context-engineering')
         self.assertEqual([f['path'] for f in context['files']],['SKILL.md'])
         self.assertEqual(context['codex']['status'],'upstream-claimed');self.assertIs(context['codex']['runtime_tested'],False)
+    def test_topic_ai_skills_includes(self):
+        entries={e['id']:e for e in skills.catalogue()}
+        expect={
+            'deliver-prd':'product-management','kicad':'electronics-eda','lean-startup':'product-management',
+            '2d-essentials':'game-development','asc-release-flow':'mobile-release','cangjie-skill':'skill-engineering',
+            'clear-communication':'writing-communication'}
+        for ident,category in expect.items():
+            e=entries[ident]
+            self.assertEqual(e['category'],category)
+            self.assertIs(e['codex']['runtime_tested'],False)
+            self.assertTrue(e['installable'])
+            self.assertNotIn(True,[f['path'].endswith('.py') or f['path'].startswith('scripts/') or '/scripts/' in f['path'] for f in e['files']])
+        self.assertEqual(entries['cangjie-skill']['path'],'.')
+        self.assertEqual([f['path'] for f in entries['cangjie-skill']['files']],['SKILL.md'])
+        self.assertEqual(entries['cangjie-skill']['codex']['status'],'unknown')
+        self.assertEqual(entries['kicad']['codex']['status'],'upstream-claimed')
+        self.assertTrue(all(f['path']=='SKILL.md' or f['path'].startswith('references/') for f in entries['kicad']['files']))
+        self.assertIn('asc CLI', entries['asc-release-flow']['requirements'])
+        self.assertEqual(len(entries),44)
     def test_review_required(self):
         with self.assertRaises(ValueError):skills.install(self.entry(),'/unused')
     def test_reference_only(self):

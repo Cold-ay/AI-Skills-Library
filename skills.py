@@ -12,7 +12,7 @@ import tempfile
 import urllib.request
 
 ROOT = Path(__file__).resolve().parent
-CATEGORIES = {'website-ui', 'video', 'coding', 'token-context', 'research-automation', 'skill-engineering', 'writing-editing'}
+CATEGORIES = {'website-ui', 'video', 'coding', 'token-context', 'research-automation', 'skill-engineering', 'writing-editing', 'product-management', 'electronics-eda', 'mobile-release', 'game-development', 'writing-communication'}
 STATUSES = {'verified-static', 'upstream-claimed', 'unknown'}
 
 def safe_path(value):
@@ -128,7 +128,7 @@ def main():
         if args.command == 'list':
             for e in entries:
                 if (not args.category or e['category'] == args.category) and args.query.lower() in json.dumps(e, ensure_ascii=False).lower():
-                    print(f"{e['id']:28} {e['category']:20} {e['codex']['status']:18} ★{e['stars']}  {e['summary']}")
+                    print(f"{e['id']:28} {e['category']:22} {e['codex']['status']:18} ★{e['stars']}  {e['summary']}")
             return
         e = next((e for e in entries if e['id'] == args.id), None)
         if e is None: raise ValueError('Unknown skill id; use list')
