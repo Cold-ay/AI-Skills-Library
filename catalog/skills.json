@@ -4383,5 +4383,479 @@
         "blob": "d3c4482fd30b4f9084bb61545fe73939a7502c28"
       }
     ]
+  },
+  {
+    "id": "deliver-prd",
+    "invocation": "deliver-prd",
+    "category": "product-management",
+    "summary": "Stakeholder product requirements document",
+    "reason": "Clear initiative-to-PRD output under Apache-2.0. Fills the product-specification gap. This skill folder only.",
+    "requirements": "Instruction pack: SKILL.md, HISTORY.md, references/TEMPLATE.md, and references/EXAMPLE.md. evals/trigger-fixtures.json is an eval fixture and is not installed. No scripts in this skill folder. Optional project memory file .claude/pm-skills.local.md may hold initiative context; review before sharing. Package this skill folder only; orchestration sub-agents elsewhere in the repo are not included. Apache-2.0 at the repository root; no per-skill LICENSE. Not executed.",
+    "repo": "product-on-purpose/pm-skills",
+    "path": "skills/deliver-prd",
+    "commit": "f943d9589bfe9db06fac2641f9740987ff9b3aee",
+    "stars": 763,
+    "observed_at": "2026-10-27",
+    "stars_evidence": "https://api.github.com/repos/product-on-purpose/pm-skills",
+    "source": "https://github.com/product-on-purpose/pm-skills/blob/f943d9589bfe9db06fac2641f9740987ff9b3aee/skills/deliver-prd/SKILL.md",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "license_evidence": [
+      "https://github.com/product-on-purpose/pm-skills/blob/f943d9589bfe9db06fac2641f9740987ff9b3aee/LICENSE",
+      "https://github.com/product-on-purpose/pm-skills/blob/f943d9589bfe9db06fac2641f9740987ff9b3aee/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/product-on-purpose/pm-skills/blob/f943d9589bfe9db06fac2641f9740987ff9b3aee/README.md",
+        "https://github.com/product-on-purpose/pm-skills/blob/f943d9589bfe9db06fac2641f9740987ff9b3aee/skills/deliver-prd/SKILL.md"
+      ],
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README compatibility table lists Codex (OpenAI) as supported via AGENTS.md auto-discovery.",
+      "runtime_tested": false
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "a505e2a962dd5e8f848dc20faead90b51a151187"
+      },
+      {
+        "path": "HISTORY.md",
+        "blob": "6f5ea3cf6cca6bcae4888f012754dd1e28c397c5"
+      },
+      {
+        "path": "references/EXAMPLE.md",
+        "blob": "18e1718e2a55bff055f685b1357ce6bc973b1b04"
+      },
+      {
+        "path": "references/TEMPLATE.md",
+        "blob": "f35ff949506b0ac3df27a42a71b5800e9a1dda2d"
+      }
+    ]
+  },
+  {
+    "id": "kicad",
+    "invocation": "kicad",
+    "category": "electronics-eda",
+    "summary": "KiCad schematic and PCB design review",
+    "reason": "Reusable electronics design-review skill. Scripts stay unpackaged and unexecuted; not claimed runtime-safe.",
+    "requirements": "Instruction and reference markdown only: SKILL.md and references/*.md. Many unreviewed Python scripts live under skills/kicad/scripts/ and skills/kicad/review/scripts/, with methodology notes beside them. Those scripts and notes are not packaged and were not executed. Do not treat this entry as runtime-safe. Upstream claims pure Python 3.10+ with no required pip or KiCad install; that claim was not tested. Sibling vendor skills are not included and may need API credentials. MIT at the repository root; no per-skill LICENSE.",
+    "repo": "aklofas/kicad-happy",
+    "path": "skills/kicad",
+    "commit": "2fd9aa0fe2d620f36627d9221e8b1393987ae38e",
+    "stars": 1508,
+    "observed_at": "2026-10-27",
+    "stars_evidence": "https://api.github.com/repos/aklofas/kicad-happy",
+    "source": "https://github.com/aklofas/kicad-happy/blob/2fd9aa0fe2d620f36627d9221e8b1393987ae38e/skills/kicad/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/aklofas/kicad-happy/blob/2fd9aa0fe2d620f36627d9221e8b1393987ae38e/LICENSE",
+      "https://github.com/aklofas/kicad-happy/blob/2fd9aa0fe2d620f36627d9221e8b1393987ae38e/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/aklofas/kicad-happy/blob/2fd9aa0fe2d620f36627d9221e8b1393987ae38e/README.md",
+        "https://github.com/aklofas/kicad-happy/blob/2fd9aa0fe2d620f36627d9221e8b1393987ae38e/skills/kicad/SKILL.md"
+      ],
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README OpenAI Codex installer section is the support claim. Python under scripts/ and review/scripts/ is not packaged and is not claimed runtime-safe.",
+      "runtime_tested": false
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "10afcfe8a87bba71d9259f96395f90dce5823c9d"
+      },
+      {
+        "path": "references/config-reference.md",
+        "blob": "8b61764d483d7ba921b409f11dc1e0cfcdda92f3"
+      },
+      {
+        "path": "references/datasheet-verification.md",
+        "blob": "91e613c0fa7e4b5d1ebfd3da45830a5060ee5f50"
+      },
+      {
+        "path": "references/deep-review.md",
+        "blob": "06ba1cf197d83ef231f5066a02257ee71cbcca0c"
+      },
+      {
+        "path": "references/design-intent.md",
+        "blob": "5a525f0e5154ac9110e3852fb24b91ade9f3b10b"
+      },
+      {
+        "path": "references/diff-analysis.md",
+        "blob": "f42ff48d5ddf4a00bdf760f1b3575dd947239da5"
+      },
+      {
+        "path": "references/file-formats.md",
+        "blob": "a464d2edb4b27caa38b7b0331285581e09999de0"
+      },
+      {
+        "path": "references/gerber-parsing.md",
+        "blob": "3672bd8acbb3ca21170fba729611ff7a302d7c9e"
+      },
+      {
+        "path": "references/manual-gerber-parsing.md",
+        "blob": "7965ef15e6e7f19f01898278e15581cfdb5b1b70"
+      },
+      {
+        "path": "references/manual-pcb-parsing.md",
+        "blob": "eaaa33b2cba51a30a83427ea5c67c47412fb7daf"
+      },
+      {
+        "path": "references/manual-schematic-parsing.md",
+        "blob": "87e9f93843c7b704f5ced480cf37e9c11cde74d7"
+      },
+      {
+        "path": "references/net-tracing.md",
+        "blob": "799263b6f9ca688cef3557ba590056556e263df4"
+      },
+      {
+        "path": "references/oshwa-certification.md",
+        "blob": "e312acc401190263760354b44d81224b578ffd34"
+      },
+      {
+        "path": "references/output-schema.md",
+        "blob": "13e846ebecd210c8a9fc5f2a55a387fe6dea9f2e"
+      },
+      {
+        "path": "references/pcb-layout-analysis.md",
+        "blob": "0d6d320b1fb5a7fb274feab8b659591fe51de16a"
+      },
+      {
+        "path": "references/pdf-schematic-extraction.md",
+        "blob": "f545bd7814843c01075a53923cc7014e2cd8d406"
+      },
+      {
+        "path": "references/report-generation.md",
+        "blob": "d0f7263eb20f085646c17a7eb6639a9c321ecad7"
+      },
+      {
+        "path": "references/schematic-analysis.md",
+        "blob": "a75d7587c01650c2b5bcdc0785af236b71c5beaa"
+      },
+      {
+        "path": "references/standards-compliance.md",
+        "blob": "0b8c5727cb5529592f6d9aaca2ced5902646a214"
+      },
+      {
+        "path": "references/supplementary-data-sources.md",
+        "blob": "f5e4f6ff2b3d6db3775d07641f932dbfbef531ed"
+      },
+      {
+        "path": "references/what-if.md",
+        "blob": "b7c57e26b627cc462073747955af5600b3ccfe9a"
+      }
+    ]
+  },
+  {
+    "id": "lean-startup",
+    "invocation": "lean-startup",
+    "category": "product-management",
+    "summary": "MVP and pivot-or-persevere coaching",
+    "reason": "Reusable Build-Measure-Learn methodology. Complements deliver-prd without duplicating PRD output.",
+    "requirements": "Instruction and reference markdown only (SKILL.md and references/). No scripts in this skill folder. Install this skill, not the whole marketplace. Book-inspired agent guidance, not a substitute for the original book text. MIT at the repository root; no per-skill LICENSE. Not executed.",
+    "repo": "wondelai/skills",
+    "path": "lean-startup",
+    "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+    "stars": 2509,
+    "observed_at": "2026-10-27",
+    "stars_evidence": "https://api.github.com/repos/wondelai/skills",
+    "source": "https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/lean-startup/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/LICENSE",
+      "https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/README.md",
+        "https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/lean-startup/SKILL.md"
+      ],
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README section Via OpenAI Codex is the support claim.",
+      "runtime_tested": false
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "aa35a366e81bb51e817d1eabf1394420bc8a1d22"
+      },
+      {
+        "path": "references/applications.md",
+        "blob": "e5d40869fa09a690c5ea77546602879f0f50d3c9"
+      },
+      {
+        "path": "references/assumptions.md",
+        "blob": "7ae86467d25e39fdac942cd4671a0591dfbb5391"
+      },
+      {
+        "path": "references/build-measure-learn.md",
+        "blob": "c42b69b8521d27f10f6cc9a19e4ff6e56a635d5b"
+      },
+      {
+        "path": "references/case-studies.md",
+        "blob": "3db2ad09eaa6b4e4ff6f9c34d58851c91bea455e"
+      },
+      {
+        "path": "references/five-whys.md",
+        "blob": "f26d9b94090080472b82d6346f88fdffe32fd975"
+      },
+      {
+        "path": "references/growth-engines.md",
+        "blob": "b1037d144022d8896ea9261becde995405f03a65"
+      },
+      {
+        "path": "references/innovation-accounting.md",
+        "blob": "098f5799bc6f5180728a6576ba027013b22e80fe"
+      },
+      {
+        "path": "references/metrics.md",
+        "blob": "0a0b4944c759d2b9ee1fe3dd28549315b351d92d"
+      },
+      {
+        "path": "references/mvp-design.md",
+        "blob": "48f88a7e44655ba30262a0144afaa56703a3f922"
+      },
+      {
+        "path": "references/pivots.md",
+        "blob": "97b438f369f1fed358070dcc20a208cad8cf582b"
+      },
+      {
+        "path": "references/small-batches.md",
+        "blob": "171c38fe39c966aca206a3f224f3d68f29a22846"
+      }
+    ]
+  },
+  {
+    "id": "2d-essentials",
+    "invocation": "2d-essentials",
+    "category": "game-development",
+    "summary": "Godot 4.3+ 2D systems guidance",
+    "reason": "Godot 2D domain skill. The catalogue had no game-engine skills.",
+    "requirements": "Instruction and reference markdown only (SKILL.md and references/). No scripts in this skill folder. Godot 4.3+. Package this skill directory only; repository validators and hooks were not executed. MIT at the repository root; no per-skill LICENSE.",
+    "repo": "jame581/GodotPrompter",
+    "path": "skills/2d-essentials",
+    "commit": "d7b26cdb5fae14d4ef7b713c5bf259395e75c3c6",
+    "stars": 873,
+    "observed_at": "2026-10-27",
+    "stars_evidence": "https://api.github.com/repos/jame581/GodotPrompter",
+    "source": "https://github.com/jame581/GodotPrompter/blob/d7b26cdb5fae14d4ef7b713c5bf259395e75c3c6/skills/2d-essentials/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/jame581/GodotPrompter/blob/d7b26cdb5fae14d4ef7b713c5bf259395e75c3c6/LICENSE",
+      "https://github.com/jame581/GodotPrompter/blob/d7b26cdb5fae14d4ef7b713c5bf259395e75c3c6/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/jame581/GodotPrompter/blob/d7b26cdb5fae14d4ef7b713c5bf259395e75c3c6/README.md",
+        "https://github.com/jame581/GodotPrompter/blob/d7b26cdb5fae14d4ef7b713c5bf259395e75c3c6/skills/2d-essentials/SKILL.md"
+      ],
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README Codex clone and symlink section is the support claim. Repository validators and hooks were not executed.",
+      "runtime_tested": false
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "a7b541219f01ec678b12fb556cb292b6db85b5f2"
+      },
+      {
+        "path": "references/2d-particles.md",
+        "blob": "b29ca496f305f434038a3dfee09f4a449e4f4b96"
+      },
+      {
+        "path": "references/custom-drawing.md",
+        "blob": "e210ee2a4e59b093e6604c7fdb6c611e4ce67d98"
+      },
+      {
+        "path": "references/lights-and-shadows.md",
+        "blob": "e0d1323bc14184ad7e24e601678df6d97e21dded"
+      },
+      {
+        "path": "references/parallax.md",
+        "blob": "109032784fe017b9b6dc0236a6a819f7f1c68550"
+      },
+      {
+        "path": "references/tilemap.md",
+        "blob": "b40c8d3cc200076712a51c0d500054641d7d7876"
+      }
+    ]
+  },
+  {
+    "id": "asc-release-flow",
+    "invocation": "asc-release-flow",
+    "category": "mobile-release",
+    "summary": "App Store release steps via the asc CLI",
+    "reason": "Reusable App Store release workflow with an explicit asc CLI and credentials dependency. Not project glue.",
+    "requirements": "High operational risk. Depends on the community asc CLI plus App Store Connect credentials and network access. Mistakes can affect live App Store submissions. This package is SKILL.md and references/multi-item-submissions.md only; no scripts in this skill folder. Unofficial and not affiliated with Apple. Review credentials before use. MIT at the repository root; no per-skill LICENSE. Not executed.",
+    "repo": "rorkai/app-store-connect-cli-skills",
+    "path": "skills/asc-release-flow",
+    "commit": "0915e9da1016a6cc953659d43906dcf7839a4c52",
+    "stars": 1106,
+    "observed_at": "2026-10-27",
+    "stars_evidence": "https://api.github.com/repos/rorkai/app-store-connect-cli-skills",
+    "source": "https://github.com/rorkai/app-store-connect-cli-skills/blob/0915e9da1016a6cc953659d43906dcf7839a4c52/skills/asc-release-flow/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/rorkai/app-store-connect-cli-skills/blob/0915e9da1016a6cc953659d43906dcf7839a4c52/LICENSE",
+      "https://github.com/rorkai/app-store-connect-cli-skills/blob/0915e9da1016a6cc953659d43906dcf7839a4c52/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/rorkai/app-store-connect-cli-skills/blob/0915e9da1016a6cc953659d43906dcf7839a4c52/README.md",
+        "https://github.com/rorkai/app-store-connect-cli-skills/blob/0915e9da1016a6cc953659d43906dcf7839a4c52/skills/asc-release-flow/SKILL.md"
+      ],
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README Codex plugin section and npx skills add --agent codex are the support claim. The asc CLI and App Store Connect credentials were not used.",
+      "runtime_tested": false
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "4b2896c8fc704f33d31c203c14445eba31b6d23d"
+      },
+      {
+        "path": "references/multi-item-submissions.md",
+        "blob": "3858d5519ba39ecd50368a67b4fb340d5092f96f"
+      }
+    ]
+  },
+  {
+    "id": "cangjie-skill",
+    "invocation": "cangjie-skill",
+    "category": "skill-engineering",
+    "summary": "Distill long-form media into agent skills",
+    "reason": "Meta-skill for turning long-form sources into invocable skills. Fits skill-engineering. Codex compatibility is unknown.",
+    "requirements": "Root meta skill only: SKILL.md. Example packs under books/ and dist/, extractors, and other repository scripts are not packaged and were not executed. Output may inherit copyright limits from source books, video, podcasts, or courses; operators must respect those rights. MIT at the repository root. Codex support is unknown. Not executed.",
+    "repo": "kangarooking/cangjie-skill",
+    "path": ".",
+    "commit": "a28de55ba881b9928956a55048f743f7a9e3b23e",
+    "stars": 11767,
+    "observed_at": "2026-10-27",
+    "stars_evidence": "https://api.github.com/repos/kangarooking/cangjie-skill",
+    "source": "https://github.com/kangarooking/cangjie-skill/blob/a28de55ba881b9928956a55048f743f7a9e3b23e/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/kangarooking/cangjie-skill/blob/a28de55ba881b9928956a55048f743f7a9e3b23e/LICENSE",
+      "https://github.com/kangarooking/cangjie-skill/blob/a28de55ba881b9928956a55048f743f7a9e3b23e/README.md"
+    ],
+    "codex": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/kangarooking/cangjie-skill/blob/a28de55ba881b9928956a55048f743f7a9e3b23e/README.md",
+        "https://github.com/kangarooking/cangjie-skill/blob/a28de55ba881b9928956a55048f743f7a9e3b23e/SKILL.md"
+      ],
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. The pinned README has no Codex string, so compatibility stays unknown. Root SKILL.md only; books, dist, and scripts are not packaged.",
+      "runtime_tested": false
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "5d0c0b68425847eb12e7bf3d7109a4d63db42fa3"
+      }
+    ]
+  },
+  {
+    "id": "clear-communication",
+    "invocation": "clear-communication",
+    "category": "writing-communication",
+    "summary": "Accurate reader-friendly explanations",
+    "reason": "Portable clarity skill for explanations, status, and docs. Distinct from humanizer and beautiful-article. Personal OS siblings are excluded.",
+    "requirements": "Skill folder only: SKILL.md, agents/openai.yaml, and references (examples, sources, and bundled license notices). No scripts in this folder. README states no mandatory network or tool API for the core skill. Do not install COMPASS personal-OS siblings (profile keeper, task forest, and similar). Distinct from humanizer and beautiful-article. MIT at the repository root; no per-skill LICENSE. Not executed.",
+    "repo": "dongshuyan/compass-skills",
+    "path": "skills/clear-communication",
+    "commit": "5bf1e5df7de8e6d92e649bab0aefd3041a038c05",
+    "stars": 761,
+    "observed_at": "2026-10-27",
+    "stars_evidence": "https://api.github.com/repos/dongshuyan/compass-skills",
+    "source": "https://github.com/dongshuyan/compass-skills/blob/5bf1e5df7de8e6d92e649bab0aefd3041a038c05/skills/clear-communication/SKILL.md",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "license_evidence": [
+      "https://github.com/dongshuyan/compass-skills/blob/5bf1e5df7de8e6d92e649bab0aefd3041a038c05/LICENSE",
+      "https://github.com/dongshuyan/compass-skills/blob/5bf1e5df7de8e6d92e649bab0aefd3041a038c05/README.md"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/dongshuyan/compass-skills/blob/5bf1e5df7de8e6d92e649bab0aefd3041a038c05/README.md",
+        "https://github.com/dongshuyan/compass-skills/blob/5bf1e5df7de8e6d92e649bab0aefd3041a038c05/skills/clear-communication/SKILL.md"
+      ],
+      "note": "Static source and name/description inspected. No skill instructions or bundled scripts executed. README install line uses -a codex and documents Codex paths. COMPASS personal-OS siblings are not packaged.",
+      "runtime_tested": false
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "7311fe9d659c17291bb8f14447905da51633bd70"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "50b87df9bcbfda46971c0f87f3c442b39e8bff7a"
+      },
+      {
+        "path": "references/examples.md",
+        "blob": "f9178f0fe9b89332c397b214cfe271a70ec8bba2"
+      },
+      {
+        "path": "references/licenses/gpt-with-taste.txt",
+        "blob": "ac6c7014915e0b5d8408069bc74fe0a00cc69906"
+      },
+      {
+        "path": "references/licenses/plain-english.txt",
+        "blob": "9f0c39c91a5799383a67237c2fa6a2c7975b5084"
+      },
+      {
+        "path": "references/sources.md",
+        "blob": "674c4df3692ff65b8568f1817d94c700403e78a4"
+      }
+    ]
   }
 ]
