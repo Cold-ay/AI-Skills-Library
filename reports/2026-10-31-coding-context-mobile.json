@@ -73,35 +73,6 @@
   ],
   "added": [
     {
-      "id": "test-driven-development",
-      "category": "coding",
-      "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md",
-      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
-      "stars": 309217,
-      "stars_evidence": "reports/evidence/2026-10-30/obra--superpowers.json",
-      "summary": "Build behavior changes through a failing-test-first cycle",
-      "reason": "Useful when a failing behavior can be reproduced and regression protection matters; stricter than a lightweight checklist.",
-      "requirements": "Full upstream Superpowers setup recommended. Review strict rewrite/delete instructions against project and user decisions; no permission to discard existing code is granted here.",
-      "codex": {
-        "status": "upstream-claimed",
-        "evidence": [
-          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
-          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md"
-        ],
-        "runtime_tested": false,
-        "note": "Pinned source review only; no host runtime execution."
-      },
-      "claude": {
-        "status": "upstream-claimed",
-        "evidence": [
-          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
-        ],
-        "runtime_tested": false,
-        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
-      },
-      "installable": false
-    },
-    {
       "id": "verification-before-completion",
       "category": "coding",
       "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/verification-before-completion/SKILL.md",
@@ -153,35 +124,6 @@
         "status": "upstream-claimed",
         "evidence": [
           "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
-        ],
-        "runtime_tested": false,
-        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
-      },
-      "installable": true
-    },
-    {
-      "id": "filesystem-context",
-      "category": "token-context",
-      "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md",
-      "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
-      "stars": 18252,
-      "stars_evidence": "reports/evidence/2026-10-30/muratcankoylan--Agent-Skills-for-Context-Engineering.json",
-      "summary": "Offload bulky outputs and retrieve task-relevant context from files",
-      "reason": "A practical first step for long coding sessions: preserve raw outputs, index them and reload only the needed sections.",
-      "requirements": "Filesystem read/write access. Optional Python helper has cleanup/deletion code; review destinations before execution. Offloading does not remove already loaded tokens from chat history.",
-      "codex": {
-        "status": "upstream-claimed",
-        "evidence": [
-          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
-          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md"
-        ],
-        "runtime_tested": false,
-        "note": "Pinned source review only; no host runtime execution."
-      },
-      "claude": {
-        "status": "upstream-claimed",
-        "evidence": [
-          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
         ],
         "runtime_tested": false,
         "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
@@ -420,5 +362,77 @@
   ],
   "star_comparisons": [],
   "published_on": "2026-10-31",
-  "observation_timezone": "Asia/Hong_Kong (API timestamps retained in UTC)"
+  "observation_timezone": "Asia/Hong_Kong (API timestamps retained in UTC)",
+  "revisited": [
+    {
+      "id": "test-driven-development",
+      "category": "coding",
+      "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "stars": 309217,
+      "stars_evidence": "reports/evidence/2026-10-30/obra--superpowers.json",
+      "summary": "Build behavior changes through a failing-test-first cycle",
+      "reason": "Useful when a failing behavior can be reproduced and regression protection matters; stricter than a lightweight checklist.",
+      "requirements": "Full upstream Superpowers setup recommended. Review strict rewrite/delete instructions against project and user decisions; no permission to discard existing code is granted here.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": false,
+      "preserved_catalogue_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "decision": "Already catalogued by an intervening remote research round. Fresh source review and star observation retained in this report only; existing entry unchanged."
+    },
+    {
+      "id": "filesystem-context",
+      "category": "token-context",
+      "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md",
+      "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+      "stars": 18252,
+      "stars_evidence": "reports/evidence/2026-10-30/muratcankoylan--Agent-Skills-for-Context-Engineering.json",
+      "summary": "Offload bulky outputs and retrieve task-relevant context from files",
+      "reason": "A practical first step for long coding sessions: preserve raw outputs, index them and reload only the needed sections.",
+      "requirements": "Filesystem read/write access. Optional Python helper has cleanup/deletion code; review destinations before execution. Offloading does not remove already loaded tokens from chat history.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": true,
+      "preserved_catalogue_commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+      "decision": "Already catalogued by an intervening remote research round. Fresh source review and star observation retained in this report only; existing entry unchanged."
+    }
+  ],
+  "integration": {
+    "base": "origin/main at 1dc18351a374a41b000e3357d082ddfe4e855ea7",
+    "preserved_prior_skills": 44,
+    "new_skills": 9,
+    "total_skills": 53,
+    "total_combinations": 21,
+    "note": "Preserved all remote catalogue and recipe records, historical reports and source pin changes. New recipe may refer to preserved older pins."
+  }
 }

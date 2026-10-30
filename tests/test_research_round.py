@@ -27,7 +27,10 @@ class ResearchRoundTests(unittest.TestCase):
         for ident in ('self-managed-context','expo-overview','expo-design-system','expo-native-ui','test-driven-development'):
             self.assertFalse(entries[ident]['installable'])
         self.assertIn('runtime',entries['self-managed-context']['requirements'])
-        self.assertIn('already loaded tokens',entries['filesystem-context']['requirements'])
+        snapshot=json.loads((skills.ROOT/'reports/2026-10-31-coding-context-mobile.json').read_text())
+        reviewed=next(e for e in snapshot['revisited'] if e['id']=='filesystem-context')
+        self.assertIn('already loaded tokens',reviewed['requirements'])
+        self.assertEqual(entries['filesystem-context']['commit'],reviewed['preserved_catalogue_commit'])
         self.assertEqual(entries['react-native-skills']['codex']['status'],'unknown')
     def test_recipes_reference_available_skills_without_claiming_packages(self):
         recipes={b['id']:b for b in bundles.combinations()}

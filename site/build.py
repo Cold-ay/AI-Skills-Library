@@ -57,8 +57,19 @@ def build():
         source=file.read_text();title=source.splitlines()[0].lstrip('# ')
         video='video-review' in file.stem
         combo='combinations' in file.stem
+        editorial='radar' in file.stem or file.stem.endswith('-weekly')
         first_paragraph=next((line.strip() for line in source.splitlines()[1:] if line.strip() and not line.startswith(('#','|','-','```'))),'Read the findings, sources and limitations in this report.')
-        posts.append(dict(slug=file.stem,title=title,date=file.stem[:10],category='Source review' if video else 'Discovery',readTime=max(1,len(source.split())//200),excerpt='Seven new skills, six workflow combinations and a reusable primary-source research method.' if combo else 'Ten recommendations, nine additions, and the evidence behind each decision.' if video else 'The preserved discovery snapshot: real repository stars, candidate projects and collection limits.' if file.stem=='2026-10-21' else first_paragraph[:240],html=markdown('\n'.join(source.splitlines()[1:])),source=f'https://github.com/Cold-ay/AI-Skills-Library/blob/main/reports/{file.name}',markdown=source))
+        if combo:
+            excerpt='Seven new skills, six workflow combinations and a reusable primary-source research method.'
+        elif video:
+            excerpt='Ten recommendations, nine additions, and the evidence behind each decision.'
+        elif file.stem=='2026-10-21':
+            excerpt='The preserved discovery snapshot: real repository stars, candidate projects and collection limits.'
+        elif editorial:
+            excerpt='Eleven candidates reviewed: humanizer and context-engineering included, seven deferred, two rejected. No runtime test was run.'
+        else:
+            excerpt=first_paragraph[:240]
+        posts.append(dict(slug=file.stem,title=title,date=file.stem[:10],category='Discovery' if editorial or not video else 'Source review',readTime=max(1,len(source.split())//200),excerpt=excerpt,html=markdown('\n'.join(source.splitlines()[1:])),source=f'https://github.com/Cold-ay/AI-Skills-Library/blob/main/reports/{file.name}',markdown=source))
     packs=combinations()
     artifacts=json.loads((dest/'downloads/index.json').read_text())
     for a in artifacts:

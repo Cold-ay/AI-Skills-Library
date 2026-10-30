@@ -1,8 +1,8 @@
 # AI Skills Library
 
-An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, mobile app design, video, coding, token/context efficiency, research/automation and skill engineering.
+An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, mobile app design, video, coding, token/context efficiency, research/automation, skill engineering, writing/editing, product management, electronics/EDA, mobile release, game development, and writing/communication.
 
-**39 curated entries · 9 combinations · 4 downloadable packs · English documentation · Manual reports · No scheduled updates**
+**53 curated entries · 21 combinations · 4 downloadable packs · English documentation · Manual reports · No scheduled updates**
 
 ## Discover a skill
 
@@ -17,7 +17,7 @@ python3 skills.py list --query animation
 python3 skills.py show taste-skill
 ```
 
-[Browse the catalogue](docs/CATALOG.md) · [Read the video analysis](reports/2026-10-21-video-review.md) · [Current discovery snapshot](reports/2026-10-21.md) · [Evidence standards](docs/CURATION.md)
+[Browse the catalogue](docs/CATALOG.md) · [Read the video analysis](reports/2026-10-21-video-review.md) · [Weekly review 2026-10-21](reports/2026-10-21-weekly.md) · [On-demand review 2026-10-22](reports/2026-10-22-ondemand.md) · [On-demand review 2026-10-27](reports/2026-10-27-ondemand.md) · [Current discovery snapshot](reports/2026-10-21.md) · [Evidence standards](docs/CURATION.md)
 
 ## Install and call
 
@@ -48,6 +48,11 @@ Installation only downloads pinned files and verifies Git blob hashes. It does n
 | Record-ready article presentations | web-video-presentation | Vite, React and TypeScript; optional TTS |
 | Programmatic video | remotion-best-practices | Node.js and Remotion |
 | Long-session handoff | context-compression | Measure quality as well as token use |
+| Session context setup and handoffs | context-engineering | Instruction-only; keep it separate from context-compression |
+| De-AI prose before publishing | humanizer | Instruction-only; the packaging script is not installed |
+| Product requirements | deliver-prd | Apache-2.0 skill folder; review optional local project memory before sharing |
+| KiCad design review | kicad | Instruction markdown only; upstream Python scripts are not installed |
+| Clear explanations | clear-communication | This skill folder only; not the COMPASS personal OS |
 | Research citations | zotero | Zotero Desktop and its complete plugin |
 | Plugin engineering | plugin-creator | Upstream repository workflow |
 
@@ -57,7 +62,7 @@ Codex labels distinguish static official evidence, upstream support claims and u
 
 The redesigned AI Skill Library uses static HTML, CSS and JavaScript. See [Vercel setup](docs/VERCEL.md) for its hosting configuration.
 
-Reports are added manually under `reports/`. The existing 2026-10-21 snapshot is preserved, including its collection errors. The video review adds a separate dated article and evidence file. No weekly schedule, report automation or scheduling template is included.
+Reports are added manually under `reports/`. The existing 2026-10-21 snapshot is preserved, including its collection errors. The video review and the 2026-10-21 weekly review are separate dated articles. No weekly schedule, report automation or scheduling template is included.
 
 The `site/` directory contains the AI Skill Library website: report articles, a searchable skill catalogue, topic filters, and a browser-local Markdown draft editor with export. Published pages are generated from repository reports and catalogue data.
 
@@ -84,7 +89,7 @@ Official reference: [Build skills](https://learn.chatgpt.com/docs/build-skills).
 
 ## Combinations and downloads
 
-Browse [workflow combinations](https://ai-skill-library.vercel.app/#combinations): four downloadable packs and five dependency-aware recipes. Each explains its stages, handoff artifacts, prerequisites, conflicts and evidence limits. Packs include pinned original skill files, MIT license texts, provenance manifests and a `combination-*` orchestration skill. They are static integration proposals; no end-to-end Codex runtime test is claimed.
+Browse [workflow combinations](https://ai-skill-library.vercel.app/#combinations): four downloadable packs and seventeen recipes. Recipes describe setup requirements and static integration proposals; they are not ZIPs or runtime-tested integrations. Each explains its stages, handoff artifacts, prerequisites, conflicts and evidence limits. Packs include pinned original skill files, MIT license texts, provenance manifests and a `combination-*` orchestration skill. They are static integration proposals; no end-to-end Codex runtime test is claimed.
 
 ```sh
 python3 bundles.py list
@@ -110,6 +115,6 @@ Paste the resulting file-based request into Claude Code. This does not install n
 
 ## Latest research: coding, context and mobile
 
-The [2026-10-31 research round](reports/2026-10-31-coding-context-mobile.md) adds 11 skills across coding quality, durable context and mobile app design. Browse the dedicated [Mobile app design category](https://ai-skill-library.vercel.app/#library/mobile-app). Sources include Superpowers, Context Engineering, Expo, SwiftUI Expert and Vercel. Stars were observed on 2026-10-30; immutable sources, requirements and host evidence are preserved. No runtime compatibility or token-saving percentage is claimed.
+The [2026-10-31 research round](reports/2026-10-31-coding-context-mobile.md) adds 9 skills and revisits 2 already catalogued workflows across coding quality, durable context and mobile app design. Browse the dedicated [Mobile app design category](https://ai-skill-library.vercel.app/#library/mobile-app). Sources include Superpowers, Context Engineering, Expo, SwiftUI Expert and Vercel. Stars were observed on 2026-10-30; immutable sources, requirements and host evidence are preserved. No runtime compatibility or token-saving percentage is claimed.
 
 Three additional recipes cover evidence-led coding, durable context/handoff and Expo design review. Future manual searches can use `research/queries-coding-context-mobile.json`.

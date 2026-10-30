@@ -1,6 +1,6 @@
 # Curated skills
 
-39 skills across seven categories. Stars are dated repository observations, not quality scores. Follow each source record for its own observation date, fixed commit and requirements.
+53 skills across 13 categories. Stars are dated repository observations, not quality scores. Follow each source record for its own observation date, fixed commit and requirements.
 
 | Skill | Purpose | Category | Stars | Codex evidence |
 |---|---|---|---:|---|
@@ -32,10 +32,24 @@
 | [scientific-critical-thinking](https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/scientific-critical-thinking/SKILL.md) | Appraise evidence, bias and scientific claims | research-automation | 53,459 | upstream-claimed |
 | [gsap-react](https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-react/SKILL.md) | React animation lifecycle and cleanup | website-ui | 16,731 | upstream-claimed |
 | [gsap-timeline](https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-timeline/SKILL.md) | Sequence animation with reusable timelines | website-ui | 16,731 | upstream-claimed |
-| [test-driven-development](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md) | Build behavior changes through a failing-test-first cycle | coding | 309,217 | upstream-claimed |
+| [humanizer](https://github.com/blader/humanizer/blob/8c307f367c91bd974002f10f2be2965d642c13df/SKILL.md) | De-AI prose rewriting | writing-editing | 59,130 | upstream-claimed |
+| [context-engineering](https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/context-engineering/SKILL.md) | Agent context setup and session handoffs | token-context | 109,160 | upstream-claimed |
+| [handoff](https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/handoff/SKILL.md) | Session handoff document | token-context | 300,066 | upstream-claimed |
+| [tdd](https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/tdd/SKILL.md) | Test-driven red-green loop | coding | 300,066 | upstream-claimed |
+| [diagnosing-bugs](https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md) | Feedback-loop-first bug diagnosis | coding | 300,066 | upstream-claimed |
+| [context-degradation](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-degradation/SKILL.md) | Diagnose context failure modes | token-context | 18,189 | upstream-claimed |
+| [context-fundamentals](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-fundamentals/SKILL.md) | Context engineering foundations | token-context | 18,189 | upstream-claimed |
+| [filesystem-context](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md) | Filesystem overflow for agent context | token-context | 18,189 | upstream-claimed |
+| [test-driven-development](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md) | Iron-law test-driven development | coding | 303,236 | upstream-claimed |
+| [deliver-prd](https://github.com/product-on-purpose/pm-skills/blob/f943d9589bfe9db06fac2641f9740987ff9b3aee/skills/deliver-prd/SKILL.md) | Stakeholder product requirements document | product-management | 763 | upstream-claimed |
+| [kicad](https://github.com/aklofas/kicad-happy/blob/2fd9aa0fe2d620f36627d9221e8b1393987ae38e/skills/kicad/SKILL.md) | KiCad schematic and PCB design review | electronics-eda | 1,508 | upstream-claimed |
+| [lean-startup](https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/lean-startup/SKILL.md) | MVP and pivot-or-persevere coaching | product-management | 2,509 | upstream-claimed |
+| [2d-essentials](https://github.com/jame581/GodotPrompter/blob/d7b26cdb5fae14d4ef7b713c5bf259395e75c3c6/skills/2d-essentials/SKILL.md) | Godot 4.3+ 2D systems guidance | game-development | 873 | upstream-claimed |
+| [asc-release-flow](https://github.com/rorkai/app-store-connect-cli-skills/blob/0915e9da1016a6cc953659d43906dcf7839a4c52/skills/asc-release-flow/SKILL.md) | App Store release steps via the asc CLI | mobile-release | 1,106 | upstream-claimed |
+| [cangjie-skill](https://github.com/kangarooking/cangjie-skill/blob/a28de55ba881b9928956a55048f743f7a9e3b23e/SKILL.md) | Distill long-form media into agent skills | skill-engineering | 11,767 | unknown |
+| [clear-communication](https://github.com/dongshuyan/compass-skills/blob/5bf1e5df7de8e6d92e649bab0aefd3041a038c05/skills/clear-communication/SKILL.md) | Accurate reader-friendly explanations | writing-communication | 761 | upstream-claimed |
 | [verification-before-completion](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/verification-before-completion/SKILL.md) | Require fresh command evidence before declaring work complete | coding | 309,217 | upstream-claimed |
 | [receiving-code-review](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/receiving-code-review/SKILL.md) | Evaluate review feedback before making changes | coding | 309,217 | upstream-claimed |
-| [filesystem-context](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md) | Offload bulky outputs and retrieve task-relevant context from files | token-context | 18,252 | upstream-claimed |
 | [memory-systems](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/memory-systems/SKILL.md) | Design cross-session memory and evidence-aware retrieval | token-context | 18,252 | upstream-claimed |
 | [self-managed-context](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/self-managed-context/SKILL.md) | Design an agent runtime that can edit its own live context | token-context | 18,252 | upstream-claimed |
 | [expo-overview](https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-overview/SKILL.md) | Route Expo tasks through the right SDK-aware workflow | mobile-app | 3,819 | upstream-claimed |

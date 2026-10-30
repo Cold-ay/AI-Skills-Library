@@ -45,8 +45,8 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 
 ## Research round published 2026-10-31
 
-- Added 11 pinned skills from five original repositories, preserving all earlier catalogue records and reports. Raw star observations retain 2026-10-30 UTC timestamps.
-- Added a seventh category, Mobile app design, and three recipe-only combinations. Four existing downloadable archives and their hashes remain unchanged.
-- 29 unit tests passed. New checks compare every added star count and repository identity with preserved API responses, verify source pins and host evidence boundaries, and keep plugin/custom-runtime entries out of standalone copying.
+- Reviewed 11 skills from five original repositories; added nine and preserved two already catalogued entries, preserving all earlier catalogue records and reports. Raw star observations retain 2026-10-30 UTC timestamps.
+- Added Mobile app design as the thirteenth category, and three recipe-only combinations. Four existing downloadable archives and their hashes remain unchanged.
+- 32 unit tests passed after integrating the remote research updates. New checks compare every added star count and repository identity with preserved API responses, verify source pins and host evidence boundaries, and keep plugin/custom-runtime entries out of standalone copying.
 - Browser preview verified Mobile app design filtering, SwiftUI search within that category, and the dated article with comparison tables. CLI category filtering and combination listing passed.
 - Static inspection only: no third-party code, source feedback commands, mobile builds/simulators, benchmark reproduction or end-to-end agent workflow execution. No token savings or runtime certification claimed.

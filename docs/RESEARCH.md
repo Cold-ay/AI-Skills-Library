@@ -4,7 +4,7 @@ Goal: find workflows that solve a stated task, record why they are useful, and p
 
 ## 1. Define the question
 
-Write the task, inputs, expected output, host (such as Codex), allowed services, budget and a concrete success check. Example: “Build a React animation that cleans up on unmount and respects reduced motion.” Choose one of website/UI, mobile app design, video, coding, context efficiency, research/automation or skill engineering. List existing skills so duplicates are not mistaken for new findings.
+Write the task, inputs, expected output, host (such as Codex), allowed services, budget and a concrete success check. Example: “Build a React animation that cleans up on unmount and respects reduced motion.” Choose one of website/UI, video, coding, context efficiency, research/automation, skill engineering, writing/editing, product management, electronics/EDA, mobile release, game development, or writing/communication. List existing skills so duplicates are not mistaken for new findings.
 
 ## 2. Search through complementary lanes
 

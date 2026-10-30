@@ -12,7 +12,7 @@ import tempfile
 import urllib.request
 
 ROOT = Path(__file__).resolve().parent
-CATEGORIES = {'website-ui', 'mobile-app', 'video', 'coding', 'token-context', 'research-automation', 'skill-engineering'}
+CATEGORIES = {'website-ui', 'mobile-app', 'video', 'coding', 'token-context', 'research-automation', 'skill-engineering', 'writing-editing', 'product-management', 'electronics-eda', 'mobile-release', 'game-development', 'writing-communication'}
 STATUSES = {'verified-static', 'upstream-claimed', 'unknown'}
 
 def safe_path(value):
@@ -20,6 +20,20 @@ def safe_path(value):
     if not value or value == '.' or p.is_absolute() or '..' in p.parts or '\\' in value or str(p) != value:
         raise ValueError('Unsafe relative path: ' + value)
     return p
+
+def catalog_path(value):
+    """Skill directory inside a repository. '.' is the repository root."""
+    if value == '.':
+        return PurePosixPath('.')
+    return safe_path(value)
+
+def raw_file_url(repo, commit, root, relative):
+    catalog_path(root)
+    safe_path(relative)
+    base = f'https://raw.githubusercontent.com/{repo}/{commit}'
+    if root == '.':
+        return f'{base}/{relative}'
+    return f'{base}/{root}/{relative}'
 
 def validate(entries):
     ids = set()
@@ -31,7 +45,7 @@ def validate(entries):
             raise ValueError('Invalid category or compatibility status')
         if not re.fullmatch(r'[\w.-]+/[\w.-]+', e['repo']) or not re.fullmatch(r'[0-9a-f]{40}', e['commit']):
             raise ValueError('Invalid source or unpinned commit')
-        safe_path(e['path'])
+        catalog_path(e['path'])
         if type(e['stars']) is not int or e['stars'] < 0 or not e['observed_at']:
             raise ValueError('Missing star evidence')
         if not e['codex']['evidence'] or e['codex']['runtime_tested'] is not False:
@@ -79,7 +93,7 @@ def install(e, destination, reviewed=False, downloader=fetch):
         total = 0
         for f in e['files']:
             safe_path(f['path'])
-            data = downloader(f"https://raw.githubusercontent.com/{e['repo']}/{e['commit']}/{e['path']}/{f['path']}")
+            data = downloader(raw_file_url(e['repo'], e['commit'], e['path'], f['path']))
             total += len(data)
             if total > 25_000_000 or blob_hash(data) != f['blob']:
                 raise ValueError('Size limit or integrity mismatch; nothing installed')
@@ -114,7 +128,7 @@ def main():
         if args.command == 'list':
             for e in entries:
                 if (not args.category or e['category'] == args.category) and args.query.lower() in json.dumps(e, ensure_ascii=False).lower():
-                    print(f"{e['id']:28} {e['category']:20} {e['codex']['status']:18} ★{e['stars']}  {e['summary']}")
+                    print(f"{e['id']:28} {e['category']:22} {e['codex']['status']:18} ★{e['stars']}  {e['summary']}")
             return
         e = next((e for e in entries if e['id'] == args.id), None)
         if e is None: raise ValueError('Unknown skill id; use list')
