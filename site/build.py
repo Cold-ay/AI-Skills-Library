@@ -77,6 +77,12 @@ def build():
         if hashlib.sha256(path.read_bytes()).hexdigest()!=a['sha256']:raise ValueError('Bundle archive integrity mismatch')
     payload=json.dumps(dict(skills=skills,posts=posts,combinations=packs,downloads=artifacts),ensure_ascii=True)
     (dest/'data.js').write_text('window.AI_SKILL_LIBRARY = '+payload+';\n')
+    # Version each asset so cached styles/scripts cannot mask a published UI change.
+    index=dest/'index.html';html=index.read_text()
+    for filename in ('style.css','data.js','library-ui.js','app.js'):
+        digest=hashlib.sha256((dest/filename).read_bytes()).hexdigest()[:12]
+        html=re.sub(r'((?:src|href)=")'+re.escape(filename)+r'(?:\?[^"]*)?"',lambda m:m[1]+filename+'?v='+digest+'"',html)
+    index.write_text(html)
     print(f'Built {len(posts)} articles and {len(skills)} skill records in {dest}')
     return posts
 

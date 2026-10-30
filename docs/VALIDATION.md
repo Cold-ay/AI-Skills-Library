@@ -50,3 +50,9 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - 32 unit tests passed after integrating the remote research updates. New checks compare every added star count and repository identity with preserved API responses, verify source pins and host evidence boundaries, and keep plugin/custom-runtime entries out of standalone copying.
 - Browser preview verified Mobile app design filtering, SwiftUI search within that category, and the dated article with comparison tables. CLI category filtering and combination listing passed.
 - Static inspection only: no third-party code, source feedback commands, mobile builds/simulators, benchmark reproduction or end-to-end agent workflow execution. No token savings or runtime certification claimed.
+
+## Sorting and skill-purpose UI
+
+- 33 Python tests and four Node tests passed. Sorting checks cover numeric star ordering, deterministic ties, alphabetical/date/evidence ordering, invalid modes and source-array preservation. Purpose filtering tests retain every stage of a matched workflow.
+- Browser preview verified descending/ascending star order within a category, URL restoration after reload, category-based combination filtering, and separate purpose/workflow-role fields.
+- Added content hashes to asset URLs after observing a stale stylesheet during visual verification; the build/test checks these against actual asset bytes.

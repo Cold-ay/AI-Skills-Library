@@ -79,6 +79,7 @@ The optional `python3 report.py` collector is **manual only**. It reads public G
 
 ```sh
 python3 -m unittest discover -s tests -v
+node --test tests/test_library_ui.cjs
 python3 skills.py validate
 python3 site/build.py
 ```

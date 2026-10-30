@@ -1,6 +1,7 @@
 import importlib.util
 from pathlib import Path
 import unittest
+import hashlib
 
 spec=importlib.util.spec_from_file_location('site_builder',Path(__file__).resolve().parents[1]/'site/build.py')
 site=importlib.util.module_from_spec(spec);spec.loader.exec_module(site)
@@ -28,6 +29,11 @@ class SiteTests(unittest.TestCase):
         self.assertIn('humanizer',by['2026-10-21-weekly']['excerpt'])
         self.assertNotEqual(by['2026-10-21']['excerpt'],by['2026-10-21-weekly']['excerpt'])
         self.assertTrue((site.HERE/'dist/data.js').read_text().startswith('window.AI_SKILL_LIBRARY = '))
+    def test_asset_versions_match_content(self):
+        site.build();html=(site.HERE/'dist/index.html').read_text()
+        for name in ('style.css','data.js','library-ui.js','app.js'):
+            digest=hashlib.sha256((site.HERE/'dist'/name).read_bytes()).hexdigest()[:12]
+            self.assertIn(name+'?v='+digest,html)
     def test_no_recurring_report_workflow(self):
         self.assertFalse((site.ROOT/'docs/workflows/weekly.yml').exists())
         for path in (site.ROOT/'.github/workflows').glob('*.yml'):

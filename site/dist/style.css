@@ -19,3 +19,8 @@
 .workflow-prompt .workflow-prompt-help{margin:10px 0 0;font-size:11px;line-height:1.7;color:var(--muted)}
 
 .bundle-host{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--muted);margin:0 0 18px}.bundle-host select{min-height:44px;max-width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:7px;background:var(--white);font:inherit;color:var(--ink)}
+
+/* Purpose stays distinct from a member's task-specific role. */
+.member-category{display:inline-flex;margin:0 0 8px}.member-name{display:block;font-weight:650;font-size:15px;overflow-wrap:anywhere}.member-name:hover{text-decoration:underline;text-underline-offset:3px}
+.member-purpose{margin:12px 0}.member-purpose dt{font-size:10px;font-weight:650;color:var(--ink);margin:10px 0 3px}.member-purpose dd{margin:0;color:var(--muted);font-size:12px;line-height:1.75}
+.combination-stages li::marker{color:var(--accent);font-weight:650}.library-tools label{min-width:155px}.library-tools select{max-width:100%}

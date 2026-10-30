@@ -52,3 +52,11 @@ Each downloadable pack also contains a root `CLAUDE.md` adapter. Keep the shared
 Choose **Claude Code · CLAUDE.md** in the combination page to copy an explicit file-based prompt. CLI equivalent: `python3 bundles.py call react-motion --agent claude`. The default Codex prompt remains available. The adapter does not change upstream instructions, grant tool permissions or install dependencies. Neither host has an end-to-end runtime verification claim.
 
 Reference: [Claude Code project memory](https://code.claude.com/docs/en/memory). CLAUDE.md supplies project instructions; a copied prompt requests a specific workflow.
+
+## Skill sorting and member purposes
+
+The Skills page supports curated order, GitHub stars (descending/ascending), alphabetical name, newest research observation, and documentary Codex evidence level. Sorting applies after category, evidence and text filters, preserves the source catalogue order, and uses names to break ties. The URL's `sort` parameter restores the selection on reload; unknown values fall back to curated order. Research date means `observed_at`, not upstream update time. Repository stars come from different dated snapshots and are not quality scores.
+
+Combination members display their catalogue category, general purpose and task-specific workflow role as separate fields. **Contains skills for** selects workflows containing at least one skill in that category; all stages remain visible and in their original order. It intersects with the existing workflow search and works with either host prompt option.
+
+Pure sorting and purpose-filter logic lives in `site/dist/library-ui.js`. Run `node --test tests/test_library_ui.cjs` (Node 18+) for its regression checks. `site/build.py` versions stylesheet and script URLs with content hashes so UI changes are not hidden by cached assets.
