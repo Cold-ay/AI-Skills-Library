@@ -1,6 +1,6 @@
 # Coding, context and mobile app design: the next research round
 
-Eleven additions across three areas, a dedicated Mobile app design category, and three new workflow recipes. The library now contains 39 skills in seven categories and nine combinations, including the four existing downloadable packs.
+Eleven skills reviewed: nine additions and two revisited entries across three areas, a dedicated Mobile app design category, and three new workflow recipes. The library now contains 53 skills in thirteen categories and twenty-one combinations, including the four existing downloadable packs.
 
 Published 2026-10-31 (Asia/Hong_Kong). Repository star observations were collected on 2026-10-30 at approximately 23:56 HKT; the raw API responses retain exact UTC timestamps. A skill being new to this library does not mean its repository was recently created.
 
@@ -30,7 +30,7 @@ No token-saving percentage is claimed. To evaluate a strategy, compare the same 
 
 ### Why some context advice was held back
 
-`context-degradation` has a useful failure taxonomy, but also includes broad numerical thresholds and a statement that doubling a long context makes cost exponential. This review did not establish those as valid across current models, provider pricing or workloads. It remains a deferred candidate rather than a new catalogue recommendation. The source link and reason are in the companion JSON.
+`context-degradation` has a useful failure taxonomy, but also includes broad numerical thresholds and a statement that doubling a long context makes cost exponential. This review did not establish those as valid across current models, provider pricing or workloads. It was already included by an intervening remote round and is preserved as historical catalogue content; this round does not add or re-endorse that entry. The source link and reason are in the companion JSON.
 
 `latent-briefing` was not selected: it assumes control over worker execution and KV-cache compaction. Its relevance to custom runtimes should not be presented as an ordinary Codex or Claude Code token-saving feature. Experimental Expo skills were also omitted in favor of the main plugin's guidance.
 
@@ -60,6 +60,10 @@ Expo's source recommends SDK-specific documentation, which is more useful than b
 
 These counts are repository-wide, not per-skill adoption or quality ratings. Five source repositories were inspected; several additions come from the same source. Existing pins and historical star observations were preserved, so a source can have different pins across research rounds. This report does not claim star growth or benchmark improvements.
 
+## Integration with intervening research
+
+The remote repository already contained 44 entries and 18 workflows from three earlier PRs when this round was integrated. `test-driven-development` and `filesystem-context` were already present. Their original catalogue entries and pins are preserved; this report records fresh source observations without replacing those entries. Nine other reviewed skills are newly added. Earlier reports, categories and recipes remain available. The context-degradation caveat above applies to the inspected newer source, not a silent rewrite of its historical catalogue record.
+
 ## Three new combinations
 
 | Recipe | Stages and handoff | Main boundary |
@@ -68,7 +72,7 @@ These counts are repository-wide, not per-skill adoption or quality ratings. Fiv
 | Durable context and handoff | Offload raw evidence → write a recoverable summary → retain useful memory | Scratch storage, handoff and semantic memory are separate; measure quality as well as tokens |
 | Expo design to native review | Detect Expo/SDK → adopt theme → native screen review → performance audit | SDK/platform rules own package choices; SwiftUI is an alternative stack |
 
-These are recipes, not new ZIPs or claims of tested interoperability. Expo's sibling/plugin dependencies and Superpowers' broader setup should be reviewed upstream. The context recipe deliberately retains the older compression skill pin; mixed-version combinations need a future smoke test. The existing four downloadable packs and their CLAUDE.md adapters are preserved.
+These are recipes, not new ZIPs or claims of tested interoperability. Expo's sibling/plugin dependencies and Superpowers' broader setup should be reviewed upstream. The context recipe deliberately retains the older compression skill pin; mixed-version combinations need a future smoke test. TDD and filesystem stages also use their preserved catalogue pins rather than silently switching to this report's fresh source checkout. The existing four downloadable packs and their CLAUDE.md adapters are preserved.
 
 ## Reproduce the research
 
