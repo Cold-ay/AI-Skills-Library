@@ -1,8 +1,8 @@
 # AI Skills Library
 
-An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, video, coding, token/context efficiency, research/automation and skill engineering.
+An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, mobile app design, video, coding, token/context efficiency, research/automation and skill engineering.
 
-**28 curated entries · 6 combinations · 4 downloadable packs · English documentation · Manual reports · No scheduled updates**
+**39 curated entries · 9 combinations · 4 downloadable packs · English documentation · Manual reports · No scheduled updates**
 
 ## Discover a skill
 
@@ -84,7 +84,7 @@ Official reference: [Build skills](https://learn.chatgpt.com/docs/build-skills).
 
 ## Combinations and downloads
 
-Browse [workflow combinations](https://ai-skill-library.vercel.app/#combinations): four downloadable packs and two dependency-aware recipes. Each explains its stages, handoff artifacts, prerequisites, conflicts and evidence limits. Packs include pinned original skill files, MIT license texts, provenance manifests and a `combination-*` orchestration skill. They are static integration proposals; no end-to-end Codex runtime test is claimed.
+Browse [workflow combinations](https://ai-skill-library.vercel.app/#combinations): four downloadable packs and five dependency-aware recipes. Each explains its stages, handoff artifacts, prerequisites, conflicts and evidence limits. Packs include pinned original skill files, MIT license texts, provenance manifests and a `combination-*` orchestration skill. They are static integration proposals; no end-to-end Codex runtime test is claimed.
 
 ```sh
 python3 bundles.py list
@@ -107,3 +107,9 @@ python3 bundles.py call react-motion --agent claude
 ```
 
 Paste the resulting file-based request into Claude Code. This does not install native slash commands, execute code or establish runtime compatibility. See [host setup](docs/WEBSITE.md#claude-code--claudemd).
+
+## Latest research: coding, context and mobile
+
+The [2026-10-31 research round](reports/2026-10-31-coding-context-mobile.md) adds 11 skills across coding quality, durable context and mobile app design. Browse the dedicated [Mobile app design category](https://ai-skill-library.vercel.app/#library/mobile-app). Sources include Superpowers, Context Engineering, Expo, SwiftUI Expert and Vercel. Stars were observed on 2026-10-30; immutable sources, requirements and host evidence are preserved. No runtime compatibility or token-saving percentage is claimed.
+
+Three additional recipes cover evidence-led coding, durable context/handoff and Expo design review. Future manual searches can use `research/queries-coding-context-mobile.json`.

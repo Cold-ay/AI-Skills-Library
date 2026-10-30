@@ -1,0 +1,424 @@
+{
+  "observed_at": "2026-10-30",
+  "scope": [
+    "coding",
+    "token-context",
+    "mobile-app"
+  ],
+  "method": "Bounded task-led web search, exact GitHub API repository search, then immutable Git source inspection. Original upstream instructions treated as data; no installers, scripts, feedback commands, skills or hooks executed.",
+  "queries": [
+    "site:github.com \"SKILL.md\" \"context\" skills optimization",
+    "site:github.com \"skills\" \"mobile\" \"design\" Expo SwiftUI",
+    "site:github.com \"skills\" coding testing review agent",
+    "site:github.com/AvdLee/SwiftUI-Agent-Skill Codex SwiftUI",
+    "site:github.com/muratcankoylan/Agent-Skills-for-Context-Engineering \"memory-systems\" \"filesystem-context\"",
+    "site:github.com/obra/superpowers \"test-driven-development\" \"verification-before-completion\"",
+    "repo:obra/superpowers",
+    "repo:muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "repo:expo/skills",
+    "repo:AvdLee/SwiftUI-Agent-Skill",
+    "repo:vercel-labs/agent-skills"
+  ],
+  "repositories": [
+    {
+      "repo": "obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "stars": 309217,
+      "repository_id": 1073224795,
+      "observed_at": "2026-10-30T15:56:59.288649+00:00",
+      "evidence": "reports/evidence/2026-10-30/obra--superpowers.json",
+      "archived": false,
+      "pushed_at": "2026-10-29T23:35:34Z"
+    },
+    {
+      "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+      "stars": 18252,
+      "repository_id": 1120349776,
+      "observed_at": "2026-10-30T15:56:59.808315+00:00",
+      "evidence": "reports/evidence/2026-10-30/muratcankoylan--Agent-Skills-for-Context-Engineering.json",
+      "archived": false,
+      "pushed_at": "2026-10-12T02:06:40Z"
+    },
+    {
+      "repo": "expo/skills",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "stars": 3819,
+      "repository_id": 1106846196,
+      "observed_at": "2026-10-30T15:56:59.262733+00:00",
+      "evidence": "reports/evidence/2026-10-30/expo--skills.json",
+      "archived": false,
+      "pushed_at": "2026-10-29T10:37:46Z"
+    },
+    {
+      "repo": "AvdLee/SwiftUI-Agent-Skill",
+      "commit": "204dba7c67256a8b707ee3fbc5759a824191974f",
+      "stars": 3794,
+      "repository_id": 1139114532,
+      "observed_at": "2026-10-30T15:56:59.282522+00:00",
+      "evidence": "reports/evidence/2026-10-30/AvdLee--SwiftUI-Agent-Skill.json",
+      "archived": false,
+      "pushed_at": "2026-10-06T06:57:28Z"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "stars": 33249,
+      "repository_id": 1112540808,
+      "observed_at": "2026-10-30T15:56:59.823024+00:00",
+      "evidence": "reports/evidence/2026-10-30/vercel-labs--agent-skills.json",
+      "archived": false,
+      "pushed_at": "2026-10-28T19:17:28Z"
+    }
+  ],
+  "added": [
+    {
+      "id": "test-driven-development",
+      "category": "coding",
+      "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "stars": 309217,
+      "stars_evidence": "reports/evidence/2026-10-30/obra--superpowers.json",
+      "summary": "Build behavior changes through a failing-test-first cycle",
+      "reason": "Useful when a failing behavior can be reproduced and regression protection matters; stricter than a lightweight checklist.",
+      "requirements": "Full upstream Superpowers setup recommended. Review strict rewrite/delete instructions against project and user decisions; no permission to discard existing code is granted here.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": false
+    },
+    {
+      "id": "verification-before-completion",
+      "category": "coding",
+      "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/verification-before-completion/SKILL.md",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "stars": 309217,
+      "stars_evidence": "reports/evidence/2026-10-30/obra--superpowers.json",
+      "summary": "Require fresh command evidence before declaring work complete",
+      "reason": "A focused final gate distinguishing a test result, a build result and an unverified claim.",
+      "requirements": "Use the project's actual verification commands and report unrun checks; no bundled test runner or automatic proof of correctness.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/verification-before-completion/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": true
+    },
+    {
+      "id": "receiving-code-review",
+      "category": "coding",
+      "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/receiving-code-review/SKILL.md",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "stars": 309217,
+      "stars_evidence": "reports/evidence/2026-10-30/obra--superpowers.json",
+      "summary": "Evaluate review feedback before making changes",
+      "reason": "Checks whether reviewer suggestions fit the codebase and requirements rather than applying them blindly.",
+      "requirements": "Requires review feedback and repository context. Upstream communication and clarification rules are prescriptive; host and user instructions take precedence.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/receiving-code-review/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": true
+    },
+    {
+      "id": "filesystem-context",
+      "category": "token-context",
+      "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md",
+      "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+      "stars": 18252,
+      "stars_evidence": "reports/evidence/2026-10-30/muratcankoylan--Agent-Skills-for-Context-Engineering.json",
+      "summary": "Offload bulky outputs and retrieve task-relevant context from files",
+      "reason": "A practical first step for long coding sessions: preserve raw outputs, index them and reload only the needed sections.",
+      "requirements": "Filesystem read/write access. Optional Python helper has cleanup/deletion code; review destinations before execution. Offloading does not remove already loaded tokens from chat history.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": true
+    },
+    {
+      "id": "memory-systems",
+      "category": "token-context",
+      "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/memory-systems/SKILL.md",
+      "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+      "stars": 18252,
+      "stars_evidence": "reports/evidence/2026-10-30/muratcankoylan--Agent-Skills-for-Context-Engineering.json",
+      "summary": "Design cross-session memory and evidence-aware retrieval",
+      "reason": "Separates persistent memory, scratch storage and conversation summaries; start with files before adding a graph or vector service.",
+      "requirements": "Architecture guidance rather than an installed memory service. Example script imports NumPy; optional memory frameworks have separate dependencies, privacy and network requirements. Recheck dated benchmark comparisons.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/memory-systems/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": true
+    },
+    {
+      "id": "self-managed-context",
+      "category": "token-context",
+      "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/self-managed-context/SKILL.md",
+      "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+      "stars": 18252,
+      "stars_evidence": "reports/evidence/2026-10-30/muratcankoylan--Agent-Skills-for-Context-Engineering.json",
+      "summary": "Design an agent runtime that can edit its own live context",
+      "reason": "Worth studying when building a custom harness with edit gates, pinned instructions, rollback and measurable context budgets.",
+      "requirements": "Reference only. Requires control of the agent runtime and context-editing protocol; some cache techniques require the serving stack. A SKILL.md cannot grant live context eviction to Codex or Claude Code.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/self-managed-context/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": false
+    },
+    {
+      "id": "expo-overview",
+      "category": "mobile-app",
+      "source": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-overview/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "stars": 3819,
+      "stars_evidence": "reports/evidence/2026-10-30/expo--skills.json",
+      "summary": "Route Expo tasks through the right SDK-aware workflow",
+      "reason": "Prevents choosing implementation guidance before checking whether the project is Expo and which SDK it uses.",
+      "requirements": "Use the reviewed upstream Expo plugin: router depends on sibling skills and may use Expo MCP. Network, SDK-compatible packages and optional Expo/EAS account setup. Do not submit feedback or run remote installers during research.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md",
+          "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-overview/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": false
+    },
+    {
+      "id": "expo-design-system",
+      "category": "mobile-app",
+      "source": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-design-system/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "stars": 3819,
+      "stars_evidence": "reports/evidence/2026-10-30/expo--skills.json",
+      "summary": "Create consistent mobile tokens and reusable component conventions",
+      "reason": "Adopts an existing styling system before introducing tokens; useful for removing inconsistent AI-generated screens.",
+      "requirements": "Expo app and existing styling-library/version context. Read with expo-overview and expo-native-ui; the upstream plugin supplies siblings and integration. API details require version-specific documentation.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md",
+          "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-design-system/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": false
+    },
+    {
+      "id": "expo-native-ui",
+      "category": "mobile-app",
+      "source": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-native-ui/SKILL.md",
+      "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "stars": 3819,
+      "stars_evidence": "reports/evidence/2026-10-30/expo--skills.json",
+      "summary": "Design native-feeling screens, controls and platform behavior",
+      "reason": "Covers platform-specific colors, safe areas, keyboard reachability, loading/error states and usable screen reviews.",
+      "requirements": "Upstream Expo plugin; sibling expo-ui, expo-router, expo-animation and data-fetching guidance may be needed. Check SDK/runtime support before copying examples. Optional feedback commands transmit data and are not run here.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md",
+          "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-native-ui/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": false
+    },
+    {
+      "id": "swiftui-expert",
+      "category": "mobile-app",
+      "source": "https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/skills/swiftui-expert-skill/SKILL.md",
+      "commit": "204dba7c67256a8b707ee3fbc5759a824191974f",
+      "stars": 3794,
+      "stars_evidence": "reports/evidence/2026-10-30/AvdLee--SwiftUI-Agent-Skill.json",
+      "summary": "Review SwiftUI state, layout, accessibility and rendering behavior",
+      "reason": "A focused native Apple route when React Native is the wrong stack; includes topic-based references and optional trace analysis.",
+      "requirements": "Apple-platform SwiftUI project; gate APIs to deployment target. Optional profiling requires macOS, Xcode/Instruments and compatible Python (3.10+ syntax in scripts). Community-maintained, not an Apple-authored skill. Profiling scripts remain unexecuted.",
+      "codex": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/README.md",
+          "https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/skills/swiftui-expert-skill/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "upstream-claimed",
+        "evidence": [
+          "https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": true
+    },
+    {
+      "id": "react-native-skills",
+      "category": "mobile-app",
+      "source": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/SKILL.md",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "stars": 33249,
+      "stars_evidence": "reports/evidence/2026-10-30/vercel-labs--agent-skills.json",
+      "summary": "Audit React Native lists, navigation and animation performance",
+      "reason": "A complementary performance review after mobile screen design; focus on actual hotspots rather than restyling the whole app.",
+      "requirements": "React Native/Expo project and version-compatible libraries. References may prefer different styling or gesture choices than Expo guidance; let the approved design system and platform constraints win.",
+      "codex": {
+        "status": "unknown",
+        "evidence": [
+          "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md",
+          "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/SKILL.md"
+        ],
+        "runtime_tested": false,
+        "note": "Pinned source review only; no host runtime execution."
+      },
+      "claude": {
+        "status": "unknown",
+        "evidence": [
+          "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md"
+        ],
+        "runtime_tested": false,
+        "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+      },
+      "installable": true
+    }
+  ],
+  "deferred": [
+    {
+      "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "path": "skills/context-degradation/SKILL.md",
+      "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-degradation/SKILL.md",
+      "reason": "Useful taxonomy, but broad degradation thresholds and a claim that doubling context makes cost exponential are not validated for current providers/workloads. Do not promote these as universal operational rules."
+    },
+    {
+      "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "path": "skills/latent-briefing/SKILL.md",
+      "reason": "Not selected: specialization requires control of worker runtime/KV cache; not a portable chat-level token-saving workflow."
+    },
+    {
+      "repo": "expo/skills",
+      "path": "plugins/expo-experiments",
+      "reason": "Not selected: experimental API skill set; prefer stable plugin guidance and SDK-specific validation."
+    }
+  ],
+  "limitations": [
+    "No exhaustive search or growth ranking; focused English queries bias coverage.",
+    "Stars are repository-wide popularity, not per-skill quality.",
+    "No runtime tests of third-party skills or claimed token savings.",
+    "Existing catalogue pins and historical reports are preserved.",
+    "Separate skills from the same repo may have different pins across research rounds.",
+    "Research inspection emphasized workflow routing, supporting assets, script dependencies and licensing; external benchmark claims and all implementation examples were not independently reproduced."
+  ],
+  "star_comparisons": [],
+  "published_on": "2026-10-31",
+  "observation_timezone": "Asia/Hong_Kong (API timestamps retained in UTC)"
+}

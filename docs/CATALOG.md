@@ -1,6 +1,6 @@
 # Curated skills
 
-28 skills. Repository stars are dated observations, not quality scores. See each record for immutable provenance and requirements.
+39 skills across seven categories. Stars are dated repository observations, not quality scores. Follow each source record for its own observation date, fixed commit and requirements.
 
 | Skill | Purpose | Category | Stars | Codex evidence |
 |---|---|---|---:|---|
@@ -32,3 +32,14 @@
 | [scientific-critical-thinking](https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/scientific-critical-thinking/SKILL.md) | Appraise evidence, bias and scientific claims | research-automation | 53,459 | upstream-claimed |
 | [gsap-react](https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-react/SKILL.md) | React animation lifecycle and cleanup | website-ui | 16,731 | upstream-claimed |
 | [gsap-timeline](https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-timeline/SKILL.md) | Sequence animation with reusable timelines | website-ui | 16,731 | upstream-claimed |
+| [test-driven-development](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md) | Build behavior changes through a failing-test-first cycle | coding | 309,217 | upstream-claimed |
+| [verification-before-completion](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/verification-before-completion/SKILL.md) | Require fresh command evidence before declaring work complete | coding | 309,217 | upstream-claimed |
+| [receiving-code-review](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/receiving-code-review/SKILL.md) | Evaluate review feedback before making changes | coding | 309,217 | upstream-claimed |
+| [filesystem-context](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md) | Offload bulky outputs and retrieve task-relevant context from files | token-context | 18,252 | upstream-claimed |
+| [memory-systems](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/memory-systems/SKILL.md) | Design cross-session memory and evidence-aware retrieval | token-context | 18,252 | upstream-claimed |
+| [self-managed-context](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/self-managed-context/SKILL.md) | Design an agent runtime that can edit its own live context | token-context | 18,252 | upstream-claimed |
+| [expo-overview](https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-overview/SKILL.md) | Route Expo tasks through the right SDK-aware workflow | mobile-app | 3,819 | upstream-claimed |
+| [expo-design-system](https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-design-system/SKILL.md) | Create consistent mobile tokens and reusable component conventions | mobile-app | 3,819 | upstream-claimed |
+| [expo-native-ui](https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-native-ui/SKILL.md) | Design native-feeling screens, controls and platform behavior | mobile-app | 3,819 | upstream-claimed |
+| [swiftui-expert](https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/skills/swiftui-expert-skill/SKILL.md) | Review SwiftUI state, layout, accessibility and rendering behavior | mobile-app | 3,794 | upstream-claimed |
+| [react-native-skills](https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/SKILL.md) | Audit React Native lists, navigation and animation performance | mobile-app | 33,249 | unknown |

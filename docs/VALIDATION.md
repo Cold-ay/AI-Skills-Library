@@ -42,3 +42,11 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - All four ZIPs now include a library-authored root CLAUDE.md adapter; original upstream skill bytes and licenses are preserved.
 - 26 unit tests passed, including adapter content, explicit Claude file-path prompts and archive manifest/checksum coverage. CLI `bundles.py call react-motion --agent claude` was verified.
 - Browser preview verified host selection switches the displayed prompt and setup instructions to Claude Code. Compatibility badges remain explicitly Codex evidence. Claude Code itself was not executed; this is file-based integration support, not a runtime certification.
+
+## Research round published 2026-10-31
+
+- Added 11 pinned skills from five original repositories, preserving all earlier catalogue records and reports. Raw star observations retain 2026-10-30 UTC timestamps.
+- Added a seventh category, Mobile app design, and three recipe-only combinations. Four existing downloadable archives and their hashes remain unchanged.
+- 29 unit tests passed. New checks compare every added star count and repository identity with preserved API responses, verify source pins and host evidence boundaries, and keep plugin/custom-runtime entries out of standalone copying.
+- Browser preview verified Mobile app design filtering, SwiftUI search within that category, and the dated article with comparison tables. CLI category filtering and combination listing passed.
+- Static inspection only: no third-party code, source feedback commands, mobile builds/simulators, benchmark reproduction or end-to-end agent workflow execution. No token savings or runtime certification claimed.

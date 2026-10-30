@@ -206,5 +206,107 @@
     "downloadable": false,
     "compatibility": "Static workflow proposal; no end-to-end Codex runtime test.",
     "licenses": {}
+  },
+  {
+    "id": "evidence-led-coding",
+    "title": "Evidence-led coding loop",
+    "summary": "Write a behavior test, evaluate review feedback, then verify the actual result.",
+    "skills": [
+      "test-driven-development",
+      "receiving-code-review",
+      "verification-before-completion"
+    ],
+    "stages": [
+      {
+        "skill": "test-driven-development",
+        "title": "Define a failing behavior",
+        "task": "Use a scoped failing test and a minimal change; preserve existing work and follow the project test policy."
+      },
+      {
+        "skill": "receiving-code-review",
+        "title": "Evaluate review feedback",
+        "task": "Check each suggestion against repository behavior before changing code; keep justified decisions and evidence."
+      },
+      {
+        "skill": "verification-before-completion",
+        "title": "Verify completion",
+        "task": "Run the commands that demonstrate the requested outcome and report failures and unrun checks."
+      }
+    ],
+    "requirements": "Reviewed upstream Superpowers setup and an existing project test toolchain. Recipe only: no full plugin, hooks or test runner are bundled.",
+    "conflicts": "User and project decisions override upstream rewrite/delete or always-test mandates. Review must not silently change the approved scope. A passing test alone does not prove a deployment or a UI flow works.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex or Claude Code runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "durable-context",
+    "title": "Durable context and handoff",
+    "summary": "Keep raw evidence in files, summarize the active task, then retain only useful cross-session knowledge.",
+    "skills": [
+      "filesystem-context",
+      "context-compression",
+      "memory-systems"
+    ],
+    "stages": [
+      {
+        "skill": "filesystem-context",
+        "title": "Offload bulky evidence",
+        "task": "Save raw outputs with paths and source timestamps; reload narrow excerpts rather than entire logs."
+      },
+      {
+        "skill": "context-compression",
+        "title": "Write a recoverable handoff",
+        "task": "Record goals, decisions, changed files, verification and next actions while preserving links to raw evidence."
+      },
+      {
+        "skill": "memory-systems",
+        "title": "Retain durable knowledge",
+        "task": "Persist only knowledge that must survive sessions, with provenance and a retention policy; start with files."
+      }
+    ],
+    "requirements": "Filesystem access and reviewed individual skills. Optional memory implementations have separate dependencies. Recipe only; the preserved compression pin is older than the new context guides.",
+    "conflicts": "Scratch files are not semantic memory. Offloading does not evict old chat messages or guarantee lower billing. Do not load every memory file by default; measure accuracy, latency and tokens on the same tasks.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex or Claude Code runtime test.",
+    "licenses": {}
+  },
+  {
+    "id": "expo-native-design",
+    "title": "Expo design to native review",
+    "summary": "Confirm Expo/SDK context, unify design tokens, then review native screen behavior and performance.",
+    "skills": [
+      "expo-overview",
+      "expo-design-system",
+      "expo-native-ui",
+      "react-native-skills"
+    ],
+    "stages": [
+      {
+        "skill": "expo-overview",
+        "title": "Route the task and detect SDK",
+        "task": "Inspect package.json and the requested goal; route only Expo projects through this workflow."
+      },
+      {
+        "skill": "expo-design-system",
+        "title": "Adopt a visual system",
+        "task": "Reuse the declared theme/library and define screen/component conventions without a second competing system."
+      },
+      {
+        "skill": "expo-native-ui",
+        "title": "Review native screen behavior",
+        "task": "Check platform controls, safe areas, keyboard access, dynamic text and data failure/recovery states."
+      },
+      {
+        "skill": "react-native-skills",
+        "title": "Audit measured hotspots",
+        "task": "Review list rendering and animation hotspots without overriding the approved design or choosing unsupported packages."
+      }
+    ],
+    "requirements": "Upstream Expo plugin and its routed siblings, a version-matched Expo project and platform simulator/device access for a real trial. Vercel guidance has unknown Codex/Claude support in the inspected README. Recipe only.",
+    "conflicts": "Expo guidance owns SDK and native platform decisions; performance advice cannot override accessibility or theme decisions. SwiftUI Expert is an alternative for a native Apple project, not another design layer to load into an Expo app. No API versions or device outcomes were validated here.",
+    "downloadable": false,
+    "compatibility": "Static workflow proposal; no end-to-end Codex or Claude Code runtime test.",
+    "licenses": {}
   }
 ]

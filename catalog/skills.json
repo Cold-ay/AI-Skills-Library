@@ -3950,5 +3950,955 @@
         "blob": "1fed372b0e5276b2a207d80bc23f81180a0dff55"
       }
     ]
+  },
+  {
+    "id": "test-driven-development",
+    "invocation": "test-driven-development",
+    "category": "coding",
+    "summary": "Build behavior changes through a failing-test-first cycle",
+    "reason": "Useful when a failing behavior can be reproduced and regression protection matters; stricter than a lightweight checklist.",
+    "requirements": "Full upstream Superpowers setup recommended. Review strict rewrite/delete instructions against project and user decisions; no permission to discard existing code is granted here.",
+    "repo": "obra/superpowers",
+    "path": "skills/test-driven-development",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "stars": 309217,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/obra--superpowers.json",
+    "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "46838cc9e893c06259e3bdad0fc2425b36242f15"
+      },
+      {
+        "path": "writing-good-tests.md",
+        "blob": "d3c4482fd30b4f9084bb61545fe73939a7502c28"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "verification-before-completion",
+    "invocation": "verification-before-completion",
+    "category": "coding",
+    "summary": "Require fresh command evidence before declaring work complete",
+    "reason": "A focused final gate distinguishing a test result, a build result and an unverified claim.",
+    "requirements": "Use the project's actual verification commands and report unrun checks; no bundled test runner or automatic proof of correctness.",
+    "repo": "obra/superpowers",
+    "path": "skills/verification-before-completion",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "stars": 309217,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/obra--superpowers.json",
+    "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/verification-before-completion/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/verification-before-completion/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "receiving-code-review",
+    "invocation": "receiving-code-review",
+    "category": "coding",
+    "summary": "Evaluate review feedback before making changes",
+    "reason": "Checks whether reviewer suggestions fit the codebase and requirements rather than applying them blindly.",
+    "requirements": "Requires review feedback and repository context. Upstream communication and clarification rules are prescriptive; host and user instructions take precedence.",
+    "repo": "obra/superpowers",
+    "path": "skills/receiving-code-review",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "stars": 309217,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/obra--superpowers.json",
+    "source": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/receiving-code-review/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/receiving-code-review/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "filesystem-context",
+    "invocation": "filesystem-context",
+    "category": "token-context",
+    "summary": "Offload bulky outputs and retrieve task-relevant context from files",
+    "reason": "A practical first step for long coding sessions: preserve raw outputs, index them and reload only the needed sections.",
+    "requirements": "Filesystem read/write access. Optional Python helper has cleanup/deletion code; review destinations before execution. Offloading does not remove already loaded tokens from chat history.",
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "path": "skills/filesystem-context",
+    "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+    "stars": 18252,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/muratcankoylan--Agent-Skills-for-Context-Engineering.json",
+    "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/filesystem-context/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "d80eec51832f6d7fb784839251a211ca84522239"
+      },
+      {
+        "path": "references/implementation-patterns.md",
+        "blob": "6487d650dd259a5d0defe275f2a8074d52499c3c"
+      },
+      {
+        "path": "scripts/filesystem_context.py",
+        "blob": "574ef4f6847b1720b2ee8959b44a5b638e331707"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "memory-systems",
+    "invocation": "memory-systems",
+    "category": "token-context",
+    "summary": "Design cross-session memory and evidence-aware retrieval",
+    "reason": "Separates persistent memory, scratch storage and conversation summaries; start with files before adding a graph or vector service.",
+    "requirements": "Architecture guidance rather than an installed memory service. Example script imports NumPy; optional memory frameworks have separate dependencies, privacy and network requirements. Recheck dated benchmark comparisons.",
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "path": "skills/memory-systems",
+    "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+    "stars": 18252,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/muratcankoylan--Agent-Skills-for-Context-Engineering.json",
+    "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/memory-systems/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/memory-systems/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "5c42112555148f9dd3913e093eb4a8427c1a974a"
+      },
+      {
+        "path": "references/implementation.md",
+        "blob": "8c248456f965d9eda5986b26dae2f340fda543f8"
+      },
+      {
+        "path": "scripts/memory_store.py",
+        "blob": "6bb63fae99e918f88013ae13d00c79164f752423"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "self-managed-context",
+    "invocation": "self-managed-context",
+    "category": "token-context",
+    "summary": "Design an agent runtime that can edit its own live context",
+    "reason": "Worth studying when building a custom harness with edit gates, pinned instructions, rollback and measurable context budgets.",
+    "requirements": "Reference only. Requires control of the agent runtime and context-editing protocol; some cache techniques require the serving stack. A SKILL.md cannot grant live context eviction to Codex or Claude Code.",
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "path": "skills/self-managed-context",
+    "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+    "stars": 18252,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/muratcankoylan--Agent-Skills-for-Context-Engineering.json",
+    "source": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/self-managed-context/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md",
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/self-managed-context/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "fcb93bf54346e76e682dbf873c5875f72844e06f"
+      },
+      {
+        "path": "references/evidence.md",
+        "blob": "982881383087a160ce7bdecb8241e6db5fd857c2"
+      },
+      {
+        "path": "references/harness-protocol.md",
+        "blob": "51085d97d0f069be70f024ab1286fbafda0923e6"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "expo-overview",
+    "invocation": "expo-overview",
+    "category": "mobile-app",
+    "summary": "Route Expo tasks through the right SDK-aware workflow",
+    "reason": "Prevents choosing implementation guidance before checking whether the project is Expo and which SDK it uses.",
+    "requirements": "Use the reviewed upstream Expo plugin: router depends on sibling skills and may use Expo MCP. Network, SDK-compatible packages and optional Expo/EAS account setup. Do not submit feedback or run remote installers during research.",
+    "repo": "expo/skills",
+    "path": "plugins/expo/skills/expo-overview",
+    "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+    "stars": 3819,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/expo--skills.json",
+    "source": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-overview/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md",
+        "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-overview/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "8d4fc1a52c7207d76826162bb349f59e87367a94"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "f64422bcca68c00f1d6f1154fd5d44cdc8e1dfd0"
+      },
+      {
+        "path": "references/launch-without-dev-menu.md",
+        "blob": "de4856a162b0627c0178103a29fc9969270bb301"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "expo-design-system",
+    "invocation": "expo-design-system",
+    "category": "mobile-app",
+    "summary": "Create consistent mobile tokens and reusable component conventions",
+    "reason": "Adopts an existing styling system before introducing tokens; useful for removing inconsistent AI-generated screens.",
+    "requirements": "Expo app and existing styling-library/version context. Read with expo-overview and expo-native-ui; the upstream plugin supplies siblings and integration. API details require version-specific documentation.",
+    "repo": "expo/skills",
+    "path": "plugins/expo/skills/expo-design-system",
+    "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+    "stars": 3819,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/expo--skills.json",
+    "source": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-design-system/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md",
+        "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-design-system/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "3c07361109588ae16b512ab0f77f44aacfc6bd47"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "2322f6ef8e7cfe1716bfc0254adb03a2faefe604"
+      },
+      {
+        "path": "references/audit.md",
+        "blob": "0a6e276fb410982ca3f5167f69fbe925286e0a14"
+      },
+      {
+        "path": "references/native-slop.md",
+        "blob": "b313f4c7f1f361b567b051682500a78245946bf6"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "expo-native-ui",
+    "invocation": "expo-native-ui",
+    "category": "mobile-app",
+    "summary": "Design native-feeling screens, controls and platform behavior",
+    "reason": "Covers platform-specific colors, safe areas, keyboard reachability, loading/error states and usable screen reviews.",
+    "requirements": "Upstream Expo plugin; sibling expo-ui, expo-router, expo-animation and data-fetching guidance may be needed. Check SDK/runtime support before copying examples. Optional feedback commands transmit data and are not run here.",
+    "repo": "expo/skills",
+    "path": "plugins/expo/skills/expo-native-ui",
+    "commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+    "stars": 3819,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/expo--skills.json",
+    "source": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-native-ui/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md",
+        "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/plugins/expo/skills/expo-native-ui/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "9bd26c48aab5682031b7a0b592148980252ca238"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "b41117eac0d64ecd7da917e692d62eb127b18ebc"
+      },
+      {
+        "path": "references/controls.md",
+        "blob": "05865bde831d647faae39fb3a8960bdc119f1b4f"
+      },
+      {
+        "path": "references/gradients.md",
+        "blob": "329600dc1d3c683dcc15b29ee7bc61e112acb6a6"
+      },
+      {
+        "path": "references/icons.md",
+        "blob": "d23ac8f14586a2539993b645561e37e39393de3e"
+      },
+      {
+        "path": "references/media.md",
+        "blob": "65813b4e20c6f532cd55c93a411471b887d7be24"
+      },
+      {
+        "path": "references/storage.md",
+        "blob": "c084f121367b6e9a6393af7f8c10b9247ccde108"
+      },
+      {
+        "path": "references/visual-effects.md",
+        "blob": "fdf312a6c81979df0e9cd14df88c3f22d2e4e3c7"
+      },
+      {
+        "path": "references/webgpu-three.md",
+        "blob": "58b5ce8046255f2c729b338da837a7e18804c356"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "swiftui-expert",
+    "invocation": "swiftui-expert-skill",
+    "category": "mobile-app",
+    "summary": "Review SwiftUI state, layout, accessibility and rendering behavior",
+    "reason": "A focused native Apple route when React Native is the wrong stack; includes topic-based references and optional trace analysis.",
+    "requirements": "Apple-platform SwiftUI project; gate APIs to deployment target. Optional profiling requires macOS, Xcode/Instruments and compatible Python (3.10+ syntax in scripts). Community-maintained, not an Apple-authored skill. Profiling scripts remain unexecuted.",
+    "repo": "AvdLee/SwiftUI-Agent-Skill",
+    "path": "skills/swiftui-expert-skill",
+    "commit": "204dba7c67256a8b707ee3fbc5759a824191974f",
+    "stars": 3794,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/AvdLee--SwiftUI-Agent-Skill.json",
+    "source": "https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/skills/swiftui-expert-skill/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/README.md",
+        "https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/skills/swiftui-expert-skill/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "534cf9adbd98a421ed85ea081373a370699bc2da"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "blob": "dc0a5c53ce2718b681456d4499e46b27b9c24c60"
+      },
+      {
+        "path": "assets/logo-small.png",
+        "blob": "58c6eb6734ee6246ebfba0f551f955bd879578e7"
+      },
+      {
+        "path": "assets/logo.png",
+        "blob": "7af7d764198eff72132f6da95e6ac213898cb288"
+      },
+      {
+        "path": "assets/logo.svg",
+        "blob": "34126506623cf59f7ed92d44d42408f12b7c9ce5"
+      },
+      {
+        "path": "references/accessibility-patterns.md",
+        "blob": "6f0ea0c1275696c5fbddccbf1d7a07b13ee03dbf"
+      },
+      {
+        "path": "references/animation-advanced.md",
+        "blob": "94256396380d90a6f6eb821bef6faca6d5130a19"
+      },
+      {
+        "path": "references/animation-basics.md",
+        "blob": "859682a9106895d725c065c6cd8454418694813e"
+      },
+      {
+        "path": "references/animation-transitions.md",
+        "blob": "e522466199b6f9cf8921fa46ca535579635bdd33"
+      },
+      {
+        "path": "references/charts-accessibility.md",
+        "blob": "a0f4cd6547a071a12b5590f9039e9705fbf44144"
+      },
+      {
+        "path": "references/charts.md",
+        "blob": "014adcf19b9cb8e22a3d655f77d486aca1512a9a"
+      },
+      {
+        "path": "references/document-apps.md",
+        "blob": "5e7bd695652f90a7e1fa5db015803aba5edba56a"
+      },
+      {
+        "path": "references/environment-patterns.md",
+        "blob": "85e2e2b4e2dd4412ad4eea45dacbd69c8516eb2d"
+      },
+      {
+        "path": "references/focus-patterns.md",
+        "blob": "74b3d010e0b879c4c9d8aada4ea0c60cc6335824"
+      },
+      {
+        "path": "references/image-optimization.md",
+        "blob": "73d6c14e7f2795a7dd5706519318a6ac159a5f28"
+      },
+      {
+        "path": "references/iphone-duo.md",
+        "blob": "6b4187145f91b24ee2e11c4e432c8ebefd9fc53d"
+      },
+      {
+        "path": "references/latest-apis.md",
+        "blob": "1f5b1d5594d3e5a51af2b38121fdb794fa25d08f"
+      },
+      {
+        "path": "references/layout-best-practices.md",
+        "blob": "7045f41e8c3ea4878f3b6f5d38f23315c0fab27a"
+      },
+      {
+        "path": "references/liquid-glass.md",
+        "blob": "f570bc4ab89f089ffe0a0efe6fd90876f5383aee"
+      },
+      {
+        "path": "references/list-patterns.md",
+        "blob": "e0fd28983c5f45f30f9d9319e189fc5b11441c3d"
+      },
+      {
+        "path": "references/localization.md",
+        "blob": "c2f7750d1576d54c834c2eb61a402d7cc2abba4d"
+      },
+      {
+        "path": "references/macos-scenes.md",
+        "blob": "f6cef4802c03cb10fa6562c6274aa70fbd14e5f3"
+      },
+      {
+        "path": "references/macos-views.md",
+        "blob": "ff5335d7b1cfcced0e1621fd272b74df65c2c29e"
+      },
+      {
+        "path": "references/macos-window-styling.md",
+        "blob": "40825d9b57c36054be44d39b5306ba4acf5fbd13"
+      },
+      {
+        "path": "references/modifier-patterns.md",
+        "blob": "03a8d24cac64640855a8a8d8c93ca3f46230640d"
+      },
+      {
+        "path": "references/performance-patterns.md",
+        "blob": "b62c68c2f758e83b5f14074f203d99bf8f073702"
+      },
+      {
+        "path": "references/previews.md",
+        "blob": "6e19d2bf2fb3272669f4992680a88b18dff2178a"
+      },
+      {
+        "path": "references/scroll-patterns.md",
+        "blob": "6827d55684a7063c634e1fd701216f813277a933"
+      },
+      {
+        "path": "references/sheet-navigation-patterns.md",
+        "blob": "d09845a0228f61728436a7bb1ba80ceaa5fd0e7e"
+      },
+      {
+        "path": "references/soft-deprecation.md",
+        "blob": "355f1ce6d721b0dac17fb20f11aaeeced319cc8e"
+      },
+      {
+        "path": "references/state-management.md",
+        "blob": "7a8b35722ffa57192bdd9ef0ccd4f841854ef896"
+      },
+      {
+        "path": "references/styled-text-editing.md",
+        "blob": "09f083d28b5631f08270f3f5b57d04eb21d1746b"
+      },
+      {
+        "path": "references/text-patterns.md",
+        "blob": "351097f950f4de968e4ce7bd7472dbe15da0d20a"
+      },
+      {
+        "path": "references/toolbar-patterns.md",
+        "blob": "c7586aee7c5d936170c9571149598e1266a23973"
+      },
+      {
+        "path": "references/trace-analysis.md",
+        "blob": "98f279f6fb14d619637e8aa396ad5f0d2a8e21fd"
+      },
+      {
+        "path": "references/trace-recording.md",
+        "blob": "fcfdd1d9b9fa8013a08127ec1642a2c758510cfe"
+      },
+      {
+        "path": "references/view-structure.md",
+        "blob": "6b60fc53aa65a1d68af0012c9883bfe3538a8614"
+      },
+      {
+        "path": "references/webkit-integration.md",
+        "blob": "c2a79841047d37f1ac1a55d57db6e4170be5eadb"
+      },
+      {
+        "path": "scripts/analyze_trace.py",
+        "blob": "250dbfdfb262f09301d097b597be3c92c5b6dc6e"
+      },
+      {
+        "path": "scripts/instruments_parser/__init__.py",
+        "blob": "e15975bd89069b689ec4a85a647824463e9b4c83"
+      },
+      {
+        "path": "scripts/instruments_parser/causes.py",
+        "blob": "1148b42ec6d669851e7c77f036840b7ea69f0d64"
+      },
+      {
+        "path": "scripts/instruments_parser/correlate.py",
+        "blob": "e29b8dea4d68d380a04a6fa1db5dbba8f430e623"
+      },
+      {
+        "path": "scripts/instruments_parser/events.py",
+        "blob": "6ea8028ef5be48a478d1dff7b3b308ee27b89b5a"
+      },
+      {
+        "path": "scripts/instruments_parser/hangs.py",
+        "blob": "8cfc75c3c7f962fbe29c77794151e512154942b3"
+      },
+      {
+        "path": "scripts/instruments_parser/hitches.py",
+        "blob": "a1e769d2a6abc12cc17319288c5b3af28a0f7f3f"
+      },
+      {
+        "path": "scripts/instruments_parser/summary.py",
+        "blob": "5927db72f0710e1b86d8160fde47bcb3ba0c7f88"
+      },
+      {
+        "path": "scripts/instruments_parser/swiftui.py",
+        "blob": "9c359dde0ec5f3f55c5f7c8405c7fe4cede74dff"
+      },
+      {
+        "path": "scripts/instruments_parser/time_profiler.py",
+        "blob": "720590670c18321dd1e4e3c71d470e411fe3bc93"
+      },
+      {
+        "path": "scripts/instruments_parser/xctrace.py",
+        "blob": "768839b46ddf26d10a1ceadb509319f5cadac151"
+      },
+      {
+        "path": "scripts/instruments_parser/xml_utils.py",
+        "blob": "e18acf0b2416183cdac55edad3f2ad27e1083932"
+      },
+      {
+        "path": "scripts/record_trace.py",
+        "blob": "16cd69d75c07bde86d16dfc321c723038bcb43ce"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "react-native-skills",
+    "invocation": "vercel-react-native-skills",
+    "category": "mobile-app",
+    "summary": "Audit React Native lists, navigation and animation performance",
+    "reason": "A complementary performance review after mobile screen design; focus on actual hotspots rather than restyling the whole app.",
+    "requirements": "React Native/Expo project and version-compatible libraries. References may prefer different styling or gesture choices than Expo guidance; let the approved design system and platform constraints win.",
+    "repo": "vercel-labs/agent-skills",
+    "path": "skills/react-native-skills",
+    "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+    "stars": 33249,
+    "observed_at": "2026-10-30",
+    "stars_evidence": "reports/evidence/2026-10-30/vercel-labs--agent-skills.json",
+    "source": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/SKILL.md"
+    ],
+    "codex": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md",
+        "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned source review only; no host runtime execution."
+    },
+    "claude": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary support only; CLAUDE.md adapter support does not certify this skill."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "blob": "d263eb9c111002248ec8b1539dbcd7ba7b6fddde"
+      },
+      {
+        "path": "README.md",
+        "blob": "854db9f525c3427060b4ecefd266f00beca94eac"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "73401865dd7440a43c5243b107a3763e0d2f4aae"
+      },
+      {
+        "path": "metadata.json",
+        "blob": "600eb5bc73d42a337a1d7aa3a59c654fee7b3278"
+      },
+      {
+        "path": "rules/_sections.md",
+        "blob": "0519cf2325eec35f2f56611204d9ee35aa2a9782"
+      },
+      {
+        "path": "rules/_template.md",
+        "blob": "1e9e70703485021e0b969f5731f38c8b9f8694db"
+      },
+      {
+        "path": "rules/animation-derived-value.md",
+        "blob": "310928a957b841fc5af335e984a4df6c1a6b3f3a"
+      },
+      {
+        "path": "rules/animation-gesture-detector-press.md",
+        "blob": "87c67827054bbb0a41d7e4ad78adf3612accb6bf"
+      },
+      {
+        "path": "rules/animation-gpu-properties.md",
+        "blob": "5fda09558e89b2d6021bbbe5a2731fd26d16b1f3"
+      },
+      {
+        "path": "rules/design-system-compound-components.md",
+        "blob": "d8239ee1fbb95d52b5b57a1d699199b1f4758e8c"
+      },
+      {
+        "path": "rules/fonts-config-plugin.md",
+        "blob": "39aa01477af69b372e7e6251831430da1c3203f9"
+      },
+      {
+        "path": "rules/imports-design-system-folder.md",
+        "blob": "8466dcb2544dad65639d29e5921a6be00ea1ac2c"
+      },
+      {
+        "path": "rules/js-hoist-intl.md",
+        "blob": "9af1c354c3e5e8836883c1a79a533fa5e72d4958"
+      },
+      {
+        "path": "rules/list-performance-callbacks.md",
+        "blob": "a0b3913ff3b88e92bd0a91b555f8c96732b2b953"
+      },
+      {
+        "path": "rules/list-performance-function-references.md",
+        "blob": "9721929b28b8115e8fa24ff8a6f82a6b1ec94d6e"
+      },
+      {
+        "path": "rules/list-performance-images.md",
+        "blob": "75a3bafc83f65e0e14af3b7cc5786ea40b0d34b4"
+      },
+      {
+        "path": "rules/list-performance-inline-objects.md",
+        "blob": "d5b6514a6658917468399803b16cb61b17459af7"
+      },
+      {
+        "path": "rules/list-performance-item-expensive.md",
+        "blob": "f617a76d4e525cde99b937a8e0e163dfe0ef52b0"
+      },
+      {
+        "path": "rules/list-performance-item-memo.md",
+        "blob": "634935e8ed0e6bd10014450c91b8a97187cbeda1"
+      },
+      {
+        "path": "rules/list-performance-item-types.md",
+        "blob": "1027e4e6cd982476271d12507c329653ec793484"
+      },
+      {
+        "path": "rules/list-performance-virtualize.md",
+        "blob": "8a393ba1eef972f72a00a67c6b0a23c09c688639"
+      },
+      {
+        "path": "rules/monorepo-native-deps-in-app.md",
+        "blob": "ff85d76735d89e4cdfa89afd75759020780c5d5f"
+      },
+      {
+        "path": "rules/monorepo-single-dependency-versions.md",
+        "blob": "1087dfa511e9837f14b71f49d1c3d2018d6cfdc1"
+      },
+      {
+        "path": "rules/navigation-native-navigators.md",
+        "blob": "035c5fd37ce16afc0613405bd1f0b8ad0cc8b1ce"
+      },
+      {
+        "path": "rules/react-compiler-destructure-functions.md",
+        "blob": "f76c25ac6f8c48c8436f0ccee1359a649a33b48f"
+      },
+      {
+        "path": "rules/react-compiler-reanimated-shared-values.md",
+        "blob": "0dcbaf47a6abeb72da8673f99b45d2e8b609412b"
+      },
+      {
+        "path": "rules/react-state-dispatcher.md",
+        "blob": "93e8b6db6112936ad57e6506f56eeef0725336c1"
+      },
+      {
+        "path": "rules/react-state-fallback.md",
+        "blob": "204f34665f206a734cb2d0de17a7179f3793dc89"
+      },
+      {
+        "path": "rules/react-state-minimize.md",
+        "blob": "64605b6c382e407f244d2db8b72bb3105ebae87b"
+      },
+      {
+        "path": "rules/rendering-no-falsy-and.md",
+        "blob": "30f05d3f8bea95379273799a21f0a1990a6e6511"
+      },
+      {
+        "path": "rules/rendering-text-in-text-component.md",
+        "blob": "fd1b9f407014c783f3e59a5f3e5bf72979d62547"
+      },
+      {
+        "path": "rules/scroll-position-no-state.md",
+        "blob": "a5760cd2892a9985aeeed93abf719be5dc4efa88"
+      },
+      {
+        "path": "rules/state-ground-truth.md",
+        "blob": "c3c4bd9e497bcec63c303ec1cf2d0ff34e5a39cb"
+      },
+      {
+        "path": "rules/ui-expo-image.md",
+        "blob": "72d768f1bf89d998e93611724e3608f48eb6b3a1"
+      },
+      {
+        "path": "rules/ui-image-gallery.md",
+        "blob": "ef26d962f376c8c3fe052d578e143932fdd96a58"
+      },
+      {
+        "path": "rules/ui-measure-views.md",
+        "blob": "8b783fee314ec7a4152cf49e0febcbdd78411e2c"
+      },
+      {
+        "path": "rules/ui-menus.md",
+        "blob": "5168bc2037ca1fd1e1312abd4a2b77fec8eb5264"
+      },
+      {
+        "path": "rules/ui-native-modals.md",
+        "blob": "f560e11e12e703a46517ff87d371a43e56230a81"
+      },
+      {
+        "path": "rules/ui-pressable.md",
+        "blob": "31c3d204274292e244466bae9f425064263ae80a"
+      },
+      {
+        "path": "rules/ui-safe-area-scroll.md",
+        "blob": "79812bc9ce35eaad4c965103d0d87b7230084ca8"
+      },
+      {
+        "path": "rules/ui-scrollview-content-inset.md",
+        "blob": "bbebc3b81c22ded13447efe5876c8c3408b4eb02"
+      },
+      {
+        "path": "rules/ui-styling.md",
+        "blob": "3908de3c4bbd03ce2f024917a2d82f9c03517100"
+      }
+    ],
+    "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
   }
 ]

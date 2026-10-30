@@ -1,6 +1,6 @@
 'use strict';
 const {skills,posts,combinations,downloads}=window.AI_SKILL_LIBRARY;
-const names={'website-ui':'Website & UI','video':'Video & storytelling','coding':'Coding','token-context':'Token & context','research-automation':'Research & automation','skill-engineering':'Skill engineering'};
+const names={'website-ui':'Website & UI','mobile-app':'Mobile app design','video':'Video & storytelling','coding':'Coding','token-context':'Token & context','research-automation':'Research & automation','skill-engineering':'Skill engineering'};
 const statuses={'verified-static':'Official static evidence','upstream-claimed':'Upstream claims support','unknown':'Unknown compatibility'};
 const $=s=>document.querySelector(s);
 function el(tag,cls,text){const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;}
@@ -8,9 +8,9 @@ function link(href,text,cls){const node=el('a',cls,text);node.href=href;if(href.
 function toast(text){$('#toast').textContent=text;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),3500);}
 function download(name,text){const url=URL.createObjectURL(new Blob([text],{type:'text/markdown;charset=utf-8'}));const a=link(url,'');a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 async function copy(text,button){try{await navigator.clipboard.writeText(text);const old=button.textContent;button.textContent='Copied ✓';setTimeout(()=>button.textContent=old,1800);}catch{toast('Clipboard unavailable. Select the command in Details to copy it.');}}
-$('#nav-count').textContent=skills.length;$('#skill-count').textContent=skills.length;$('#post-count').textContent=String(posts.length).padStart(2,'0');
-function categoryIcon(category){const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');const paths={'website-ui':'M3 5h18v14H3z M3 9h18 M7 7h.01 M10 7h.01','video':'M4 5h16v14H4z M10 9l5 3-5 3z','coding':'M8 6l-6 6 6 6 M16 6l6 6-6 6 M14 3l-4 18','token-context':'M4 6h16 M4 12h16 M4 18h16 M8 3v6 M16 9v6 M9 15v6','research-automation':'M15 15l6 6 M17 10a7 7 0 1 0-14 0 7 7 0 0 0 14 0','skill-engineering':'M5 3v18 M19 3v18 M2 8h6 M16 16h6 M8 8h8v8H8z'};const path=document.createElementNS('http://www.w3.org/2000/svg','path');path.setAttribute('d',paths[category]);svg.append(path);return svg;}
-const shortNames={'website-ui':'Website & UI','video':'Video','coding':'Coding','token-context':'Token & context','research-automation':'Research','skill-engineering':'Skill engineering'};
+if($('#category-count'))$('#category-count').textContent=Object.keys(names).length;$('#nav-count').textContent=skills.length;$('#skill-count').textContent=skills.length;$('#post-count').textContent=String(posts.length).padStart(2,'0');
+function categoryIcon(category){const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');const paths={'mobile-app':'M7 2h10v20H7z M10 5h4 M11 19h2','website-ui':'M3 5h18v14H3z M3 9h18 M7 7h.01 M10 7h.01','video':'M4 5h16v14H4z M10 9l5 3-5 3z','coding':'M8 6l-6 6 6 6 M16 6l6 6-6 6 M14 3l-4 18','token-context':'M4 6h16 M4 12h16 M4 18h16 M8 3v6 M16 9v6 M9 15v6','research-automation':'M15 15l6 6 M17 10a7 7 0 1 0-14 0 7 7 0 0 0 14 0','skill-engineering':'M5 3v18 M19 3v18 M2 8h6 M16 16h6 M8 8h8v8H8z'};const path=document.createElementNS('http://www.w3.org/2000/svg','path');path.setAttribute('d',paths[category]);svg.append(path);return svg;}
+const shortNames={'website-ui':'Website & UI','mobile-app':'Mobile app design','video':'Video','coding':'Coding','token-context':'Token & context','research-automation':'Research','skill-engineering':'Skill engineering'};
 
 for(const [category,name] of Object.entries(names)){const count=skills.filter(s=>s.category===category).length;const a=link('#library/'+category,name);a.append(el('span','',String(count).padStart(2,'0')));$('#topic-links').append(a);const tile=link('#library/'+category,'','category-tile');tile.dataset.category=category;const symbol=el('span','category-icon');symbol.setAttribute('aria-hidden','true');symbol.append(categoryIcon(category));tile.append(symbol,el('h3','',shortNames[category]),el('span','',count+(count===1?' skill':' skills')));$('#category-grid').append(tile);const o=el('option','',name);o.value=category;$('#category-select').append(o);}
 let postFilter='All';
@@ -45,7 +45,7 @@ $('#draft-form').addEventListener('submit',()=>{if($('#draft-status').textConten
 window.addEventListener('beforeunload',event=>{if(draftDirty){event.preventDefault();event.returnValue='';}});
 
 function renderCombinations(){
- const claude=$('#bundle-agent').value==='claude';
+ const claude=$('#bundle-agent')?.value==='claude';
  const host=claude?'Claude Code':'Codex';
  const query=$('#bundle-search').value.trim().toLowerCase();
  const found=combinations.filter(b=>JSON.stringify(b).toLowerCase().includes(query));
@@ -76,4 +76,4 @@ function renderCombinations(){
   $('#combinations').append(card);
  }
 }
-$('#bundle-search').addEventListener('input',renderCombinations);$('#bundle-agent').addEventListener('change',renderCombinations);renderCombinations();
+$('#bundle-search').addEventListener('input',renderCombinations);$('#bundle-agent')?.addEventListener('change',renderCombinations);renderCombinations();

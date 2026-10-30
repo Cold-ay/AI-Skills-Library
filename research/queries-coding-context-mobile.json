@@ -1,0 +1,11 @@
+{
+  "window_days": 90,
+  "per_query": 8,
+  "queries": [
+    "\"skills\" \"testing\" stars:>=20 archived:false pushed:>={since}",
+    "\"skills\" \"context\" stars:>=20 archived:false pushed:>={since}",
+    "\"skills\" \"Expo\" archived:false",
+    "\"skills\" \"SwiftUI\" archived:false",
+    "\"skills\" \"React Native\" archived:false"
+  ]
+}

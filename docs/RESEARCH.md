@@ -4,7 +4,7 @@ Goal: find workflows that solve a stated task, record why they are useful, and p
 
 ## 1. Define the question
 
-Write the task, inputs, expected output, host (such as Codex), allowed services, budget and a concrete success check. Example: “Build a React animation that cleans up on unmount and respects reduced motion.” Choose one of website/UI, video, coding, context efficiency, research/automation or skill engineering. List existing skills so duplicates are not mistaken for new findings.
+Write the task, inputs, expected output, host (such as Codex), allowed services, budget and a concrete success check. Example: “Build a React animation that cleans up on unmount and respects reduced motion.” Choose one of website/UI, mobile app design, video, coding, context efficiency, research/automation or skill engineering. List existing skills so duplicates are not mistaken for new findings.
 
 ## 2. Search through complementary lanes
 
@@ -61,3 +61,9 @@ python3 site/build.py
 ```
 
 Review the diff and generated articles. Test the site's search, workflow links, ZIP contents and invocation text. Building an archive tests packaging, not the behavior of the upstream skills. Add a dated report describing findings, omissions and collection failures. No recurring schedule is configured.
+
+## Focused round: published 2026-10-31
+
+The coding/context/mobile round uses `research/queries-coding-context-mobile.json` for future collection. Its actual method was targeted primary-source web search, exact repository API lookups and pinned Git review; see `reports/2026-10-31-coding-context-mobile.json` for the complete query and decision log. Observations occurred at 23:56 HKT on 2026-10-30; the publication date is 2026-10-31. Preserve this distinction when comparing snapshots.
+
+For context skills, distinguish file offloading, session compaction, persistent memory and live runtime context editing. Never turn benchmark-specific thresholds or architecture proposals into universal savings claims. For mobile design, detect Expo/React Native versus native SwiftUI, check the project SDK/OS target and note device/simulator checks not performed. Claude and Codex support claims must be attributed separately; unknown evidence stays unknown.
