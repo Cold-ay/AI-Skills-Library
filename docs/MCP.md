@@ -29,15 +29,15 @@ Windows PowerShell:
 
 ```powershell
 py -3 -m venv .venv-mcp
-.venv-mcp\Scripts\python.exe -m pip install -r requirements-mcp.txt
-.venv-mcp\Scripts\python.exe scripts\smoke_mcp.py
+.\.venv-mcp\Scripts\python.exe -m pip install -r requirements-mcp.txt
+.\.venv-mcp\Scripts\python.exe scripts\smoke_mcp.py
 ```
 
 The environment pins the official MCP Python SDK to 2.3.0. Source reading needs outbound HTTPS to raw.githubusercontent.com; metadata search, combinations and reports work from the local checkout without that network request. The smoke check starts a real MCP client/server connection and makes no model API calls. Add `--fetch-source` to verify one public pinned instruction file; this still does not execute it.
 
 ## 3. Configure your client
 
-Generate a configuration with the absolute paths for your own checkout. These commands print text only; they do not overwrite or register client settings. On Windows, use `.venv-mcp\Scripts\python.exe` in place of `.venv-mcp/bin/python` below.
+Generate a configuration with the absolute paths for your own checkout. These commands print text only; they do not overwrite or register client settings. On Windows, use `.\.venv-mcp\Scripts\python.exe` in place of `.venv-mcp/bin/python` below.
 
 For Codex:
 
@@ -81,7 +81,7 @@ Use the ai_skill_library MCP server to find skills for reviewing a SwiftUI app. 
 Use the ai_skill_library MCP server to get the react-motion combination. Load each stage's SKILL.md and its remaining pages only when needed, then help me build a reduced-motion-aware hero animation.
 ```
 
-Skill cards offer **Copy MCP prompt**. Combination cards offer **MCP · Connected client** in the prompt selector. These buttons copy requests for the connected client; the website itself does not call your local server. Codex/Claude file-based invocation remains available as a separate option.
+The website’s **MCP** section introduces the connection, offers task previews from current catalogue data, and provides a four-step setup wizard with client/OS choices and copyable commands. Previews and copy buttons do not run a local server. Skill cards offer **Copy MCP prompt**. Combination cards offer **MCP · Connected client** in the prompt selector. These buttons copy requests for the connected client; the website itself does not call your local server. Codex/Claude file-based invocation remains available as a separate option.
 
 Clients exposing MCP prompts can request `use_skill` with `skill_id` and `task`, or `use_combination` with `combination_id` and `task`. These return task context, not a running agent. A skill source remains third-party reference data; host/user instructions and authorization still govern its use.
 

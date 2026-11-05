@@ -30,3 +30,13 @@ test('purpose filtering includes workflows with matching members, preserves othe
  assert.equal(matchesPurpose(workflow,rows,'all'),true);
  assert.deepEqual(workflow.skills,['zulu','beta']);
 });
+const {mcpSetupPlan}=require('../site/dist/library-ui.js');
+test('MCP setup uses the selected client and platform without assuming an installed server',()=>{
+ const windows=mcpSetupPlan('claude','windows');assert.equal(windows.length,4);assert.ok(windows[2].command.startsWith('.\\.venv-mcp'));
+ assert.ok(windows[1].command.startsWith('py -3 -m venv'));
+ assert.ok(windows[2].command.includes('.venv-mcp\\Scripts\\python.exe mcp_server.py --config claude'));
+ assert.ok(windows[3].command.endsWith('scripts/smoke_mcp.py'));
+ const posix=mcpSetupPlan('codex','posix');assert.ok(posix[2].command.endsWith('--config codex'));
+ assert.ok(posix[2].description.includes('only prints settings'));
+ assert.ok(!posix.some(step=>step.command.includes('codex mcp add')));
+});

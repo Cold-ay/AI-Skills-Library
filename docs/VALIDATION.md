@@ -64,3 +64,9 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - Live SDK client/server smoke test discovered all tools/prompts, read the overview, retrieved React motion stages and fetched GSAP core at its catalogue commit. Its Git blob hash matched. No third-party scripts, installers, hooks or agent workflows ran.
 - Tests exercise unknown IDs, manifest restrictions, traversal, report symlinks, binary/oversized content, hash mismatch, page bounds, metadata-only search and absolute-path configuration generation.
 - Client configuration is generated but host/account settings are not edited. The static Vercel website is not a remote MCP endpoint. No specific Codex/Claude desktop UI connection or full skill runtime certification is claimed.
+
+## MCP introduction and setup wizard â€” 2026-11-05
+
+- Added an MCP main-navigation section and home-page callout, preserving the old connection route. Visual explanation and interactive task examples are based on current catalogue data; they do not simulate a successful live connection.
+- Browser preview verified task switching, Claude/Windows setup selection, step navigation, command copy feedback and the final request step. Five JavaScript tests cover sorting/filtering and platform/client-specific setup commands; 46 Python tests continue to pass.
+- Windows commands use an explicit PowerShell relative executable path. Full technical setup and the local-stdio limitation remain available. No client settings or server capabilities were changed by this UI update.

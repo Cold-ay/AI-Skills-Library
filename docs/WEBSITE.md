@@ -60,3 +60,9 @@ The Skills page supports curated order, GitHub stars (descending/ascending), alp
 Combination members display their catalogue category, general purpose and task-specific workflow role as separate fields. **Contains skills for** selects workflows containing at least one skill in that category; all stages remain visible and in their original order. It intersects with the existing workflow search and works with either host prompt option.
 
 Pure sorting and purpose-filter logic lives in `site/dist/library-ui.js`. Run `node --test tests/test_library_ui.cjs` (Node 18+) for its regression checks. `site/build.py` versions stylesheet and script URLs with content hashes so UI changes are not hidden by cached assets.
+
+## MCP section and guided setup
+
+`#mcp` opens the dedicated MCP section in the main navigation; the original `#connect` route remains an alias. The home page links to it through a connection callout. It explains the protocol and the distinction between skills and connectivity, then offers task previews using real catalogue entries. Previews do not contact the MCP server.
+
+The four-step wizard lets users select Codex/Claude Code and macOS/Linux/Windows. Commands come from the tested `mcpSetupPlan` helper. Configuration generation prints settings for a user to merge; no web control executes commands or claims a connected client. The final step separates the terminal smoke test from the request to paste into the AI client. Full documentation remains in a collapsed technical reference.
