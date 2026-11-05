@@ -1,0 +1,921 @@
+{
+  "observed_at": "2026-11-05T09:21:19.463647+00:00",
+  "repo": "testdino-hq/playwright-skill",
+  "commit": "178d1cb537604279d7b54500c4823a6db42b9de6",
+  "metadata": {
+    "id": 1157070830,
+    "node_id": "R_kgDORPd_7g",
+    "name": "playwright-skill",
+    "full_name": "testdino-hq/playwright-skill",
+    "private": false,
+    "owner": {
+      "login": "testdino-hq",
+      "id": 224796533,
+      "node_id": "O_kgDODWYfdQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224796533?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/testdino-hq",
+      "html_url": "https://github.com/testdino-hq",
+      "followers_url": "https://api.github.com/users/testdino-hq/followers",
+      "following_url": "https://api.github.com/users/testdino-hq/following{/other_user}",
+      "gists_url": "https://api.github.com/users/testdino-hq/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/testdino-hq/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/testdino-hq/subscriptions",
+      "organizations_url": "https://api.github.com/users/testdino-hq/orgs",
+      "repos_url": "https://api.github.com/users/testdino-hq/repos",
+      "events_url": "https://api.github.com/users/testdino-hq/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/testdino-hq/received_events",
+      "type": "Organization",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "html_url": "https://github.com/testdino-hq/playwright-skill",
+    "description": "TestDino Playwright Skill: AI-powered guides for Playwright best practices, made by testdino.com.",
+    "fork": false,
+    "url": "https://api.github.com/repos/testdino-hq/playwright-skill",
+    "forks_url": "https://api.github.com/repos/testdino-hq/playwright-skill/forks",
+    "keys_url": "https://api.github.com/repos/testdino-hq/playwright-skill/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/testdino-hq/playwright-skill/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/testdino-hq/playwright-skill/teams",
+    "hooks_url": "https://api.github.com/repos/testdino-hq/playwright-skill/hooks",
+    "issue_events_url": "https://api.github.com/repos/testdino-hq/playwright-skill/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/testdino-hq/playwright-skill/events",
+    "assignees_url": "https://api.github.com/repos/testdino-hq/playwright-skill/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/testdino-hq/playwright-skill/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/testdino-hq/playwright-skill/tags",
+    "blobs_url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/testdino-hq/playwright-skill/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/testdino-hq/playwright-skill/languages",
+    "stargazers_url": "https://api.github.com/repos/testdino-hq/playwright-skill/stargazers",
+    "contributors_url": "https://api.github.com/repos/testdino-hq/playwright-skill/contributors",
+    "subscribers_url": "https://api.github.com/repos/testdino-hq/playwright-skill/subscribers",
+    "subscription_url": "https://api.github.com/repos/testdino-hq/playwright-skill/subscription",
+    "commits_url": "https://api.github.com/repos/testdino-hq/playwright-skill/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/testdino-hq/playwright-skill/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/testdino-hq/playwright-skill/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/testdino-hq/playwright-skill/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/testdino-hq/playwright-skill/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/testdino-hq/playwright-skill/merges",
+    "archive_url": "https://api.github.com/repos/testdino-hq/playwright-skill/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/testdino-hq/playwright-skill/downloads",
+    "issues_url": "https://api.github.com/repos/testdino-hq/playwright-skill/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/testdino-hq/playwright-skill/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/testdino-hq/playwright-skill/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/testdino-hq/playwright-skill/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/testdino-hq/playwright-skill/labels{/name}",
+    "releases_url": "https://api.github.com/repos/testdino-hq/playwright-skill/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/testdino-hq/playwright-skill/deployments",
+    "created_at": "2026-02-13T11:49:59Z",
+    "updated_at": "2026-11-04T16:34:32Z",
+    "pushed_at": "2026-10-12T07:23:03Z",
+    "git_url": "git://github.com/testdino-hq/playwright-skill.git",
+    "ssh_url": "git@github.com:testdino-hq/playwright-skill.git",
+    "clone_url": "https://github.com/testdino-hq/playwright-skill.git",
+    "svn_url": "https://github.com/testdino-hq/playwright-skill",
+    "homepage": "https://www.testdino.com",
+    "size": 816,
+    "stargazers_count": 410,
+    "watchers_count": 410,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": false,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 67,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "has_pull_requests": true,
+    "pull_request_creation_policy": "all",
+    "topics": [
+      "ai",
+      "ai-skills",
+      "antigravity-skills",
+      "claude-skills",
+      "codex-skills",
+      "cursor-skills",
+      "devtool",
+      "openclaw-skills",
+      "playwright",
+      "reporting",
+      "skills",
+      "test-reporting",
+      "testing-tools"
+    ],
+    "visibility": "public",
+    "forks": 67,
+    "open_issues": 1,
+    "watchers": 410,
+    "default_branch": "main",
+    "temp_clone_token": null,
+    "custom_properties": {},
+    "organization": {
+      "login": "testdino-hq",
+      "id": 224796533,
+      "node_id": "O_kgDODWYfdQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224796533?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/testdino-hq",
+      "html_url": "https://github.com/testdino-hq",
+      "followers_url": "https://api.github.com/users/testdino-hq/followers",
+      "following_url": "https://api.github.com/users/testdino-hq/following{/other_user}",
+      "gists_url": "https://api.github.com/users/testdino-hq/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/testdino-hq/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/testdino-hq/subscriptions",
+      "organizations_url": "https://api.github.com/users/testdino-hq/orgs",
+      "repos_url": "https://api.github.com/users/testdino-hq/repos",
+      "events_url": "https://api.github.com/users/testdino-hq/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/testdino-hq/received_events",
+      "type": "Organization",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "network_count": 67,
+    "subscribers_count": 4
+  },
+  "tree": {
+    "sha": "178d1cb537604279d7b54500c4823a6db42b9de6",
+    "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/trees/178d1cb537604279d7b54500c4823a6db42b9de6",
+    "tree": [
+      {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6c5b4dc9628583b174164db2b5f9672e005969f6",
+        "size": 1065,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/6c5b4dc9628583b174164db2b5f9672e005969f6"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fc67f5c0c222aeb299c300b361d219f3fa414476",
+        "size": 16440,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/fc67f5c0c222aeb299c300b361d219f3fa414476"
+      },
+      {
+        "path": "SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4121859998d96191126b5b7cc7b60593441b8596",
+        "size": 13343,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/4121859998d96191126b5b7cc7b60593441b8596"
+      },
+      {
+        "path": "ci",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "8e9883c95b587d5ea31c0d5c9ee83a5fcbca5dd1",
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/trees/8e9883c95b587d5ea31c0d5c9ee83a5fcbca5dd1"
+      },
+      {
+        "path": "ci/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ceba7f1656c9ee6f4cf6b96bb1c14d8a9cfd35c9",
+        "size": 2126,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/ceba7f1656c9ee6f4cf6b96bb1c14d8a9cfd35c9"
+      },
+      {
+        "path": "ci/ci-github-actions.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9aea9ec9f2bc678ca5fedd687de0f0f49d77d56e",
+        "size": 18461,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/9aea9ec9f2bc678ca5fedd687de0f0f49d77d56e"
+      },
+      {
+        "path": "ci/ci-gitlab.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a994ec92d1fc278fa141b7cc749840468ae29b90",
+        "size": 11050,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/a994ec92d1fc278fa141b7cc749840468ae29b90"
+      },
+      {
+        "path": "ci/ci-other.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "36fa3af00ea174095f825dd104be2a951a4b4fdf",
+        "size": 15424,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/36fa3af00ea174095f825dd104be2a951a4b4fdf"
+      },
+      {
+        "path": "ci/docker-and-containers.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "397e7b6d43833d73b7d10b32e904c245c3269afa",
+        "size": 14653,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/397e7b6d43833d73b7d10b32e904c245c3269afa"
+      },
+      {
+        "path": "ci/global-setup-teardown.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "250bf6a32863dff8a9363289a69feb25df68869e",
+        "size": 18100,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/250bf6a32863dff8a9363289a69feb25df68869e"
+      },
+      {
+        "path": "ci/parallel-and-sharding.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "059a8b65f708571a2237b598b2e9e6de24df4bec",
+        "size": 16511,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/059a8b65f708571a2237b598b2e9e6de24df4bec"
+      },
+      {
+        "path": "ci/projects-and-dependencies.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ec2e99ac3b4d55625e17a88e1a9f6bc90285c470",
+        "size": 19562,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/ec2e99ac3b4d55625e17a88e1a9f6bc90285c470"
+      },
+      {
+        "path": "ci/reporting-and-artifacts.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3549ca4e06a2fe00ee1e99ea110850fc3040eed8",
+        "size": 20562,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/3549ca4e06a2fe00ee1e99ea110850fc3040eed8"
+      },
+      {
+        "path": "ci/test-coverage.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9352ebd120c702b1e8b6ddded7316f66237df3f0",
+        "size": 14106,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/9352ebd120c702b1e8b6ddded7316f66237df3f0"
+      },
+      {
+        "path": "core",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "869cff65d704b1d7bc1a58e691b5acf41dd2d289",
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/trees/869cff65d704b1d7bc1a58e691b5acf41dd2d289"
+      },
+      {
+        "path": "core/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f9d3da9d906319182089534fad2929d6111ddab9",
+        "size": 6045,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/f9d3da9d906319182089534fad2929d6111ddab9"
+      },
+      {
+        "path": "core/accessibility.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4e7c5679fc2bd7b12892872f17f6694408a85da6",
+        "size": 56716,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/4e7c5679fc2bd7b12892872f17f6694408a85da6"
+      },
+      {
+        "path": "core/angular.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d16cd8c3d86ca13a542e73c875917f06dc634b96",
+        "size": 40264,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/d16cd8c3d86ca13a542e73c875917f06dc634b96"
+      },
+      {
+        "path": "core/api-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b9b106b2fd63c81cc1948a9ec7a9b894289f5684",
+        "size": 52979,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/b9b106b2fd63c81cc1948a9ec7a9b894289f5684"
+      },
+      {
+        "path": "core/assertions-and-waiting.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "22d2227cc6fcfd866a39f00350aa1a1354cd0ff1",
+        "size": 29222,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/22d2227cc6fcfd866a39f00350aa1a1354cd0ff1"
+      },
+      {
+        "path": "core/auth-flows.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c8430308d7822ba80b7dc05ff5b7ef0fa70eeb14",
+        "size": 36956,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/c8430308d7822ba80b7dc05ff5b7ef0fa70eeb14"
+      },
+      {
+        "path": "core/authentication.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ad252a1647d4f0cacaf0e5d4b8ebc082b6887417",
+        "size": 50582,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/ad252a1647d4f0cacaf0e5d4b8ebc082b6887417"
+      },
+      {
+        "path": "core/browser-apis.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eadeb53e8bd226f31b27f0325ccd514fcd7721d8",
+        "size": 24768,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/eadeb53e8bd226f31b27f0325ccd514fcd7721d8"
+      },
+      {
+        "path": "core/browser-extensions.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "20d2a73b98c9104236493907d5bb28dddce3450d",
+        "size": 13786,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/20d2a73b98c9104236493907d5bb28dddce3450d"
+      },
+      {
+        "path": "core/canvas-and-webgl.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f5f8af9fd6882874607d48150489288ba069ce7b",
+        "size": 19024,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/f5f8af9fd6882874607d48150489288ba069ce7b"
+      },
+      {
+        "path": "core/clock-and-time-mocking.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3b3d54cf712f9138bbd60cc396dc7d0ca856da27",
+        "size": 18371,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/3b3d54cf712f9138bbd60cc396dc7d0ca856da27"
+      },
+      {
+        "path": "core/common-pitfalls.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ad5a7cc5fb6e6eb585166eb139a0e15eb2127c76",
+        "size": 44980,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/ad5a7cc5fb6e6eb585166eb139a0e15eb2127c76"
+      },
+      {
+        "path": "core/component-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0d1d46ca8069bed213b4fca42c3aaae785cda66e",
+        "size": 22665,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/0d1d46ca8069bed213b4fca42c3aaae785cda66e"
+      },
+      {
+        "path": "core/configuration.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f67a2d5f52ae0f5091410a29090d2573d63e5e64",
+        "size": 22432,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/f67a2d5f52ae0f5091410a29090d2573d63e5e64"
+      },
+      {
+        "path": "core/crud-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "49180c1286dec64aeb2955367b6d287fa887d439",
+        "size": 32073,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/49180c1286dec64aeb2955367b6d287fa887d439"
+      },
+      {
+        "path": "core/debugging.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c3f34acde316006265c296e1077053a2c106f13a",
+        "size": 30302,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/c3f34acde316006265c296e1077053a2c106f13a"
+      },
+      {
+        "path": "core/drag-and-drop.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8492e4823c1b57d4658f72f0daa06341730eecfd",
+        "size": 32422,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/8492e4823c1b57d4658f72f0daa06341730eecfd"
+      },
+      {
+        "path": "core/dynamic-test-selection.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1b298f2420e6ae183d46dae9ecf80700f5613a71",
+        "size": 10074,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/1b298f2420e6ae183d46dae9ecf80700f5613a71"
+      },
+      {
+        "path": "core/electron-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b58c2b0df7c981d056b1772fe53ca499bda9674b",
+        "size": 21210,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/b58c2b0df7c981d056b1772fe53ca499bda9674b"
+      },
+      {
+        "path": "core/error-and-edge-cases.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "700431eaf30bba7d1f720f4aa3647b0e9a847500",
+        "size": 40378,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/700431eaf30bba7d1f720f4aa3647b0e9a847500"
+      },
+      {
+        "path": "core/error-index.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "17eaf13bbc961856d8ab1332009c5521736c7e1d",
+        "size": 63179,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/17eaf13bbc961856d8ab1332009c5521736c7e1d"
+      },
+      {
+        "path": "core/file-operations.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "108f4d2b3c28a706ab7189254581b866df3014f8",
+        "size": 25652,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/108f4d2b3c28a706ab7189254581b866df3014f8"
+      },
+      {
+        "path": "core/file-upload-download.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7b981da088da0636272d38bbc140e7f3c28154e3",
+        "size": 32274,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/7b981da088da0636272d38bbc140e7f3c28154e3"
+      },
+      {
+        "path": "core/fixtures-and-hooks.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fe3e289aca9ae41748920531adbc338edcfbb14d",
+        "size": 34456,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/fe3e289aca9ae41748920531adbc338edcfbb14d"
+      },
+      {
+        "path": "core/flaky-tests.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b358e5b0230c3d4c769a610e4027de65584a1db4",
+        "size": 35544,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/b358e5b0230c3d4c769a610e4027de65584a1db4"
+      },
+      {
+        "path": "core/forms-and-validation.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8067bb3bf5c1c760fda7486e6d84bd997c49f338",
+        "size": 38921,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/8067bb3bf5c1c760fda7486e6d84bd997c49f338"
+      },
+      {
+        "path": "core/i18n-and-localization.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f04ff0b65a97fc01f0ed3f27549c7821ff87c6c1",
+        "size": 23503,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/f04ff0b65a97fc01f0ed3f27549c7821ff87c6c1"
+      },
+      {
+        "path": "core/iframes-and-shadow-dom.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0c80fedd6b80b1a61ea5584c94ca9ae7633757e8",
+        "size": 21132,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/0c80fedd6b80b1a61ea5584c94ca9ae7633757e8"
+      },
+      {
+        "path": "core/locator-strategy.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a80419e30b85fa71a35d5402c67d6e39551e064f",
+        "size": 19527,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/a80419e30b85fa71a35d5402c67d6e39551e064f"
+      },
+      {
+        "path": "core/locators.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "286780a8c13836feef92cbc52c699cb56ebac893",
+        "size": 34038,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/286780a8c13836feef92cbc52c699cb56ebac893"
+      },
+      {
+        "path": "core/mobile-and-responsive.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "67e273ce018c96fd89d41439f435705f7ae7fc65",
+        "size": 58143,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/67e273ce018c96fd89d41439f435705f7ae7fc65"
+      },
+      {
+        "path": "core/multi-context-and-popups.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "62a7d660054ebb37c2a8fd232f9bbcdc7fefdcf8",
+        "size": 23279,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/62a7d660054ebb37c2a8fd232f9bbcdc7fefdcf8"
+      },
+      {
+        "path": "core/multi-user-and-collaboration.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "35ad6d7cc8928488d8d05e459996d77cad3fe59a",
+        "size": 19012,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/35ad6d7cc8928488d8d05e459996d77cad3fe59a"
+      },
+      {
+        "path": "core/network-mocking.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "faa6b0f5eb572a29e39040ab113141b5ca01d2e3",
+        "size": 46387,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/faa6b0f5eb572a29e39040ab113141b5ca01d2e3"
+      },
+      {
+        "path": "core/nextjs.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3a0fe6d8179eea5510fc7156f0954e49584d12c5",
+        "size": 36254,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/3a0fe6d8179eea5510fc7156f0954e49584d12c5"
+      },
+      {
+        "path": "core/performance-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "611297d9359ff579fa96faf7b17b690f934562c9",
+        "size": 21920,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/611297d9359ff579fa96faf7b17b690f934562c9"
+      },
+      {
+        "path": "core/react.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "aa8e6dbba6d29a776c8a591a9689631c420539a2",
+        "size": 39169,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/aa8e6dbba6d29a776c8a591a9689631c420539a2"
+      },
+      {
+        "path": "core/search-and-filter.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bda03c4c0a66b4ba97cd7c1d2273b2ee229305b7",
+        "size": 44662,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/bda03c4c0a66b4ba97cd7c1d2273b2ee229305b7"
+      },
+      {
+        "path": "core/security-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f7a189e2f798fccc9b5431545090fcf301f3c861",
+        "size": 23990,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/f7a189e2f798fccc9b5431545090fcf301f3c861"
+      },
+      {
+        "path": "core/service-workers-and-pwa.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "137632bc116494a87a174a1c7d5e988b0af752c7",
+        "size": 19192,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/137632bc116494a87a174a1c7d5e988b0af752c7"
+      },
+      {
+        "path": "core/test-agents.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3d5cc9cc10038b48547089899c053e0a856b7af3",
+        "size": 6182,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/3d5cc9cc10038b48547089899c053e0a856b7af3"
+      },
+      {
+        "path": "core/test-architecture.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "973643a23ade988b03bd63efe45b7009626ec47a",
+        "size": 24153,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/973643a23ade988b03bd63efe45b7009626ec47a"
+      },
+      {
+        "path": "core/test-data-management.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "da972e63cd102301e23946ceeb8ef9c942048f6d",
+        "size": 35897,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/da972e63cd102301e23946ceeb8ef9c942048f6d"
+      },
+      {
+        "path": "core/test-organization.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "91d6397c72c2fba41009b68a6bc19f50e0630983",
+        "size": 30188,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/91d6397c72c2fba41009b68a6bc19f50e0630983"
+      },
+      {
+        "path": "core/third-party-integrations.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3531750f4981df3fd870c01ea8317d0d052e048d",
+        "size": 29103,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/3531750f4981df3fd870c01ea8317d0d052e048d"
+      },
+      {
+        "path": "core/trace-analysis.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "03379d4ed1e666140ffe2df1157134b75185278b",
+        "size": 11406,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/03379d4ed1e666140ffe2df1157134b75185278b"
+      },
+      {
+        "path": "core/visual-regression.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "70a05c9b90ec17b07aefc098d45ce0d34fde96a4",
+        "size": 38517,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/70a05c9b90ec17b07aefc098d45ce0d34fde96a4"
+      },
+      {
+        "path": "core/vue.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1a491ebc632d5edd82f835115b08086eea741d33",
+        "size": 39074,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/1a491ebc632d5edd82f835115b08086eea741d33"
+      },
+      {
+        "path": "core/webmcp-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fe29ff3d223f1c04529ab33b84061b9aa42366a3",
+        "size": 10635,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/fe29ff3d223f1c04529ab33b84061b9aa42366a3"
+      },
+      {
+        "path": "core/websockets-and-realtime.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fa4bed8d4f9f225738a2283f484c86bba3c23093",
+        "size": 21586,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/fa4bed8d4f9f225738a2283f484c86bba3c23093"
+      },
+      {
+        "path": "core/when-to-mock.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2206035f647ecf86a82eae7ee768a14bbbd0fb14",
+        "size": 26324,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/2206035f647ecf86a82eae7ee768a14bbbd0fb14"
+      },
+      {
+        "path": "frontend",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3e90eb07a208b6feaf1ee5974eec45006ae0324e",
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/trees/3e90eb07a208b6feaf1ee5974eec45006ae0324e"
+      },
+      {
+        "path": "frontend/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "911a6d7ee44d43087e9f51a1a7c259d09ce37e37",
+        "size": 2574,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/911a6d7ee44d43087e9f51a1a7c259d09ce37e37"
+      },
+      {
+        "path": "frontend/data-testid-conventions.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "39c05d3a1b174314e9f3dbc0e491f0dd11ce32fb",
+        "size": 14255,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/39c05d3a1b174314e9f3dbc0e491f0dd11ce32fb"
+      },
+      {
+        "path": "frontend/examples.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "67c777a15afe8fb8b7fa83ab15939599aa18b3e1",
+        "size": 6793,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/67c777a15afe8fb8b7fa83ab15939599aa18b3e1"
+      },
+      {
+        "path": "migration",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "443da45c78aa901ed97d23bd3bf44baf4ca77a23",
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/trees/443da45c78aa901ed97d23bd3bf44baf4ca77a23"
+      },
+      {
+        "path": "migration/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9e5dcfb36bb77c60ca994969e761dac45577a750",
+        "size": 645,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/9e5dcfb36bb77c60ca994969e761dac45577a750"
+      },
+      {
+        "path": "migration/from-cypress.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "03f2d1c57be300b8e30742fc778bb502f630e891",
+        "size": 43219,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/03f2d1c57be300b8e30742fc778bb502f630e891"
+      },
+      {
+        "path": "migration/from-selenium.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b599f94d87fd2f7636cfdc2b1ab4cd1c401156ed",
+        "size": 39565,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/b599f94d87fd2f7636cfdc2b1ab4cd1c401156ed"
+      },
+      {
+        "path": "playwright-cli",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "190f567147f9c6b2713cef1a0efdc61cf310e99d",
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/trees/190f567147f9c6b2713cef1a0efdc61cf310e99d"
+      },
+      {
+        "path": "playwright-cli/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "861c83ab5ebcc03b51561d33b9ca2395ea6a581e",
+        "size": 10755,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/861c83ab5ebcc03b51561d33b9ca2395ea6a581e"
+      },
+      {
+        "path": "playwright-cli/advanced-workflows.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c07ae68e7ecf7e4d8f5d5a106bdbde6178809428",
+        "size": 18762,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/c07ae68e7ecf7e4d8f5d5a106bdbde6178809428"
+      },
+      {
+        "path": "playwright-cli/core-commands.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ecbb5f5975dd75aab72c112d8795b225af12cbcd",
+        "size": 11708,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/ecbb5f5975dd75aab72c112d8795b225af12cbcd"
+      },
+      {
+        "path": "playwright-cli/device-emulation.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "03ddeabfbf69ae26b329c29cf7da70706ef47916",
+        "size": 13589,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/03ddeabfbf69ae26b329c29cf7da70706ef47916"
+      },
+      {
+        "path": "playwright-cli/request-mocking.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5fbca4bbac47f6ee8e16a7837abc2eb24b8a66b6",
+        "size": 10328,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/5fbca4bbac47f6ee8e16a7837abc2eb24b8a66b6"
+      },
+      {
+        "path": "playwright-cli/running-custom-code.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "710e330bc0d17108131e9869f949bdfb2c733f02",
+        "size": 15126,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/710e330bc0d17108131e9869f949bdfb2c733f02"
+      },
+      {
+        "path": "playwright-cli/screenshots-and-media.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8848fd764e907e2674df048d97f457543ac1bfb2",
+        "size": 14294,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/8848fd764e907e2674df048d97f457543ac1bfb2"
+      },
+      {
+        "path": "playwright-cli/session-management.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "04241949a9a4bd84186b61597d603fd426065ea4",
+        "size": 12386,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/04241949a9a4bd84186b61597d603fd426065ea4"
+      },
+      {
+        "path": "playwright-cli/storage-and-auth.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7e86ca710596073042374fabbccc5c1e466c8757",
+        "size": 11473,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/7e86ca710596073042374fabbccc5c1e466c8757"
+      },
+      {
+        "path": "playwright-cli/test-generation.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "326a69bbb9b5ba4e927a81789ade0558f2214627",
+        "size": 11181,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/326a69bbb9b5ba4e927a81789ade0558f2214627"
+      },
+      {
+        "path": "playwright-cli/tracing-and-debugging.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "95491d6d943614cf0700ef3c53c416e1fd697923",
+        "size": 15030,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/95491d6d943614cf0700ef3c53c416e1fd697923"
+      },
+      {
+        "path": "pom",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b3d4f9180c9111f933916bb09b2a64520f7c75ed",
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/trees/b3d4f9180c9111f933916bb09b2a64520f7c75ed"
+      },
+      {
+        "path": "pom/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bdfd220295de6035005643d5c86ab7153a5f81ee",
+        "size": 669,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/bdfd220295de6035005643d5c86ab7153a5f81ee"
+      },
+      {
+        "path": "pom/page-object-model.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "be68ba8fa59d3d8fe92ac04b7694b2a9f412eb23",
+        "size": 28154,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/be68ba8fa59d3d8fe92ac04b7694b2a9f412eb23"
+      },
+      {
+        "path": "pom/pom-vs-fixtures-vs-helpers.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "49293e3d623f910924180941af60e8b117ccba3d",
+        "size": 32330,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/49293e3d623f910924180941af60e8b117ccba3d"
+      },
+      {
+        "path": "qa",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d118ee2d76cd1a84783402c03e163b3a7808f8cf",
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/trees/d118ee2d76cd1a84783402c03e163b3a7808f8cf"
+      },
+      {
+        "path": "qa/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7efe7949850756dcb59d2fcf0e78a1499f8bdbf0",
+        "size": 1906,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/7efe7949850756dcb59d2fcf0e78a1499f8bdbf0"
+      },
+      {
+        "path": "qa/bug-reports.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6d8baa20fa2bccaecec49342ff56a2f2abdb0535",
+        "size": 6205,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/6d8baa20fa2bccaecec49342ff56a2f2abdb0535"
+      },
+      {
+        "path": "qa/manual-to-automated.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d757fe72b9e08c73276272bac7430c472ca4b061",
+        "size": 7883,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/d757fe72b9e08c73276272bac7430c472ca4b061"
+      },
+      {
+        "path": "qa/test-design.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e57f311384a7bd11807b11151cc14f266067c337",
+        "size": 8227,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/e57f311384a7bd11807b11151cc14f266067c337"
+      },
+      {
+        "path": "qa/test-review.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "026ee9da79421db413ed7a2658c4f05092eb8d7c",
+        "size": 7262,
+        "url": "https://api.github.com/repos/testdino-hq/playwright-skill/git/blobs/026ee9da79421db413ed7a2658c4f05092eb8d7c"
+      }
+    ],
+    "truncated": false
+  }
+}

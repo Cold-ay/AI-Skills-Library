@@ -70,3 +70,10 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - Added an MCP main-navigation section and home-page callout, preserving the old connection route. Visual explanation and interactive task examples are based on current catalogue data; they do not simulate a successful live connection.
 - Browser preview verified task switching, Claude/Windows setup selection, step navigation, command copy feedback and the final request step. Five JavaScript tests cover sorting/filtering and platform/client-specific setup commands; 46 Python tests continue to pass.
 - Windows commands use an explicit PowerShell relative executable path. Full technical setup and the local-stdio limitation remain available. No client settings or server capabilities were changed by this UI update.
+
+## Website topic research â€” 2026-11-05
+
+- Preserved all 53 prior skill entries and 21 prior combinations unchanged; added three reviewed website skills, a licensed design pack and a QA recipe. Current totals: 56 skills, 23 combinations, five downloadable packs and eight reports.
+- New entries have pinned root license manifests; the copy-only installer verifies and preserves their notices. Offline tests cover copied notices, rollback on hash mismatch and unsafe/colliding paths. Existing entries without that optional manifest retain their prior behavior.
+- 51 Python tests and five JavaScript tests passed, including evidence/pin cross-checks and archive integrity checks. Website build and git whitespace checks passed. Packaging verification does not establish upstream runtime skill quality.
+- The public topic API search is bounded to 50 star-ranked results. Selected instructions were read, references sampled and 77 selected Markdown blobs hash-verified; no upstream installer, script or skill workflow was executed.

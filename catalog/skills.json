@@ -5703,5 +5703,454 @@
       }
     ],
     "discovered_from": "reports/2026-10-31-coding-context-mobile.json"
+  },
+  {
+    "id": "design-everyday-things",
+    "invocation": "design-everyday-things",
+    "category": "website-ui",
+    "summary": "Make website controls understandable",
+    "reason": "Review signifiers, control-to-result mapping, recoverable errors and the user mental model; useful for skill discovery, download controls and MCP onboarding.",
+    "requirements": "Website or prototype and a specific user task. Sibling ux-heuristics and ios-hig-design are optional, not bundled. Upstream scores and user-study percentages are heuristics, not measured outcomes; preserve keyboard access and project accessibility standards.",
+    "repo": "wondelai/skills",
+    "path": "design-everyday-things",
+    "commit": "d8d5d75f83da9f16d8aad5bab5f5b341a4770a30",
+    "stars": 2590,
+    "observed_at": "2026-11-05",
+    "stars_evidence": "reports/evidence/2026-11-05-ai-skills-topic/wondelai--skills.json",
+    "source": "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/design-everyday-things/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/README.md",
+        "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/design-everyday-things/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Explicit upstream Codex claim in pinned README; no host execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source review only; no Claude runtime trial."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "83cd405291dbcc42367a3828299b866acdeb7984"
+      },
+      {
+        "path": "references/affordances.md",
+        "blob": "013be99ef7bee22078865a33ccac6ea55487bf2a"
+      },
+      {
+        "path": "references/case-studies.md",
+        "blob": "dbe8bd5365fa17cf8de77044270abdeea8401168"
+      },
+      {
+        "path": "references/conceptual-models.md",
+        "blob": "1f57b568500d3050e37b035dd12750df5b0aacd4"
+      },
+      {
+        "path": "references/constraints.md",
+        "blob": "d03e42ad3e792d2979949ca3014b3dd6a773a652"
+      },
+      {
+        "path": "references/feedback.md",
+        "blob": "c4677476a13e2403dab21b821e494c3ddf1359c1"
+      },
+      {
+        "path": "references/human-error.md",
+        "blob": "323ee1ca1a59c29cacab15cd1895d40ff23971f6"
+      },
+      {
+        "path": "references/mappings.md",
+        "blob": "dc1da00984497e3fb7115b595a3318141f95954d"
+      },
+      {
+        "path": "references/seven-stages.md",
+        "blob": "108c0aa327626b7bccf3f4f3df1eea9600df46d1"
+      },
+      {
+        "path": "references/signifiers.md",
+        "blob": "1d3258898d62b2274f6c9fe7cd7efaa4d480d1d7"
+      },
+      {
+        "path": "references/two-gulfs.md",
+        "blob": "6e7c1811882dafc39134d0beae7b0473cdcd56ab"
+      }
+    ],
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "blob": "9b62238504f0feb80cf3b390f181cef476c60d9e"
+      }
+    ]
+  },
+  {
+    "id": "microinteractions",
+    "invocation": "microinteractions",
+    "category": "website-ui",
+    "summary": "Design button feedback and interaction states",
+    "reason": "Specify triggers, rules, feedback and repeated-action behavior; useful for copy buttons, filters, setup steps, loading and error recovery.",
+    "requirements": "Existing interface and explicit state transitions. No animation package required. Sibling refactoring-ui is optional, not bundled. Respect reduced motion; report clipboard or network failures honestly. Upstream numerical scores are heuristic, not usability certification.",
+    "repo": "wondelai/skills",
+    "path": "microinteractions",
+    "commit": "d8d5d75f83da9f16d8aad5bab5f5b341a4770a30",
+    "stars": 2590,
+    "observed_at": "2026-11-05",
+    "stars_evidence": "reports/evidence/2026-11-05-ai-skills-topic/wondelai--skills.json",
+    "source": "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/microinteractions/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/README.md",
+        "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/microinteractions/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Explicit upstream Codex claim in pinned README; no host execution."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/wondelai/skills/blob/d8d5d75f83da9f16d8aad5bab5f5b341a4770a30/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source review only; no Claude runtime trial."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "38ea3e5ae315d464bd8b21b6c27b5354a2ad6c16"
+      },
+      {
+        "path": "references/case-studies.md",
+        "blob": "d6c70b55f27b582e8ac7bd1b63115b647e8c6ba1"
+      },
+      {
+        "path": "references/feedback-patterns.md",
+        "blob": "a9c4c563b45e5539b10885ebc41b2f0e586b6f18"
+      },
+      {
+        "path": "references/loops-modes.md",
+        "blob": "5aae42b71f80c44252d5eaa85812d3a580034b94"
+      },
+      {
+        "path": "references/rules-and-state.md",
+        "blob": "8252a9fdc1409a08c441c9972b83aa48cfcba430"
+      },
+      {
+        "path": "references/signature-moments.md",
+        "blob": "cf657d6e36f8797a609a07629767ad6b2ba6587e"
+      },
+      {
+        "path": "references/trigger-design.md",
+        "blob": "cf0330de4de3b85cb142b5af2ca04c255f4d5abe"
+      }
+    ],
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "blob": "9b62238504f0feb80cf3b390f181cef476c60d9e"
+      }
+    ]
+  },
+  {
+    "id": "playwright-best-practices",
+    "invocation": "playwright-best-practices",
+    "category": "website-ui",
+    "summary": "Write resilient website tests",
+    "reason": "Activity-indexed guidance on semantic locators, retrying assertions, fixtures, accessibility and responsive test coverage; complements generic debugging and agent-browser.",
+    "requirements": "Node.js, TypeScript, @playwright/test and appropriate browser binaries for runtime tests; optional @axe-core/playwright. Currents cloud service is not required for core guidance. Check every snippet against installed Playwright: prefer documented test.info().errors over expect.soft.hasFailures(), and public locators over internal:shadow. No test suite was executed during discovery.",
+    "repo": "currents-dev/playwright-best-practices-skill",
+    "path": "playwright-best-practices",
+    "commit": "283d5cbc5d11aac1abda058b16ad22c317d54dc0",
+    "stars": 419,
+    "observed_at": "2026-11-05",
+    "stars_evidence": "reports/evidence/2026-11-05-ai-skills-topic/currents-dev--playwright-best-practices-skill.json",
+    "source": "https://github.com/currents-dev/playwright-best-practices-skill/blob/283d5cbc5d11aac1abda058b16ad22c317d54dc0/playwright-best-practices/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/currents-dev/playwright-best-practices-skill/blob/283d5cbc5d11aac1abda058b16ad22c317d54dc0/LICENSE.md"
+    ],
+    "codex": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/currents-dev/playwright-best-practices-skill/blob/283d5cbc5d11aac1abda058b16ad22c317d54dc0/README.md",
+        "https://github.com/currents-dev/playwright-best-practices-skill/blob/283d5cbc5d11aac1abda058b16ad22c317d54dc0/playwright-best-practices/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Pinned README and SKILL.md do not establish explicit Codex support; format alone is insufficient."
+    },
+    "claude": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/currents-dev/playwright-best-practices-skill/blob/283d5cbc5d11aac1abda058b16ad22c317d54dc0/README.md"
+      ],
+      "runtime_tested": false,
+      "note": "Static source review only; no Claude runtime trial."
+    },
+    "installable": true,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "0da736253c343081ab8c0cb9802729a707c23196"
+      },
+      {
+        "path": "advanced/authentication-flows.md",
+        "blob": "24ad08c177d8b07ed6555a3d639729a0cfc02611"
+      },
+      {
+        "path": "advanced/authentication.md",
+        "blob": "02c2dd7b276d314feb9b1e9b5861679db8c66db2"
+      },
+      {
+        "path": "advanced/clock-mocking.md",
+        "blob": "073d0870551950d33b766832c370fd9e205b3534"
+      },
+      {
+        "path": "advanced/mobile-testing.md",
+        "blob": "e928bdee507d2f5f343df7d633ea0e3fb797ae5c"
+      },
+      {
+        "path": "advanced/multi-context.md",
+        "blob": "ed1cf8a07c24feb7d5c0bddc64cd1f559d480cba"
+      },
+      {
+        "path": "advanced/multi-user.md",
+        "blob": "301e55c4fecaf553f7b33d24f3251ea95afb2b30"
+      },
+      {
+        "path": "advanced/network-advanced.md",
+        "blob": "fa017fe53fbea61e7e910e08b93cc088b990b11b"
+      },
+      {
+        "path": "advanced/third-party.md",
+        "blob": "acf8ab8901720d43d88dcf646cd10f5fbd35789c"
+      },
+      {
+        "path": "architecture/pom-vs-fixtures.md",
+        "blob": "eafb06f767d9a7a5f973e4260090f0988702ecdc"
+      },
+      {
+        "path": "architecture/test-architecture.md",
+        "blob": "28b6f6c9c52faa7f6d5c66b168956648d93311d4"
+      },
+      {
+        "path": "architecture/when-to-mock.md",
+        "blob": "d5d5705b1fa55a9bbd167134e4951314fc214f4a"
+      },
+      {
+        "path": "browser-apis/browser-apis.md",
+        "blob": "cc4c269e8f1c31c056e7295d643f7cc7adebb56a"
+      },
+      {
+        "path": "browser-apis/iframes.md",
+        "blob": "145e050ff89b5ad5012ee2773fbb3d13e01aaf3c"
+      },
+      {
+        "path": "browser-apis/service-workers.md",
+        "blob": "7603de322e069b0bd6a7801a2a6c3f8a7663fa9f"
+      },
+      {
+        "path": "browser-apis/websockets.md",
+        "blob": "075a997395ab0cf14649563860c4f7c49375f999"
+      },
+      {
+        "path": "core/annotations.md",
+        "blob": "ac0f890a5e2eef36af52f4080205dd7c4ff99f04"
+      },
+      {
+        "path": "core/assertions-waiting.md",
+        "blob": "bd03dd8a4db6a56fd7354637b224ffc86f5c620c"
+      },
+      {
+        "path": "core/configuration.md",
+        "blob": "66b9d33849304e2024626b050a9603765f5fdd1f"
+      },
+      {
+        "path": "core/fixtures-hooks.md",
+        "blob": "ff9dc93f71a1be7d57de3807923d7cba87a463b2"
+      },
+      {
+        "path": "core/global-setup.md",
+        "blob": "a0335226e7c0180c158be3cf0c6a99bfd60d3089"
+      },
+      {
+        "path": "core/locators.md",
+        "blob": "f806635d62953b1a72ae0a9ff20b7c8515b8100e"
+      },
+      {
+        "path": "core/page-object-model.md",
+        "blob": "0cdc6d642c33f9b4eb6890131ebc373c842071cb"
+      },
+      {
+        "path": "core/projects-dependencies.md",
+        "blob": "1005daeb20063081b98a9e964e1e028f86f9f87c"
+      },
+      {
+        "path": "core/test-data.md",
+        "blob": "1c07af843edd0f75269e877f44bb14991a48e88a"
+      },
+      {
+        "path": "core/test-suite-structure.md",
+        "blob": "2659f1502073a06ce9dedb26b6465a20197c44ef"
+      },
+      {
+        "path": "core/test-tags.md",
+        "blob": "6d81cd9649a8ee05932477308c3b841a333237a1"
+      },
+      {
+        "path": "debugging/console-errors.md",
+        "blob": "d1e9882c39aaf13e19be806af9783eb5997dbb7b"
+      },
+      {
+        "path": "debugging/debugging.md",
+        "blob": "187e4879e787663e8912c70b2e678cfe657e0383"
+      },
+      {
+        "path": "debugging/error-testing.md",
+        "blob": "43b17b6b7ff6bb18365de3a1a283af9b425654d5"
+      },
+      {
+        "path": "debugging/flaky-tests.md",
+        "blob": "d081f2116832048e8a9124f566a14b534330afd8"
+      },
+      {
+        "path": "frameworks/angular.md",
+        "blob": "ec09ecd4eb228255c613ca2348f8e100aef80c8d"
+      },
+      {
+        "path": "frameworks/nextjs.md",
+        "blob": "c16a9e9dfa75a0704a2d790c3136c5d16e738bc7"
+      },
+      {
+        "path": "frameworks/react.md",
+        "blob": "20e3a1ae6eb64d35dbab59b6ba7b81811cc92b08"
+      },
+      {
+        "path": "frameworks/vue.md",
+        "blob": "8abb6fcec3a0573437b8546b3d48bf7d18562b9c"
+      },
+      {
+        "path": "infrastructure-ci-cd/ci-cd.md",
+        "blob": "d5ad0d4c8f4a3b5b54cabe8b7b9f158efeb71f15"
+      },
+      {
+        "path": "infrastructure-ci-cd/docker.md",
+        "blob": "f20040b4ae28758367ea88f5aceb2d0d78989f46"
+      },
+      {
+        "path": "infrastructure-ci-cd/github-actions.md",
+        "blob": "0a8597550f58290d3c0a654dc4880d1bca1597e9"
+      },
+      {
+        "path": "infrastructure-ci-cd/gitlab.md",
+        "blob": "576692e36e31213697ea2ad7e34848f612d3d56e"
+      },
+      {
+        "path": "infrastructure-ci-cd/other-providers.md",
+        "blob": "ca808593202b4ce60289ec80df9af6b82d809ebe"
+      },
+      {
+        "path": "infrastructure-ci-cd/parallel-sharding.md",
+        "blob": "898a4259593c6a9d4898732907791da70b68a57f"
+      },
+      {
+        "path": "infrastructure-ci-cd/performance.md",
+        "blob": "bc03da8e92616e68440335035d25ee29d199fc2e"
+      },
+      {
+        "path": "infrastructure-ci-cd/reporting.md",
+        "blob": "55e1a9374ccce8f20d32aba9adb62624a3a492af"
+      },
+      {
+        "path": "infrastructure-ci-cd/test-coverage.md",
+        "blob": "9bc73aebe22c690d47f8dd048357f7349c730585"
+      },
+      {
+        "path": "testing-patterns/accessibility.md",
+        "blob": "1f13e21d94eb47b5e1f38af8af8a2241443f53b2"
+      },
+      {
+        "path": "testing-patterns/api-testing.md",
+        "blob": "e3b5fa220705c74ca1e57ff797d0f91baf92bbaf"
+      },
+      {
+        "path": "testing-patterns/browser-extensions.md",
+        "blob": "f3991fbb9668deec72f45fe039e308fe850f6153"
+      },
+      {
+        "path": "testing-patterns/canvas-webgl.md",
+        "blob": "2d9aeb2e3b780c8767b46b421abc0593baee76a5"
+      },
+      {
+        "path": "testing-patterns/component-testing.md",
+        "blob": "9cb36ae0ef3adeedb9488af9b163e7818beea1b5"
+      },
+      {
+        "path": "testing-patterns/drag-drop.md",
+        "blob": "4d4d0abc134d34c998ae6aeb82f78c778aa71a14"
+      },
+      {
+        "path": "testing-patterns/electron.md",
+        "blob": "016f198a4a4f366b66d8f14afd6bd449341e3b81"
+      },
+      {
+        "path": "testing-patterns/file-operations.md",
+        "blob": "367b8b149c1cc32f9e9693f9f301388f32f81f82"
+      },
+      {
+        "path": "testing-patterns/file-upload-download.md",
+        "blob": "75a43482b124fe7d53705a871ca52977f554137f"
+      },
+      {
+        "path": "testing-patterns/forms-validation.md",
+        "blob": "2cfdd8cdcd424dc063329893d84d57dc9076a6f2"
+      },
+      {
+        "path": "testing-patterns/graphql-testing.md",
+        "blob": "d2d35044d5803b12c1478a7d5bf4d7d5a7bf0699"
+      },
+      {
+        "path": "testing-patterns/i18n.md",
+        "blob": "686cdc33f9cd65afd40745829d08c7823a82b509"
+      },
+      {
+        "path": "testing-patterns/performance-testing.md",
+        "blob": "50135b49db40772256fd42bc01064cb58119239a"
+      },
+      {
+        "path": "testing-patterns/security-testing.md",
+        "blob": "f1f622a0f166d8af3568073f6394bb72436c6361"
+      },
+      {
+        "path": "testing-patterns/visual-regression.md",
+        "blob": "14280f6c537e4699bc7ecfcaca0f87963aaefcf8"
+      }
+    ],
+    "license_files": [
+      {
+        "path": "LICENSE.md",
+        "blob": "0312fd7de9487ced54515687d0026fc146aba947"
+      }
+    ]
   }
 ]

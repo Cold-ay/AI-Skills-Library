@@ -26,5 +26,12 @@
     "sha256": "efab6a192ef5725a3de0559c82041b826abc61487c33819f0af8dcbd9d5df391",
     "bytes": 212577,
     "files": 73
+  },
+  {
+    "id": "clear-website-interactions",
+    "file": "clear-website-interactions.zip",
+    "sha256": "c3cd2e9a7ca6f6dbf990e425b431d66f579b9dc5acc8eaae5725d512fa316ce8",
+    "bytes": 117719,
+    "files": 24
   }
 ]

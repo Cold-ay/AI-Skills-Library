@@ -1,0 +1,1760 @@
+{
+  "observed_at": "2026-11-05T09:21:19.463647+00:00",
+  "repo": "Bhanunamikaze/Agentic-SEO-Skill",
+  "commit": "445c46c268d947fac25c4b57d38aaf723129fe62",
+  "metadata": {
+    "id": 1170939774,
+    "node_id": "R_kgDORcsffg",
+    "name": "Agentic-SEO-Skill",
+    "full_name": "Bhanunamikaze/Agentic-SEO-Skill",
+    "private": false,
+    "owner": {
+      "login": "Bhanunamikaze",
+      "id": 17119658,
+      "node_id": "MDQ6VXNlcjE3MTE5NjU4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17119658?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Bhanunamikaze",
+      "html_url": "https://github.com/Bhanunamikaze",
+      "followers_url": "https://api.github.com/users/Bhanunamikaze/followers",
+      "following_url": "https://api.github.com/users/Bhanunamikaze/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Bhanunamikaze/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Bhanunamikaze/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Bhanunamikaze/subscriptions",
+      "organizations_url": "https://api.github.com/users/Bhanunamikaze/orgs",
+      "repos_url": "https://api.github.com/users/Bhanunamikaze/repos",
+      "events_url": "https://api.github.com/users/Bhanunamikaze/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Bhanunamikaze/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "html_url": "https://github.com/Bhanunamikaze/Agentic-SEO-Skill",
+    "description": "An LLM-first SEO analysis skill for Antigravity, Codex, Claude with 16 specialized sub-skills, 10 specialist agents, and 88 optional utility scripts used as evidence collectors.",
+    "fork": false,
+    "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill",
+    "forks_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/forks",
+    "keys_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/teams",
+    "hooks_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/hooks",
+    "issue_events_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/events",
+    "assignees_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/tags",
+    "blobs_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/languages",
+    "stargazers_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/stargazers",
+    "contributors_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/contributors",
+    "subscribers_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/subscribers",
+    "subscription_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/subscription",
+    "commits_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/merges",
+    "archive_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/downloads",
+    "issues_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/labels{/name}",
+    "releases_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/deployments",
+    "created_at": "2026-03-02T17:37:53Z",
+    "updated_at": "2026-11-04T13:32:12Z",
+    "pushed_at": "2026-10-14T13:06:40Z",
+    "git_url": "git://github.com/Bhanunamikaze/Agentic-SEO-Skill.git",
+    "ssh_url": "git@github.com:Bhanunamikaze/Agentic-SEO-Skill.git",
+    "clone_url": "https://github.com/Bhanunamikaze/Agentic-SEO-Skill.git",
+    "svn_url": "https://github.com/Bhanunamikaze/Agentic-SEO-Skill",
+    "homepage": "",
+    "size": 737,
+    "stargazers_count": 1022,
+    "watchers_count": 1022,
+    "language": "Python",
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": false,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 151,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 11,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "has_pull_requests": true,
+    "pull_request_creation_policy": "all",
+    "topics": [
+      "ai-skill",
+      "ai-skills",
+      "antigravity-ai",
+      "antigravity-skills",
+      "antigravity-tools",
+      "claude-skill",
+      "claude-skills",
+      "codex-skill",
+      "codex-skills",
+      "seo",
+      "seo-optimization",
+      "skills"
+    ],
+    "visibility": "public",
+    "forks": 151,
+    "open_issues": 11,
+    "watchers": 1022,
+    "default_branch": "main",
+    "temp_clone_token": null,
+    "network_count": 151,
+    "subscribers_count": 20
+  },
+  "tree": {
+    "sha": "445c46c268d947fac25c4b57d38aaf723129fe62",
+    "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/445c46c268d947fac25c4b57d38aaf723129fe62",
+    "tree": [
+      {
+        "path": ".env.example",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "31b454f42f7c51103934ff9fca7ac813b0c9d123",
+        "size": 2039,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/31b454f42f7c51103934ff9fca7ac813b0c9d123"
+      },
+      {
+        "path": ".github",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "8bd303bbb8a32d4bd40fb38383c3c8961d7d94f0",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/8bd303bbb8a32d4bd40fb38383c3c8961d7d94f0"
+      },
+      {
+        "path": ".github/CODEOWNERS",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a36611a10aa0330ca59c1a8696e3187d5869de0c",
+        "size": 17,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/a36611a10aa0330ca59c1a8696e3187d5869de0c"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e1f892743e5189b70a5abd7e0eb13de283544a0c",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/e1f892743e5189b70a5abd7e0eb13de283544a0c"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4ac6d1a54db52ee345c92cab0e5c36fbbfbea179",
+        "size": 309,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/4ac6d1a54db52ee345c92cab0e5c36fbbfbea179"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a22f3531f273c009898bb3dc9006d77dd333ae08",
+        "size": 250,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/a22f3531f273c009898bb3dc9006d77dd333ae08"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "68a36c88b49d4df0a8a6a1878a6a5421d34a5ec3",
+        "size": 270,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/68a36c88b49d4df0a8a6a1878a6a5421d34a5ec3"
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9b023d7ebae3c164683efc851a60019cdbd81f23",
+        "size": 437,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/9b023d7ebae3c164683efc851a60019cdbd81f23"
+      },
+      {
+        "path": ".github/workflows",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d7ff6d900af55f1378e9b68fccca2fb4a6538800",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/d7ff6d900af55f1378e9b68fccca2fb4a6538800"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "33601e2f8649825fa820cdc1b66b22a495632e1a",
+        "size": 609,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/33601e2f8649825fa820cdc1b66b22a495632e1a"
+      },
+      {
+        "path": ".github/workflows/package-on-tag.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "13e7627e06e874ca228cefaaa69ca1ace27e7b19",
+        "size": 2136,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/13e7627e06e874ca228cefaaa69ca1ace27e7b19"
+      },
+      {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "695c8a1e66571795fa880263dbf5e70a4d94ea8c",
+        "size": 497,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/695c8a1e66571795fa880263dbf5e70a4d94ea8c"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f229d426dff7cd7afbcf682636296e899e4a951a",
+        "size": 1692,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/f229d426dff7cd7afbcf682636296e899e4a951a"
+      },
+      {
+        "path": "CITATION.cff",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "766679c048c59076a4576ac2788196df40447c44",
+        "size": 616,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/766679c048c59076a4576ac2788196df40447c44"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9bcae6db70304d06c3bb9dd4bee777ce671fe3bb",
+        "size": 870,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/9bcae6db70304d06c3bb9dd4bee777ce671fe3bb"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dcae1a59dc669345a88ac0b907de57d0bdf0575d",
+        "size": 1560,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/dcae1a59dc669345a88ac0b907de57d0bdf0575d"
+      },
+      {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "34067ffbd356465c03c82d0e44f866900f8ea72c",
+        "size": 1103,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/34067ffbd356465c03c82d0e44f866900f8ea72c"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8266c1df68b2416120cb0f911756ffafd1934091",
+        "size": 27922,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/8266c1df68b2416120cb0f911756ffafd1934091"
+      },
+      {
+        "path": "SECURITY.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e501882a27bbea12cbabf2d98828f49ed4fba6d2",
+        "size": 1025,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/e501882a27bbea12cbabf2d98828f49ed4fba6d2"
+      },
+      {
+        "path": "SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c5dae5f7d57db4f2b93bf0e5508ca17569db6336",
+        "size": 19845,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/c5dae5f7d57db4f2b93bf0e5508ca17569db6336"
+      },
+      {
+        "path": "SUPPORT.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5981040e5cdecc2e78ba0ed3d4347efe6d0893ae",
+        "size": 576,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/5981040e5cdecc2e78ba0ed3d4347efe6d0893ae"
+      },
+      {
+        "path": "docs",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4577186afc9170d5df4a1c59e88a3e94a6bbb6cd",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/4577186afc9170d5df4a1c59e88a3e94a6bbb6cd"
+      },
+      {
+        "path": "docs/images",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c16177e15de04dcdcdae18267fd132a3b8423ace",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/c16177e15de04dcdcdae18267fd132a3b8423ace"
+      },
+      {
+        "path": "docs/images/example-prompt-output.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e14674b8979436ffce39cbcf94b64e90d2750b99",
+        "size": 75771,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/e14674b8979436ffce39cbcf94b64e90d2750b99"
+      },
+      {
+        "path": "docs/images/report-dashboard.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0f3e69a9f21a6fd3e9bfce70db66c551145c23de",
+        "size": 232849,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/0f3e69a9f21a6fd3e9bfce70db66c551145c23de"
+      },
+      {
+        "path": "improvements.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c1e7f55a4595df510fcca0547287445e49e8db6d",
+        "size": 34371,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/c1e7f55a4595df510fcca0547287445e49e8db6d"
+      },
+      {
+        "path": "install.ps1",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "ac71b0c362dfa62de3a559f6df8014df37fd3d1b",
+        "size": 39122,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/ac71b0c362dfa62de3a559f6df8014df37fd3d1b"
+      },
+      {
+        "path": "install.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "1c471e2062bb200798f1344a6fa39cf85c3991ea",
+        "size": 27368,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/1c471e2062bb200798f1344a6fa39cf85c3991ea"
+      },
+      {
+        "path": "pyproject.toml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "62a0d7ce8e60f71b882d58f002a63271ea5bf684",
+        "size": 860,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/62a0d7ce8e60f71b882d58f002a63271ea5bf684"
+      },
+      {
+        "path": "requirements.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "68522b35c85c562bf6c09b025e9de7d1e759c011",
+        "size": 190,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/68522b35c85c562bf6c09b025e9de7d1e759c011"
+      },
+      {
+        "path": "resources",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "71d98f9c7565556b98dd0213588a669be60f6508",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/71d98f9c7565556b98dd0213588a669be60f6508"
+      },
+      {
+        "path": "resources/agents",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "62f464838744921bab4f73eb88641ef0e2ae4aa8",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/62f464838744921bab4f73eb88641ef0e2ae4aa8"
+      },
+      {
+        "path": "resources/agents/seo-content.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f882f5cb44ba8e626dc8551a9c8d5d6bbec876e9",
+        "size": 5814,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/f882f5cb44ba8e626dc8551a9c8d5d6bbec876e9"
+      },
+      {
+        "path": "resources/agents/seo-github-analyst.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "56d74f1d836f9f35c0462f97db5a29df23c5a60d",
+        "size": 1764,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/56d74f1d836f9f35c0462f97db5a29df23c5a60d"
+      },
+      {
+        "path": "resources/agents/seo-github-benchmark.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "619c03538bfcb9c15cb313dc843c5c2b276fa4b9",
+        "size": 1275,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/619c03538bfcb9c15cb313dc843c5c2b276fa4b9"
+      },
+      {
+        "path": "resources/agents/seo-github-data.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5def5058fe380df74ad4331d6ff1a1cb644cae55",
+        "size": 1314,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/5def5058fe380df74ad4331d6ff1a1cb644cae55"
+      },
+      {
+        "path": "resources/agents/seo-performance.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d6278ce0593cd675688a8435f45cc004d386c5b4",
+        "size": 5012,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/d6278ce0593cd675688a8435f45cc004d386c5b4"
+      },
+      {
+        "path": "resources/agents/seo-schema.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4222e6cfa5a16950cbed330b9a3bc86cfebcc94f",
+        "size": 4279,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/4222e6cfa5a16950cbed330b9a3bc86cfebcc94f"
+      },
+      {
+        "path": "resources/agents/seo-sitemap.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8ce513f99a3a9cd2d3666e8b8f8417bbf1cafb44",
+        "size": 4583,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/8ce513f99a3a9cd2d3666e8b8f8417bbf1cafb44"
+      },
+      {
+        "path": "resources/agents/seo-technical.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0ada28c32f412af7ccbe04089bb04441459445b4",
+        "size": 5076,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/0ada28c32f412af7ccbe04089bb04441459445b4"
+      },
+      {
+        "path": "resources/agents/seo-verifier.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6acb67a7fa86a4fffdf57a38641d0db29fb74250",
+        "size": 1207,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/6acb67a7fa86a4fffdf57a38641d0db29fb74250"
+      },
+      {
+        "path": "resources/agents/seo-visual.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a6dacb804a01dba0df196ebab7988a5481a572ef",
+        "size": 5150,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/a6dacb804a01dba0df196ebab7988a5481a572ef"
+      },
+      {
+        "path": "resources/config",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "84a634e322ef9625512bbd2280642d868b27539d",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/84a634e322ef9625512bbd2280642d868b27539d"
+      },
+      {
+        "path": "resources/config/scoring.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a23fa99c23bb04dc8187cf44946dc081da1dbd5e",
+        "size": 1313,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/a23fa99c23bb04dc8187cf44946dc081da1dbd5e"
+      },
+      {
+        "path": "resources/references",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "78b3a8e766df41704d8abfad15ccb0ee927bdb91",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/78b3a8e766df41704d8abfad15ccb0ee927bdb91"
+      },
+      {
+        "path": "resources/references/cwv-thresholds.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2c522b88faaa15e5d1eb6e36a92a4451c192f9a7",
+        "size": 5183,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/2c522b88faaa15e5d1eb6e36a92a4451c192f9a7"
+      },
+      {
+        "path": "resources/references/eeat-framework.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b5aa022bd9c26205c01dd5d1e13a6dfdfb2b3520",
+        "size": 7503,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/b5aa022bd9c26205c01dd5d1e13a6dfdfb2b3520"
+      },
+      {
+        "path": "resources/references/github-api-ops.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8660704365f8aff7433d28db8b54ae83ddd9165e",
+        "size": 1799,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/8660704365f8aff7433d28db8b54ae83ddd9165e"
+      },
+      {
+        "path": "resources/references/github-ranking-factors.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2cd74d60593fd3030a8693f4613495111cabe935",
+        "size": 1833,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/2cd74d60593fd3030a8693f4613495111cabe935"
+      },
+      {
+        "path": "resources/references/google-seo-reference.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fd4aec5d84442c895baa3e04c28390a800194d77",
+        "size": 7766,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/fd4aec5d84442c895baa3e04c28390a800194d77"
+      },
+      {
+        "path": "resources/references/link-building.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e2194fe1dfc7b34362c44af8430345aebc8e2e6",
+        "size": 5965,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/5e2194fe1dfc7b34362c44af8430345aebc8e2e6"
+      },
+      {
+        "path": "resources/references/llm-audit-rubric.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "43ef5cd6b17a2f436a42be53b3ba4287192f2baf",
+        "size": 5050,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/43ef5cd6b17a2f436a42be53b3ba4287192f2baf"
+      },
+      {
+        "path": "resources/references/quality-gates.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9533f1ca94aeef9e9f6295a62b10bd3aab6bbf13",
+        "size": 5240,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/9533f1ca94aeef9e9f6295a62b10bd3aab6bbf13"
+      },
+      {
+        "path": "resources/references/readme-audit-rubric.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e93af6a3f6289c8406ace4a798b928037311f4f6",
+        "size": 1795,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/e93af6a3f6289c8406ace4a798b928037311f4f6"
+      },
+      {
+        "path": "resources/references/schema-types.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44c746885e7c477b74c8ea36e4fda14b92fae2c9",
+        "size": 5949,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/44c746885e7c477b74c8ea36e4fda14b92fae2c9"
+      },
+      {
+        "path": "resources/schema",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "619c0d463f59bcb86217236fad0de3cf4ea67e60",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/619c0d463f59bcb86217236fad0de3cf4ea67e60"
+      },
+      {
+        "path": "resources/schema/templates.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "acac82a60b1a11a34aa33ffbe89640fdfed8efef",
+        "size": 12733,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/acac82a60b1a11a34aa33ffbe89640fdfed8efef"
+      },
+      {
+        "path": "resources/skills",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b525413fa9310dad353c8545aa85994ca2a4123f",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/b525413fa9310dad353c8545aa85994ca2a4123f"
+      },
+      {
+        "path": "resources/skills/seo-aeo.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d4b176770d6059d811e913022cd928449647c989",
+        "size": 6633,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/d4b176770d6059d811e913022cd928449647c989"
+      },
+      {
+        "path": "resources/skills/seo-article.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2bf10825072391e5d54e5bdeaa9c5aa26fb7a1e9",
+        "size": 1984,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/2bf10825072391e5d54e5bdeaa9c5aa26fb7a1e9"
+      },
+      {
+        "path": "resources/skills/seo-audit.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9aca9c964dca83888f49badfcd2a524cdbdbccc1",
+        "size": 3614,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/9aca9c964dca83888f49badfcd2a524cdbdbccc1"
+      },
+      {
+        "path": "resources/skills/seo-competitor-pages.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3fdd8102ec4fe1674ec8c701a47d20f3a333d3dd",
+        "size": 6960,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/3fdd8102ec4fe1674ec8c701a47d20f3a333d3dd"
+      },
+      {
+        "path": "resources/skills/seo-content.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "61e0dacb698797eb72a35e71262b84f901df5d66",
+        "size": 7083,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/61e0dacb698797eb72a35e71262b84f901df5d66"
+      },
+      {
+        "path": "resources/skills/seo-geo.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "47f02e3cd184c8938903acfe20bcd16f28704775",
+        "size": 8692,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/47f02e3cd184c8938903acfe20bcd16f28704775"
+      },
+      {
+        "path": "resources/skills/seo-github.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4afa77ce61e1323e7f3dec319c34d1d58ab1fd5",
+        "size": 4775,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/c4afa77ce61e1323e7f3dec319c34d1d58ab1fd5"
+      },
+      {
+        "path": "resources/skills/seo-hreflang.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ba4f2e1fd712c57d6cd974c9c67112a0aeaacf56",
+        "size": 7986,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/ba4f2e1fd712c57d6cd974c9c67112a0aeaacf56"
+      },
+      {
+        "path": "resources/skills/seo-images.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1db58462b016f1ad6d7661e600fe2a75fd285634",
+        "size": 5457,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/1db58462b016f1ad6d7661e600fe2a75fd285634"
+      },
+      {
+        "path": "resources/skills/seo-links.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "da64e78f11a54a6c494d7931cb591c3fb865cd04",
+        "size": 4442,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/da64e78f11a54a6c494d7931cb591c3fb865cd04"
+      },
+      {
+        "path": "resources/skills/seo-page.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ee9bda8b1e53647bcb9983786485551a77570a21",
+        "size": 4023,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/ee9bda8b1e53647bcb9983786485551a77570a21"
+      },
+      {
+        "path": "resources/skills/seo-plan.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2ad845f8d2368424f56e74e527f433aca3ccae01",
+        "size": 5917,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/2ad845f8d2368424f56e74e527f433aca3ccae01"
+      },
+      {
+        "path": "resources/skills/seo-programmatic.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7c7c55aa0171d24af8b6060293bab8d7a18de6a4",
+        "size": 8007,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/7c7c55aa0171d24af8b6060293bab8d7a18de6a4"
+      },
+      {
+        "path": "resources/skills/seo-schema.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6403a747d1c3a08f0c8b189301ee39df88f5592b",
+        "size": 5101,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/6403a747d1c3a08f0c8b189301ee39df88f5592b"
+      },
+      {
+        "path": "resources/skills/seo-sitemap.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2d4451327d7641d2a49f43b9bb165115291f9eec",
+        "size": 3686,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/2d4451327d7641d2a49f43b9bb165115291f9eec"
+      },
+      {
+        "path": "resources/skills/seo-technical.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1b1e8e4663f778faf87f002ac6743640631fd43f",
+        "size": 9280,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/1b1e8e4663f778faf87f002ac6743640631fd43f"
+      },
+      {
+        "path": "resources/templates",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c156e673757bedaf841f331b490a1f673dc275d0",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/c156e673757bedaf841f331b490a1f673dc275d0"
+      },
+      {
+        "path": "resources/templates/agency.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6d236edc76213dc8d2a41e5e4841de2761d92253",
+        "size": 4522,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/6d236edc76213dc8d2a41e5e4841de2761d92253"
+      },
+      {
+        "path": "resources/templates/blog-post.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "57a2e7d76a256cf3914a35c76134868b5b4deff1",
+        "size": 2546,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/57a2e7d76a256cf3914a35c76134868b5b4deff1"
+      },
+      {
+        "path": "resources/templates/ecommerce.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "30eb4730814855ccfb16e8fe886323a10286a17a",
+        "size": 4888,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/30eb4730814855ccfb16e8fe886323a10286a17a"
+      },
+      {
+        "path": "resources/templates/generic.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5495b64a8810945c4e84ddb3e059efa64483ed81",
+        "size": 4171,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/5495b64a8810945c4e84ddb3e059efa64483ed81"
+      },
+      {
+        "path": "resources/templates/github-seo-report.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b3f08c6f731e7a6d32853e8ab9a55f38b0936968",
+        "size": 866,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/b3f08c6f731e7a6d32853e8ab9a55f38b0936968"
+      },
+      {
+        "path": "resources/templates/github-weekly-scorecard.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "de902bb5fbec7b9e6d4d6bc9bd40573cdf8321d1",
+        "size": 954,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/de902bb5fbec7b9e6d4d6bc9bd40573cdf8321d1"
+      },
+      {
+        "path": "resources/templates/local-service.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f5c8b97b9a67915b709add43232c5690d3dafbd3",
+        "size": 5446,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/f5c8b97b9a67915b709add43232c5690d3dafbd3"
+      },
+      {
+        "path": "resources/templates/news-article.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0871dc4052721334c83275ccb0b4f3e5f81e7e9a",
+        "size": 2354,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/0871dc4052721334c83275ccb0b4f3e5f81e7e9a"
+      },
+      {
+        "path": "resources/templates/publisher.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "55d75e4129efbbf5cb68dd098fb23020a4e27ee4",
+        "size": 4568,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/55d75e4129efbbf5cb68dd098fb23020a4e27ee4"
+      },
+      {
+        "path": "resources/templates/saas.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "56d43d74fce83c66be2ec58ea9f15bfffe0ace4f",
+        "size": 4487,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/56d43d74fce83c66be2ec58ea9f15bfffe0ace4f"
+      },
+      {
+        "path": "resources/templates/technical-article.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "909f6d261d7e1cfa97fa6b8a5ed997b8be15c456",
+        "size": 2415,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/909f6d261d7e1cfa97fa6b8a5ed997b8be15c456"
+      },
+      {
+        "path": "scripts",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2b4e2000fbb6505df8493c45927c72e5f7e52e78",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/2b4e2000fbb6505df8493c45927c72e5f7e52e78"
+      },
+      {
+        "path": "scripts/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fa516bca7567381bb5008b64bdfd00bc611850ae",
+        "size": 34,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/fa516bca7567381bb5008b64bdfd00bc611850ae"
+      },
+      {
+        "path": "scripts/a11y_seo_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "96cc4cdf1edf8b28fa703974b619a01243c67969",
+        "size": 3440,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/96cc4cdf1edf8b28fa703974b619a01243c67969"
+      },
+      {
+        "path": "scripts/ai_crawler_policy_matrix.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3e2e63f9db7298f7b979a49df344b6f57b58fbc3",
+        "size": 2220,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/3e2e63f9db7298f7b979a49df344b6f57b58fbc3"
+      },
+      {
+        "path": "scripts/analyze_visual.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "a72328c284e51d8a26101f35330a5b5ce82e4eb5",
+        "size": 6629,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/a72328c284e51d8a26101f35330a5b5ce82e4eb5"
+      },
+      {
+        "path": "scripts/anchor_text_audit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fa1b06c58e0b018a802b2a20060d2b3f388ce7b5",
+        "size": 7930,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/fa1b06c58e0b018a802b2a20060d2b3f388ce7b5"
+      },
+      {
+        "path": "scripts/answer_block_scanner.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b33c301bead8f902831bb37e8031dc1b8861c250",
+        "size": 3986,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/b33c301bead8f902831bb37e8031dc1b8861c250"
+      },
+      {
+        "path": "scripts/article_seo.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "13928ccb87831cf57eda511cca454ea1dde2ab9e",
+        "size": 27770,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/13928ccb87831cf57eda511cca454ea1dde2ab9e"
+      },
+      {
+        "path": "scripts/audit_runner.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8b2b9070badc7bbfa13d2eb087a6002bc7b0fd77",
+        "size": 3171,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/8b2b9070badc7bbfa13d2eb087a6002bc7b0fd77"
+      },
+      {
+        "path": "scripts/broken_links.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d4598ea95c99b0f7a2d60f1ad25132f2326526cb",
+        "size": 8510,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/d4598ea95c99b0f7a2d60f1ad25132f2326526cb"
+      },
+      {
+        "path": "scripts/cache_compression_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b9c2114d66b07c0ad331a3a1dca408e66befc4ab",
+        "size": 6818,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/b9c2114d66b07c0ad331a3a1dca408e66befc4ab"
+      },
+      {
+        "path": "scripts/canonical_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "726dc7340c5337ef0bad5669897c8605d03cfcda",
+        "size": 3511,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/726dc7340c5337ef0bad5669897c8605d03cfcda"
+      },
+      {
+        "path": "scripts/capture_screenshot.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "2f21dfc09a0c4e4a55eb7fb5ac088a24a90a6ff7",
+        "size": 4490,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/2f21dfc09a0c4e4a55eb7fb5ac088a24a90a6ff7"
+      },
+      {
+        "path": "scripts/citation_readiness.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e42657abeee2f14fc14afad2c377bc0faa9155b",
+        "size": 5247,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/5e42657abeee2f14fc14afad2c377bc0faa9155b"
+      },
+      {
+        "path": "scripts/collection_page_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bd4ebedf1b38a1197982ca6453e3833ce715ea27",
+        "size": 4303,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/bd4ebedf1b38a1197982ca6453e3833ce715ea27"
+      },
+      {
+        "path": "scripts/competitor_gap.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c1cf04b62cadd0dc6cc6873d6ff07a287041be69",
+        "size": 10475,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/c1cf04b62cadd0dc6cc6873d6ff07a287041be69"
+      },
+      {
+        "path": "scripts/content_decay_detector.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6add78a51e098252d413d3542739c3af044d5c36",
+        "size": 6329,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/6add78a51e098252d413d3542739c3af044d5c36"
+      },
+      {
+        "path": "scripts/content_intent_matcher.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f023c0e9d63d2f74cff22d17618871c53f7128d1",
+        "size": 5554,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/f023c0e9d63d2f74cff22d17618871c53f7128d1"
+      },
+      {
+        "path": "scripts/crawl_audit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b5df537e6a25382172bbb3ec93026c94147c26c4",
+        "size": 7355,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/b5df537e6a25382172bbb3ec93026c94147c26c4"
+      },
+      {
+        "path": "scripts/critical_request_chain.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "791b5f230170ce1219e85fd6497e8ac6e50821bf",
+        "size": 4890,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/791b5f230170ce1219e85fd6497e8ac6e50821bf"
+      },
+      {
+        "path": "scripts/duplicate_content.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4078e1eab071fbde1774bc3c7336e45a136fb85e",
+        "size": 14300,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/4078e1eab071fbde1774bc3c7336e45a136fb85e"
+      },
+      {
+        "path": "scripts/eeat_signal_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "371a0683867d2ca48d6c50dba53acfc275d13a0d",
+        "size": 5616,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/371a0683867d2ca48d6c50dba53acfc275d13a0d"
+      },
+      {
+        "path": "scripts/entity_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ed16422ecd008c0a1e1d85c8cf35f353c2d80056",
+        "size": 19843,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/ed16422ecd008c0a1e1d85c8cf35f353c2d80056"
+      },
+      {
+        "path": "scripts/env_loader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3f657e93812b00fa8ce4768abca47f8914026a5b",
+        "size": 3642,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/3f657e93812b00fa8ce4768abca47f8914026a5b"
+      },
+      {
+        "path": "scripts/external_link_quality.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "407d5522291f53a766eec3e02443800cf26efbda",
+        "size": 6732,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/407d5522291f53a766eec3e02443800cf26efbda"
+      },
+      {
+        "path": "scripts/faceted_nav_audit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d48ad9ca5c266218ad41203603f26f42e9fd3562",
+        "size": 3404,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/d48ad9ca5c266218ad41203603f26f42e9fd3562"
+      },
+      {
+        "path": "scripts/fetch_page.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "42c9a233e69a4b24c5d8c560222eed034c4104f0",
+        "size": 3721,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/42c9a233e69a4b24c5d8c560222eed034c4104f0"
+      },
+      {
+        "path": "scripts/finding_verifier.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f90018099dabc99eba866437bb1baae5a641919b",
+        "size": 4976,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/f90018099dabc99eba866437bb1baae5a641919b"
+      },
+      {
+        "path": "scripts/font_audit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "916508e0560b589afc6cbcafd85255067eaaa8d3",
+        "size": 6048,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/916508e0560b589afc6cbcafd85255067eaaa8d3"
+      },
+      {
+        "path": "scripts/freshness_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "df854b507d39836dcb78aefef413c59535018d55",
+        "size": 6344,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/df854b507d39836dcb78aefef413c59535018d55"
+      },
+      {
+        "path": "scripts/generate_report.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f9444e511cf972c3b5d50da4e6eb40ce68ca23e4",
+        "size": 82657,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/f9444e511cf972c3b5d50da4e6eb40ce68ca23e4"
+      },
+      {
+        "path": "scripts/github_api.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f0f3ae8a83bd5542dda168764e78cb1b0f4bbc5b",
+        "size": 13081,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/f0f3ae8a83bd5542dda168764e78cb1b0f4bbc5b"
+      },
+      {
+        "path": "scripts/github_community_health.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "27d1834beda0ade71f9b12275f7f802322270100",
+        "size": 9068,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/27d1834beda0ade71f9b12275f7f802322270100"
+      },
+      {
+        "path": "scripts/github_competitor_research.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f7d6c04fa142ea981252e927eb90c25ea5adb9c7",
+        "size": 17567,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/f7d6c04fa142ea981252e927eb90c25ea5adb9c7"
+      },
+      {
+        "path": "scripts/github_readme_lint.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1c497e94145f1eb5dd00c761767607f7594c4359",
+        "size": 15245,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/1c497e94145f1eb5dd00c761767607f7594c4359"
+      },
+      {
+        "path": "scripts/github_repo_audit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f24e5eca160c57cf6bc9ca273a29cec473ce465c",
+        "size": 21464,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/f24e5eca160c57cf6bc9ca273a29cec473ce465c"
+      },
+      {
+        "path": "scripts/github_search_benchmark.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "247957d0ea43e3f7910b5d7604b5d528dd199db3",
+        "size": 7902,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/247957d0ea43e3f7910b5d7604b5d528dd199db3"
+      },
+      {
+        "path": "scripts/github_seo_report.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "24001ae5f25b6c5b7dc31549b7c3f99558567e1a",
+        "size": 32814,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/24001ae5f25b6c5b7dc31549b7c3f99558567e1a"
+      },
+      {
+        "path": "scripts/github_traffic_archiver.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5ce5d19f8308104136a9eeec080374ac326adc81",
+        "size": 6481,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/5ce5d19f8308104136a9eeec080374ac326adc81"
+      },
+      {
+        "path": "scripts/github_weekly_scorecard.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "79e18684aa454d8cb8847073e2b9c194031ae7fe",
+        "size": 4532,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/79e18684aa454d8cb8847073e2b9c194031ae7fe"
+      },
+      {
+        "path": "scripts/gsc_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d10c4cd71b946dc84e90cb4756d04783acc2998b",
+        "size": 11695,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/d10c4cd71b946dc84e90cb4756d04783acc2998b"
+      },
+      {
+        "path": "scripts/hreflang_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1399a801abe0c1598d22344f608aef14840456fe",
+        "size": 24738,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/1399a801abe0c1598d22344f608aef14840456fe"
+      },
+      {
+        "path": "scripts/hreflang_sitemap_validator.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4780cd1475acc2f5b80f19786aa29c14ce61c268",
+        "size": 6527,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/4780cd1475acc2f5b80f19786aa29c14ce61c268"
+      },
+      {
+        "path": "scripts/image_inventory.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a790472e081d74f10908095bb60e38db2016daba",
+        "size": 2900,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/a790472e081d74f10908095bb60e38db2016daba"
+      },
+      {
+        "path": "scripts/image_weight_audit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "76312dabe3615537a8bdc13f9e002a655fe9131d",
+        "size": 4875,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/76312dabe3615537a8bdc13f9e002a655fe9131d"
+      },
+      {
+        "path": "scripts/indexability_matrix.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "20d9ba28ad9d80ba788d934f2da0cb8b819f662e",
+        "size": 3576,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/20d9ba28ad9d80ba788d934f2da0cb8b819f662e"
+      },
+      {
+        "path": "scripts/indexnow_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "aaba9b9443f25a65fd5a6f6bd6dc4018ba76953e",
+        "size": 9578,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/aaba9b9443f25a65fd5a6f6bd6dc4018ba76953e"
+      },
+      {
+        "path": "scripts/internal_links.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3ffd91aee7bd7628014c9602cdefa14ec02cb24a",
+        "size": 10724,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/3ffd91aee7bd7628014c9602cdefa14ec02cb24a"
+      },
+      {
+        "path": "scripts/javascript_render_audit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "054a17e93815bc19c7d6e8bcce6f0dcee701e34f",
+        "size": 2984,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/054a17e93815bc19c7d6e8bcce6f0dcee701e34f"
+      },
+      {
+        "path": "scripts/lcp_subparts.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "03856ef98c710428850569b1082e1bd8f7a2518d",
+        "size": 7505,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/03856ef98c710428850569b1082e1bd8f7a2518d"
+      },
+      {
+        "path": "scripts/lib",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5fbea10958498a4428cb1810a08a4c9c85b38748",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/5fbea10958498a4428cb1810a08a4c9c85b38748"
+      },
+      {
+        "path": "scripts/lib/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "67dc4f829414b5a1654769025bc23e79b9d1c0c3",
+        "size": 46,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/67dc4f829414b5a1654769025bc23e79b9d1c0c3"
+      },
+      {
+        "path": "scripts/lib/safe_http.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1ae06541ceed409fea4711073f142f8ff766a899",
+        "size": 6260,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/1ae06541ceed409fea4711073f142f8ff766a899"
+      },
+      {
+        "path": "scripts/lighthouse_runner.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "85853aa58b29554042ec6421cc318f8cb70efc84",
+        "size": 6096,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/85853aa58b29554042ec6421cc318f8cb70efc84"
+      },
+      {
+        "path": "scripts/link_profile.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "007c8e3e88fa9122449afbe1eab79b04c25c9d17",
+        "size": 12851,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/007c8e3e88fa9122449afbe1eab79b04c25c9d17"
+      },
+      {
+        "path": "scripts/llms_txt_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dc7599035b6b264436442c47aa38a95ac702b80c",
+        "size": 7638,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/dc7599035b6b264436442c47aa38a95ac702b80c"
+      },
+      {
+        "path": "scripts/llms_txt_generator.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "20a2c8518974ae13b29a239bbde338999030d491",
+        "size": 2990,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/20a2c8518974ae13b29a239bbde338999030d491"
+      },
+      {
+        "path": "scripts/local_seo_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "caeecd9d3f009248926e3952582da746dde282a2",
+        "size": 3738,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/caeecd9d3f009248926e3952582da746dde282a2"
+      },
+      {
+        "path": "scripts/log_file_analyzer.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "997bd6e142a50505c45c467eccd058c3628dc0be",
+        "size": 6137,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/997bd6e142a50505c45c467eccd058c3628dc0be"
+      },
+      {
+        "path": "scripts/mobile_render_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44f1fc1531e2463040d5d04d52c89b71d72c374c",
+        "size": 7070,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/44f1fc1531e2463040d5d04d52c89b71d72c374c"
+      },
+      {
+        "path": "scripts/orphan_pages_from_sitemap.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "905d5a68a24760f9fbfbdf3aabf6668dac691383",
+        "size": 6352,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/905d5a68a24760f9fbfbdf3aabf6668dac691383"
+      },
+      {
+        "path": "scripts/pagespeed.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "efce0417fd142111910a60976a841c6ac933f3de",
+        "size": 13253,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/efce0417fd142111910a60976a841c6ac933f3de"
+      },
+      {
+        "path": "scripts/parse_html.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "9653e415c1d792997ac3ff4da3d1bbbf1af0952b",
+        "size": 12493,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/9653e415c1d792997ac3ff4da3d1bbbf1af0952b"
+      },
+      {
+        "path": "scripts/pre_commit_seo_check.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "c73d6e073cbeb71bd8846657aa4f8ee1fa23c212",
+        "size": 2972,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/c73d6e073cbeb71bd8846657aa4f8ee1fa23c212"
+      },
+      {
+        "path": "scripts/product_schema_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c535dbf1a7d544d0111a41d9bc4cbf34a10866c4",
+        "size": 4971,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/c535dbf1a7d544d0111a41d9bc4cbf34a10866c4"
+      },
+      {
+        "path": "scripts/readability.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "94eb6c0bc4e5d3ec85289d7abbfb726177e82b43",
+        "size": 14799,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/94eb6c0bc4e5d3ec85289d7abbfb726177e82b43"
+      },
+      {
+        "path": "scripts/redirect_backlink_reclaim.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0088ce1525eef18f6079e555be66ce8a8ac6487f",
+        "size": 5811,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/0088ce1525eef18f6079e555be66ce8a8ac6487f"
+      },
+      {
+        "path": "scripts/redirect_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c38206406c60dafdfd38c1ec67a34c27dc12cafd",
+        "size": 6341,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/c38206406c60dafdfd38c1ec67a34c27dc12cafd"
+      },
+      {
+        "path": "scripts/reference_freshness.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "65e32c5ff418d76f4fd5e53ee02f62524e0e0705",
+        "size": 2979,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/65e32c5ff418d76f4fd5e53ee02f62524e0e0705"
+      },
+      {
+        "path": "scripts/repo_docs_site_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9999dbcdb68b445622f1940bfd4dac8fd938e69c",
+        "size": 5885,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/9999dbcdb68b445622f1940bfd4dac8fd938e69c"
+      },
+      {
+        "path": "scripts/repo_file_inventory.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "04dc7cdceee56b4f7d7cfcaa0e1e29c0e0314ff5",
+        "size": 3674,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/04dc7cdceee56b4f7d7cfcaa0e1e29c0e0314ff5"
+      },
+      {
+        "path": "scripts/repo_release_seo.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1b79b6aaa6148e42e08c09a33898a54dd1376593",
+        "size": 6720,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/1b79b6aaa6148e42e08c09a33898a54dd1376593"
+      },
+      {
+        "path": "scripts/repo_social_preview_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bff5397d07b62d5bf57423901ef2e66e4904b65c",
+        "size": 4167,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/bff5397d07b62d5bf57423901ef2e66e4904b65c"
+      },
+      {
+        "path": "scripts/repo_topic_suggester.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9f5c2bfedabadbfd06ac9870db04d74c839cb425",
+        "size": 6445,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/9f5c2bfedabadbfd06ac9870db04d74c839cb425"
+      },
+      {
+        "path": "scripts/review_schema_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1aeb575bb73b62fc7816b4d1055387a7daffbddc",
+        "size": 4054,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/1aeb575bb73b62fc7816b4d1055387a7daffbddc"
+      },
+      {
+        "path": "scripts/rich_results_guard.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "71014ffce7e0b5e35d4a4c9a87869c12fa04ab1a",
+        "size": 3524,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/71014ffce7e0b5e35d4a4c9a87869c12fa04ab1a"
+      },
+      {
+        "path": "scripts/robots_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cb31a76e238f3a6d63818823868518cb135e1cc5",
+        "size": 7415,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/cb31a76e238f3a6d63818823868518cb135e1cc5"
+      },
+      {
+        "path": "scripts/robots_path_tester.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "42c376797f1ece2d4c83dafb85cff964a0637ca6",
+        "size": 1831,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/42c376797f1ece2d4c83dafb85cff964a0637ca6"
+      },
+      {
+        "path": "scripts/schema_diff.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2bbc979fa8ccb4dd7791c5829abadc3f7f745aba",
+        "size": 3127,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/2bbc979fa8ccb4dd7791c5829abadc3f7f745aba"
+      },
+      {
+        "path": "scripts/schema_required_props.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6e05135a434c9141065cc83a110cd84ce7504804",
+        "size": 8311,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/6e05135a434c9141065cc83a110cd84ce7504804"
+      },
+      {
+        "path": "scripts/schema_template_generator.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a8512093721be0b97cecf157e4ee0daa3238c838",
+        "size": 5481,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/a8512093721be0b97cecf157e4ee0daa3238c838"
+      },
+      {
+        "path": "scripts/security_headers.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d49e97068dc095ca1c98200813ce0cf0bcf95b24",
+        "size": 6961,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/d49e97068dc095ca1c98200813ce0cf0bcf95b24"
+      },
+      {
+        "path": "scripts/seo_common.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "387f23c90efa9e56937c33c28d4771070a4652df",
+        "size": 14429,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/387f23c90efa9e56937c33c28d4771070a4652df"
+      },
+      {
+        "path": "scripts/sitemap_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cff11721ef9efef663d0a7636d736b49dc87a52c",
+        "size": 6623,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/cff11721ef9efef663d0a7636d736b49dc87a52c"
+      },
+      {
+        "path": "scripts/sitemap_generator.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5f39d6dccc2dbd6db1241cfc38534bc00dbc72cd",
+        "size": 3503,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/5f39d6dccc2dbd6db1241cfc38534bc00dbc72cd"
+      },
+      {
+        "path": "scripts/social_meta.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "69431e95615c366a51be39057e8424acb143f583",
+        "size": 8912,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/69431e95615c366a51be39057e8424acb143f583"
+      },
+      {
+        "path": "scripts/third_party_script_audit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5338dc32e377ebfe4ed1e51684fa8d3576b719e2",
+        "size": 4804,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/5338dc32e377ebfe4ed1e51684fa8d3576b719e2"
+      },
+      {
+        "path": "scripts/topical_cluster_mapper.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b90df0b16b24e5fa4fdae74361a901bcc6ebedf2",
+        "size": 6549,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/b90df0b16b24e5fa4fdae74361a901bcc6ebedf2"
+      },
+      {
+        "path": "scripts/url_quality.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "efedd6638031696ad73f302a4e8ff8e2eb314d39",
+        "size": 2567,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/efedd6638031696ad73f302a4e8ff8e2eb314d39"
+      },
+      {
+        "path": "scripts/validate_schema.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5ff985c377a5eb8176702f399c1f8b7e70d0b847",
+        "size": 4387,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/5ff985c377a5eb8176702f399c1f8b7e70d0b847"
+      },
+      {
+        "path": "scripts/validate_skill_inventory.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "24d08cc09d6d91708995702b1f1a2fd9afd6d857",
+        "size": 4876,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/24d08cc09d6d91708995702b1f1a2fd9afd6d857"
+      },
+      {
+        "path": "scripts/video_schema_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "df7559647f2704939740f33295bcb3738497dd83",
+        "size": 3706,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/df7559647f2704939740f33295bcb3738497dd83"
+      },
+      {
+        "path": "scripts/visual_regression_snapshot.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "147e23bf1379ae691118afbf39ffea1781da0ded",
+        "size": 5455,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/147e23bf1379ae691118afbf39ffea1781da0ded"
+      },
+      {
+        "path": "scripts/x_robots_header_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "db94fd8801b2ed8ccadd8ebe1ca58df189c69895",
+        "size": 2049,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/db94fd8801b2ed8ccadd8ebe1ca58df189c69895"
+      },
+      {
+        "path": "tests",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "47848ae579f45d2e0a463940119e54134f0a609f",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/47848ae579f45d2e0a463940119e54134f0a609f"
+      },
+      {
+        "path": "tests/fixtures",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e68ddd1fc857a6c4673463b04383138509753550",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/e68ddd1fc857a6c4673463b04383138509753550"
+      },
+      {
+        "path": "tests/fixtures/pagespeed_field_data.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "662ef579b57df60abaf07b01c58065448820f20d",
+        "size": 945,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/662ef579b57df60abaf07b01c58065448820f20d"
+      },
+      {
+        "path": "tests/fixtures/pagespeed_lab_data.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "52a874c4874225e976f76f0362be1f50513b44f1",
+        "size": 810,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/52a874c4874225e976f76f0362be1f50513b44f1"
+      },
+      {
+        "path": "tests/fixtures/report_data.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3fa777e996b95f3bc917f193eb5d1dea3103049b",
+        "size": 2136,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/3fa777e996b95f3bc917f193eb5d1dea3103049b"
+      },
+      {
+        "path": "tests/test_content_ai_scripts.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3b6aa65548be6c675328ca62133529ba406f03e7",
+        "size": 5021,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/3b6aa65548be6c675328ca62133529ba406f03e7"
+      },
+      {
+        "path": "tests/test_core_seo_scripts.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c1cdb4df5684bc37e2d9da894ee0ed0535edc306",
+        "size": 1824,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/c1cdb4df5684bc37e2d9da894ee0ed0535edc306"
+      },
+      {
+        "path": "tests/test_duplicate_content.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a18372d297cb0e2246c0401eff1a0e5657485174",
+        "size": 2908,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/a18372d297cb0e2246c0401eff1a0e5657485174"
+      },
+      {
+        "path": "tests/test_link_and_github_depth_scripts.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "54aadaf96d1c90ca73ff426c642fd4917232bc3b",
+        "size": 2545,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/54aadaf96d1c90ca73ff426c642fd4917232bc3b"
+      },
+      {
+        "path": "tests/test_pagespeed.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1a797c7af312be2df6b4831dfd891b7b8943e891",
+        "size": 3432,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/1a797c7af312be2df6b4831dfd891b7b8943e891"
+      },
+      {
+        "path": "tests/test_performance_scripts.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6fcff1d202ba20b68c4603f47df3ed2c8292dc62",
+        "size": 4088,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/6fcff1d202ba20b68c4603f47df3ed2c8292dc62"
+      },
+      {
+        "path": "tests/test_readability.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b4bb2e9df11108f4efa9b6ea814241ded7539798",
+        "size": 1387,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/b4bb2e9df11108f4efa9b6ea814241ded7539798"
+      },
+      {
+        "path": "tests/test_reporting.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "93e48f636e92472f0091651b4b6e7030ab49fa85",
+        "size": 1958,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/93e48f636e92472f0091651b4b6e7030ab49fa85"
+      },
+      {
+        "path": "tests/test_schema_local_ecommerce_scripts.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9e20804a8c50d0db37174c8aa90be47d02f7db43",
+        "size": 2408,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/9e20804a8c50d0db37174c8aa90be47d02f7db43"
+      },
+      {
+        "path": "wiki",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0b79e8564b70a557c0d6464fdcccfb03d5262823",
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/trees/0b79e8564b70a557c0d6464fdcccfb03d5262823"
+      },
+      {
+        "path": "wiki/Audit-Workflow.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b487e4d1cbbcc3a2899edee48b91093b0e7b1bb7",
+        "size": 2283,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/b487e4d1cbbcc3a2899edee48b91093b0e7b1bb7"
+      },
+      {
+        "path": "wiki/Command-Reference.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "403ce68a252d2dfb9838d75c719c90e686fd5108",
+        "size": 1733,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/403ce68a252d2dfb9838d75c719c90e686fd5108"
+      },
+      {
+        "path": "wiki/Example-Prompts.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "698618b4595edf1decb1389eac050e581e80565b",
+        "size": 12989,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/698618b4595edf1decb1389eac050e581e80565b"
+      },
+      {
+        "path": "wiki/Home.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "69764f0869d0bbc34c4295d67c289c9b2e192a94",
+        "size": 5916,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/69764f0869d0bbc34c4295d67c289c9b2e192a94"
+      },
+      {
+        "path": "wiki/Installation.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "83e2d0cc256f599465d23d8c415b6558bdc78723",
+        "size": 8432,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/83e2d0cc256f599465d23d8c415b6558bdc78723"
+      },
+      {
+        "path": "wiki/Release-and-Packaging.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a1576baf3372f87162e0eb65de935469f859cbe5",
+        "size": 1136,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/a1576baf3372f87162e0eb65de935469f859cbe5"
+      },
+      {
+        "path": "wiki/Reports-and-Outputs.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0a6df515c765d9f9ee396e5d405e656239000480",
+        "size": 6242,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/0a6df515c765d9f9ee396e5d405e656239000480"
+      },
+      {
+        "path": "wiki/Script-Inventory.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "02a5cab5372792a556535017bdaad4570ed00a40",
+        "size": 11551,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/02a5cab5372792a556535017bdaad4570ed00a40"
+      },
+      {
+        "path": "wiki/Troubleshooting.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c08655f6794bd183e599a4a1c0e61b15bc66d5b8",
+        "size": 1677,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/c08655f6794bd183e599a4a1c0e61b15bc66d5b8"
+      },
+      {
+        "path": "wiki/_Sidebar.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2e9d93797b5e473e69bc0b00493e54929b565f9b",
+        "size": 218,
+        "url": "https://api.github.com/repos/Bhanunamikaze/Agentic-SEO-Skill/git/blobs/2e9d93797b5e473e69bc0b00493e54929b565f9b"
+      }
+    ],
+    "truncated": false
+  }
+}

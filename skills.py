@@ -60,6 +60,14 @@ def validate(entries):
             names.add(f['path'])
         if 'SKILL.md' not in names:
             raise ValueError('Missing SKILL.md')
+        license_names = set()
+        for f in e.get('license_files', []):
+            safe_path(f['path'])
+            if f['path'] in license_names or not re.fullmatch(r'[0-9a-f]{40}', f['blob']):
+                raise ValueError('Invalid license manifest')
+            license_names.add(f['path'])
+            if 'LICENSES/upstream/' + f['path'] in names:
+                raise ValueError('License destination collision')
     return entries
 
 def catalogue():
@@ -98,6 +106,15 @@ def install(e, destination, reviewed=False, downloader=fetch):
             if total > 25_000_000 or blob_hash(data) != f['blob']:
                 raise ValueError('Size limit or integrity mismatch; nothing installed')
             out = staging / f['path']
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_bytes(data)
+        for f in e.get('license_files', []):
+            safe_path(f['path'])
+            data = downloader(raw_file_url(e['repo'], e['commit'], '.', f['path']))
+            total += len(data)
+            if total > 25_000_000 or blob_hash(data) != f['blob']:
+                raise ValueError('License integrity mismatch; nothing installed')
+            out = staging / 'LICENSES' / 'upstream' / f['path']
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_bytes(data)
         # mkdir is exclusive: concurrent installs cannot overwrite an existing directory.

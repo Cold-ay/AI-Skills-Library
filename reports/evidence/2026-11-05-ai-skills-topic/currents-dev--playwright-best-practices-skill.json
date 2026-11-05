@@ -1,0 +1,735 @@
+{
+  "observed_at": "2026-11-05T09:21:19.463647+00:00",
+  "repo": "currents-dev/playwright-best-practices-skill",
+  "commit": "283d5cbc5d11aac1abda058b16ad22c317d54dc0",
+  "metadata": {
+    "id": 1143589800,
+    "node_id": "R_kgDORCnLqA",
+    "name": "playwright-best-practices-skill",
+    "full_name": "currents-dev/playwright-best-practices-skill",
+    "private": false,
+    "owner": {
+      "login": "currents-dev",
+      "id": 81007196,
+      "node_id": "MDEyOk9yZ2FuaXphdGlvbjgxMDA3MTk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81007196?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/currents-dev",
+      "html_url": "https://github.com/currents-dev",
+      "followers_url": "https://api.github.com/users/currents-dev/followers",
+      "following_url": "https://api.github.com/users/currents-dev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/currents-dev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/currents-dev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/currents-dev/subscriptions",
+      "organizations_url": "https://api.github.com/users/currents-dev/orgs",
+      "repos_url": "https://api.github.com/users/currents-dev/repos",
+      "events_url": "https://api.github.com/users/currents-dev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/currents-dev/received_events",
+      "type": "Organization",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "html_url": "https://github.com/currents-dev/playwright-best-practices-skill",
+    "description": "AI Skill for Playwright Best Practices\u2014made by Currents.dev",
+    "fork": false,
+    "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill",
+    "forks_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/forks",
+    "keys_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/teams",
+    "hooks_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/hooks",
+    "issue_events_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/events",
+    "assignees_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/tags",
+    "blobs_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/languages",
+    "stargazers_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/stargazers",
+    "contributors_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/contributors",
+    "subscribers_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/subscribers",
+    "subscription_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/subscription",
+    "commits_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/merges",
+    "archive_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/downloads",
+    "issues_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/labels{/name}",
+    "releases_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/deployments",
+    "created_at": "2026-01-27T19:08:57Z",
+    "updated_at": "2026-11-05T05:55:30Z",
+    "pushed_at": "2026-07-21T06:01:56Z",
+    "git_url": "git://github.com/currents-dev/playwright-best-practices-skill.git",
+    "ssh_url": "git@github.com:currents-dev/playwright-best-practices-skill.git",
+    "clone_url": "https://github.com/currents-dev/playwright-best-practices-skill.git",
+    "svn_url": "https://github.com/currents-dev/playwright-best-practices-skill",
+    "homepage": "",
+    "size": 341,
+    "stargazers_count": 419,
+    "watchers_count": 419,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": false,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 64,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 2,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "has_pull_requests": true,
+    "pull_request_creation_policy": "all",
+    "topics": [
+      "ai",
+      "ai-skill",
+      "ai-skills",
+      "playwright",
+      "playwright-typescript"
+    ],
+    "visibility": "public",
+    "forks": 64,
+    "open_issues": 2,
+    "watchers": 419,
+    "default_branch": "main",
+    "temp_clone_token": null,
+    "custom_properties": {
+      "vanta_production_branch_name": "main"
+    },
+    "organization": {
+      "login": "currents-dev",
+      "id": 81007196,
+      "node_id": "MDEyOk9yZ2FuaXphdGlvbjgxMDA3MTk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81007196?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/currents-dev",
+      "html_url": "https://github.com/currents-dev",
+      "followers_url": "https://api.github.com/users/currents-dev/followers",
+      "following_url": "https://api.github.com/users/currents-dev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/currents-dev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/currents-dev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/currents-dev/subscriptions",
+      "organizations_url": "https://api.github.com/users/currents-dev/orgs",
+      "repos_url": "https://api.github.com/users/currents-dev/repos",
+      "events_url": "https://api.github.com/users/currents-dev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/currents-dev/received_events",
+      "type": "Organization",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "network_count": 64,
+    "subscribers_count": 9
+  },
+  "tree": {
+    "sha": "283d5cbc5d11aac1abda058b16ad22c317d54dc0",
+    "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/283d5cbc5d11aac1abda058b16ad22c317d54dc0",
+    "tree": [
+      {
+        "path": ".agnix.toml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "667ee3cece5793185058890d870325cc81662ed5",
+        "size": 35,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/667ee3cece5793185058890d870325cc81662ed5"
+      },
+      {
+        "path": ".github",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "de4e8d156ad951e64c6547d8c4f19619543add3e",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/de4e8d156ad951e64c6547d8c4f19619543add3e"
+      },
+      {
+        "path": ".github/workflows",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9f5c807d929d614fe17d15e375517a303db9765c",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/9f5c807d929d614fe17d15e375517a303db9765c"
+      },
+      {
+        "path": ".github/workflows/validate-skill.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8d31b2cb4af35a195733e4ec66c57b48929ee376",
+        "size": 312,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/8d31b2cb4af35a195733e4ec66c57b48929ee376"
+      },
+      {
+        "path": "LICENSE.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0312fd7de9487ced54515687d0026fc146aba947",
+        "size": 1073,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/0312fd7de9487ced54515687d0026fc146aba947"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a18033ede62103b313cc88f411377907ecdbf8d1",
+        "size": 10123,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/a18033ede62103b313cc88f411377907ecdbf8d1"
+      },
+      {
+        "path": "playwright-best-practices",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b4620eb2cfc6b58173cda800b7c7578190dfd632",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/b4620eb2cfc6b58173cda800b7c7578190dfd632"
+      },
+      {
+        "path": "playwright-best-practices/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0da736253c343081ab8c0cb9802729a707c23196",
+        "size": 26306,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/0da736253c343081ab8c0cb9802729a707c23196"
+      },
+      {
+        "path": "playwright-best-practices/advanced",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b36938b346fe498cdfc2e4f454bea37c7a3297c2",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/b36938b346fe498cdfc2e4f454bea37c7a3297c2"
+      },
+      {
+        "path": "playwright-best-practices/advanced/authentication-flows.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "24ad08c177d8b07ed6555a3d639729a0cfc02611",
+        "size": 10871,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/24ad08c177d8b07ed6555a3d639729a0cfc02611"
+      },
+      {
+        "path": "playwright-best-practices/advanced/authentication.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "02c2dd7b276d314feb9b1e9b5861679db8c66db2",
+        "size": 30857,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/02c2dd7b276d314feb9b1e9b5861679db8c66db2"
+      },
+      {
+        "path": "playwright-best-practices/advanced/clock-mocking.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "073d0870551950d33b766832c370fd9e205b3534",
+        "size": 9872,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/073d0870551950d33b766832c370fd9e205b3534"
+      },
+      {
+        "path": "playwright-best-practices/advanced/mobile-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e928bdee507d2f5f343df7d633ea0e3fb797ae5c",
+        "size": 10993,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/e928bdee507d2f5f343df7d633ea0e3fb797ae5c"
+      },
+      {
+        "path": "playwright-best-practices/advanced/multi-context.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ed1cf8a07c24feb7d5c0bddc64cd1f559d480cba",
+        "size": 8570,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/ed1cf8a07c24feb7d5c0bddc64cd1f559d480cba"
+      },
+      {
+        "path": "playwright-best-practices/advanced/multi-user.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "301e55c4fecaf553f7b33d24f3251ea95afb2b30",
+        "size": 11490,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/301e55c4fecaf553f7b33d24f3251ea95afb2b30"
+      },
+      {
+        "path": "playwright-best-practices/advanced/network-advanced.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fa017fe53fbea61e7e910e08b93cc088b990b11b",
+        "size": 11106,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/fa017fe53fbea61e7e910e08b93cc088b990b11b"
+      },
+      {
+        "path": "playwright-best-practices/advanced/third-party.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "acf8ab8901720d43d88dcf646cd10f5fbd35789c",
+        "size": 12163,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/acf8ab8901720d43d88dcf646cd10f5fbd35789c"
+      },
+      {
+        "path": "playwright-best-practices/architecture",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7159aec81d7ab65bd0ba64f9462a8592c0db8f7f",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/7159aec81d7ab65bd0ba64f9462a8592c0db8f7f"
+      },
+      {
+        "path": "playwright-best-practices/architecture/pom-vs-fixtures.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eafb06f767d9a7a5f973e4260090f0988702ecdc",
+        "size": 11261,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/eafb06f767d9a7a5f973e4260090f0988702ecdc"
+      },
+      {
+        "path": "playwright-best-practices/architecture/test-architecture.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "28b6f6c9c52faa7f6d5c66b168956648d93311d4",
+        "size": 14839,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/28b6f6c9c52faa7f6d5c66b168956648d93311d4"
+      },
+      {
+        "path": "playwright-best-practices/architecture/when-to-mock.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d5d5705b1fa55a9bbd167134e4951314fc214f4a",
+        "size": 11346,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/d5d5705b1fa55a9bbd167134e4951314fc214f4a"
+      },
+      {
+        "path": "playwright-best-practices/browser-apis",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1ec21a7ab15972f8b56a7f1421c4af1f63e8ac18",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/1ec21a7ab15972f8b56a7f1421c4af1f63e8ac18"
+      },
+      {
+        "path": "playwright-best-practices/browser-apis/browser-apis.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cc4c269e8f1c31c056e7295d643f7cc7adebb56a",
+        "size": 10717,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/cc4c269e8f1c31c056e7295d643f7cc7adebb56a"
+      },
+      {
+        "path": "playwright-best-practices/browser-apis/iframes.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "145e050ff89b5ad5012ee2773fbb3d13e01aaf3c",
+        "size": 11634,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/145e050ff89b5ad5012ee2773fbb3d13e01aaf3c"
+      },
+      {
+        "path": "playwright-best-practices/browser-apis/service-workers.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7603de322e069b0bd6a7801a2a6c3f8a7663fa9f",
+        "size": 13813,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/7603de322e069b0bd6a7801a2a6c3f8a7663fa9f"
+      },
+      {
+        "path": "playwright-best-practices/browser-apis/websockets.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "075a997395ab0cf14649563860c4f7c49375f999",
+        "size": 10597,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/075a997395ab0cf14649563860c4f7c49375f999"
+      },
+      {
+        "path": "playwright-best-practices/core",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a9f473170de37db04e0fc8a5ab586f316020336d",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/a9f473170de37db04e0fc8a5ab586f316020336d"
+      },
+      {
+        "path": "playwright-best-practices/core/annotations.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ac0f890a5e2eef36af52f4080205dd7c4ff99f04",
+        "size": 10864,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/ac0f890a5e2eef36af52f4080205dd7c4ff99f04"
+      },
+      {
+        "path": "playwright-best-practices/core/assertions-waiting.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bd03dd8a4db6a56fd7354637b224ffc86f5c620c",
+        "size": 9459,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/bd03dd8a4db6a56fd7354637b224ffc86f5c620c"
+      },
+      {
+        "path": "playwright-best-practices/core/configuration.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "66b9d33849304e2024626b050a9603765f5fdd1f",
+        "size": 12611,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/66b9d33849304e2024626b050a9603765f5fdd1f"
+      },
+      {
+        "path": "playwright-best-practices/core/fixtures-hooks.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ff9dc93f71a1be7d57de3807923d7cba87a463b2",
+        "size": 11802,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/ff9dc93f71a1be7d57de3807923d7cba87a463b2"
+      },
+      {
+        "path": "playwright-best-practices/core/global-setup.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a0335226e7c0180c158be3cf0c6a99bfd60d3089",
+        "size": 12885,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/a0335226e7c0180c158be3cf0c6a99bfd60d3089"
+      },
+      {
+        "path": "playwright-best-practices/core/locators.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f806635d62953b1a72ae0a9ff20b7c8515b8100e",
+        "size": 6528,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/f806635d62953b1a72ae0a9ff20b7c8515b8100e"
+      },
+      {
+        "path": "playwright-best-practices/core/page-object-model.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0cdc6d642c33f9b4eb6890131ebc373c842071cb",
+        "size": 8110,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/0cdc6d642c33f9b4eb6890131ebc373c842071cb"
+      },
+      {
+        "path": "playwright-best-practices/core/projects-dependencies.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1005daeb20063081b98a9e964e1e028f86f9f87c",
+        "size": 8949,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/1005daeb20063081b98a9e964e1e028f86f9f87c"
+      },
+      {
+        "path": "playwright-best-practices/core/test-data.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1c07af843edd0f75269e877f44bb14991a48e88a",
+        "size": 12082,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/1c07af843edd0f75269e877f44bb14991a48e88a"
+      },
+      {
+        "path": "playwright-best-practices/core/test-suite-structure.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2659f1502073a06ce9dedb26b6465a20197c44ef",
+        "size": 9550,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/2659f1502073a06ce9dedb26b6465a20197c44ef"
+      },
+      {
+        "path": "playwright-best-practices/core/test-tags.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6d81cd9649a8ee05932477308c3b841a333237a1",
+        "size": 7080,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/6d81cd9649a8ee05932477308c3b841a333237a1"
+      },
+      {
+        "path": "playwright-best-practices/debugging",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3f53911dbddb52815ae2c61c6c9c4737df39ca6d",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/3f53911dbddb52815ae2c61c6c9c4737df39ca6d"
+      },
+      {
+        "path": "playwright-best-practices/debugging/console-errors.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d1e9882c39aaf13e19be806af9783eb5997dbb7b",
+        "size": 10093,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/d1e9882c39aaf13e19be806af9783eb5997dbb7b"
+      },
+      {
+        "path": "playwright-best-practices/debugging/debugging.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "187e4879e787663e8912c70b2e678cfe657e0383",
+        "size": 15097,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/187e4879e787663e8912c70b2e678cfe657e0383"
+      },
+      {
+        "path": "playwright-best-practices/debugging/error-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "43b17b6b7ff6bb18365de3a1a283af9b425654d5",
+        "size": 9694,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/43b17b6b7ff6bb18365de3a1a283af9b425654d5"
+      },
+      {
+        "path": "playwright-best-practices/debugging/flaky-tests.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d081f2116832048e8a9124f566a14b534330afd8",
+        "size": 15094,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/d081f2116832048e8a9124f566a14b534330afd8"
+      },
+      {
+        "path": "playwright-best-practices/frameworks",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "73123c207d020175d8892cd03bcacc55c4e41cb6",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/73123c207d020175d8892cd03bcacc55c4e41cb6"
+      },
+      {
+        "path": "playwright-best-practices/frameworks/angular.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ec09ecd4eb228255c613ca2348f8e100aef80c8d",
+        "size": 18606,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/ec09ecd4eb228255c613ca2348f8e100aef80c8d"
+      },
+      {
+        "path": "playwright-best-practices/frameworks/nextjs.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c16a9e9dfa75a0704a2d790c3136c5d16e738bc7",
+        "size": 13273,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/c16a9e9dfa75a0704a2d790c3136c5d16e738bc7"
+      },
+      {
+        "path": "playwright-best-practices/frameworks/react.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "20e3a1ae6eb64d35dbab59b6ba7b81811cc92b08",
+        "size": 17650,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/20e3a1ae6eb64d35dbab59b6ba7b81811cc92b08"
+      },
+      {
+        "path": "playwright-best-practices/frameworks/vue.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8abb6fcec3a0573437b8546b3d48bf7d18562b9c",
+        "size": 17005,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/8abb6fcec3a0573437b8546b3d48bf7d18562b9c"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7bc0711b3a35a07cf02867b7b89d907a2245152e",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/7bc0711b3a35a07cf02867b7b89d907a2245152e"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd/ci-cd.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d5ad0d4c8f4a3b5b54cabe8b7b9f158efeb71f15",
+        "size": 10006,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/d5ad0d4c8f4a3b5b54cabe8b7b9f158efeb71f15"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd/docker.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f20040b4ae28758367ea88f5aceb2d0d78989f46",
+        "size": 6262,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/f20040b4ae28758367ea88f5aceb2d0d78989f46"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd/github-actions.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0a8597550f58290d3c0a654dc4880d1bca1597e9",
+        "size": 13383,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/0a8597550f58290d3c0a654dc4880d1bca1597e9"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd/gitlab.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "576692e36e31213697ea2ad7e34848f612d3d56e",
+        "size": 10647,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/576692e36e31213697ea2ad7e34848f612d3d56e"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd/other-providers.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ca808593202b4ce60289ec80df9af6b82d809ebe",
+        "size": 13732,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/ca808593202b4ce60289ec80df9af6b82d809ebe"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd/parallel-sharding.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "898a4259593c6a9d4898732907791da70b68a57f",
+        "size": 11579,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/898a4259593c6a9d4898732907791da70b68a57f"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd/performance.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bc03da8e92616e68440335035d25ee29d199fc2e",
+        "size": 11867,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/bc03da8e92616e68440335035d25ee29d199fc2e"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd/reporting.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "55e1a9374ccce8f20d32aba9adb62624a3a492af",
+        "size": 10492,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/55e1a9374ccce8f20d32aba9adb62624a3a492af"
+      },
+      {
+        "path": "playwright-best-practices/infrastructure-ci-cd/test-coverage.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9bc73aebe22c690d47f8dd048357f7349c730585",
+        "size": 12725,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/9bc73aebe22c690d47f8dd048357f7349c730585"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4903e26bdcb3ce4c19b7a777454f73ae55c59a1a",
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/trees/4903e26bdcb3ce4c19b7a777454f73ae55c59a1a"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/accessibility.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1f13e21d94eb47b5e1f38af8af8a2241443f53b2",
+        "size": 9176,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/1f13e21d94eb47b5e1f38af8af8a2241443f53b2"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/api-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e3b5fa220705c74ca1e57ff797d0f91baf92bbaf",
+        "size": 24927,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/e3b5fa220705c74ca1e57ff797d0f91baf92bbaf"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/browser-extensions.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f3991fbb9668deec72f45fe039e308fe850f6153",
+        "size": 13826,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/f3991fbb9668deec72f45fe039e308fe850f6153"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/canvas-webgl.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2d9aeb2e3b780c8767b46b421abc0593baee76a5",
+        "size": 13183,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/2d9aeb2e3b780c8767b46b421abc0593baee76a5"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/component-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9cb36ae0ef3adeedb9488af9b163e7818beea1b5",
+        "size": 11701,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/9cb36ae0ef3adeedb9488af9b163e7818beea1b5"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/drag-drop.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4d4d0abc134d34c998ae6aeb82f78c778aa71a14",
+        "size": 18124,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/4d4d0abc134d34c998ae6aeb82f78c778aa71a14"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/electron.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "016f198a4a4f366b66d8f14afd6bd449341e3b81",
+        "size": 13512,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/016f198a4a4f366b66d8f14afd6bd449341e3b81"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/file-operations.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "367b8b149c1cc32f9e9693f9f301388f32f81f82",
+        "size": 10447,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/367b8b149c1cc32f9e9693f9f301388f32f81f82"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/file-upload-download.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "75a43482b124fe7d53705a871ca52977f554137f",
+        "size": 17233,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/75a43482b124fe7d53705a871ca52977f554137f"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/forms-validation.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2cfdd8cdcd424dc063329893d84d57dc9076a6f2",
+        "size": 22177,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/2cfdd8cdcd424dc063329893d84d57dc9076a6f2"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/graphql-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d2d35044d5803b12c1478a7d5bf4d7d5a7bf0699",
+        "size": 8714,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/d2d35044d5803b12c1478a7d5bf4d7d5a7bf0699"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/i18n.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "686cdc33f9cd65afd40745829d08c7823a82b509",
+        "size": 13134,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/686cdc33f9cd65afd40745829d08c7823a82b509"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/performance-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "50135b49db40772256fd42bc01064cb58119239a",
+        "size": 12566,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/50135b49db40772256fd42bc01064cb58119239a"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/security-testing.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f1f622a0f166d8af3568073f6394bb72436c6361",
+        "size": 12145,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/f1f622a0f166d8af3568073f6394bb72436c6361"
+      },
+      {
+        "path": "playwright-best-practices/testing-patterns/visual-regression.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "14280f6c537e4699bc7ecfcaca0f87963aaefcf8",
+        "size": 17765,
+        "url": "https://api.github.com/repos/currents-dev/playwright-best-practices-skill/git/blobs/14280f6c537e4699bc7ecfcaca0f87963aaefcf8"
+      }
+    ],
+    "truncated": false
+  }
+}

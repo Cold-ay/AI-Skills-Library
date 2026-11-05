@@ -620,5 +620,71 @@
     "downloadable": false,
     "compatibility": "Static workflow proposal; no end-to-end Codex or Claude Code runtime test.",
     "licenses": {}
+  },
+  {
+    "id": "clear-website-interactions",
+    "title": "Clear website interactions",
+    "summary": "Make controls discoverable, then specify honest feedback and recovery states.",
+    "skills": [
+      "design-everyday-things",
+      "microinteractions"
+    ],
+    "stages": [
+      {
+        "skill": "design-everyday-things",
+        "title": "Clarify the action and outcome",
+        "task": "Audit one user journey; hand off a control map with labels, expected outcomes, constraints and recovery paths."
+      },
+      {
+        "skill": "microinteractions",
+        "title": "Specify and implement the state transitions",
+        "task": "Use the approved control map to define idle, focus, pending, success, failure and repeated-click behavior. Hand off a state matrix and keyboard/reduced-motion checks."
+      }
+    ],
+    "requirements": "A website or prototype with a specific task. Plain HTML/CSS/JavaScript works; no animation runtime or service is bundled. Review source before use; preserve existing project instructions.",
+    "conflicts": "Design of Everyday Things owns discoverability and task flow; Microinteractions owns local feedback within that flow. Optional sibling skills are not bundled. Numeric self-scores and user-study percentages are heuristics, not test results. Never show success before the real operation succeeds or infer that copying a command ran it.",
+    "downloadable": true,
+    "compatibility": "Upstream-claimed Codex support for members; static library-authored sequence. No end-to-end test in Codex or Claude.",
+    "licenses": {
+      "design-everyday-things": {
+        "path": "LICENSE",
+        "blob": "9b62238504f0feb80cf3b390f181cef476c60d9e"
+      },
+      "microinteractions": {
+        "path": "LICENSE",
+        "blob": "9b62238504f0feb80cf3b390f181cef476c60d9e"
+      }
+    }
+  },
+  {
+    "id": "website-interaction-qa",
+    "title": "Website interaction QA",
+    "summary": "Specify interaction states, write browser regression checks, then report measured evidence.",
+    "skills": [
+      "microinteractions",
+      "playwright-best-practices",
+      "verification-before-completion"
+    ],
+    "stages": [
+      {
+        "skill": "microinteractions",
+        "title": "Define the state contract",
+        "task": "List expected outcomes for search, filters, copy controls or setup steps, including error and repeated-action cases."
+      },
+      {
+        "skill": "playwright-best-practices",
+        "title": "Implement browser regression tests",
+        "task": "Translate the state contract into semantic locators and retrying assertions. Check installed APIs against official Playwright docs; hand off test commands, traces and failures."
+      },
+      {
+        "skill": "verification-before-completion",
+        "title": "Verify the tested result",
+        "task": "Run the relevant checks in the target project and report exact evidence, failures and untested paths. Do not claim field performance or full accessibility compliance from a browser test."
+      }
+    ],
+    "requirements": "A disposable or approved test target; Node.js, @playwright/test and browser binaries. Follow project auth/test-data setup; optional axe dependency requires separate review.",
+    "conflicts": "Microinteractions defines expected behavior; Playwright tests observe it; verification reports evidence. Do not import upstream private APIs or treat automatic axe checks as complete accessibility certification. Codex support for the Playwright member is unknown.",
+    "downloadable": false,
+    "compatibility": "Recipe only, not a packaged or runtime-verified integration."
   }
 ]

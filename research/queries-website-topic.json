@@ -1,0 +1,10 @@
+{
+  "window_days": 90,
+  "per_query": 20,
+  "queries": [
+    "topic:ai-skills archived:false",
+    "topic:ai-skills playwright archived:false",
+    "topic:ai-skills website archived:false",
+    "topic:ai-skills accessibility archived:false"
+  ]
+}

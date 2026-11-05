@@ -1,0 +1,92 @@
+[
+  {
+    "path": "design-everyday-things/SKILL.md",
+    "blob": "83cd405291dbcc42367a3828299b866acdeb7984",
+    "bytes": 15994
+  },
+  {
+    "path": "design-everyday-things/references/affordances.md",
+    "blob": "013be99ef7bee22078865a33ccac6ea55487bf2a",
+    "bytes": 13207
+  },
+  {
+    "path": "design-everyday-things/references/case-studies.md",
+    "blob": "dbe8bd5365fa17cf8de77044270abdeea8401168",
+    "bytes": 16231
+  },
+  {
+    "path": "design-everyday-things/references/conceptual-models.md",
+    "blob": "1f57b568500d3050e37b035dd12750df5b0aacd4",
+    "bytes": 16061
+  },
+  {
+    "path": "design-everyday-things/references/constraints.md",
+    "blob": "d03e42ad3e792d2979949ca3014b3dd6a773a652",
+    "bytes": 13886
+  },
+  {
+    "path": "design-everyday-things/references/feedback.md",
+    "blob": "c4677476a13e2403dab21b821e494c3ddf1359c1",
+    "bytes": 15517
+  },
+  {
+    "path": "design-everyday-things/references/human-error.md",
+    "blob": "323ee1ca1a59c29cacab15cd1895d40ff23971f6",
+    "bytes": 16310
+  },
+  {
+    "path": "design-everyday-things/references/mappings.md",
+    "blob": "dc1da00984497e3fb7115b595a3318141f95954d",
+    "bytes": 13714
+  },
+  {
+    "path": "design-everyday-things/references/seven-stages.md",
+    "blob": "108c0aa327626b7bccf3f4f3df1eea9600df46d1",
+    "bytes": 15091
+  },
+  {
+    "path": "design-everyday-things/references/signifiers.md",
+    "blob": "1d3258898d62b2274f6c9fe7cd7efaa4d480d1d7",
+    "bytes": 14110
+  },
+  {
+    "path": "design-everyday-things/references/two-gulfs.md",
+    "blob": "6e7c1811882dafc39134d0beae7b0473cdcd56ab",
+    "bytes": 12282
+  },
+  {
+    "path": "microinteractions/SKILL.md",
+    "blob": "38ea3e5ae315d464bd8b21b6c27b5354a2ad6c16",
+    "bytes": 15227
+  },
+  {
+    "path": "microinteractions/references/case-studies.md",
+    "blob": "d6c70b55f27b582e8ac7bd1b63115b647e8c6ba1",
+    "bytes": 19262
+  },
+  {
+    "path": "microinteractions/references/feedback-patterns.md",
+    "blob": "a9c4c563b45e5539b10885ebc41b2f0e586b6f18",
+    "bytes": 16598
+  },
+  {
+    "path": "microinteractions/references/loops-modes.md",
+    "blob": "5aae42b71f80c44252d5eaa85812d3a580034b94",
+    "bytes": 14213
+  },
+  {
+    "path": "microinteractions/references/rules-and-state.md",
+    "blob": "8252a9fdc1409a08c441c9972b83aa48cfcba430",
+    "bytes": 15071
+  },
+  {
+    "path": "microinteractions/references/signature-moments.md",
+    "blob": "cf657d6e36f8797a609a07629767ad6b2ba6587e",
+    "bytes": 14333
+  },
+  {
+    "path": "microinteractions/references/trigger-design.md",
+    "blob": "cf0330de4de3b85cb142b5af2ca04c255f4d5abe",
+    "bytes": 12529
+  }
+]

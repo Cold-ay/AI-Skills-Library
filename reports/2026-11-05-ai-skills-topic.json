@@ -1,0 +1,75 @@
+{
+  "published_on": "2026-11-05",
+  "observed_at": "2026-11-05T09:21:19.463647+00:00",
+  "topic": "https://github.com/topics/ai-skills",
+  "query_url": "https://api.github.com/search/repositories?q=topic:ai-skills+archived:false&sort=stars&order=desc&per_page=50",
+  "query": "topic:ai-skills archived:false",
+  "sort": "stars descending",
+  "limit": 50,
+  "total_matches": 2228,
+  "method": "Topic-seeded top-50 metadata triage; five repositories inspected at fixed commits; selected SKILL.md read, selected references sampled, all selected regular-blob manifests hash checked. No upstream execution.",
+  "added": [
+    {
+      "id": "design-everyday-things",
+      "repo": "wondelai/skills",
+      "path": "design-everyday-things",
+      "commit": "d8d5d75f83da9f16d8aad5bab5f5b341a4770a30",
+      "stars": 2590,
+      "codex": "upstream-claimed"
+    },
+    {
+      "id": "microinteractions",
+      "repo": "wondelai/skills",
+      "path": "microinteractions",
+      "commit": "d8d5d75f83da9f16d8aad5bab5f5b341a4770a30",
+      "stars": 2590,
+      "codex": "upstream-claimed"
+    },
+    {
+      "id": "playwright-best-practices",
+      "repo": "currents-dev/playwright-best-practices-skill",
+      "path": "playwright-best-practices",
+      "commit": "283d5cbc5d11aac1abda058b16ad22c317d54dc0",
+      "stars": 419,
+      "codex": "unknown"
+    }
+  ],
+  "combinations": [
+    "clear-website-interactions",
+    "website-interaction-qa"
+  ],
+  "deferred": [
+    {
+      "id": "high-perf-browser",
+      "reason": "Useful networking guidance, but the suggested Lighthouse CI INP assertion conflates lab budgets and field INP; needs a corrected version or explicit reviewed adapter."
+    },
+    {
+      "id": "refactoring-ui",
+      "reason": "Overlaps existing design skills; large-text contrast example uses an oversimplified size threshold. Retain as a candidate, not a new design owner."
+    },
+    {
+      "repo": "Bhanunamikaze/Agentic-SEO-Skill",
+      "reason": "Multi-script SEO system with installer, specialist dependencies and claims requiring source-by-source validation; not a simple copyable skill."
+    },
+    {
+      "repo": "testdino-hq/playwright-skill",
+      "reason": "Alternative multi-skill testing suite. Overlaps the selected focused Currents skill; root README/index reviewed, sub-skills not deeply reviewed."
+    },
+    {
+      "repo": "docmd-io/docmd",
+      "reason": "Documentation compiler; no SKILL.md in pinned repository tree. Potential website tooling, not an installable skill."
+    },
+    {
+      "repo": "wondelai/skills",
+      "path": "create-website",
+      "reason": "Orchestrates several sibling skills and journey state; not standalone and duplicates existing website combinations."
+    }
+  ],
+  "limitations": [
+    "Bounded top-50 star-ranked sample; no claim to review all topic repositories.",
+    "Install counts not independently captured for selected entries; leaderboard was discovery context only.",
+    "Stars are repository-level dated observations, not per-skill quality scores or growth.",
+    "Codex/Claude compatibility is documentary only; no end-to-end skill runtime tests.",
+    "Most reference examples were not individually validated; selected references sampled."
+  ]
+}
