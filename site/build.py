@@ -75,7 +75,7 @@ def build():
     for a in artifacts:
         path=dest/'downloads'/a['file']
         if hashlib.sha256(path.read_bytes()).hexdigest()!=a['sha256']:raise ValueError('Bundle archive integrity mismatch')
-    payload=json.dumps(dict(skills=skills,posts=posts,combinations=packs,downloads=artifacts),ensure_ascii=True)
+    payload=json.dumps(dict(skills=skills,posts=posts,combinations=packs,downloads=artifacts,mcpGuide=markdown((ROOT/'docs/MCP.md').read_text())),ensure_ascii=True)
     (dest/'data.js').write_text('window.AI_SKILL_LIBRARY = '+payload+';\n')
     # Version each asset so cached styles/scripts cannot mask a published UI change.
     index=dest/'index.html';html=index.read_text()

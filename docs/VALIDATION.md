@@ -56,3 +56,11 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - 33 Python tests and four Node tests passed. Sorting checks cover numeric star ordering, deterministic ties, alphabetical/date/evidence ordering, invalid modes and source-array preservation. Purpose filtering tests retain every stage of a matched workflow.
 - Browser preview verified descending/ascending star order within a category, URL restoration after reload, category-based combination filtering, and separate purpose/workflow-role fields.
 - Added content hashes to asset URLs after observing a stale stylesheet during visual verification; the build/test checks these against actual asset bytes.
+
+## MCP connection â€” 2026-11-05
+
+- Added a local stdio server using the official MCP Python SDK 2.3.0 in an optional isolated environment. Eight read-only tools, three resource routes and two task prompts expose catalogue metadata, ordered combinations, bounded report/source reads and provenance.
+- 46 Python tests passed with the MCP environment, including an actual stdio subprocess launched from another working directory. The original Python 3.9 environment passes 44 tests with two SDK protocol tests skipped when the optional dependency is absent. Four JavaScript tests passed.
+- Live SDK client/server smoke test discovered all tools/prompts, read the overview, retrieved React motion stages and fetched GSAP core at its catalogue commit. Its Git blob hash matched. No third-party scripts, installers, hooks or agent workflows ran.
+- Tests exercise unknown IDs, manifest restrictions, traversal, report symlinks, binary/oversized content, hash mismatch, page bounds, metadata-only search and absolute-path configuration generation.
+- Client configuration is generated but host/account settings are not edited. The static Vercel website is not a remote MCP endpoint. No specific Codex/Claude desktop UI connection or full skill runtime certification is claimed.

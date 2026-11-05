@@ -119,3 +119,20 @@ Paste the resulting file-based request into Claude Code. This does not install n
 The [2026-10-31 research round](reports/2026-10-31-coding-context-mobile.md) adds 9 skills and revisits 2 already catalogued workflows across coding quality, durable context and mobile app design. Browse the dedicated [Mobile app design category](https://ai-skill-library.vercel.app/#library/mobile-app). Sources include Superpowers, Context Engineering, Expo, SwiftUI Expert and Vercel. Stars were observed on 2026-10-30; immutable sources, requirements and host evidence are preserved. No runtime compatibility or token-saving percentage is claimed.
 
 Three additional recipes cover evidence-led coding, durable context/handoff and Expo design review. Future manual searches can use `research/queries-coding-context-mobile.json`.
+
+## Connect through MCP
+
+Use the [MCP setup guide](docs/MCP.md) or the [website connection page](https://ai-skill-library.vercel.app/#connect) to connect Codex, Claude Code or another local stdio MCP client. One read-only server exposes skill/workflow search, provenance, hash-verified instruction reads, reports and task prompts. It does not install or execute third-party skills.
+
+Python 3.10+; optional isolated environment:
+
+```sh
+python3 -m venv .venv-mcp
+.venv-mcp/bin/python -m pip install -r requirements-mcp.txt
+.venv-mcp/bin/python scripts/smoke_mcp.py
+.venv-mcp/bin/python mcp_server.py --config codex
+# Or print Claude-style JSON:
+.venv-mcp/bin/python mcp_server.py --config claude
+```
+
+Merge the generated configuration into the client and reconnect. Skill cards offer Copy MCP prompt; combination prompts can target MCP. The static Vercel site is not a hosted MCP endpoint. Source retrieval still requires public GitHub access and any upstream plugin/runtime prerequisites. See the guide for Windows setup, protocol tests and limits.

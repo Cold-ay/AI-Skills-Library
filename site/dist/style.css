@@ -24,3 +24,5 @@
 .member-category{display:inline-flex;margin:0 0 8px}.member-name{display:block;font-weight:650;font-size:15px;overflow-wrap:anywhere}.member-name:hover{text-decoration:underline;text-underline-offset:3px}
 .member-purpose{margin:12px 0}.member-purpose dt{font-size:10px;font-weight:650;color:var(--ink);margin:10px 0 3px}.member-purpose dd{margin:0;color:var(--muted);font-size:12px;line-height:1.75}
 .combination-stages li::marker{color:var(--accent);font-weight:650}.library-tools label{min-width:155px}.library-tools select{max-width:100%}
+
+.skill-card .card-actions{flex-wrap:wrap;gap:8px}.skill-card .card-actions button{min-height:40px}.evidence-note .quiet-link{margin-left:8px}#connect-view .prose{margin-bottom:60px}#connect-view .prose pre{overflow-x:auto}#connect-view .prose h2:first-child{margin-top:0}
