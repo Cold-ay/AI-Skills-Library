@@ -41,7 +41,7 @@ There are examples that need correction before reuse: the soft-assertion referen
 - **Clear website interactions**: Design of Everyday Things owns the control map; Microinteractions owns feedback within that map. The downloadable `clear-website-interactions` pack includes fixed upstream files, both MIT license texts, provenance, a staged workflow and a CLAUDE.md adapter. These are sequential responsibilities, not simultaneous independent design directors.
 - **Website interaction QA**: Microinteractions supplies a state contract; Playwright Best Practices translates it into tests; Verification Before Completion reports actual results. This is a recipe requiring project/browser setup, with no ZIP or runtime compatibility claim.
 
-Find both by title on the website's Combinations page. The download is inert instruction text; it does not install dependencies or register a client. Review files in a staging folder and merge CLAUDE.md with existing instructions.
+Browse both on the [Combinations page](https://ai-skill-library.vercel.app/#combinations), or [download the reviewed design ZIP](https://ai-skill-library.vercel.app/downloads/clear-website-interactions.zip). The download is inert instruction text; it does not install dependencies or register a client. Review files in a staging folder and merge CLAUDE.md with existing instructions.
 
 ## Candidates held back
 
@@ -58,12 +58,12 @@ Find both by title on the website's Combinations page. The download is inert ins
 
 ## Reproduce this research
 
-1. Start at [GitHub's ai-skills topic](https://github.com/topics/ai-skills), sorted by stars. Capture a timestamp because rankings change.
-2. Query GitHub repository search with `topic:ai-skills archived:false`, sorting by stars descending and limiting to 50. This API query excludes archived projects and may differ from the topic page. This run returned 2228 matches; only the first 50 were triaged from metadata.
-3. Compare candidate repositories and skill paths against `catalog/skills.json`. Separate actual skills from frameworks, registries and general tools.
-4. Deepen into five relevant repositories: Wondel, Currents, TestDino, Agentic SEO and docmd. Resolve default-branch HEAD to a full commit, read the README/license and inspect the recursive tree. Read chosen SKILL.md files and selected linked references as data. Do not run install commands, hooks or scripts.
-5. For accepted folders, reject non-regular blobs and verify every file's Git blob hash. Preserve root license hashes. Record Codex claims separately from evidence of runtime behavior.
-6. Record include/defer reasons and actual uncertainties. Add entries only after review; regenerate the website and validate hashes/tests.
+- **Step 1.** Start at [GitHub's ai-skills topic](https://github.com/topics/ai-skills), sorted by stars. Capture a timestamp because rankings change.
+- **Step 2.** Query GitHub repository search with `topic:ai-skills archived:false`, sorting by stars descending and limiting to 50. This API query excludes archived projects and may differ from the topic page. This run returned 2228 matches; only the first 50 were triaged from metadata.
+- **Step 3.** Compare candidate repositories and skill paths against `catalog/skills.json`. Separate actual skills from frameworks, registries and general tools.
+- **Step 4.** Deepen into five relevant repositories: Wondel, Currents, TestDino, Agentic SEO and docmd. Resolve default-branch HEAD to a full commit, read the README/license and inspect the recursive tree. Read chosen SKILL.md files and selected linked references as data. Do not run install commands, hooks or scripts.
+- **Step 5.** For accepted folders, reject non-regular blobs and verify every file's Git blob hash. Preserve root license hashes. Record Codex claims separately from evidence of runtime behavior.
+- **Step 6.** Record include/defer reasons and actual uncertainties. Add entries only after review; regenerate the website and validate hashes/tests.
 
 The exact search response, repository metadata, commit trees and selected-file verification inventories are preserved under `reports/evidence/2026-11-05-ai-skills-topic/`. The adjacent JSON report is the machine-readable decision log. Full selected instruction bytes remain at their immutable upstream links and in the reviewed design pack; the evidence folder does not claim every reference example was individually validated.
 
