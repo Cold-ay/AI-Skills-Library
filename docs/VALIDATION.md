@@ -90,3 +90,10 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - Published 14 deterministic offline installation packages: nine standalone skills and five combinations, derived from previously reviewed archives. Original source catalogues and original ZIPs remain unchanged.
 - 64 Python tests and seven JavaScript tests pass. New tests cover three platform directory layouts and both scopes, preview-only behavior, hash/collision/symlink/traversal failures, rollback, source/license preservation, reproducible ZIPs and executing the self-contained installer in a temporary Claude project outside the repository. No upstream scripts or actual agent sessions ran.
 - Website build, JavaScript syntax and whitespace checks passed. Browser verification was unavailable because the browser tool timed out; no visual/end-to-end UI pass is claimed.
+
+## Native Codex installer â€” 2026-11-15
+
+- Published nine original skill folders and five library-authored combination wrappers with supporting files and licenses. Each combination request lists all members and the wrapper, pinned to a full source commit.
+- 70 Python tests and eight JavaScript tests passed locally. Integration tests exercise the bundled Codex installer validation/copy code for all 14 folders in temporary storage, substituting only its network checkout with the local source tree. Tests also verify provenance, rebuild preservation, registry hashes, scope-specific requests and explicit dependency paths. No actual upstream task workflow ran.
+- Five generated wrappers pass frontmatter validation. Two unchanged upstream skills have metadata keys flagged by the bundled validator; the native installer copy test succeeds, but no Codex skill-session behavior is claimed. See docs/CODEX-INSTALLER.md.
+- Browser preview was unavailable (browser tool timeout); no visual UI pass is claimed.

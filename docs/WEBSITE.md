@@ -74,3 +74,7 @@ The 2026-11-15 round adds six presentation entries under `#library/presentations
 ## Skill Bridge
 
 `#install` is the platform-selection and local installation page. Skill cards and combination cards link directly to `#install/skill/<id>` or `#install/combination/<id>`. Choose Codex, Claude Code or Cursor; project or user scope; macOS/Linux or Windows. Available portable packages expose archive hashes, preview/install commands and matching native chat prompts. Unavailable entries expose upstream requirements and an MCP reading route. Downloads and copy buttons do not install or send messages. Build packages with `python3 bridge.py --reviewed` before the website build; see [the complete guide](SKILL-BRIDGE.md).
+
+## Native Codex install actions
+
+Eligible skill and combination cards expose **Install with Codex**, copying a full-SHA `$skill-installer` request. The Skill Bridge page adds a scope-aware native option when Codex is selected. Direct card requests use the built-in personal default; project requests require the real project path. Source links point to the same immutable GitHub commit. `site/dist/codex-installer.json` is generated only after committing the exported tree; `site/build.py` validates its local index and content hashes. See [Codex installer publication](CODEX-INSTALLER.md). Existing portable ZIPs and other-platform flows are preserved.

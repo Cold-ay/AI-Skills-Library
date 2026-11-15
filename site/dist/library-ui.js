@@ -41,6 +41,15 @@
    chat:(platform==='codex'?'$':'/')+pkg.invocation+' <your task>',
    folder:pkg.root};
  }
- const api={sortLabels,normalizeSort,sortSkills,matchesPurpose,mcpSetupPlan,bridgePlan};root.AI_SKILL_UI=api;
+ function codexInstallPlan(registry,kind,id,scope='user'){
+  if(!registry||!Array.isArray(registry.entries)||!/^\w[\w.-]*\/[\w.-]+$/.test(registry.repo)||!/^[a-f0-9]{40}$/.test(registry.ref)||!['project','user'].includes(scope))return null;
+  const entry=registry.entries.find(e=>e.kind===kind&&e.id===id);
+  if(!entry||!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(entry.invocation)||!Array.isArray(entry.paths)||!entry.paths.length||new Set(entry.paths).size!==entry.paths.length||entry.paths.some(p=>!/^installables\/codex\/skills\/[a-z0-9]+(?:-[a-z0-9]+)*$/.test(p)))return null;
+  const destination=scope==='project'?'<project>/.agents/skills':"Codex installer default: $CODEX_HOME/skills (normally ~/.codex/skills)";
+  const args='--repo '+registry.repo+' --ref '+registry.ref+' --path '+entry.paths.join(' ')+(scope==='project'?' --dest "<absolute-project-path>/.agents/skills"':'');
+  const request='$skill-installer Install '+entry.title+' from the pinned AI Skill Library distribution. Use your built-in install-skill-from-github.py helper with these arguments:\n\n'+args+'\n\n'+(scope==='project'?'Replace the destination placeholder with the actual absolute current-project path and quote paths containing spaces. Do not run the placeholder literally.':'Use the built-in installer’s normal personal destination; respect CODEX_HOME if configured.')+' Before installing, inspect the pinned source and license notices, determine the destination, and check ALL '+entry.paths.length+' listed skill folders for conflicts. If any already exists, stop and report before copying any folder. Install every listed path into the SAME skills root; combination members are not auto-resolved. Do not run upstream scripts, install runtime dependencies or modify client settings. If installation fails partway, report the exact partial state; do not claim rollback. If the built-in installer is unavailable, explain that requirement rather than running another installer. After success, return the installed paths and tell me to use $'+entry.invocation+' <your task> on my next turn.';
+  return {request,args,destination,paths:entry.paths.slice(),ref:registry.ref,chat:'$'+entry.invocation+' <your task>',source:'https://github.com/'+registry.repo+'/tree/'+registry.ref+'/'+entry.paths[entry.paths.length-1]};
+ }
+ const api={sortLabels,normalizeSort,sortSkills,matchesPurpose,mcpSetupPlan,bridgePlan,codexInstallPlan};root.AI_SKILL_UI=api;
  if(typeof module==='object'&&module.exports)module.exports=api;
 })(globalThis);

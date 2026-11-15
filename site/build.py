@@ -7,6 +7,7 @@ import hashlib
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from bundles import combinations
+from codex_export import validate_registry
 from urllib.parse import urlparse
 
 HERE=Path(__file__).resolve().parent
@@ -79,7 +80,7 @@ def build():
     for package in bridge_packages:
         if not re.fullmatch(r'(?:skill|combination)-[a-z0-9-]+\.zip',package['file']):raise ValueError('Invalid bridge artifact')
         if hashlib.sha256((dest/'bridge'/package['file']).read_bytes()).hexdigest()!=package['sha256']:raise ValueError('Bridge archive integrity mismatch')
-    payload=json.dumps(dict(skills=skills,posts=posts,combinations=packs,downloads=artifacts,bridgePackages=bridge_packages,mcpGuide=markdown((ROOT/'docs/MCP.md').read_text())),ensure_ascii=True)
+    payload=json.dumps(dict(skills=skills,posts=posts,combinations=packs,downloads=artifacts,bridgePackages=bridge_packages,codexInstaller=validate_registry(),mcpGuide=markdown((ROOT/'docs/MCP.md').read_text())),ensure_ascii=True)
     (dest/'data.js').write_text('window.AI_SKILL_LIBRARY = '+payload+';\n')
     # Version each asset so cached styles/scripts cannot mask a published UI change.
     index=dest/'index.html';html=index.read_text()

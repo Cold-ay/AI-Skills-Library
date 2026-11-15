@@ -4,6 +4,10 @@ Skill Bridge is the local installation bridge between AI Skill Library and Codex
 
 The website cannot write into an agent's local skill folders. A download or copied prompt does not install a skill or send a chat message. The ZIP includes a standalone Python installer; it runs only when you run it locally. No account, API key, local web server, global npm package or repository clone is required. Python 3.9+ is required.
 
+## Codex built-in installer option
+
+When Codex is selected, eligible entries also offer **Install with Codex**. This copies a pinned GitHub-folder request for the built-in `$skill-installer`; the native method does not use the portable ZIP installer. Combinations list every member and wrapper explicitly. Project scope adds `--dest <project>/.agents/skills`; personal scope uses the built-in helper’s default, normally `$CODEX_HOME/skills` or `~/.codex/skills`, rather than the portable installer’s explicit `.agents` path. The built-in multi-path installer is sequential and is not transactional: check all destinations before it runs, and report any partial failure. See [the native installer guide](CODEX-INSTALLER.md).
+
 ## Supported local platforms
 
 | Platform | Project skills | Personal skills | Native chat invocation |

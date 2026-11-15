@@ -148,3 +148,7 @@ The [dated presentation review](reports/2026-11-15-presentation-skills.md) compa
 ## Skill Bridge — use the library in your agent
 
 Open [Use in your agent](https://ai-skill-library.vercel.app/#install) to download an available skill or combination, install its reviewed files into Codex, Claude Code or Cursor, and copy a matching chatbox prompt. Choose project or personal scope. The initial bridge includes nine standalone skills and five combinations; other entries retain their source/MCP setup routes. The portable Python installer previews by default, verifies payload hashes and preserves licenses, refuses existing folders, and never runs upstream code. See the [Skill Bridge guide](docs/SKILL-BRIDGE.md). Local installation does not upload skills to cloud accounts.
+
+## Codex built-in installer
+
+Eligible cards now offer **Install with Codex**: copy a pinned `$skill-installer` request directly into Codex. Nine standalone skill folders and five combination wrappers are published under `installables/codex/skills/`; combination requests include every member path. Choose project scope from Skill Bridge or use the direct card action for the built-in personal default. See [native Codex installation](docs/CODEX-INSTALLER.md) for paths, immutable publication and conflict handling.

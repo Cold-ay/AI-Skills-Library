@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "repo": "Cold-ay/AI-Skills-Library",
+  "ref": "d396aceec262c23b199f953852046bc2ebf19649",
+  "entries": [
+    {
+      "kind": "skill",
+      "id": "beautiful-article",
+      "title": "beautiful-article",
+      "invocation": "beautiful-article",
+      "folders": [
+        "beautiful-article"
+      ],
+      "paths": [
+        "installables/codex/skills/beautiful-article"
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "design-everyday-things",
+      "title": "design-everyday-things",
+      "invocation": "design-everyday-things",
+      "folders": [
+        "design-everyday-things"
+      ],
+      "paths": [
+        "installables/codex/skills/design-everyday-things"
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "gsap-core",
+      "title": "gsap-core",
+      "invocation": "gsap-core",
+      "folders": [
+        "gsap-core"
+      ],
+      "paths": [
+        "installables/codex/skills/gsap-core"
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "gsap-react",
+      "title": "gsap-react",
+      "invocation": "gsap-react",
+      "folders": [
+        "gsap-react"
+      ],
+      "paths": [
+        "installables/codex/skills/gsap-react"
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "gsap-timeline",
+      "title": "gsap-timeline",
+      "invocation": "gsap-timeline",
+      "folders": [
+        "gsap-timeline"
+      ],
+      "paths": [
+        "installables/codex/skills/gsap-timeline"
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "microinteractions",
+      "title": "microinteractions",
+      "invocation": "microinteractions",
+      "folders": [
+        "microinteractions"
+      ],
+      "paths": [
+        "installables/codex/skills/microinteractions"
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "nothing-design",
+      "title": "nothing-design",
+      "invocation": "nothing-design",
+      "folders": [
+        "nothing-design"
+      ],
+      "paths": [
+        "installables/codex/skills/nothing-design"
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "scientific-critical-thinking",
+      "title": "scientific-critical-thinking",
+      "invocation": "scientific-critical-thinking",
+      "folders": [
+        "scientific-critical-thinking"
+      ],
+      "paths": [
+        "installables/codex/skills/scientific-critical-thinking"
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "web-video-presentation",
+      "title": "web-video-presentation",
+      "invocation": "web-video-presentation",
+      "folders": [
+        "web-video-presentation"
+      ],
+      "paths": [
+        "installables/codex/skills/web-video-presentation"
+      ]
+    },
+    {
+      "kind": "combination",
+      "id": "article-to-presentation",
+      "title": "Article to presentation",
+      "invocation": "combination-article-to-presentation",
+      "folders": [
+        "beautiful-article",
+        "web-video-presentation",
+        "combination-article-to-presentation"
+      ],
+      "paths": [
+        "installables/codex/skills/beautiful-article",
+        "installables/codex/skills/web-video-presentation",
+        "installables/codex/skills/combination-article-to-presentation"
+      ]
+    },
+    {
+      "kind": "combination",
+      "id": "clear-website-interactions",
+      "title": "Clear website interactions",
+      "invocation": "combination-clear-website-interactions",
+      "folders": [
+        "design-everyday-things",
+        "microinteractions",
+        "combination-clear-website-interactions"
+      ],
+      "paths": [
+        "installables/codex/skills/design-everyday-things",
+        "installables/codex/skills/microinteractions",
+        "installables/codex/skills/combination-clear-website-interactions"
+      ]
+    },
+    {
+      "kind": "combination",
+      "id": "evidence-to-article",
+      "title": "Evidence to editorial report",
+      "invocation": "combination-evidence-to-article",
+      "folders": [
+        "scientific-critical-thinking",
+        "beautiful-article",
+        "combination-evidence-to-article"
+      ],
+      "paths": [
+        "installables/codex/skills/scientific-critical-thinking",
+        "installables/codex/skills/beautiful-article",
+        "installables/codex/skills/combination-evidence-to-article"
+      ]
+    },
+    {
+      "kind": "combination",
+      "id": "industrial-motion",
+      "title": "Industrial interface + motion",
+      "invocation": "combination-industrial-motion",
+      "folders": [
+        "nothing-design",
+        "gsap-core",
+        "combination-industrial-motion"
+      ],
+      "paths": [
+        "installables/codex/skills/nothing-design",
+        "installables/codex/skills/gsap-core",
+        "installables/codex/skills/combination-industrial-motion"
+      ]
+    },
+    {
+      "kind": "combination",
+      "id": "react-motion",
+      "title": "React motion studio",
+      "invocation": "combination-react-motion",
+      "folders": [
+        "gsap-core",
+        "gsap-timeline",
+        "gsap-react",
+        "combination-react-motion"
+      ],
+      "paths": [
+        "installables/codex/skills/gsap-core",
+        "installables/codex/skills/gsap-timeline",
+        "installables/codex/skills/gsap-react",
+        "installables/codex/skills/combination-react-motion"
+      ]
+    }
+  ],
+  "index_sha256": "e99884b01638b41ff349a4e388e22523a78ad96a95c9fb6f926c21bc1b87b39b"
+}

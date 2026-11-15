@@ -77,3 +77,29 @@ test('chat setup request pins a package, reviews before installation, and respec
  assert.ok(personal.setup.includes('--platform claude --scope user'));
  assert.ok(!personal.setup.includes('--project'));
 });
+
+test('native Codex requests pin source and include every combination dependency in one installer call',()=>{
+ const {codexInstallPlan}=require('../site/dist/library-ui.js');
+ const registry=require('../site/dist/codex-installer.json');
+ const plan=codexInstallPlan(registry,'combination','clear-website-interactions','project');
+ assert.equal(plan.paths.length,3);
+ assert.ok(plan.request.startsWith('$skill-installer'));
+ assert.ok(plan.args.includes('--ref '+registry.ref));
+ assert.ok(!plan.args.includes('--ref main'));
+ for(const path of plan.paths)assert.ok(plan.args.includes(path));
+ assert.equal(plan.paths.at(-1),'installables/codex/skills/combination-clear-website-interactions');
+ assert.ok(plan.args.includes('--dest "<absolute-project-path>/.agents/skills"'));
+ assert.equal(plan.chat,'$combination-clear-website-interactions <your task>');
+ assert.ok(plan.request.includes('check ALL 3 listed skill folders'));
+ assert.ok(plan.request.includes('do not claim rollback'));
+ assert.ok(plan.source.includes('/tree/'+registry.ref+'/'));
+ const personal=codexInstallPlan(registry,'skill','microinteractions','user');
+ assert.ok(!personal.args.includes('--dest'));
+ assert.ok(personal.request.includes('respect CODEX_HOME'));
+ assert.ok(!personal.request.includes('install.py'));
+ assert.equal(codexInstallPlan(registry,'skill','frontend-slides'),null);
+ assert.equal(codexInstallPlan({...registry,ref:'main'},'skill','microinteractions'),null);
+ assert.equal(codexInstallPlan({...registry,entries:undefined},'skill','microinteractions'),null);
+ const invalid=JSON.parse(JSON.stringify(registry));invalid.entries[0].paths=['../escape'];
+ assert.equal(codexInstallPlan(invalid,invalid.entries[0].kind,invalid.entries[0].id),null);
+});
