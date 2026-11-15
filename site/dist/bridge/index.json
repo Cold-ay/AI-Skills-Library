@@ -1,0 +1,209 @@
+[
+  {
+    "kind": "skill",
+    "id": "beautiful-article",
+    "title": "beautiful-article",
+    "file": "skill-beautiful-article.zip",
+    "root": "ai-skill-library-skill-beautiful-article",
+    "invocation": "beautiful-article",
+    "sha256": "ba52e7b878823101a3d82a97a8b655599b1b04b688c8ca25c424c9d8c5a631ee",
+    "bytes": 161581,
+    "files": 59,
+    "folders": [
+      "beautiful-article"
+    ]
+  },
+  {
+    "kind": "skill",
+    "id": "design-everyday-things",
+    "title": "design-everyday-things",
+    "file": "skill-design-everyday-things.zip",
+    "root": "ai-skill-library-skill-design-everyday-things",
+    "invocation": "design-everyday-things",
+    "sha256": "801ef2e676cc6084a91d58251ccb2e65c3c673b425bb6e11ef9f5624f885b8b7",
+    "bytes": 73546,
+    "files": 12,
+    "folders": [
+      "design-everyday-things"
+    ]
+  },
+  {
+    "kind": "skill",
+    "id": "gsap-core",
+    "title": "gsap-core",
+    "file": "skill-gsap-core.zip",
+    "root": "ai-skill-library-skill-gsap-core",
+    "invocation": "gsap-core",
+    "sha256": "02d60aaa9a5163c0d66b35c6433fa9795c18c1f34aa324bbdb62cd2bb4556f28",
+    "bytes": 11503,
+    "files": 2,
+    "folders": [
+      "gsap-core"
+    ]
+  },
+  {
+    "kind": "skill",
+    "id": "gsap-react",
+    "title": "gsap-react",
+    "file": "skill-gsap-react.zip",
+    "root": "ai-skill-library-skill-gsap-react",
+    "invocation": "gsap-react",
+    "sha256": "f25c7d7a32de6394359c153709636fa5b07d627204c218c5c9206a4fdc901a4c",
+    "bytes": 8291,
+    "files": 2,
+    "folders": [
+      "gsap-react"
+    ]
+  },
+  {
+    "kind": "skill",
+    "id": "gsap-timeline",
+    "title": "gsap-timeline",
+    "file": "skill-gsap-timeline.zip",
+    "root": "ai-skill-library-skill-gsap-timeline",
+    "invocation": "gsap-timeline",
+    "sha256": "2e1175ecbe52beaf4aa38e28c497012cfe6002ffbd4c099cccb34544270a4cdc",
+    "bytes": 7416,
+    "files": 2,
+    "folders": [
+      "gsap-timeline"
+    ]
+  },
+  {
+    "kind": "skill",
+    "id": "microinteractions",
+    "title": "microinteractions",
+    "file": "skill-microinteractions.zip",
+    "root": "ai-skill-library-skill-microinteractions",
+    "invocation": "microinteractions",
+    "sha256": "b17cc96c49245e1554fcd2d3a75611e05e9359ae78e18177758cb8c1def31514",
+    "bytes": 50591,
+    "files": 8,
+    "folders": [
+      "microinteractions"
+    ]
+  },
+  {
+    "kind": "skill",
+    "id": "nothing-design",
+    "title": "nothing-design",
+    "file": "skill-nothing-design.zip",
+    "root": "ai-skill-library-skill-nothing-design",
+    "invocation": "nothing-design",
+    "sha256": "18278ff180fef23c5c2953cdc03dba6aa5e9fe4c40d8fb9759c7f355c1460426",
+    "bytes": 17624,
+    "files": 5,
+    "folders": [
+      "nothing-design"
+    ]
+  },
+  {
+    "kind": "skill",
+    "id": "scientific-critical-thinking",
+    "title": "scientific-critical-thinking",
+    "file": "skill-scientific-critical-thinking.zip",
+    "root": "ai-skill-library-skill-scientific-critical-thinking",
+    "invocation": "scientific-critical-thinking",
+    "sha256": "d4ec18f66363791b2f9035520e3ae317661e7ac78f9e684aaf64d77b431e9f9d",
+    "bytes": 60872,
+    "files": 10,
+    "folders": [
+      "scientific-critical-thinking"
+    ]
+  },
+  {
+    "kind": "skill",
+    "id": "web-video-presentation",
+    "title": "web-video-presentation",
+    "file": "skill-web-video-presentation.zip",
+    "root": "ai-skill-library-skill-web-video-presentation",
+    "invocation": "web-video-presentation",
+    "sha256": "208c87e35963692970c34714b2b55218ad74a7a16d5adda3302307a4654442ab",
+    "bytes": 188899,
+    "files": 96,
+    "folders": [
+      "web-video-presentation"
+    ]
+  },
+  {
+    "kind": "combination",
+    "id": "article-to-presentation",
+    "title": "Article to presentation",
+    "file": "combination-article-to-presentation.zip",
+    "root": "ai-skill-library-combination-article-to-presentation",
+    "invocation": "combination-article-to-presentation",
+    "sha256": "ffa302e4a2eedebe7937ef05c203bfe8775e2bc91afb06ce2f3c79af1678ab29",
+    "bytes": 349874,
+    "files": 156,
+    "folders": [
+      "beautiful-article",
+      "combination-article-to-presentation",
+      "web-video-presentation"
+    ]
+  },
+  {
+    "kind": "combination",
+    "id": "clear-website-interactions",
+    "title": "Clear website interactions",
+    "file": "combination-clear-website-interactions.zip",
+    "root": "ai-skill-library-combination-clear-website-interactions",
+    "invocation": "combination-clear-website-interactions",
+    "sha256": "5bb6d47175c0691bad7aa0ae35b4efe4912e51184f81f09c1d6df9d68832022e",
+    "bytes": 121299,
+    "files": 21,
+    "folders": [
+      "combination-clear-website-interactions",
+      "design-everyday-things",
+      "microinteractions"
+    ]
+  },
+  {
+    "kind": "combination",
+    "id": "evidence-to-article",
+    "title": "Evidence to editorial report",
+    "file": "combination-evidence-to-article.zip",
+    "root": "ai-skill-library-combination-evidence-to-article",
+    "invocation": "combination-evidence-to-article",
+    "sha256": "53303cc3c789500ca2f2a26ff10c58c05309c42e5f524ea5bac7db6c727c502f",
+    "bytes": 220191,
+    "files": 70,
+    "folders": [
+      "beautiful-article",
+      "combination-evidence-to-article",
+      "scientific-critical-thinking"
+    ]
+  },
+  {
+    "kind": "combination",
+    "id": "industrial-motion",
+    "title": "Industrial interface + motion",
+    "file": "combination-industrial-motion.zip",
+    "root": "ai-skill-library-combination-industrial-motion",
+    "invocation": "combination-industrial-motion",
+    "sha256": "bd6c297e0bc7a3a37b9ead4f021cd712ac659b976fdb4d30399062bdd20691ba",
+    "bytes": 26008,
+    "files": 8,
+    "folders": [
+      "combination-industrial-motion",
+      "gsap-core",
+      "nothing-design"
+    ]
+  },
+  {
+    "kind": "combination",
+    "id": "react-motion",
+    "title": "React motion studio",
+    "file": "combination-react-motion.zip",
+    "root": "ai-skill-library-combination-react-motion",
+    "invocation": "combination-react-motion",
+    "sha256": "f555e02ab1ef816bcbba0cd315f55a5ae4067ebc4191766a06f91ab43fb96a4c",
+    "bytes": 19553,
+    "files": 7,
+    "folders": [
+      "combination-react-motion",
+      "gsap-core",
+      "gsap-react",
+      "gsap-timeline"
+    ]
+  }
+]

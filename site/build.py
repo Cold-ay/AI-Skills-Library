@@ -75,7 +75,11 @@ def build():
     for a in artifacts:
         path=dest/'downloads'/a['file']
         if hashlib.sha256(path.read_bytes()).hexdigest()!=a['sha256']:raise ValueError('Bundle archive integrity mismatch')
-    payload=json.dumps(dict(skills=skills,posts=posts,combinations=packs,downloads=artifacts,mcpGuide=markdown((ROOT/'docs/MCP.md').read_text())),ensure_ascii=True)
+    bridge_packages=json.loads((dest/'bridge/index.json').read_text())
+    for package in bridge_packages:
+        if not re.fullmatch(r'(?:skill|combination)-[a-z0-9-]+\.zip',package['file']):raise ValueError('Invalid bridge artifact')
+        if hashlib.sha256((dest/'bridge'/package['file']).read_bytes()).hexdigest()!=package['sha256']:raise ValueError('Bridge archive integrity mismatch')
+    payload=json.dumps(dict(skills=skills,posts=posts,combinations=packs,downloads=artifacts,bridgePackages=bridge_packages,mcpGuide=markdown((ROOT/'docs/MCP.md').read_text())),ensure_ascii=True)
     (dest/'data.js').write_text('window.AI_SKILL_LIBRARY = '+payload+';\n')
     # Version each asset so cached styles/scripts cannot mask a published UI change.
     index=dest/'index.html';html=index.read_text()

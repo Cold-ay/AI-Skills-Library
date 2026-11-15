@@ -70,3 +70,7 @@ The four-step wizard lets users select Codex/Claude Code and macOS/Linux/Windows
 ## Presentations & PPT category
 
 The 2026-11-15 round adds six presentation entries under `#library/presentations`. Summaries and requirements distinguish HTML delivery, native editable PowerPoint objects and image-only PPTX. All six are reference-only: the evidence manifests support source reading through MCP but do not constitute complete installations or new downloadable packs. Three recipes retain one deck-authoring owner and explicit review handoffs. See the dated presentation report for source identities, licensing, model requirements and verification limits.
+
+## Skill Bridge
+
+`#install` is the platform-selection and local installation page. Skill cards and combination cards link directly to `#install/skill/<id>` or `#install/combination/<id>`. Choose Codex, Claude Code or Cursor; project or user scope; macOS/Linux or Windows. Available portable packages expose archive hashes, preview/install commands and matching native chat prompts. Unavailable entries expose upstream requirements and an MCP reading route. Downloads and copy buttons do not install or send messages. Build packages with `python3 bridge.py --reviewed` before the website build; see [the complete guide](SKILL-BRIDGE.md).

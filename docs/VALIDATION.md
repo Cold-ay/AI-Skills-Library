@@ -84,3 +84,9 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - Verified 43 selected reading-file hashes against pinned Git trees. Source modes include ordinary files and executable script blobs inspected as text; none was executed. Reading manifests are incomplete upstream installations.
 - 55 Python tests and five JavaScript tests passed. New checks cover original-source identity, aliases, exact stars/commits, reading manifests, output distinctions, installer refusal, missing/AGPL license boundaries and one authoring owner per recipe. Website build, JavaScript syntax and whitespace checks passed.
 - No deck was generated, no image backend configured and no exporter or attribution guard run. Test results establish library integrity, not upstream presentation quality or host runtime compatibility.
+
+## Skill Bridge â€” 2026-11-15
+
+- Published 14 deterministic offline installation packages: nine standalone skills and five combinations, derived from previously reviewed archives. Original source catalogues and original ZIPs remain unchanged.
+- 64 Python tests and seven JavaScript tests pass. New tests cover three platform directory layouts and both scopes, preview-only behavior, hash/collision/symlink/traversal failures, rollback, source/license preservation, reproducible ZIPs and executing the self-contained installer in a temporary Claude project outside the repository. No upstream scripts or actual agent sessions ran.
+- Website build, JavaScript syntax and whitespace checks passed. Browser verification was unavailable because the browser tool timed out; no visual/end-to-end UI pass is claimed.

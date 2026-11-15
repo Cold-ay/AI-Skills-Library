@@ -144,3 +144,7 @@ Added Design of Everyday Things, Microinteractions and Playwright Best Practices
 ## Presentation skills research — 2026-11-15
 
 The [dated presentation review](reports/2026-11-15-presentation-skills.md) compares Frontend Slides, Magazine Web PPT, HTML PPT Studio, PPT Master, baoyu-slide-deck and visual-style-ppt. Browse the new [Presentations & PPT category](https://ai-skill-library.vercel.app/#library/presentations). These six entries are reference-only with pinned reading manifests, actual repository stars, output/editability distinctions and upstream-claimed Codex evidence. Three recipes provide staged handoffs; no new ZIP or runtime compatibility claim is made.
+
+## Skill Bridge — use the library in your agent
+
+Open [Use in your agent](https://ai-skill-library.vercel.app/#install) to download an available skill or combination, install its reviewed files into Codex, Claude Code or Cursor, and copy a matching chatbox prompt. Choose project or personal scope. The initial bridge includes nine standalone skills and five combinations; other entries retain their source/MCP setup routes. The portable Python installer previews by default, verifies payload hashes and preserves licenses, refuses existing folders, and never runs upstream code. See the [Skill Bridge guide](docs/SKILL-BRIDGE.md). Local installation does not upload skills to cloud accounts.
