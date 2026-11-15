@@ -686,5 +686,92 @@
     "conflicts": "Microinteractions defines expected behavior; Playwright tests observe it; verification reports evidence. Do not import upstream private APIs or treat automatic axe checks as complete accessibility certification. Codex support for the Playwright member is unknown.",
     "downloadable": false,
     "compatibility": "Recipe only, not a packaged or runtime-verified integration."
+  },
+  {
+    "id": "research-to-html-slides",
+    "title": "Evidence to browser slides",
+    "summary": "Check the argument, build a browser deck, then review usability.",
+    "skills": [
+      "scientific-critical-thinking",
+      "frontend-slides",
+      "web-design-guidelines"
+    ],
+    "stages": [
+      {
+        "skill": "scientific-critical-thinking",
+        "title": "Prepare a claim ledger",
+        "task": "Separate supported claims, uncertainties and source citations. Hand off an audience-specific outline without inventing data."
+      },
+      {
+        "skill": "frontend-slides",
+        "title": "Own the deck design",
+        "task": "Use the approved claims to preview styles and generate one HTML deck. Keep citations and asset provenance; retain the chosen fixed-stage design."
+      },
+      {
+        "skill": "web-design-guidelines",
+        "title": "Review the delivered interface",
+        "task": "Check keyboard navigation, focus, contrast, reduced motion and content overflow in the target browser. Report findings without replacing the approved visual system."
+      }
+    ],
+    "requirements": "Reviewed Frontend Slides upstream package and browser tools; source material, fonts and asset rights. Optional conversion/PDF/deploy setup is separate. No external publication follows from requesting this recipe.",
+    "conflicts": "Frontend Slides is the sole deck-design owner. Magazine Web PPT and HTML PPT Studio are alternatives, not concurrent designers. Browser review does not certify accessibility or produce native PPTX.",
+    "downloadable": false,
+    "compatibility": "Source-reviewed recipe only; no end-to-end generation/export or Codex/Claude trial. Upstream setup required, no ZIP."
+  },
+  {
+    "id": "source-to-editable-pptx",
+    "title": "Source to editable PowerPoint",
+    "summary": "Validate source claims, choose the native authoring route, and verify the export.",
+    "skills": [
+      "scientific-critical-thinking",
+      "ppt-master",
+      "verification-before-completion"
+    ],
+    "stages": [
+      {
+        "skill": "scientific-critical-thinking",
+        "title": "Lock the source and claims",
+        "task": "Produce a source-backed outline and identify tables/charts that must remain editable; hand off a content contract."
+      },
+      {
+        "skill": "ppt-master",
+        "title": "Generate or preserve the native deck",
+        "task": "Use the full official package. Choose the correct generation or existing-PPTX editing route; preserve required attribution and source files. Hand off the exported PPTX and unresolved conversion limitations."
+      },
+      {
+        "skill": "verification-before-completion",
+        "title": "Inspect actual export evidence",
+        "task": "Verify slide count, text readback, notes, intended editable objects and rendered pages in the target environment. Report unsupported objects and failed checks explicitly."
+      }
+    ],
+    "requirements": "Complete PPT Master distribution with attribution guard, Python and route-specific dependencies. PowerPoint or an agreed rendering environment is needed for fidelity review; optional media services require separate setup.",
+    "conflicts": "Do not replace native editable objects with a screenshot deck while claiming success. Existing-template editing and full regeneration are distinct routes. No guard execution or export occurred during research.",
+    "downloadable": false,
+    "compatibility": "Source-reviewed recipe only; no end-to-end generation/export or Codex/Claude trial. Upstream setup required, no ZIP."
+  },
+  {
+    "id": "visual-reading-deck",
+    "title": "Outline to visual reading deck",
+    "summary": "Create approved prompts and images, package them, then verify order and readability.",
+    "skills": [
+      "baoyu-slide-deck",
+      "verification-before-completion"
+    ],
+    "stages": [
+      {
+        "skill": "baoyu-slide-deck",
+        "title": "Own visual generation and packaging",
+        "task": "Confirm audience, style and page count; save per-slide prompts, generate approved raster slides, and merge using reviewed dependencies. Preserve prompts and image provenance."
+      },
+      {
+        "skill": "verification-before-completion",
+        "title": "Verify image-deck delivery",
+        "task": "Check actual slide/image counts, order, dimensions, text legibility and correspondence to the approved outline. Report that slide text is raster and that corrections require regeneration."
+      }
+    ],
+    "requirements": "Compatible image backend and its billing/data-access setup; complete baoyu-slide-deck sources, Bun/npx and merger dependencies. Generation is not authorized merely by loading this recipe.",
+    "conflicts": "Use one backend and one deck design system. visual-style-ppt is a conditional alternative with a model-specific requirement and unknown redistribution license, not a bundled companion. Image PPTX is not editable PowerPoint text.",
+    "downloadable": false,
+    "compatibility": "Source-reviewed recipe only; no end-to-end generation/export or Codex/Claude trial. Upstream setup required, no ZIP."
   }
 ]

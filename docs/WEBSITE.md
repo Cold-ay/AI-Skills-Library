@@ -66,3 +66,7 @@ Pure sorting and purpose-filter logic lives in `site/dist/library-ui.js`. Run `n
 `#mcp` opens the dedicated MCP section in the main navigation; the original `#connect` route remains an alias. The home page links to it through a connection callout. It explains the protocol and the distinction between skills and connectivity, then offers task previews using real catalogue entries. Previews do not contact the MCP server.
 
 The four-step wizard lets users select Codex/Claude Code and macOS/Linux/Windows. Commands come from the tested `mcpSetupPlan` helper. Configuration generation prints settings for a user to merge; no web control executes commands or claims a connected client. The final step separates the terminal smoke test from the request to paste into the AI client. Full documentation remains in a collapsed technical reference.
+
+## Presentations & PPT category
+
+The 2026-11-15 round adds six presentation entries under `#library/presentations`. Summaries and requirements distinguish HTML delivery, native editable PowerPoint objects and image-only PPTX. All six are reference-only: the evidence manifests support source reading through MCP but do not constitute complete installations or new downloadable packs. Three recipes retain one deck-authoring owner and explicit review handoffs. See the dated presentation report for source identities, licensing, model requirements and verification limits.

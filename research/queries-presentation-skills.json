@@ -1,0 +1,12 @@
+{
+  "window_days": 90,
+  "per_query": 8,
+  "queries": [
+    "\"frontend-slides\" archived:false",
+    "\"guizang-ppt-skill\" archived:false",
+    "\"html-ppt-skill\" archived:false",
+    "\"ppt-master\" archived:false",
+    "\"baoyu-skills\" archived:false",
+    "\"visual-style-ppt\" archived:false"
+  ]
+}

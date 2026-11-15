@@ -6152,5 +6152,464 @@
         "blob": "0312fd7de9487ced54515687d0026fc146aba947"
       }
     ]
+  },
+  {
+    "id": "frontend-slides",
+    "invocation": "frontend-slides",
+    "category": "presentations",
+    "summary": "HTML slides with visual style previews",
+    "reason": "Custom browser decks and PPTX-to-HTML rebuilding, with multiple visual previews and a fixed 16:9 stage.",
+    "requirements": "Full upstream support files/assets/scripts; filesystem, shell and browser tools. HTML output, not native PPTX. External fonts need network or local replacements; input conversion needs python-pptx. Optional PDF export installs Playwright/Chromium; optional Vercel script publishes externally. Review those separately.",
+    "repo": "zarazhangrui/frontend-slides",
+    "path": ".",
+    "commit": "9906a34d640d2111f724544cbc50f7f130569ae1",
+    "stars": 32329,
+    "observed_at": "2026-11-15",
+    "stars_evidence": "reports/evidence/2026-11-15-presentation-skills/zarazhangrui--frontend-slides.json",
+    "source": "https://github.com/zarazhangrui/frontend-slides/blob/9906a34d640d2111f724544cbc50f7f130569ae1/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/zarazhangrui/frontend-slides/blob/9906a34d640d2111f724544cbc50f7f130569ae1/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/zarazhangrui/frontend-slides/blob/9906a34d640d2111f724544cbc50f7f130569ae1/README.md",
+        "https://github.com/zarazhangrui/frontend-slides/blob/9906a34d640d2111f724544cbc50f7f130569ae1/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Explicit pinned upstream Codex guidance/claim; no generation/export trial in Codex."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/zarazhangrui/frontend-slides/blob/9906a34d640d2111f724544cbc50f7f130569ae1/README.md",
+        "https://github.com/zarazhangrui/frontend-slides/blob/9906a34d640d2111f724544cbc50f7f130569ae1/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary claim only; no Claude runtime test."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "blob": "746da6896f2da755b5b54987b4f29a7eea1320b5"
+      },
+      {
+        "path": "README.md",
+        "blob": "bd4bd929069d569e7dfbe3e8d6be77431bb50e43"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "9b8374bf128db6d5c18921d170bdc6a230808f82"
+      },
+      {
+        "path": "STYLE_PRESETS.md",
+        "blob": "f4045f18700584e3ceecf5800780098cdbff5a25"
+      },
+      {
+        "path": "bold-template-pack/selection-index.json",
+        "blob": "9b15d346f7b1fa1ebfdeaff38ffd2513ec9a763c"
+      },
+      {
+        "path": "html-template.md",
+        "blob": "511aa9b98322dab8190eb0ec61fa191446cbb4c1"
+      },
+      {
+        "path": "plugins/frontend-slides/skills/frontend-slides/SKILL.md",
+        "blob": "9b8374bf128db6d5c18921d170bdc6a230808f82"
+      },
+      {
+        "path": "scripts/deploy.sh",
+        "blob": "a5f79f2b31c0c4891b0d235623b22bcf13d7bd22"
+      },
+      {
+        "path": "scripts/export-pdf.sh",
+        "blob": "8493d84faea2752cc065f313ac917641e7902b98"
+      },
+      {
+        "path": "scripts/extract-pptx.py",
+        "blob": "498e2a5e4c9d3f11bec09a3ca54cd6731491a0e3"
+      },
+      {
+        "path": "viewport-base.css",
+        "blob": "0b35133bdb60f752da6482add385eb13ca6e536b"
+      }
+    ],
+    "presentation": {
+      "format": "html",
+      "editability": "HTML source and built-in text editing, not native PPTX",
+      "reading_set_only": true
+    },
+    "review_scope": "Pinned entry instructions and selected support documents/scripts inspected as data; manifest is a reading set, not a complete installation or full code audit."
+  },
+  {
+    "id": "magazine-web-ppt",
+    "invocation": "guizang-ppt-skill",
+    "category": "presentations",
+    "summary": "Editorial or Swiss-style HTML presentations",
+    "reason": "Canonical Magazine Web PPT by op7418, with live-talk design, speaker notes, audience synchronization and a low-power runtime.",
+    "requirements": "Full assets, templates and references. HTML is the core delivery, not PPTX. Check WebGL, external fonts/icons and motion fallback in the target browser. Optional image-model names are upstream claims, not verified availability. AGPL-3.0 source: reference-only, no MIT ZIP. Do not silently update the pin.",
+    "repo": "op7418/guizang-ppt-skill",
+    "path": ".",
+    "commit": "93d21bf4a73a851907a6eb00acbf30618236667a",
+    "stars": 29800,
+    "observed_at": "2026-11-15",
+    "stars_evidence": "reports/evidence/2026-11-15-presentation-skills/op7418--guizang-ppt-skill.json",
+    "source": "https://github.com/op7418/guizang-ppt-skill/blob/93d21bf4a73a851907a6eb00acbf30618236667a/SKILL.md",
+    "license": {
+      "spdx_id": "AGPL-3.0"
+    },
+    "license_evidence": [
+      "https://github.com/op7418/guizang-ppt-skill/blob/93d21bf4a73a851907a6eb00acbf30618236667a/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/op7418/guizang-ppt-skill/blob/93d21bf4a73a851907a6eb00acbf30618236667a/README.md",
+        "https://github.com/op7418/guizang-ppt-skill/blob/93d21bf4a73a851907a6eb00acbf30618236667a/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Explicit pinned upstream Codex guidance/claim; no generation/export trial in Codex."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/op7418/guizang-ppt-skill/blob/93d21bf4a73a851907a6eb00acbf30618236667a/README.md",
+        "https://github.com/op7418/guizang-ppt-skill/blob/93d21bf4a73a851907a6eb00acbf30618236667a/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary claim only; no Claude runtime test."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "blob": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e"
+      },
+      {
+        "path": "README.en.md",
+        "blob": "8502a309f32bc7b25ac14b9cdb22f8b379c13d59"
+      },
+      {
+        "path": "README.md",
+        "blob": "07eeda15a683b27a5204b3e2e164d44623506847"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "26556c0bd917e310c2c57dd9b2f6ae637e6e1e06"
+      },
+      {
+        "path": "assets/template.html",
+        "blob": "976cf0f65aed1ddb8642ef0849b2d0d54a70a6f4"
+      },
+      {
+        "path": "references/image-prompts.md",
+        "blob": "b3e07da9234f503650c029a7ce5e5b7e55f8f187"
+      },
+      {
+        "path": "references/layouts.md",
+        "blob": "f9b0c394533caea69224740d6092e1ef1b6cdacd"
+      },
+      {
+        "path": "references/presenter-mode.md",
+        "blob": "e5e3996b3b2243d88178eda8f14e7d282cbbe336"
+      }
+    ],
+    "presentation": {
+      "format": "html",
+      "editability": "HTML/CSS source, not a native PowerPoint deck",
+      "reading_set_only": true
+    },
+    "review_scope": "Pinned entry instructions and selected support documents/scripts inspected as data; manifest is a reading set, not a complete installation or full code audit."
+  },
+  {
+    "id": "html-ppt-studio",
+    "invocation": "html-ppt",
+    "category": "presentations",
+    "summary": "Template-driven HTML decks with presenter mode",
+    "reason": "Reusable themes, layouts and a keyboard/presenter runtime for technical talks, reports and repeatable browser decks.",
+    "requirements": "Complete assets/templates/runtime tree with correct relative paths. Remote webfont imports have fallback; offline rendering may differ. Scaffold script writes files; PNG rendering hard-codes a macOS Chrome path. Review platform setup before running. HTML/PNG output is not editable PPTX.",
+    "repo": "lewislulu/html-ppt-skill",
+    "path": ".",
+    "commit": "fd1629067909ff55b36b905476de4e5f26062a1f",
+    "stars": 9091,
+    "observed_at": "2026-11-15",
+    "stars_evidence": "reports/evidence/2026-11-15-presentation-skills/lewislulu--html-ppt-skill.json",
+    "source": "https://github.com/lewislulu/html-ppt-skill/blob/fd1629067909ff55b36b905476de4e5f26062a1f/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/lewislulu/html-ppt-skill/blob/fd1629067909ff55b36b905476de4e5f26062a1f/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/lewislulu/html-ppt-skill/blob/fd1629067909ff55b36b905476de4e5f26062a1f/README.md",
+        "https://github.com/lewislulu/html-ppt-skill/blob/fd1629067909ff55b36b905476de4e5f26062a1f/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Explicit pinned upstream Codex guidance/claim; no generation/export trial in Codex."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/lewislulu/html-ppt-skill/blob/fd1629067909ff55b36b905476de4e5f26062a1f/README.md",
+        "https://github.com/lewislulu/html-ppt-skill/blob/fd1629067909ff55b36b905476de4e5f26062a1f/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary claim only; no Claude runtime test."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "blob": "6c44d346dc52cedc04c104a6ff10dd5ae021d5f8"
+      },
+      {
+        "path": "README.md",
+        "blob": "00df16578e6661eac43fc1517070d2b9285bf1bc"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "4381965e976a8ee74fd62ee78a7e3cb4fca943dd"
+      },
+      {
+        "path": "assets/fonts.css",
+        "blob": "64feb7222db4caab11b9f7944eff7510d99a60ab"
+      },
+      {
+        "path": "references/authoring-guide.md",
+        "blob": "e0249f782b043ab7b7a1be87271214307b0ffc10"
+      },
+      {
+        "path": "references/presenter-mode.md",
+        "blob": "9b5aa0e48fb7e9e9f5d511c0d1239b07b801c156"
+      },
+      {
+        "path": "scripts/new-deck.sh",
+        "blob": "494a40c8b68bd0b945e5b655fae757174364a229"
+      },
+      {
+        "path": "scripts/render.sh",
+        "blob": "194f930beecd644fad8069fd15470180f9b67a9d"
+      }
+    ],
+    "presentation": {
+      "format": "html",
+      "editability": "Template and HTML source, not native PPTX",
+      "reading_set_only": true
+    },
+    "review_scope": "Pinned entry instructions and selected support documents/scripts inspected as data; manifest is a reading set, not a complete installation or full code audit."
+  },
+  {
+    "id": "ppt-master",
+    "invocation": "ppt-master",
+    "category": "presentations",
+    "summary": "Generate and edit native PowerPoint decks",
+    "reason": "Original Hugo He workflow with separate generation, template-creation and existing-PPTX editing routes; strongest fit here for PowerPoint-object editing.",
+    "requirements": "Complete official package including attribution files, scripts and templates; Python 3.10+ and route-specific dependencies. Required attribution guard was inspected, not run. Native DrawingML conversion supports a subset; verify unsupported objects in PowerPoint. Optional PyMuPDF has AGPL/commercial terms; image/narration services may transmit data or incur costs.",
+    "repo": "hugohe3/ppt-master",
+    "path": "skills/ppt-master",
+    "commit": "b243a950e9f85998705551fb1b77c6459573ff39",
+    "stars": 76891,
+    "observed_at": "2026-11-15",
+    "stars_evidence": "reports/evidence/2026-11-15-presentation-skills/hugohe3--ppt-master.json",
+    "source": "https://github.com/hugohe3/ppt-master/blob/b243a950e9f85998705551fb1b77c6459573ff39/skills/ppt-master/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/hugohe3/ppt-master/blob/b243a950e9f85998705551fb1b77c6459573ff39/skills/ppt-master/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/hugohe3/ppt-master/blob/b243a950e9f85998705551fb1b77c6459573ff39/README.md",
+        "https://github.com/hugohe3/ppt-master/blob/b243a950e9f85998705551fb1b77c6459573ff39/skills/ppt-master/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Explicit pinned upstream Codex guidance/claim; no generation/export trial in Codex."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/hugohe3/ppt-master/blob/b243a950e9f85998705551fb1b77c6459573ff39/README.md",
+        "https://github.com/hugohe3/ppt-master/blob/b243a950e9f85998705551fb1b77c6459573ff39/skills/ppt-master/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary claim only; no Claude runtime test."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "blob": "9c261c3d9a1d3249fa8f18611c950d719d288560"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "fb53783e6b75cff35c7048c3af2ee1229b14a809"
+      },
+      {
+        "path": "requirements.txt",
+        "blob": "e686b944c0fced2fcde22cfa37bc4dbb9aade242"
+      },
+      {
+        "path": "scripts/attribution_guard.py",
+        "blob": "35c3313165a7f94d1f0d005c137afd2b9bfe26f2"
+      },
+      {
+        "path": "workflows/edit-native-pptx.md",
+        "blob": "1f9ed86429e94ac03ff43088c46f7606a1c02f7a"
+      },
+      {
+        "path": "workflows/generate-pptx.md",
+        "blob": "5640c130581a229796b9b4ad2da7c3b495a285f7"
+      },
+      {
+        "path": "workflows/routing.md",
+        "blob": "7af09ce4627f3ccce85f8e763dc6ac1385dad734"
+      }
+    ],
+    "presentation": {
+      "format": "native-pptx",
+      "editability": "Native objects on supported paths; raster images stay raster",
+      "reading_set_only": true
+    },
+    "review_scope": "Pinned entry instructions and selected support documents/scripts inspected as data; manifest is a reading set, not a complete installation or full code audit."
+  },
+  {
+    "id": "baoyu-slide-deck",
+    "invocation": "baoyu-slide-deck",
+    "category": "presentations",
+    "summary": "Prompt-driven slide images with PPTX/PDF packaging",
+    "reason": "Style presets, saved per-slide prompts and selective regeneration for visual reading/sharing decks. The merger places generated images into slides.",
+    "requirements": "Compatible raster-image backend; native Codex imagegen and alternatives are upstream-described, not tested here. Bun or npx/Bun and packages such as pptxgenjs/pdf-lib. API backends may cost money and receive content. Slide text is part of the image; corrections need regeneration. Companion backends/packages are not included in this reading set.",
+    "repo": "JimLiu/baoyu-skills",
+    "path": "skills/baoyu-slide-deck",
+    "commit": "ca703c2d7c2c4399a1dc0cf82224f8551e05a96d",
+    "stars": 27549,
+    "observed_at": "2026-11-15",
+    "stars_evidence": "reports/evidence/2026-11-15-presentation-skills/JimLiu--baoyu-skills.json",
+    "source": "https://github.com/JimLiu/baoyu-skills/blob/ca703c2d7c2c4399a1dc0cf82224f8551e05a96d/skills/baoyu-slide-deck/SKILL.md",
+    "license": {
+      "spdx_id": "MIT"
+    },
+    "license_evidence": [
+      "https://github.com/JimLiu/baoyu-skills/blob/ca703c2d7c2c4399a1dc0cf82224f8551e05a96d/LICENSE"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/JimLiu/baoyu-skills/blob/ca703c2d7c2c4399a1dc0cf82224f8551e05a96d/README.md",
+        "https://github.com/JimLiu/baoyu-skills/blob/ca703c2d7c2c4399a1dc0cf82224f8551e05a96d/skills/baoyu-slide-deck/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Explicit pinned upstream Codex guidance/claim; no generation/export trial in Codex."
+    },
+    "claude": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/JimLiu/baoyu-skills/blob/ca703c2d7c2c4399a1dc0cf82224f8551e05a96d/README.md",
+        "https://github.com/JimLiu/baoyu-skills/blob/ca703c2d7c2c4399a1dc0cf82224f8551e05a96d/skills/baoyu-slide-deck/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Upstream documentary claim only; no Claude runtime test."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "SKILL.md",
+        "blob": "7904a4f433e8b419351ececb9bc4662cf4167e70"
+      },
+      {
+        "path": "references/codex-imagegen.md",
+        "blob": "9807494376ca4d98e2bbe9fed3120eb36787e747"
+      },
+      {
+        "path": "scripts/merge-to-pdf.ts",
+        "blob": "5edccdc622cbc8ebc56cc9feebe939cea30fda18"
+      },
+      {
+        "path": "scripts/merge-to-pptx.ts",
+        "blob": "4ff7f052e37b3f859ad2ad114f80d0e66610f003"
+      }
+    ],
+    "presentation": {
+      "format": "image-pptx",
+      "editability": "Full-slide raster images in PPTX; notes do not make slide text editable",
+      "reading_set_only": true
+    },
+    "review_scope": "Pinned entry instructions and selected support documents/scripts inspected as data; manifest is a reading set, not a complete installation or full code audit."
+  },
+  {
+    "id": "visual-style-ppt",
+    "invocation": "visual-style-ppt",
+    "category": "presentations",
+    "summary": "Reusable style locks for image-only presentations",
+    "reason": "Extract a reusable Style Lock, approve outline/prompts and slide images, then assemble an image-only PPTX. Conditional workflow reference, not an install recommendation.",
+    "requirements": "Reference-only: no explicit license file in the inspected tree. Instructions require a model named Image 2.5 and stop if unavailable; availability/entitlement unverified. Chinese-first defaults need an English override. No HTML fallback or native editable PPTX. Review image approval and assembly dependencies before use.",
+    "repo": "irenerachel/visual-style-ppt-skill",
+    "path": ".",
+    "commit": "71224618a2049dc47c3f32b01e1fff119dc03f45",
+    "stars": 398,
+    "observed_at": "2026-11-15",
+    "stars_evidence": "reports/evidence/2026-11-15-presentation-skills/irenerachel--visual-style-ppt-skill.json",
+    "source": "https://github.com/irenerachel/visual-style-ppt-skill/blob/71224618a2049dc47c3f32b01e1fff119dc03f45/SKILL.md",
+    "license": null,
+    "license_evidence": [
+      "https://github.com/irenerachel/visual-style-ppt-skill/blob/71224618a2049dc47c3f32b01e1fff119dc03f45/README.md",
+      "https://github.com/irenerachel/visual-style-ppt-skill/tree/71224618a2049dc47c3f32b01e1fff119dc03f45"
+    ],
+    "codex": {
+      "status": "upstream-claimed",
+      "evidence": [
+        "https://github.com/irenerachel/visual-style-ppt-skill/blob/71224618a2049dc47c3f32b01e1fff119dc03f45/README.md",
+        "https://github.com/irenerachel/visual-style-ppt-skill/blob/71224618a2049dc47c3f32b01e1fff119dc03f45/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "Explicit pinned upstream Codex guidance/claim; no generation/export trial in Codex."
+    },
+    "claude": {
+      "status": "unknown",
+      "evidence": [
+        "https://github.com/irenerachel/visual-style-ppt-skill/blob/71224618a2049dc47c3f32b01e1fff119dc03f45/README.md",
+        "https://github.com/irenerachel/visual-style-ppt-skill/blob/71224618a2049dc47c3f32b01e1fff119dc03f45/SKILL.md"
+      ],
+      "runtime_tested": false,
+      "note": "No explicit Claude support established."
+    },
+    "installable": false,
+    "files": [
+      {
+        "path": "README.md",
+        "blob": "f6e168a2d863928e09207ebe7c37ef45f96d0604"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "b2da3913174cf0af15bfe0d9b74e7f0ff171035a"
+      },
+      {
+        "path": "references/output-package.md",
+        "blob": "4a0f3af3ca649ee81294b417080fd48f6529ddf7"
+      },
+      {
+        "path": "references/revision-workflow.md",
+        "blob": "37b853be0cb0bdd62dee8cf5d192d90f11fe7768"
+      },
+      {
+        "path": "references/workflow.md",
+        "blob": "4fe89941cf13c700900b690f1de9481c3fbaa02a"
+      }
+    ],
+    "presentation": {
+      "format": "image-pptx",
+      "editability": "Image-only PPTX, no native editable slide text",
+      "reading_set_only": true
+    },
+    "review_scope": "Pinned entry instructions and selected support documents/scripts inspected as data; manifest is a reading set, not a complete installation or full code audit."
   }
 ]

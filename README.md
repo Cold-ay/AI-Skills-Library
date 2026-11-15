@@ -2,7 +2,7 @@
 
 An evidence-based catalogue of useful AI skills, with a small discovery/install CLI and an editorial report website. Covers website/UI, mobile app design, video, coding, token/context efficiency, research/automation, skill engineering, writing/editing, product management, electronics/EDA, mobile release, game development, and writing/communication.
 
-**56 curated entries · 23 combinations · 5 downloadable packs · English documentation · Manual reports · No scheduled updates**
+**62 curated entries · 26 combinations · 5 downloadable packs · English documentation · Manual reports · No scheduled updates**
 
 ## Discover a skill
 
@@ -90,7 +90,7 @@ Official reference: [Build skills](https://learn.chatgpt.com/docs/build-skills).
 
 ## Combinations and downloads
 
-Browse [workflow combinations](https://ai-skill-library.vercel.app/#combinations): five downloadable packs and eighteen recipes. Recipes describe setup requirements and static integration proposals; they are not ZIPs or runtime-tested integrations. Each explains its stages, handoff artifacts, prerequisites, conflicts and evidence limits. Packs include pinned original skill files, MIT license texts, provenance manifests and a `combination-*` orchestration skill. They are static integration proposals; no end-to-end Codex runtime test is claimed.
+Browse [workflow combinations](https://ai-skill-library.vercel.app/#combinations): five downloadable packs and twenty-one recipes. Recipes describe setup requirements and static integration proposals; they are not ZIPs or runtime-tested integrations. Each explains its stages, handoff artifacts, prerequisites, conflicts and evidence limits. Packs include pinned original skill files, MIT license texts, provenance manifests and a `combination-*` orchestration skill. They are static integration proposals; no end-to-end Codex runtime test is claimed.
 
 ```sh
 python3 bundles.py list
@@ -140,3 +140,7 @@ Merge the generated configuration into the client and reconnect. Skill cards off
 ## Website skills topic review — 2026-11-05
 
 Added Design of Everyday Things, Microinteractions and Playwright Best Practices from the GitHub ai-skills topic, plus a licensed design pack and a website QA recipe. See the [dated review](reports/2026-11-05-ai-skills-topic.md) for pinned sources, exact stars, Codex evidence, caveats, deferrals and the reproducible search method. New entries declare root `license_files`; the copy-only installer preserves those pinned notices under each installed skill’s `LICENSES/upstream/` directory.
+
+## Presentation skills research — 2026-11-15
+
+The [dated presentation review](reports/2026-11-15-presentation-skills.md) compares Frontend Slides, Magazine Web PPT, HTML PPT Studio, PPT Master, baoyu-slide-deck and visual-style-ppt. Browse the new [Presentations & PPT category](https://ai-skill-library.vercel.app/#library/presentations). These six entries are reference-only with pinned reading manifests, actual repository stars, output/editability distinctions and upstream-claimed Codex evidence. Three recipes provide staged handoffs; no new ZIP or runtime compatibility claim is made.

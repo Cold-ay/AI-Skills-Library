@@ -1,0 +1,99 @@
+{
+  "published_on": "2026-11-15",
+  "discovery": "Six user-supplied names, primary-source web search for identity resolution, public GitHub metadata/commit/tree collection and pinned source review. Zhihu entity-search links were name hints, not original-source evidence.",
+  "queries": [
+    "\"Frontend Slides\" github skill",
+    "\"Magazine Web PPT\" github",
+    "\"HTML PPT Studio\" github",
+    "\"Magazine Web PPT\" skill github",
+    "\"PPT Master\" \"SKILL.md\"",
+    "\"visual-style-ppt\" github",
+    "\"baoyu-slide-deck\" github"
+  ],
+  "added": [
+    {
+      "id": "frontend-slides",
+      "repo": "zarazhangrui/frontend-slides",
+      "path": ".",
+      "commit": "9906a34d640d2111f724544cbc50f7f130569ae1",
+      "stars": 32329,
+      "codex": "upstream-claimed",
+      "format": "html",
+      "installable": false
+    },
+    {
+      "id": "magazine-web-ppt",
+      "repo": "op7418/guizang-ppt-skill",
+      "path": ".",
+      "commit": "93d21bf4a73a851907a6eb00acbf30618236667a",
+      "stars": 29800,
+      "codex": "upstream-claimed",
+      "format": "html",
+      "installable": false
+    },
+    {
+      "id": "html-ppt-studio",
+      "repo": "lewislulu/html-ppt-skill",
+      "path": ".",
+      "commit": "fd1629067909ff55b36b905476de4e5f26062a1f",
+      "stars": 9091,
+      "codex": "upstream-claimed",
+      "format": "html",
+      "installable": false
+    },
+    {
+      "id": "ppt-master",
+      "repo": "hugohe3/ppt-master",
+      "path": "skills/ppt-master",
+      "commit": "b243a950e9f85998705551fb1b77c6459573ff39",
+      "stars": 76891,
+      "codex": "upstream-claimed",
+      "format": "native-pptx",
+      "installable": false
+    },
+    {
+      "id": "baoyu-slide-deck",
+      "repo": "JimLiu/baoyu-skills",
+      "path": "skills/baoyu-slide-deck",
+      "commit": "ca703c2d7c2c4399a1dc0cf82224f8551e05a96d",
+      "stars": 27549,
+      "codex": "upstream-claimed",
+      "format": "image-pptx",
+      "installable": false
+    },
+    {
+      "id": "visual-style-ppt",
+      "repo": "irenerachel/visual-style-ppt-skill",
+      "path": ".",
+      "commit": "71224618a2049dc47c3f32b01e1fff119dc03f45",
+      "stars": 398,
+      "codex": "upstream-claimed",
+      "format": "image-pptx",
+      "installable": false
+    }
+  ],
+  "baseline": {
+    "repo": "anthropics/skills",
+    "path": "skills/pptx",
+    "decision": "Comparison only; not added/repackaged. Per-skill LICENSE.txt inspected: Apache-2.0 at this pin; root metadata alone was insufficient."
+  },
+  "identity_notes": [
+    "Frontend Slides resolves to zarazhangrui, not an independently maintained fork.",
+    "Magazine Web PPT resolves to op7418/guizang-ppt-skill; guizang-ppt-skill is its invocation.",
+    "HTML PPT Studio resolves to lewislulu/html-ppt-skill; html-ppt is its invocation.",
+    "PPT Master resolves to hugohe3/ppt-master, declared as the official repository in metadata. Same-name repos are not conflated."
+  ],
+  "combinations": [
+    "research-to-html-slides",
+    "source-to-editable-pptx",
+    "visual-reading-deck"
+  ],
+  "limits": [
+    "No upstream installer, attribution guard, exporter, generation workflow or browser template executed.",
+    "No API credentials configured and no images generated.",
+    "All six entries are reference-only; selected reading manifests are incomplete installations.",
+    "Codex support is upstream-claimed, not runtime-verified.",
+    "Stars describe whole repositories; no growth or per-skill star claim.",
+    "Output/editability descriptions are source-based, not measured exports."
+  ]
+}

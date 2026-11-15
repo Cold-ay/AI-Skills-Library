@@ -12,7 +12,7 @@ import tempfile
 import urllib.request
 
 ROOT = Path(__file__).resolve().parent
-CATEGORIES = {'website-ui', 'mobile-app', 'video', 'coding', 'token-context', 'research-automation', 'skill-engineering', 'writing-editing', 'product-management', 'electronics-eda', 'mobile-release', 'game-development', 'writing-communication'}
+CATEGORIES = {'presentations', 'website-ui', 'mobile-app', 'video', 'coding', 'token-context', 'research-automation', 'skill-engineering', 'writing-editing', 'product-management', 'electronics-eda', 'mobile-release', 'game-development', 'writing-communication'}
 STATUSES = {'verified-static', 'upstream-claimed', 'unknown'}
 
 def safe_path(value):

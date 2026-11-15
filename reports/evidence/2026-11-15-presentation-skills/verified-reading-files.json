@@ -1,0 +1,303 @@
+[
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "LICENSE",
+    "blob": "746da6896f2da755b5b54987b4f29a7eea1320b5",
+    "mode": "100644",
+    "bytes": 1067
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "README.md",
+    "blob": "bd4bd929069d569e7dfbe3e8d6be77431bb50e43",
+    "mode": "100644",
+    "bytes": 35554
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "SKILL.md",
+    "blob": "9b8374bf128db6d5c18921d170bdc6a230808f82",
+    "mode": "100644",
+    "bytes": 28187
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "STYLE_PRESETS.md",
+    "blob": "f4045f18700584e3ceecf5800780098cdbff5a25",
+    "mode": "100644",
+    "bytes": 8201
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "bold-template-pack/selection-index.json",
+    "blob": "9b15d346f7b1fa1ebfdeaff38ffd2513ec9a763c",
+    "mode": "100644",
+    "bytes": 39202
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "html-template.md",
+    "blob": "511aa9b98322dab8190eb0ec61fa191446cbb4c1",
+    "mode": "100644",
+    "bytes": 11460
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "plugins/frontend-slides/skills/frontend-slides/SKILL.md",
+    "blob": "9b8374bf128db6d5c18921d170bdc6a230808f82",
+    "mode": "100644",
+    "bytes": 28187
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "scripts/deploy.sh",
+    "blob": "a5f79f2b31c0c4891b0d235623b22bcf13d7bd22",
+    "mode": "100755",
+    "bytes": 8077
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "scripts/export-pdf.sh",
+    "blob": "8493d84faea2752cc065f313ac917641e7902b98",
+    "mode": "100755",
+    "bytes": 13615
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "scripts/extract-pptx.py",
+    "blob": "498e2a5e4c9d3f11bec09a3ca54cd6731491a0e3",
+    "mode": "100644",
+    "bytes": 2917
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "path": "viewport-base.css",
+    "blob": "0b35133bdb60f752da6482add385eb13ca6e536b",
+    "mode": "100644",
+    "bytes": 2742
+  },
+  {
+    "repo": "op7418/guizang-ppt-skill",
+    "path": "LICENSE",
+    "blob": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+    "mode": "100644",
+    "bytes": 34523
+  },
+  {
+    "repo": "op7418/guizang-ppt-skill",
+    "path": "README.en.md",
+    "blob": "8502a309f32bc7b25ac14b9cdb22f8b379c13d59",
+    "mode": "100644",
+    "bytes": 27352
+  },
+  {
+    "repo": "op7418/guizang-ppt-skill",
+    "path": "README.md",
+    "blob": "07eeda15a683b27a5204b3e2e164d44623506847",
+    "mode": "100644",
+    "bytes": 25756
+  },
+  {
+    "repo": "op7418/guizang-ppt-skill",
+    "path": "SKILL.md",
+    "blob": "26556c0bd917e310c2c57dd9b2f6ae637e6e1e06",
+    "mode": "100644",
+    "bytes": 44097
+  },
+  {
+    "repo": "op7418/guizang-ppt-skill",
+    "path": "assets/template.html",
+    "blob": "976cf0f65aed1ddb8642ef0849b2d0d54a70a6f4",
+    "mode": "100644",
+    "bytes": 147806
+  },
+  {
+    "repo": "op7418/guizang-ppt-skill",
+    "path": "references/image-prompts.md",
+    "blob": "b3e07da9234f503650c029a7ce5e5b7e55f8f187",
+    "mode": "100644",
+    "bytes": 12415
+  },
+  {
+    "repo": "op7418/guizang-ppt-skill",
+    "path": "references/layouts.md",
+    "blob": "f9b0c394533caea69224740d6092e1ef1b6cdacd",
+    "mode": "100644",
+    "bytes": 28858
+  },
+  {
+    "repo": "op7418/guizang-ppt-skill",
+    "path": "references/presenter-mode.md",
+    "blob": "e5e3996b3b2243d88178eda8f14e7d282cbbe336",
+    "mode": "100644",
+    "bytes": 11294
+  },
+  {
+    "repo": "lewislulu/html-ppt-skill",
+    "path": "LICENSE",
+    "blob": "6c44d346dc52cedc04c104a6ff10dd5ae021d5f8",
+    "mode": "100644",
+    "bytes": 1084
+  },
+  {
+    "repo": "lewislulu/html-ppt-skill",
+    "path": "README.md",
+    "blob": "00df16578e6661eac43fc1517070d2b9285bf1bc",
+    "mode": "100644",
+    "bytes": 15221
+  },
+  {
+    "repo": "lewislulu/html-ppt-skill",
+    "path": "SKILL.md",
+    "blob": "4381965e976a8ee74fd62ee78a7e3cb4fca943dd",
+    "mode": "100644",
+    "bytes": 19834
+  },
+  {
+    "repo": "lewislulu/html-ppt-skill",
+    "path": "assets/fonts.css",
+    "blob": "64feb7222db4caab11b9f7944eff7510d99a60ab",
+    "mode": "100644",
+    "bytes": 889
+  },
+  {
+    "repo": "lewislulu/html-ppt-skill",
+    "path": "references/authoring-guide.md",
+    "blob": "e0249f782b043ab7b7a1be87271214307b0ffc10",
+    "mode": "100644",
+    "bytes": 6411
+  },
+  {
+    "repo": "lewislulu/html-ppt-skill",
+    "path": "references/presenter-mode.md",
+    "blob": "9b5aa0e48fb7e9e9f5d511c0d1239b07b801c156",
+    "mode": "100644",
+    "bytes": 9918
+  },
+  {
+    "repo": "lewislulu/html-ppt-skill",
+    "path": "scripts/new-deck.sh",
+    "blob": "494a40c8b68bd0b945e5b655fae757174364a229",
+    "mode": "100755",
+    "bytes": 7058
+  },
+  {
+    "repo": "lewislulu/html-ppt-skill",
+    "path": "scripts/render.sh",
+    "blob": "194f930beecd644fad8069fd15470180f9b67a9d",
+    "mode": "100755",
+    "bytes": 3116
+  },
+  {
+    "repo": "hugohe3/ppt-master",
+    "path": "skills/ppt-master/LICENSE",
+    "blob": "9c261c3d9a1d3249fa8f18611c950d719d288560",
+    "mode": "100644",
+    "bytes": 1069
+  },
+  {
+    "repo": "hugohe3/ppt-master",
+    "path": "skills/ppt-master/SKILL.md",
+    "blob": "fb53783e6b75cff35c7048c3af2ee1229b14a809",
+    "mode": "100644",
+    "bytes": 10323
+  },
+  {
+    "repo": "hugohe3/ppt-master",
+    "path": "skills/ppt-master/requirements.txt",
+    "blob": "e686b944c0fced2fcde22cfa37bc4dbb9aade242",
+    "mode": "100644",
+    "bytes": 8561
+  },
+  {
+    "repo": "hugohe3/ppt-master",
+    "path": "skills/ppt-master/scripts/attribution_guard.py",
+    "blob": "35c3313165a7f94d1f0d005c137afd2b9bfe26f2",
+    "mode": "100644",
+    "bytes": 7652
+  },
+  {
+    "repo": "hugohe3/ppt-master",
+    "path": "skills/ppt-master/workflows/edit-native-pptx.md",
+    "blob": "1f9ed86429e94ac03ff43088c46f7606a1c02f7a",
+    "mode": "100644",
+    "bytes": 19764
+  },
+  {
+    "repo": "hugohe3/ppt-master",
+    "path": "skills/ppt-master/workflows/generate-pptx.md",
+    "blob": "5640c130581a229796b9b4ad2da7c3b495a285f7",
+    "mode": "100644",
+    "bytes": 46470
+  },
+  {
+    "repo": "hugohe3/ppt-master",
+    "path": "skills/ppt-master/workflows/routing.md",
+    "blob": "7af09ce4627f3ccce85f8e763dc6ac1385dad734",
+    "mode": "100644",
+    "bytes": 14443
+  },
+  {
+    "repo": "JimLiu/baoyu-skills",
+    "path": "skills/baoyu-slide-deck/SKILL.md",
+    "blob": "7904a4f433e8b419351ececb9bc4662cf4167e70",
+    "mode": "100644",
+    "bytes": 19854
+  },
+  {
+    "repo": "JimLiu/baoyu-skills",
+    "path": "skills/baoyu-slide-deck/references/codex-imagegen.md",
+    "blob": "9807494376ca4d98e2bbe9fed3120eb36787e747",
+    "mode": "100644",
+    "bytes": 3715
+  },
+  {
+    "repo": "JimLiu/baoyu-skills",
+    "path": "skills/baoyu-slide-deck/scripts/merge-to-pdf.ts",
+    "blob": "5edccdc622cbc8ebc56cc9feebe939cea30fda18",
+    "mode": "100644",
+    "bytes": 3222
+  },
+  {
+    "repo": "JimLiu/baoyu-skills",
+    "path": "skills/baoyu-slide-deck/scripts/merge-to-pptx.ts",
+    "blob": "4ff7f052e37b3f859ad2ad114f80d0e66610f003",
+    "mode": "100644",
+    "bytes": 3918
+  },
+  {
+    "repo": "irenerachel/visual-style-ppt-skill",
+    "path": "README.md",
+    "blob": "f6e168a2d863928e09207ebe7c37ef45f96d0604",
+    "mode": "100644",
+    "bytes": 15527
+  },
+  {
+    "repo": "irenerachel/visual-style-ppt-skill",
+    "path": "SKILL.md",
+    "blob": "b2da3913174cf0af15bfe0d9b74e7f0ff171035a",
+    "mode": "100644",
+    "bytes": 19404
+  },
+  {
+    "repo": "irenerachel/visual-style-ppt-skill",
+    "path": "references/output-package.md",
+    "blob": "4a0f3af3ca649ee81294b417080fd48f6529ddf7",
+    "mode": "100644",
+    "bytes": 4442
+  },
+  {
+    "repo": "irenerachel/visual-style-ppt-skill",
+    "path": "references/revision-workflow.md",
+    "blob": "37b853be0cb0bdd62dee8cf5d192d90f11fe7768",
+    "mode": "100644",
+    "bytes": 3569
+  },
+  {
+    "repo": "irenerachel/visual-style-ppt-skill",
+    "path": "references/workflow.md",
+    "blob": "4fe89941cf13c700900b690f1de9481c3fbaa02a",
+    "mode": "100644",
+    "bytes": 14252
+  }
+]

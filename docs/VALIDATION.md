@@ -77,3 +77,10 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - New entries have pinned root license manifests; the copy-only installer verifies and preserves their notices. Offline tests cover copied notices, rollback on hash mismatch and unsafe/colliding paths. Existing entries without that optional manifest retain their prior behavior.
 - 51 Python tests and five JavaScript tests passed, including evidence/pin cross-checks and archive integrity checks. Website build and git whitespace checks passed. Packaging verification does not establish upstream runtime skill quality.
 - The public topic API search is bounded to 50 star-ranked results. Selected instructions were read, references sampled and 77 selected Markdown blobs hash-verified; no upstream installer, script or skill workflow was executed.
+
+## Presentation research â€” 2026-11-15
+
+- Added six reference-only presentation entries and three recipes; preserved all 56 previous entries and 23 previous combinations unchanged. Current totals: 62 skills, 26 combinations, five existing ZIP packs and nine reports.
+- Verified 43 selected reading-file hashes against pinned Git trees. Source modes include ordinary files and executable script blobs inspected as text; none was executed. Reading manifests are incomplete upstream installations.
+- 55 Python tests and five JavaScript tests passed. New checks cover original-source identity, aliases, exact stars/commits, reading manifests, output distinctions, installer refusal, missing/AGPL license boundaries and one authoring owner per recipe. Website build, JavaScript syntax and whitespace checks passed.
+- No deck was generated, no image backend configured and no exporter or attribution guard run. Test results establish library integrity, not upstream presentation quality or host runtime compatibility.

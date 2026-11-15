@@ -4,7 +4,7 @@ Goal: find workflows that solve a stated task, record why they are useful, and p
 
 ## 1. Define the question
 
-Write the task, inputs, expected output, host (such as Codex), allowed services, budget and a concrete success check. Example: “Build a React animation that cleans up on unmount and respects reduced motion.” Choose one of website/UI, video, coding, context efficiency, research/automation, skill engineering, writing/editing, product management, electronics/EDA, mobile release, game development, or writing/communication. List existing skills so duplicates are not mistaken for new findings.
+Write the task, inputs, expected output, host (such as Codex), allowed services, budget and a concrete success check. Example: “Build a React animation that cleans up on unmount and respects reduced motion.” Choose one of website/UI, presentations/PPT, video, coding, context efficiency, research/automation, skill engineering, writing/editing, product management, electronics/EDA, mobile release, game development, or writing/communication. List existing skills so duplicates are not mistaken for new findings.
 
 ## 2. Search through complementary lanes
 
@@ -71,3 +71,7 @@ For context skills, distinguish file offloading, session compaction, persistent 
 ## Topic-seeded website round: 2026-11-05
 
 Start from the supplied topic URL, then capture a bounded `topic:ai-skills archived:false` API search sorted by repository stars. Preserve the exact response and timestamp before inspection. Distinguish metadata triage from deep source review, record existing catalogue duplicates, and document suspicious snippets against primary documentation. The [dated report](../reports/2026-11-05-ai-skills-topic.md) records this run; `research/queries-website-topic.json` supplies future query refinements, not a claim that each refinement was executed. Three selected skill folders have full verified blob manifests; runtime compatibility remains claimed or unknown.
+
+## Presentation round: 2026-11-15
+
+Resolve display names and forks before comparing stars. Inspect export code and classify HTML, native PowerPoint objects and image-only PPTX separately. Keep model access, external fonts, host-specific renderers, package installation, source-template fidelity and per-skill licenses explicit. A file extension alone is insufficient evidence of editability. See the [dated report](../reports/2026-11-15-presentation-skills.md) and future collector configuration `research/queries-presentation-skills.json`. Selected reading manifests are not runnable installation manifests; all six new entries are reference-only.
