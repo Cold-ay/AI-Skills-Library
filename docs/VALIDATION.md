@@ -97,3 +97,7 @@ The current redesign is local-only and not deployed. It applies the repositoryâ€
 - 70 Python tests and eight JavaScript tests passed locally. Integration tests exercise the bundled Codex installer validation/copy code for all 14 folders in temporary storage, substituting only its network checkout with the local source tree. Tests also verify provenance, rebuild preservation, registry hashes, scope-specific requests and explicit dependency paths. No actual upstream task workflow ran.
 - Five generated wrappers pass frontmatter validation. Two unchanged upstream skills have metadata keys flagged by the bundled validator; the native installer copy test succeeds, but no Codex skill-session behavior is claimed. See docs/CODEX-INSTALLER.md.
 - Browser preview was unavailable (browser tool timeout); no visual UI pass is claimed.
+
+### Published GitHub download smoke check
+
+The actual bundled Codex installer subsequently passed network download and installation from the published immutable commit with Python 3.12, using temporary `--dest` directories: Microinteractions (one folder, eight files) and Clear Website Interactions (three folders, 21 files). Every installed file matched the exported source. The initial system-Python archive request was reset by GitHub; the bundled-runtime retry passed. No upstream scripts, personal skill folders or agent task workflows were executed/modified. Machine-readable evidence is in `docs/evidence/codex-native-installer-smoke.json`.

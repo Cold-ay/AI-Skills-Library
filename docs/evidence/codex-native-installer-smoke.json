@@ -1,0 +1,26 @@
+{
+  "repo": "Cold-ay/AI-Skills-Library",
+  "ref": "d396aceec262c23b199f953852046bc2ebf19649",
+  "helper_sha256": "38f311b75664bb063808f982c600271ebc4b560830f491705190f88a94e3e781",
+  "python": "3.12.14",
+  "method": "official bundled installer, network download, temporary explicit --dest",
+  "cases": [
+    {
+      "kind": "skill",
+      "id": "microinteractions",
+      "folders": 1,
+      "verified_files": 8,
+      "passed": true
+    },
+    {
+      "kind": "combination",
+      "id": "clear-website-interactions",
+      "folders": 3,
+      "verified_files": 21,
+      "passed": true
+    }
+  ],
+  "upstream_scripts_executed": false,
+  "personal_skills_modified": false,
+  "agent_workflow_tested": false
+}
